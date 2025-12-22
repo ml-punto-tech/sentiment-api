@@ -1,3 +1,18 @@
+# application.yml - Configuración base
+
 spring:
   application:
     name: sentiment-tech-api
+
+  profiles:
+    active: dev
+
+# API configuration
+api:
+  version: ${API_VERSION:v1}
+  base-path: /api/${api.version}
+
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: ${api.base-path}
