@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 /**
  * Respuesta genérica de la API.
  */
@@ -18,4 +20,5 @@ public class ApiResponse<T> {
     private boolean success;
     private T data;
     private String message;
+    private LocalDateTime timestamp;
 }
