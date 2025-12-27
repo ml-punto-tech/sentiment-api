@@ -1,56 +1,49 @@
-# API REST para Análisis de Sentimiento 🧠
+# 🎯 Sistema de Análisis de Sentimiento con Machine Learning
 
-API Backend desarrollada con Spring Boot que proporciona análisis de sentimiento de textos mediante integración con modelo de Machine Learning en Python.
+## 📋 Descripción del Proyecto
 
-## 📋 Descripción
+Sistema completo de análisis de sentimiento que integra **Spring Boot** para el backend API REST y **Python/Machine Learning** para el procesamiento y clasificación de texto. El sistema procesa texto en lenguaje natural y determina si el sentimiento expresado es positivo, negativo o neutral.
 
-Sistema que recibe textos, los procesa y clasifica en tres categorías de sentimiento (Positivo, Negativo, Neutral) utilizando un modelo de Machine Learning. La API actúa como intermediario entre el cliente y el servicio de Data Science.
-
-## 🏗️ Arquitectura
+## 🏗️ Arquitectura del Sistema
 
 ```
-Cliente → Spring Boot API → Python ML Service → Respuesta
+┌─────────────────┐      ┌─────────────────┐      ┌─────────────────┐
+│   Cliente Web   │ ──▶  │  Spring Boot    │ ──▶  │  Python ML API  │
+│                 │      │   (Backend)     │      │   (Port 5000)   │
+└─────────────────┘      └─────────────────┘      └─────────────────┘
+                                │
+                                ▼
+                         ┌─────────────┐
+                         │  Response   │
+                         │  JSON       │
+                         └─────────────┘
 ```
 
-## 🛠️ Tecnologías
+## 🚀 Características Principales
 
-- **Java 17+**
-- **Spring Boot 3.x**
-- **Maven**
-- **Lombok**
-- **RestTemplate/WebClient**
+- ✅ **API REST** robusta con Spring Boot
+- 🤖 **Modelo de Machine Learning** para clasificación de sentimientos
+- 🔄 **Pipeline completo** de procesamiento de datos
+- 📊 **Clasificación en 3 categorías**: Positivo, Negativo, Neutral
+- ✨ **Validación de entrada** con Spring Validation
+- 📝 **Logging completo** de requests y predicciones
+- 🎨 **Respuestas JSON** estandarizadas
 
-## 📦 Dependencias Maven
+## 🛠️ Tecnologías Utilizadas
 
-```xml
-<dependencies>
-    <!-- Spring Web -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    
-    <!-- Spring Validation -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-validation</artifactId>
-    </dependency>
-    
-    <!-- Lombok -->
-    <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <optional>true</optional>
-    </dependency>
-    
-    <!-- DevTools -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-devtools</artifactId>
-        <scope>runtime</scope>
-    </dependency>
-</dependencies>
-```
+### Backend (Spring Boot)
+- **Spring Boot** - Framework principal
+- **Spring Web** - API REST
+- **Spring Validation** - Validación de datos
+- **Lombok** - Reducción de código boilerplate
+- **RestTemplate/WebClient** - Cliente HTTP
+- **Spring Boot Dev Tools** - Herramientas de desarrollo
+
+### Data Science & ML
+- **Python** - Lenguaje de programación
+- **Machine Learning** - Modelos de clasificación
+- **Procesamiento de Lenguaje Natural (NLP)**
+- **Pandas/NumPy** - Manipulación de datos
 
 ## 📁 Estructura del Proyecto
 
@@ -59,72 +52,51 @@ src/main/java/
 ├── controller/
 │   └── SentimentController.java
 ├── service/
-│   ├── SentimentService.java
+│   └── SentimentService.java
 │   └── DataScienceClient.java
 ├── model/
 │   ├── SentimentRequest.java
 │   └── SentimentResponse.java
-└── Application.java
+└── config/
+    └── RestTemplateConfig.java
 ```
 
-## 🚀 Instalación y Configuración
+## 🔄 Proceso Backend - API REST
 
-### 1. Clonar el repositorio
+### 1. ⚙️ Configuración del Proyecto
+- Proyecto Spring Boot con Maven
+- Dependencias necesarias configuradas
+- Estructura de paquetes organizada
 
-```bash
-git clone [URL_DEL_REPOSITORIO]
-cd sentiment-api
-```
+### 2. 📨 Recepción y Validación
+**Endpoint**: `POST /api/sentiment`
 
-### 2. Configurar application.properties
-
-```properties
-# Puerto del servidor
-server.port=8080
-
-# URL del servicio de ML Python
-ml.service.url=http://localhost:5000/api_sentimiento
-
-# Logging
-logging.level.root=INFO
-logging.level.com.tuempresa=DEBUG
-```
-
-### 3. Compilar el proyecto
-
-```bash
-mvn clean install
-```
-
-### 4. Ejecutar la aplicación
-
-```bash
-mvn spring-boot:run
-```
-
-## 📝 Endpoints
-
-### Análisis de Sentimiento
-
-**POST** `/api/sentiment`
-
-Analiza el sentimiento de un texto proporcionado.
-
-#### Request Body
-
+**Request Body**:
 ```json
 {
-  "text": "El servicio es excelente, muy recomendado"
+  "text": "El servicio es excelente y muy confiable"
 }
 ```
 
-#### Validaciones
+**Validaciones**:
+- `@NotBlank`: El texto no puede estar vacío
+- `@Size(min=5)`: Longitud mínima de 5 caracteres
 
-- `text`: No puede estar vacío (`@NotBlank`)
-- `text`: Longitud mínima de 5 caracteres (`@Size(min=5)`)
+### 3. 🔗 Integración con Data Science
+- Llamada HTTP al modelo de Python (puerto 5000)
+- Endpoint: `POST http://localhost:5000/api_sentimiento`
+- Comunicación mediante RestTemplate/WebClient
 
-#### Response (200 OK)
+**Response del Modelo ML**:
+```json
+{
+  "prediccion": "Positivo",
+  "probabilidad": 0.87
+}
+```
 
+### 4. ✅ Respuesta al Cliente
+**HTTP 200 OK**:
 ```json
 {
   "prevision": "Positivo",
@@ -132,146 +104,177 @@ Analiza el sentimiento de un texto proporcionado.
 }
 ```
 
-#### Posibles Respuestas
+**Features adicionales**:
+- Logging con timestamp y request ID
+- Métricas de rendimiento
+- Content-Type: application/json
 
-- **200 OK**: Análisis exitoso
-- **400 Bad Request**: Validación fallida
-- **500 Internal Server Error**: Error en el servicio de ML
+## 📊 Pipeline de Preparación de Datos
 
-## 🔄 Flujo de Procesamiento
+### 1. 📥 Carga y Selección de Datos
+- Extracción del dataset en formato texto crudo
+- Filtrado de columnas relevantes
+- Output: Archivo con columnas Texto y Sentimiento
 
-### 1. Configuración del Proyecto
-- Proyecto Spring Boot con estructura modular
-- Dependencias Maven configuradas
-- Estructura de paquetes organizada
+### 2. 🧹 Limpieza y Normalización
+Técnicas aplicadas:
+- Conversión a minúsculas
+- Eliminación de tildes, URLs, hashtags y menciones (@)
+- Remoción de emojis y símbolos Unicode
+- Eliminación de "ruido" digital
+- Scripts automatizados de estandarización
 
-### 2. Recepción y Validación
-- Endpoint REST recibe petición POST
-- Controller valida datos con anotaciones Lombok
-- Verificación de texto no vacío y longitud mínima
+### 3. 🎨 Categorización de Sentimientos
+Clasificación en tres categorías:
+- 😊 **Positivo**: 280 registros
+- 😞 **Negativo**: 152 registros
+- 😐 **Neutral**: 330 registros
 
-### 3. Integración Data Science
-- DataScienceClient realiza llamada HTTP
-- Request enviado al servicio Python (localhost:5000)
-- Modelo ML procesa y clasifica el texto
-- Response con predicción y probabilidad
+**Total**: 762 registros procesados
 
-### 4. Respuesta al Cliente
-- Formateo de respuesta JSON
-- Logging de operación
-- Retorno HTTP 200 con resultado
+### 4. 💾 Exportación del Dataset Final
+- Formato de salida: CSV estructurado
+- Dataset listo para entrenamiento de modelos ML
+- 100% de datos limpios y categorizados
 
-## 📊 Categorías de Sentimiento
+## 📈 Métricas del Sistema
 
-| Categoría | Emoji | Descripción |
-|-----------|-------|-------------|
-| Positivo  | 😊    | Sentimiento favorable o optimista |
-| Negativo  | 😞    | Sentimiento desfavorable o pesimista |
-| Neutral   | 😐    | Sin carga emocional clara |
+| Métrica | Valor |
+|---------|-------|
+| Total Requests | 762 |
+| Categorías | 3 |
+| Accuracy | 99% |
+| Registros Procesados | 762 |
 
-## 🎯 Métricas del Sistema
+## 🚦 Guía de Inicio Rápido
 
-- **Requests procesados**: 762
-- **Categorías disponibles**: 3 (Positivo, Negativo, Neutral)
-- **Accuracy del modelo**: 99%
+### Prerrequisitos
+```bash
+- Java 11 o superior
+- Maven 3.6+
+- Python 3.8+
+- Dependencias Python (requirements.txt)
+```
 
-### Distribución de Análisis
+### Instalación
 
-- Positivos: 280 (36.7%)
-- Negativos: 152 (20.0%)
-- Neutrales: 330 (43.3%)
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/tu-usuario/sentiment-analysis-api.git
+cd sentiment-analysis-api
+```
 
-## 🔧 Configuración Avanzada
+2. **Compilar el proyecto Backend**
+```bash
+mvn clean install
+```
 
-### Timeout de Conexión
+3. **Iniciar el servicio de Python**
+```bash
+cd python-ml-service
+pip install -r requirements.txt
+python app.py
+```
 
-```java
-@Bean
-public RestTemplate restTemplate() {
-    HttpComponentsClientHttpRequestFactory factory = 
-        new HttpComponentsClientHttpRequestFactory();
-    factory.setConnectTimeout(3000);
-    factory.setReadTimeout(3000);
-    return new RestTemplate(factory);
+4. **Iniciar Spring Boot**
+```bash
+mvn spring-boot:run
+```
+
+### Uso de la API
+
+**Ejemplo con cURL**:
+```bash
+curl -X POST http://localhost:8080/api/sentiment \
+  -H "Content-Type: application/json" \
+  -d '{"text": "Este producto es excelente"}'
+```
+
+**Respuesta esperada**:
+```json
+{
+  "prevision": "Positivo",
+  "probabilidad": 0.92
 }
 ```
 
-### Manejo de Errores
+## 🧪 Ejemplos de Uso
 
-```java
-@ExceptionHandler(Exception.class)
-public ResponseEntity<ErrorResponse> handleException(Exception e) {
-    // Logging del error
-    log.error("Error procesando sentimiento", e);
-    return ResponseEntity
-        .status(HttpStatus.INTERNAL_SERVER_ERROR)
-        .body(new ErrorResponse(e.getMessage()));
+### Request Positivo
+```json
+POST /api/sentiment
+{
+  "text": "Me encanta este servicio, es increíble"
 }
 ```
 
-## 📋 Logging
+### Request Negativo
+```json
+POST /api/sentiment
+{
+  "text": "Muy decepcionado con la calidad del producto"
+}
+```
+
+### Request Neutral
+```json
+POST /api/sentiment
+{
+  "text": "El producto llegó en la fecha indicada"
+}
+```
+
+## 🔐 Validaciones y Manejo de Errores
+
+### Error 400 - Bad Request
+```json
+{
+  "error": "Validation failed",
+  "message": "El texto debe tener al menos 5 caracteres"
+}
+```
+
+### Error 500 - Internal Server Error
+```json
+{
+  "error": "Service unavailable",
+  "message": "No se pudo conectar con el servicio de ML"
+}
+```
+
+## 📝 Logging
 
 El sistema registra:
 - Timestamp de cada request
 - Request ID único
-- Texto analizado
+- Texto analizado (parcial por privacidad)
 - Predicción obtenida
 - Probabilidad del resultado
-- Tiempo de procesamiento
+- Tiempo de respuesta
 
-## 🧪 Testing
+## 🤝 Contribuciones
 
-```bash
-# Ejecutar tests unitarios
-mvn test
+Las contribuciones son bienvenidas. Por favor:
 
-# Ejecutar tests de integración
-mvn verify
-```
-
-## 🐍 Servicio Python (Requisito)
-
-La API requiere un servicio Python ejecutándose en:
-
-```
-POST http://localhost:5000/api_sentimiento
-```
-
-Este servicio debe aceptar:
-
-```json
-{
-  "text": "texto a analizar"
-}
-```
-
-Y retornar:
-
-```json
-{
-  "prediccion": "Positivo|Negativo|Neutral",
-  "probabilidad": 0.87
-}
-```
-
-## 🤝 Contribuir
-
-1. Fork del proyecto
-2. Crear rama feature (`git checkout -b feature/AmazingFeature`)
-3. Commit cambios (`git commit -m 'Add: AmazingFeature'`)
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
 4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abrir Pull Request
+5. Abre un Pull Request
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT.
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
-## 👥 Autores
+## 👥 Equipo
 
-- Tu Nombre - [@tu_usuario](https://github.com/tu_usuario)
+- **Backend Team** - Spring Boot API Development
+- **Data Science Team** - ML Model & Data Processing
 
-## 🙏 Agradecimientos
+## 📞 Contacto
 
-- Spring Boot Community
-- Equipo de Data Science por el modelo ML
-- Contribuidores del proyecto
+Para preguntas o sugerencias, por favor abre un issue en el repositorio.
+
+---
+
+⭐ **Si este proyecto te resultó útil, considera darle una estrella en GitHub**
