@@ -1,66 +1,103 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException, Request
+from pydantic import BaseModel, Field
+from contextlib import asynccontextmanager
+from pathlib import Path
 import joblib
 import numpy as np
-import os
+import logging
+from starlette.datastructures import State
 
-# --- CONFIGURACIÓN ---
-MODEL_PATH = "modelo_entrenado.joblib"
+# -------------------------------------------------------------------
+# LOGGING
+# -------------------------------------------------------------------
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-# 1. Definir el contrato de entrada
+# -------------------------------------------------------------------
+# CONFIGURACIÓN
+# -------------------------------------------------------------------
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "modelo_entrenado.joblib"
+
+# -------------------------------------------------------------------
+# MODELOS Pydantic
+# -------------------------------------------------------------------
 class SentimentRequest(BaseModel):
-    text: str
+    text: str = Field(..., min_length=10, description="Texto a analizar")
 
-# 2. Inicializar App
-app = FastAPI(
-    title="API Sentimiento",
-    version="1.0.0"
-)
+class SentimentResponse(BaseModel):
+    prevision: str
+    probabilidad: float
 
-# 3. Cargar el Modelo (Pipeline) al inicio
-model = None
+# -------------------------------------------------------------------
+# LIFESPAN (startup / shutdown)
+# -------------------------------------------------------------------
+@asynccontextmanager
+async def lifespan(api: FastAPI):
+    api.state = State()
 
-@app.on_event("startup")
-def load_model():
-    global model
-    if os.path.exists(MODEL_PATH):
-        try:
-            model = joblib.load(MODEL_PATH)
-            print(f"✅ Modelo cargado exitosamente: {MODEL_PATH}")
-        except Exception as e:
-            print(f"❌ Error crítico cargando el modelo: {e}")
-    else:
-        print(f"⚠️ ADVERTENCIA: No se encontró el archivo {MODEL_PATH}")
-
-# 4. Endpoint para el Backend Java
-@app.post("/api_sentimiento") # Ajusté la ruta para que coincida con tu carpeta si quieres
-def predict_sentiment(request: SentimentRequest):
-    global model
-    if not model:
-        raise HTTPException(status_code=500, detail="Modelo no disponible en el servidor.")
+    # 🔼 STARTUP
+    if not MODEL_PATH.exists():
+        logger.error("Modelo no encontrado en %s", MODEL_PATH)
+        raise RuntimeError("Modelo requerido no disponible")
 
     try:
-        # A. Predecir
-        # Como usamos un Pipeline, podemos pasar el texto directo.
-        # El pipeline se encarga de vectorizar internamente.
-        input_data = [request.text] 
+        api.state.model = joblib.load(MODEL_PATH)
+        logger.info("Modelo cargado exitosamente: %s", MODEL_PATH)
+    except Exception as e:
+        logger.exception("Error crítico cargando el modelo")
+        raise RuntimeError("Fallo al cargar el modelo") from e
+
+    yield
+
+    # 🔽 SHUTDOWN
+    logger.info("Apagando API de Sentimiento")
+
+# -------------------------------------------------------------------
+# APP
+# -------------------------------------------------------------------
+app = FastAPI(
+    title="API de Análisis de Sentimiento",
+    version="1.1.0",
+    lifespan=lifespan
+)
+
+# -------------------------------------------------------------------
+# ENDPOINTS
+# -------------------------------------------------------------------
+@app.post(
+    "/predict",
+    response_model=SentimentResponse,
+    summary="Analiza el sentimiento de un texto",
+)
+def predict_sentiment(request: SentimentRequest, req: Request):
+    model = req.app.state.model
+
+    try:
+        input_data = [request.text]
+
         prediction = model.predict(input_data)[0]
-        
-        # B. Probabilidad
         probs = model.predict_proba(input_data)[0]
         max_prob = float(np.max(probs))
 
-        # C. Respuesta JSON estricta para Java
-        # Java espera: String prevision, double probabilidad
-        return {
-            "prevision": str(prediction),
-            "probabilidad": round(max_prob, 4) # 4 decimales para mayor precisión
-        }
+        return SentimentResponse(
+            prevision=str(prediction),
+            probabilidad=round(max_prob, 4)
+        )
 
     except Exception as e:
-        print(f"Error procesando solicitud: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Error procesando la solicitud")
+        raise HTTPException(
+            status_code=500,
+            detail="Error interno procesando la predicción"
+        )
 
-@app.get("/")
-def health_check():
-    return {"status": "online", "model_loaded": model is not None}
+@app.get(
+    "/",
+    summary="Health check"
+)
+def health_check(request: Request):
+    return {
+        "status": "online",
+        "model_loaded": hasattr(request.app.state, "model")
+    }
