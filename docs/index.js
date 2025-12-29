@@ -29,7 +29,7 @@ const SENTIMENT_CONFIG = {
 };
 
 const MIN_CARACTERES = 10;
-const API_URL = 'http://localhost:8080/api/v1/sentiment';
+const API_URL = 'https://sentiment-tech-api.onrender.com/api/v1/sentiment';
 
 // ============================================================================
 // 2. ELEMENTOS DEL DOM
