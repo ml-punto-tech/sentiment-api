@@ -13,7 +13,7 @@ public class CorsConfig implements WebMvcConfigurer {
                 .allowedOrigins(
                         "http://localhost:3000/",
                         "https://sentimient-walo.vercel.app/",
-                        "https://ml-punto-tech.github.io/sentiment-api/"
+                        "https://ml-punto-tech.github.io/"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
                 .allowedHeaders("*")
