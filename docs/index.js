@@ -140,6 +140,7 @@ elementos.submitBtn.addEventListener('click', async function(e) {
             actualizarUI(data.data.prevision, probabilidad);
             navegarA('resultado');
             elementos.textarea.value = ''; // Limpiar formulario
+            mostrarAdvertencia('', false);
         } else {
             throw new Error(data.message || `Error ${response.status}`);
         }
