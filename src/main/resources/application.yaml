@@ -16,3 +16,8 @@ server:
   port: ${SERVER_PORT:8080}
   servlet:
     context-path: ${api.base-path}
+
+# model-api
+model:
+  api:
+    url: ${MODEL_API_URL:http://localhost:8000}
