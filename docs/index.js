@@ -18,7 +18,7 @@ const SENTIMENT_CONFIG = {
         progressClass: "progress-bar bg-negative",
         gradientClass: "gradient-negative",
     },
-    neutro: {
+    neutral: {
         emoji: "😐",
         label: "Neutral",
         description: "El texto no expresa emociones fuertes",
