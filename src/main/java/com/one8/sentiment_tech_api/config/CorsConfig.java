@@ -12,7 +12,9 @@ public class CorsConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins(
                         "https://sentimient-walo.vercel.app/",
-                        "https://ml-punto-tech.github.io/"
+                        "https://ml-punto-tech.github.io/",
+                        "https://sentiment-ceron.vercel.app/"
+                    
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
                 .allowedHeaders("*")
