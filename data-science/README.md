@@ -51,16 +51,13 @@ Este proyecto implementa un pipeline de **Natural Language Processing (NLP)** su
 
 El Back-end envía un JSON con el campo `text`. El microservicio en Python procesa, clasifica y responde.
 
-![Flujo y Arquitectura](docs/images/architecture_microservice.png)
+![Flujo y Arquitectura](images/architecture_microservice.png)
 *Figura 1. Microservicio de sentimientos (Python API) — Flujo y arquitectura.*
 
 **Tech Stack:**
 * **Entrada:** JSON.
 * **Motor:** `scikit-learn`, `joblib`, `pandas`.
 * **API:** `FastAPI`, `uvicorn`.
-
-> 📌 Nota: si aún no tenés la imagen en el repo, colocala en `docs/images/architecture_microservice.png`
-> (o actualizá la ruta del link).
 
 ---
 
@@ -116,7 +113,7 @@ Validamos que el dataset final sea íntegro y consistente antes del entrenamient
   *Decisión sugerida:* conservarlos (refuerzan frases comunes) o deduplicar (reduce sesgo). Queda explicitado como criterio de QA.
 * **Distribución de Clases:**
 
-![Distribución de Clases](docs/images/class_distribution.png)
+![Distribución de Clases](images/class_distribution.png)
 *Figura 2. Distribución de clases (dataset v2): Negativo (39.73%), Positivo (37.62%), Neutral (22.65%).*
 
 **Problemas y resoluciones (Dataset):**
@@ -135,7 +132,7 @@ Validamos que el dataset final sea íntegro y consistente antes del entrenamient
 | **F1 Weighted** | **0.6705** |
 
 **Matriz de Confusión:**
-![Matriz de Confusión](docs/images/confusion_matrix.png)
+![Matriz de Confusión](images/confusion_matrix.png)
 *Figura 3. Matriz de confusión (dataset v2). La clase 'Neutral' es la más difícil (Recall ≈ 0.365).*
 
 **Validación Cruzada (5-Fold):**
