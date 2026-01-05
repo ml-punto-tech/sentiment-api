@@ -51,7 +51,7 @@ Este proyecto implementa un pipeline de **Natural Language Processing (NLP)** su
 
 El Back-end envía un JSON con el campo `text`. El microservicio en Python procesa, clasifica y responde.
 
-![Flujo y Arquitectura](ruta/a/tu/imagen_arquitectura.png)
+![Flujo y Arquitectura](images/architecture_microservice.png)
 *Figura 1. Microservicio de sentimientos (Python API) — Flujo y arquitectura.*
 
 **Tech Stack:**
@@ -68,10 +68,18 @@ Se utilizan dos datasets principales en el flujo de trabajo:
 ### 1. Dataset Final (`dataset_listo_para_ML.csv`)
 *Dataset limpio utilizado para el entrenamiento del modelo.*
 
+✅ **Dataset actual en uso (v2):** `dataset_listo_para_ML (2).csv`  
+Recomendación: renombrarlo en el repo a **`dataset_listo_para_ML.csv`** para estandarizar.
+
+**Resumen (v2):**
+- **Registros:** **3272**
+- **Duplicados (por texto):** **424 (12.96%)**
+- **Distribución:** `negativo` 39.73% | `positivo` 37.62% | `neutral` 22.65%
+
 | Variable | Tipo | Descripción |
 | :--- | :--- | :--- |
-| `Texto_Limpio` | String | Texto normalizado (minúsculas, sin tildes/ASCII, sin ruido). |
-| `Sentimiento_Final` | String | Target: `Positivo`, `Neutral`, `Negativo`. |
+| `Texto_Limpio` | String | Texto preprocesado según reglas del pipeline (puede conservar mayúsculas y caracteres no-ASCII para capturar intensidad/emoción). |
+| `Sentimiento_Final` | String | Target: `Positivo`, `Neutral`, `Negativo` *(en el CSV v2 viene en minúscula: `positivo`, `neutral`, `negativo`)*. |
 
 ### 2. Dataset Crudo (`sentimentdataset_es.csv`)
 *Contiene 15 columnas originales incluyendo `Timestamp`, `User`, `Platform`, `Hashtags`, etc.*
@@ -84,11 +92,14 @@ El notebook `Procesamiento_y_Clasificacion_de_Datos_SentimentAPI.ipynb` ejecuta 
 
 1.  **Carga y Selección:** Extracción de columnas `Text` y `Sentiment`.
 2.  **Limpieza:**
-    * Conversión a minúsculas.
-    * Eliminación de URLs, Hashtags, Menciones y Emojis.
-    * Normalización ASCII (eliminación de tildes).
+    * Normalización y corrección de problemas de **encoding** (dataset exportado desde Excel → CSV).
+    * Limpieza de ruido común (espacios/formatos) y estandarización para entrenamiento.
+    * *Decisión de diseño (v2):* se evita forzar todo a minúsculas para conservar **intensidad emocional** (ej. “GENIAL”, “HORRIBLE”) cuando aporta señal.
 3.  **Categorización:** Mapeo de emociones complejas a las 3 clases base.
     * *Nota:* Sentimientos ambiguos no mapeados se asignan a `Neutral` (Regla de negocio MVP).
+
+> 🔎 Hallazgo dataset v2: aún existen registros con `#/@` y URLs en una fracción del dataset.
+> Se documenta en QA como punto de mejora (según el objetivo del MVP).
 
 ---
 
@@ -97,28 +108,35 @@ El notebook `Procesamiento_y_Clasificacion_de_Datos_SentimentAPI.ipynb` ejecuta 
 ### 6.A Testing de Datos (ETL)
 Validamos que el dataset final sea íntegro y consistente antes del entrenamiento.
 
-* **Integridad:** 0 Nulos, 0 filas perdidas.
-* **Duplicados:** Se conservaron 26 duplicados (3.55%) intencionalmente para reforzar patrones de feedback comunes.
+* **Integridad:** 0 nulos en columnas críticas, sin pérdida de registros.
+* **Duplicados:** Se detectaron **424 duplicados (12.96%)** por texto.
+  *Decisión sugerida:* conservarlos (refuerzan frases comunes) o deduplicar (reduce sesgo). Queda explicitado como criterio de QA.
 * **Distribución de Clases:**
 
-![Distribución de Clases](class_distribution.png)
-*Figura 2. Distribución de clases en el dataset final: Neutral (45.1%), Positivo (34.2%), Negativo (20.8%).*
+![Distribución de Clases](images/class_distribution.png)
+*Figura 2. Distribución de clases (dataset v2): Negativo (39.73%), Positivo (37.62%), Neutral (22.65%).*
+
+**Problemas y resoluciones (Dataset):**
+- **Incidente de encoding (Excel → CSV):** se detectó “mojibake”/caracteres corruptos al importar el dataset desde Excel.
+  **Resolución:** exportación a CSV y normalización del encoding antes de integrar al pipeline.
 
 ### 6.B Testing de Machine Learning
 **Modelo:** Pipeline `TF-IDF Vectorizer` + `Logistic Regression`.
 
+> ⚠️ Métricas recalculadas con el **dataset v2** (`dataset_listo_para_ML (2).csv`), split estratificado 80/20 (`random_state=42`).
+
 | Métrica | Valor (Holdout 20%) |
 | :--- | :--- |
-| **Accuracy** | **0.7075** |
-| **F1 Macro** | **0.6751** |
-| **F1 Weighted** | **0.6978** |
+| **Accuracy** | **0.6840** |
+| **F1 Macro** | **0.6440** |
+| **F1 Weighted** | **0.6705** |
 
 **Matriz de Confusión:**
-![Matriz de Confusión](confusion_matrix.png)
-*Figura 3. Matriz de confusión. Se observa que la clase 'Negativo' es la más difícil de clasificar (menor Recall).*
+![Matriz de Confusión](images/confusion_matrix.png)
+*Figura 3. Matriz de confusión (dataset v2). La clase 'Neutral' es la más difícil (Recall ≈ 0.365).*
 
 **Validación Cruzada (5-Fold):**
-El modelo demuestra estabilidad con un F1 Macro promedio de **0.6061 ± 0.0241**.
+El modelo demuestra estabilidad con un F1 Macro promedio de **0.6580 ± 0.0101**.
 
 ---
 
@@ -127,7 +145,7 @@ El modelo demuestra estabilidad con un F1 Macro promedio de **0.6061 ± 0.0241**
 ### Endpoint: `/sentiment`
 
 **Request (JSON):**
-JSON
+json
 {
   "text": "El servicio fue excelente y muy rápido"
 }
@@ -151,17 +169,17 @@ Requisitos:
 - Librerías: pandas, scikit-learn, joblib, fastapi, uvicorn, python-multipart.
 
 Pasos
-Clonar el repositorio:
-git clone [https://github.com/tu-usuario/sentiment-api.git](https://github.com/tu-usuario/sentiment-api.git)
+1) Clonar el repositorio
+git clone https://github.com/AgusLopez50/sentiment-api.git
 cd sentiment-api
 
-Instalar dependencias:
+2) Instalar dependencias
 pip install -r requirements.txt
 
-Entrenar el modelo (Opcional si ya tienes el .joblib): Ejecutar el notebook ModeloSentimentAPI.ipynb para generar modelo_entrenado.joblib.
+3) Entrenar el modelo (Opcional si ya tienes el .joblib)
+- Ejecutar el notebook ModeloSentimentAPI.ipynb para generar modelo_entrenado.joblib.
 
-Levantar la API:
+4) Levantar la API
 uvicorn main:app --reload
-Fecha de actualización: 2025-12-29
 
-
+Fecha de actualización: 2026-01-05
