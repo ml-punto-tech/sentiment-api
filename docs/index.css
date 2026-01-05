@@ -688,24 +688,12 @@ footer {
     }
 }
 
-.text-neutral {
-    color: hsl(var(--neutral));
-}
-
 .bg-neutral {
     background: var(--gradient-neutral);
 }
 
-.text-negative {
-    color: hsl(var(--negative));
-}
-
 .bg-negative {
     background: var(--gradient-negative);
-}
-
-.text-positive {
-    color: hsl(var(--positive));
 }
 
 .bg-positive {
