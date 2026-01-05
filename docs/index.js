@@ -9,7 +9,6 @@ const SENTIMENT_CONFIG = {
         badgeClass: "sentiment-value sentiment-positive",
         progressClass: "progress-bar bg-positive",
         gradientClass: "gradient-positive",
-        textClass: "text-positive",
     },
     negativo: {
         emoji: "😞",
@@ -18,7 +17,6 @@ const SENTIMENT_CONFIG = {
         badgeClass: "sentiment-value sentiment-negative",
         progressClass: "progress-bar bg-negative",
         gradientClass: "gradient-negative",
-        textClass: "text-negative",
     },
     neutral: {
         emoji: "😐",
@@ -27,13 +25,11 @@ const SENTIMENT_CONFIG = {
         badgeClass: "sentiment-value sentiment-neutral",
         progressClass: "progress-bar bg-neutral",
         gradientClass: "gradient-neutral",
-        textClass: "text-neutral"
     }
 };
 
 const MIN_CARACTERES = 10;
 const API_URL = 'https://sentiment-tech-api.onrender.com/api/v1/sentiment';
-// const API_URL = 'https://sentiment-tech-api.onrender.com/api/v1/sentiment';
 
 // ============================================================================
 // 2. ELEMENTOS DEL DOM
@@ -45,7 +41,6 @@ const elementos = {
     warnText: document.getElementById('warn'),
     main1: document.getElementById('main-one'),
     main2: document.getElementById('main-two'),
-    text: document.getElementById("text-in-result"),
     emoji: document.getElementById('emoji'),
     previsionDiv: document.getElementById('prevision'),
     progressBar: document.getElementById('progress-bar'),
@@ -75,12 +70,10 @@ function navegarA(pantalla) {
     }
 }
 
-function actualizarUI(sentimentData, probabilidad, texto) {
+function actualizarUI(sentimentData, probabilidad) {
     const config = SENTIMENT_CONFIG[sentimentData.toLowerCase()];
     if (!config) return;
 
-    elementos.text.textContent = `'${texto}'`;
-    elementos.text.className = config.textClass;
     elementos.previsionDiv.textContent = config.label;
     elementos.previsionDiv.className = config.badgeClass;
     elementos.progressBar.className = config.progressClass;
@@ -144,7 +137,7 @@ elementos.submitBtn.addEventListener('click', async function(e) {
 
         if (response.ok) {
             const probabilidad = Math.round(data.data.probabilidad * 100);
-            actualizarUI(data.data.prevision, probabilidad, texto);
+            actualizarUI(data.data.prevision, probabilidad);
             navegarA('resultado');
             elementos.textarea.value = ''; // Limpiar formulario
             mostrarAdvertencia('', false);
