@@ -1,7 +1,7 @@
 Texto_Limpio,Sentimiento_Final
 ¡Acabo de adoptar a un lindo amigo peludo!??,positivo
 ¡Acabo de terminar un entrenamiento increible!??,positivo
-¡Adoracion desbordante por un lindo cachorro rescatado!??,neutral
+¡Adoracion desbordante por un lindo cachorro rescatado!??,positivo
 "¡Año nuevo, nuevos objetivos de fitness!??",positivo
 ¡Celebrando el cumpleaños de un amigo esta noche!??,positivo
 ¡Celebrando un hito en el trabajo!??,positivo
@@ -16,7 +16,7 @@ Texto_Limpio,Sentimiento_Final
 ¡Nuevo libro publicado por mi autor favorito!,positivo
 "¡Organizando un show de talentos virtual en tiempos dificiles, haciendo sonreir a los compañeros!",positivo
 "¡Participando en un festival multicultural, celebrando la diversidad con musica, baile y comida deliciosa!",positivo
-¡Rebosante de adoracion por mi adorable mascota!??,neutral
+¡Rebosante de adoracion por mi adorable mascota!??,positivo
 ¡Un incidente divertido alegro mi dia!,neutral
 ¡Un regalo sorpresa de una amiga me alegro el dia!,neutral
 "A medida que avanzan los creditos de la pelicula, el espectador experimenta una mezcla de asombro y contemplacion, reflexionando sobre los significados mas profundos entretejidos en la historia.",neutral
@@ -28,10 +28,10 @@ Abrazando la emocion de la velocidad en los emocionantes giros de una montaña r
 "Abrazar el flujo y reflujo de la vida, encontrar aceptacion en la danza de la existencia.",positivo
 Abrazar la aceptacion de los altibajos de la vida.,positivo
 "Abrazar la belleza de la naturaleza, un momento de satisfaccion.",positivo
-"Abrazar la belleza de las imperfecciones, encontrar aceptacion en el mosaico del arte impredecible de la vida.",neutral
-"Abrazar las imperfecciones de la vida, encontrar aceptacion en el viaje, con cicatrices y todo.",neutral
-"Abrazar las imperfecciones, encontrar aceptacion en el mosaico del hermoso caos de la vida.",neutral
-"Abrazar los defectos, encontrar aceptacion en la imperfeccion, un viaje hacia el amor propio.",neutral
+"Abrazar la belleza de las imperfecciones, encontrar aceptacion en el mosaico del arte impredecible de la vida.",positivo
+"Abrazar las imperfecciones de la vida, encontrar aceptacion en el viaje, con cicatrices y todo.",positivo
+"Abrazar las imperfecciones, encontrar aceptacion en el mosaico del hermoso caos de la vida.",positivo
+"Abrazar los defectos, encontrar aceptacion en la imperfeccion, un viaje hacia el amor propio.",positivo
 Abrumado por el apoyo recibido durante un desafio personal.,positivo
 "Abrumado por el dolor, extrañando profundamente a un ser querido.",negativo
 "Abrumado por el laberinto de expectativas, un minotauro de presion acecha en el laberinto, esperando devorar el espiritu de resiliencia.",negativo
@@ -40,21 +40,21 @@ Abrumado por el apoyo recibido durante un desafio personal.,positivo
 Acabo de publicar una nueva entrada en el blog.¡Echale un vistazo!,positivo
 Acabo de terminar una rutina de ejercicios desafiante.,positivo
 Accidentalmente me gusto la foto antigua de la persona que me gusta mientras acechaba su perfil.Nivel incomodo: ¡Maximo!,negativo
-Admiracion por los intrincados detalles de una obra maestra hecha a mano.,neutral
-Admirando la dedicacion de los voluntarios en una organizacion benefica local.,neutral
-Admirar la belleza de la naturaleza durante una caminata tranquila.,neutral
+Admiracion por los intrincados detalles de una obra maestra hecha a mano.,positivo
+Admirando la dedicacion de los voluntarios en una organizacion benefica local.,positivo
+Admirar la belleza de la naturaleza durante una caminata tranquila.,positivo
 "Agotamiento emocional, el peso del mundo aplastando los hombros cansados.",negativo
 Agradecimiento de todo corazon por las risas compartidas durante una reunion familiar.,positivo
 Agradecimiento por el apoyo recibido en momentos dificiles.,positivo
 "Ahogandome en la desesperacion, la esperanza se escapa entre mis dedos.",negativo
 "Ahogandose en el abismo de la desesperacion, un corazon hecho añicos, perdido en el silencio resonante de la desesperanza.",negativo
 Ahogandose en el dolor mientras resurgen los recuerdos del amor perdido.,negativo
-"Al abrazar el aroma del pan recien horneado, el chef casero disfruta del arte de hornear, creando deliciosos recuerdos para sus seres queridos.",neutral
+"Al abrazar el aroma del pan recien horneado, el chef casero disfruta del arte de hornear, creando deliciosos recuerdos para sus seres queridos.",positivo
 "Al bajar esquiando por las laderas de los Alpes suizos, cada vuelta es un baile con la majestuosidad de los picos nevados.",neutral
 "Al caminar por la Gran Muralla China, cada paso es un testimonio de las antiguas maravillas de la ingenieria.",positivo
 "Al capturar la esencia de un mercado bullicioso, el fotografo congela momentos en el tiempo, y cada fotograma cuenta una historia unica y vibrante.",neutral
-"Al celebrar una victoria historica en la Copa del Mundo, la nacion estalla de alegria, unida por el triunfo de su equipo de futbol.",neutral
-"Al conectarse con la melodia de una orquesta en vivo, el entusiasta de la musica experimenta una sinfonia que resuena profundamente en el alma.",neutral
+"Al celebrar una victoria historica en la Copa del Mundo, la nacion estalla de alegria, unida por el triunfo de su equipo de futbol.",positivo
+"Al conectarse con la melodia de una orquesta en vivo, el entusiasta de la musica experimenta una sinfonia que resuena profundamente en el alma.",positivo
 "Al descubrir una joya escondida en el mundo de los documentales, el espectador se ilumina e inspira y siente una renovada sensacion de curiosidad.",positivo
 "Al embarcarse en un viaje espontaneo por carretera, el viajero descubre gemas escondidas, creando recuerdos que atesorara toda la vida.",neutral
 "Al experimentar la emocion de una carrera de Formula 1 de alta velocidad, los fanaticos estan al borde de sus asientos mientras los pilotos compiten por el campeonato.",neutral
@@ -64,7 +64,7 @@ Ahogandose en el dolor mientras resurgen los recuerdos del amor perdido.,negativ
 "Al navegar por el laberinto de los pensamientos, la confusion es una compañera constante en el laberinto de las ideas.",neutral
 "Al pasear por un museo historico, el entusiasta de la historia se sumerge en los cuentos del pasado, imaginando epocas pasadas.",neutral
 "Al presenciar un conmovedor regreso en la final de hockey, los fanaticos comparten lagrimas de alegria mientras el equipo logra una victoria historica despues de la adversidad.",positivo
-"Al presenciar un maraton que bate records, los espectadores se llenan de asombro y admiracion por la resistencia y dedicacion de los corredores.",neutral
+"Al presenciar un maraton que bate records, los espectadores se llenan de asombro y admiracion por la resistencia y dedicacion de los corredores.",positivo
 "Al reflexionar sobre toda una vida de recuerdos, cada arruga cuenta una historia.Abrazando la belleza del envejecimiento. #ReflexionesDeVida #BellezaEnElEnvejecimiento",positivo
 "Al transmitir la ultima serie web, el espectador queda absorto en el viaje de los personajes y siente una sensacion de conexion y empatia.",positivo
 "Al ver un conmovedor drama familiar, las lagrimas fluyen libremente mientras los personajes superan los desafios, dejando al espectador con un calido brillo.",positivo
@@ -84,7 +84,7 @@ Amarga experiencia en el departamento de atencion al cliente.,negativo
 Anticipacion por una proxima aventura en un destino exotico.,neutral
 Anticipando el estreno de una pelicula muy esperada.,neutral
 Anticipando una emocionante aventura en las proximas semanas.,neutral
-Apreciacion por la vibrante cultura experimentada durante el viaje.,neutral
+Apreciacion por la vibrante cultura experimentada durante el viaje.,positivo
 Aprender un nuevo idioma para el crecimiento personal.,positivo
 "Arrastrado por el rio del arrepentimiento, las corrientes del pasado se niegan a liberarse.",negativo
 Arrepentimiento por decisiones que llevaron a un presente doloroso.,negativo
@@ -92,13 +92,13 @@ Asco ante la corrupcion que mancha a la sociedad.,negativo
 Asco ante la vision de la injusticia y la crueldad.,negativo
 "Asfixiandose en el silencio de la soledad, donde una vez prosperaron los ecos de la risa.",negativo
 Asistiendo a un concierto de musica en vivo esta noche.,positivo
-"Asistio a un concierto de jazz y se balanceo al ritmo de melodias eternas.La musica, una compañera constante en los años dorados.#ConciertoJazz #MusicaSenior",neutral
-Asistio a un concierto de musica clasica y sintio resuenar las melodias eternas.La musica trasciende generaciones.#MusicaClasica #MelodiasAtemporales,neutral
-Asistio a un concierto y bailo toda la noche.La musica es el latido del corazon de la vida.#ConciertoVibraciones #BailarTodaLaNoche,neutral
-"Asistio a un festival de jazz local y toco con los dedos de los pies las melodias que han resistido la prueba del tiempo.La musica, una historia de amor para toda la vida.#JazzFestival #SeniorMusicLover",neutral
-Asistio a una cata de vinos y saboreo la riqueza de sabores que envejecen como el buen vino.¡Salud por los años dorados! #CatadeVinos #AmordeVinos,neutral
+"Asistio a un concierto de jazz y se balanceo al ritmo de melodias eternas.La musica, una compañera constante en los años dorados.#ConciertoJazz #MusicaSenior",positivo
+Asistio a un concierto de musica clasica y sintio resuenar las melodias eternas.La musica trasciende generaciones.#MusicaClasica #MelodiasAtemporales,positivo
+Asistio a un concierto y bailo toda la noche.La musica es el latido del corazon de la vida.#ConciertoVibraciones #BailarTodaLaNoche,positivo
+"Asistio a un festival de jazz local y toco con los dedos de los pies las melodias que han resistido la prueba del tiempo.La musica, una historia de amor para toda la vida.#JazzFestival #SeniorMusicLover",positivo
+Asistio a una cata de vinos y saboreo la riqueza de sabores que envejecen como el buen vino.¡Salud por los años dorados! #CatadeVinos #AmordeVinos,positivo
 "Asistio a una conferencia sobre historia, siempre fascinado por las lecciones del pasado.El aprendizaje es una aventura para toda la vida. #ConferenciadeHistoria #AprendizajeSenior",neutral
-Asistio a una exhibicion de autos antiguos y recordo los clasicos que alguna vez dominaron las carreteras.Nostalgia en cada revolucion.#CochesVintage #PaseosClasicos,neutral
+Asistio a una exhibicion de autos antiguos y recordo los clasicos que alguna vez dominaron las carreteras.Nostalgia en cada revolucion.#CochesVintage #PaseosClasicos,positivo
 Asistir a un show de talentos escolar para apoyar a sus compañeros.¡Aplaudiendo los diversos talentos en exhibicion!,positivo
 Asistir a un taller sobre gestion del tiempo para mejorar las habilidades organizativas.Luchando por la eficiencia.,neutral
 Asistir a una asamblea escolar para mantenerse informado sobre proximos eventos y anuncios.Mantenerse conectado con las actividades escolares.,neutral
@@ -109,16 +109,16 @@ Asistir a una reunion del club escolar para explorar nuevos intereses.Incursiona
 Asombrado por la belleza del cielo nocturno.,positivo
 Asombrado por la grandeza de la intrincada arquitectura de una antigua catedral.,positivo
 Asombrado por la inmensidad del cosmos en una noche de observacion de estrellas.,neutral
-Asombro ante la belleza de un doble arcoiris despues de la lluvia.,neutral
+Asombro ante la belleza de un doble arcoiris despues de la lluvia.,positivo
 "Atormentado por el espectro de las posibilidades perdidas, un fantasma que se niega a desvanecerse.",negativo
 "Atormentado por los arrepentimientos, el fantasma del pasado persiste implacablemente.",negativo
 Atrapado en una tormenta torrencial sin paraguas.El clima de hoy es simplemente mala suerte.,negativo
 "Bailando al ritmo de Shakira, moviendo las caderas al ritmo hipnotico de 'Hips Don't Lie'.",positivo
-"Bailando bajo el sol, cada paso es una celebracion de la alegria que se encuentra en los momentos simples.",neutral
+"Bailando bajo el sol, cada paso es una celebracion de la alegria que se encuentra en los momentos simples.",positivo
 "Bailando bajo las estrellas en el show en vivo de Beyonce, sintiendo el poder de 'Single Ladies' en cada movimiento.",neutral
 "Bailando juguetonamente bajo la lluvia de risas, un espiritu caprichoso dando vueltas en los charcos de alegria y alegria.",neutral
 "Bailando por la vida con la exuberancia de un espiritu despreocupado, abrazando la alegria y el entusiasmo en cada paso.",neutral
-Baile bajo la lluvia para celebrar el final de los examenes.Danza de la lluvia: ¡Inesperadamente refrescante!,neutral
+Baile bajo la lluvia para celebrar el final de los examenes.Danza de la lluvia: ¡Inesperadamente refrescante!,positivo
 "Balanceandose al ritmo de las melodias acusticas de Ed Sheeran, una velada serena llena de momentos 'Perfectos'.",positivo
 "Balanceandose al ritmo de un tributo a Frank Sinatra, sintiendo el encanto atemporal de 'Fly Me to the Moon'.",neutral
 "Bañado por el brillo de la inspiracion, un fenix creativo que surge de las cenizas de los pensamientos ordinarios para explorar nuevos reinos.",positivo
@@ -128,8 +128,8 @@ Brunch del domingo con amigos.,positivo
 "Buscando la serenidad en la melodia de las gotas de lluvia, un escape tranquilo del ruido de la vida cotidiana.",positivo
 Calma encontrada en el ritmo de las gotas de lluvia sobre el cristal de la ventana.,neutral
 "Caminando con confianza, huellas de seguridad en si mismo impresas en las arenas de los desafios conquistados y las victorias reclamadas.",positivo
-Capturando la belleza de la naturaleza a traves de la fotografia.Cada instantanea es un tesoro.#FotografiaDeNaturaleza #FotografoSenior,neutral
-"Cautivado por el encanto historico del Coliseo, cada piedra refleja historias del valor de los gladiadores.",neutral
+Capturando la belleza de la naturaleza a traves de la fotografia.Cada instantanea es un tesoro.#FotografiaDeNaturaleza #FotografoSenior,positivo
+"Cautivado por el encanto historico del Coliseo, cada piedra refleja historias del valor de los gladiadores.",positivo
 Cautivado por la belleza eterea de un campo lleno de luciernagas.,positivo
 Cautivado por la serenidad de un jardin tranquilo en plena floracion.,positivo
 "Cautivados por los fascinantes giros de la trama, el publico aplaude y experimenta una montaña rusa de emociones en el estreno de la pelicula.",neutral
@@ -141,9 +141,9 @@ Colaborar en un proyecto cientifico que recibio reconocimiento en una feria regi
 Colaborar en un proyecto escolar con sus compañeros.El trabajo en equipo hace que el sueño funcione.,neutral
 Colaborar en un proyecto grupal para promover el trabajo en equipo y las responsabilidades compartidas.Esfuerzo grupal en accion.,neutral
 "Comence un blog compartiendo la sabiduria adquirida a lo largo de los años, demostrando que cada dia es una oportunidad para aprender y crecer. #Blog #SabiduriaSenior",positivo
-"Comenzo a aprender bailes de salon, deslizandose con gracia por la pista de baile.Elegancia eterna en cada paso.#BaileSalon #BailarinSenior",neutral
+"Comenzo a aprender bailes de salon, deslizandose con gracia por la pista de baile.Elegancia eterna en cada paso.#BaileSalon #BailarinSenior",positivo
 Comenzo un blog sobre pensamientos y reflexiones aleatorias.Los blogs son el nuevo diario. #Blogueros,neutral
-"Comenzo un jardin comunitario, cultivando no solo plantas sino tambien amistades.¡Los pulgares verdes se unen!#JardinComunitario #JardineroSenior",neutral
+"Comenzo un jardin comunitario, cultivando no solo plantas sino tambien amistades.¡Los pulgares verdes se unen!#JardinComunitario #JardineroSenior",positivo
 "Como un cometa de inspiracion, surcando el cielo de la creatividad, dejando estelas de brillantez.",neutral
 "Como una rosa marchita en el jardin del amor, los petalos caen, una silenciosa rendicion al tiempo.",neutral
 Compartir recomendaciones de libros favoritos con compañeros de clase.Construyendo un miniclub de lectura.,neutral
@@ -156,7 +156,7 @@ Completar con exito un proyecto de codificacion desafiante.¡Emocion por superar
 "Con el corazon entusiasmado, corriendo por campos de entusiasmo, persiguiendo rayos de sol y risas en los prados de la alegria.",neutral
 Con el corazon roto tras escuchar la noticia sobre un desastre natural.,negativo
 "Con la empatia como linterna, deambulando por los oscuros callejones del dolor, iluminando el camino con compasion y cuidado.",neutral
-Construyendo una capsula del tiempo para capturar recuerdos para el futuro.¡Emociones que viajan en el tiempo!,neutral
+Construyendo una capsula del tiempo para capturar recuerdos para el futuro.¡Emociones que viajan en el tiempo!,positivo
 Contemplacion pensativa en medio de las antiguas ruinas de una civilizacion olvidada.,neutral
 Contemplacion reflexiva en medio de las ruinas de una epoca olvidada.,neutral
 Contemplando los misterios de la vida bajo el cielo estrellado.,neutral
@@ -166,7 +166,7 @@ Contentamiento en medio de una reunion familiar llena de risas.,positivo
 Convenci al profesor de tener la clase al aire libre.¡Aprendiendo ecuaciones con un poco de aire fresco!,positivo
 "Corazon dolorido, la sinfonia del dolor suena en el silencio de la soledad.",negativo
 "Corazon en ruinas, restos de sueños destrozados esparcidos por el viento.",negativo
-Creando un apreton de manos secreto con amigos.Nivel de amistad: ¡Experto!,neutral
+Creando un apreton de manos secreto con amigos.Nivel de amistad: ¡Experto!,positivo
 Creando un hermoso mural con otros entusiastas del arte.¡El poder de la colaboracion y la creatividad!,positivo
 "Cuando cae el primer copo de nieve, los entusiastas del invierno se preparan con entusiasmo para una temporada de delicias heladas, anticipando la magia de los paisajes cubiertos de nieve.",positivo
 Cumplimiento al completar un rompecabezas desafiante.,positivo
@@ -185,14 +185,14 @@ Decidio aprender un nuevo instrumento.Dia uno: todavia estoy tratando de descubr
 "Dedos frustrados golpeando el teclado, una sinfonia de molestia que compone un rompecabezas irresoluble de expectativas incumplidas.",negativo
 Deleite caprichoso en un mundo de cuentos de hadas caprichosos.,neutral
 Deleite caprichoso en un mundo de cuentos de hadas y criaturas magicas.,neutral
-Descubri una nueva serie de libros y pase toda la noche leyendo.¿Quien necesita dormir?,neutral
+Descubri una nueva serie de libros y pase toda la noche leyendo.¿Quien necesita dormir?,positivo
 "Desgarrado por el dolor, los ecos de la perdida resuenan en el alma.",negativo
 Deslumbrado por la elegancia de los deslumbrantes trajes de un baile de mascaras.,positivo
 Despertar de entusiasmo por un proximo festival.,neutral
 "Despues de una serie de derrotas, el equipo de futbol se enfrenta a la decepcion y lucha por encontrar el lado positivo de una temporada desafiante.",neutral
 "Destrozada por la traicion, la confianza se desmorona como un cristal fragil.",neutral
 "Destrozados por los ecos de un sueño destrozado, fragmentos de esperanza se dispersaron.",negativo
-"Determinacion en llamas, forjando un camino a traves de desafios, esculpiendo sueños en realidades tangibles.",neutral
+"Determinacion en llamas, forjando un camino a traves de desafios, esculpiendo sueños en realidades tangibles.",positivo
 "Devastada por la revelacion de la traicion, la confianza se hizo añicos como un fragil cristal, dejando fragmentos de dolor a su paso.",negativo
 "Devastado por la tormenta de la traicion, los restos de la confianza se dispersaron como escombros, un corazon desgarrado por los vientos de las promesas incumplidas.",negativo
 "Devastado, un corazon en ruinas, los ecos de sueños destrozados reverberando en las camaras, un requiem por lo que una vez estuvo completo.",negativo
@@ -208,8 +208,8 @@ Divertido por las travesuras de los gatitos juguetones durante el juego.,neutral
 Divertido por las travesuras de mi mascota—¡es pura diversion!,neutral
 "Dividido entre emociones encontradas, una ambivalencia que pinta mis decisiones en tonos de incertidumbre.",neutral
 "Dividido entre emociones opuestas, una ambivalencia que tiñe mis decisiones con matices de incertidumbre.",neutral
-Dominar el arte del garabato perfecto durante clases aburridas.Garabatos: ¡A+!,neutral
-Domino el arte de crear aviones de papel durante la conferencia.Aviones de papel: ¡elevandose a nuevas alturas!,neutral
+Dominar el arte del garabato perfecto durante clases aburridas.Garabatos: ¡A+!,positivo
+Domino el arte de crear aviones de papel durante la conferencia.Aviones de papel: ¡elevandose a nuevas alturas!,positivo
 "Ecos dolorosos de un amor una vez apreciado, ahora perdido en el abismo del tiempo.",negativo
 "Ecos dolorosos, una sinfonia de dolor tocada por las cuerdas de la perdida.",negativo
 "El aburrimiento persiste, un charco estancado de indiferencia.",negativo
@@ -227,7 +227,7 @@ El miedo a lo desconocido me mantiene despierto por la noche.,negativo
 "El resentimiento crece, envenena las relaciones.",negativo
 El resentimiento se acumula por traiciones pasadas.,negativo
 "El resentimiento se pudre, una herida que se niega a sanar.",negativo
-Elaboracion de intrincadas pulseras de la amistad para todo el equipo.Nivel de amistad: ¡Tejedor experto!,neutral
+Elaboracion de intrincadas pulseras de la amistad para todo el equipo.Nivel de amistad: ¡Tejedor experto!,positivo
 Elation after a surprise reunion with old friends.,neutral
 Elevandose como un espiritu libre sobre los vientos de un acantilado costero.,neutral
 "Embarcandose en un paseo en gondola por Venecia, cada canal refleja el romance de esta ciudad eterna.",positivo
@@ -252,13 +252,13 @@ Emprender un viaje de aprendizaje de un nuevo idioma.La mente se mantiene joven 
 "En el ambito de la literatura, una novela cautivadora transporta al lector a tierras lejanas, tejiendo un tapiz de imaginacion y evasion.",neutral
 "En el ambito de la moda, el diseñador presenta una coleccion que cuenta una historia, mezclando innovacion y tradicion en la pasarela de la creatividad.",positivo
 "En el campeonato de cricket, un final emocionante deja a los fanaticos al borde de sus asientos, experimentando una montaña rusa de emociones.",neutral
-"En el campeonato mundial de ciclismo, el escalador conquista terrenos desafiantes, simbolizando determinacion y logro contra todo pronostico.",neutral
+"En el campeonato mundial de ciclismo, el escalador conquista terrenos desafiantes, simbolizando determinacion y logro contra todo pronostico.",positivo
 "En el carnaval de las emociones, la montaña rusa de emociones envia al corazon a un viaje salvaje.",neutral
 "En el centro de atencion de un espectaculo de Lady Gaga, cada cambio de vestuario es una metamorfosis de creatividad y arte.",positivo
 "En el corazon de la ciudad de Nueva York, Times Square deslumbra con luces, un espectaculo vibrante de energia urbana.",neutral
 "En el corazon de un bullicioso mercado, el conocedor de la comida callejera se entrega a una aventura culinaria, saboreando diversos sabores y aromas.",positivo
 "En el festival de cine, la creacion del cineasta independiente recibe una gran ovacion, que evoca orgullo y una sensacion de logro.",positivo
-En el Grand Slam de tenis se desarrolla una feroz rivalidad que cautiva a los aficionados con una demostracion de habilidad y espiritu deportivo en el escenario mundial.,neutral
+En el Grand Slam de tenis se desarrolla una feroz rivalidad que cautiva a los aficionados con una demostracion de habilidad y espiritu deportivo en el escenario mundial.,positivo
 "En el jardin de la alegria, cada flor susurra historias de paz interior y alegria.",positivo
 "En el jardin de las amistades, cada flor es un testimonio de la belleza de la camaraderia.",positivo
 "En el jardin de los sueños rotos, caen los petalos, un testimonio silencioso de esperanzas destrozadas.",negativo
@@ -290,12 +290,12 @@ En el mundo de la ciencia se esta produciendo un descubrimiento revolucionario q
 "En medio de la bulliciosa ciudad, un cafe tranquilo se convierte en un santuario para la reflexion, donde una taza de cafe brinda consuelo a la mente errante.",neutral
 "En medio de la selva amazonica, una sinfonia de vida salvaje crea una orquesta de maravillas de la naturaleza.",neutral
 "En medio de las paginas de una cautivadora novela de misterio, el lector desentraña pistas y secretos, experimentando un emocionante viaje de suspenso y revelacion.",neutral
-"En medio de los campos de tulipanes de Keukenhof, un tapiz de colores que pinta el alma con la alegria primaveral.",neutral
+"En medio de los campos de tulipanes de Keukenhof, un tapiz de colores que pinta el alma con la alegria primaveral.",positivo
 "En medio de un partido de futbol, ??un gol en propia puerta inesperado crea un momento de desesperacion para el jugador, mientras sus compañeros lo consuelan y alientan.",neutral
 "En plena carrera ciclista, la explosion de un neumatico genera frustracion en el ciclista, que valientemente intenta superar el obstaculo inesperado.",neutral
 "En un concierto de Justin Bieber, los contagiosos ritmos de 'Baby' crean una pista de baile de entusiasmo desenfrenado.",positivo
 "En un concierto de U2, los acordes del himno de 'With or Without You' crean un momento atemporal de conexion.",neutral
-"En un espectaculo tributo a Michael Jackson, un paseo lunar entre los exitos, una celebracion del Rey del Pop.",neutral
+"En un espectaculo tributo a Michael Jackson, un paseo lunar entre los exitos, una celebracion del Rey del Pop.",positivo
 Encantado de presenciar la grandeza de un festival cultural.,neutral
 Encontrar aceptacion en medio de los desafios de la vida.,positivo
 Encontrar la calma en medio de un dia ajetreado.,neutral
@@ -303,7 +303,7 @@ Encontrar la calma en medio del caos de la vida diaria.,neutral
 Encontrar toxicidad en linea durante una sesion de juego.Los comentarios de odio pueden arruinar la diversion.,negativo
 Encontre algunos comentarios malintencionados en linea.Lidiar con el odio en linea nunca es facil.,negativo
 Enfrentando el rechazo de la universidad de sus sueños.Desanimado pero decidido a explorar otros caminos.,negativo
-"Enfrentar los desafios de frente, una determinacion que alimenta el fuego interior para lograr lo imposible.",neutral
+"Enfrentar los desafios de frente, una determinacion que alimenta el fuego interior para lograr lo imposible.",positivo
 "Enredado en la red de pensamientos, reina la confusion mientras navego por el laberinto de las ideas.",neutral
 Entre accidentalmente al salon de clases equivocado el primer dia.Confusion en el aula: ¡Comienzo incomodo!,negativo
 "Entre la multitud en un concierto de Ariana Grande, las notas altas de 'Into You' crean una sinfonia euforica.",positivo
@@ -388,11 +388,11 @@ Impresionado por el impresionante amanecer sobre las montañas.,positivo
 Impresionado por la grandeza de la intrincada arquitectura de una antigua catedral.,positivo
 "Impulsado por la curiosidad, se aventura en reinos inexplorados, un intrepido explorador de los misterios del mundo.",neutral
 "Indiferente al ruido del mundo, un observador silencioso en medio de la cacofonia de la vida.",neutral
-"Inicio un club de fotografia en la escuela.¡Capturando momentos, una instantanea a la vez!",neutral
-"Inicio un club de lectura para personas mayores, donde las discusiones son tan animadas como los personajes de las novelas. #LectoresSenior",neutral
+"Inicio un club de fotografia en la escuela.¡Capturando momentos, una instantanea a la vez!",positivo
+"Inicio un club de lectura para personas mayores, donde las discusiones son tan animadas como los personajes de las novelas. #LectoresSenior",positivo
 "Inmersas en las conmovedoras melodias de Adele, las lagrimas fluyen libremente, conmovidas por la emocion de 'Hello'.",neutral
 Inmerso en las encantadoras melodias del violin de un musico callejero.,neutral
-"Inmerso en los ritmos palpitantes de un concierto de Bruno Mars, donde 'Uptown Funk' se convierte en una ciudad de alegria.",neutral
+"Inmerso en los ritmos palpitantes de un concierto de Bruno Mars, donde 'Uptown Funk' se convierte en una ciudad de alegria.",positivo
 "Inmerso en un estado de entumecimiento emocional, un escudo contra la tormenta de las luchas cotidianas.",negativo
 Inspirado en la resistencia de un arbol solitario erguido en medio de una tormenta.,positivo
 Intentando batir el record de mas volteretas consecutivas.Desafio de la voltereta: ¡en marcha!,neutral
@@ -418,8 +418,8 @@ La alegria envuelve mientras el aroma del pan recien horneado llena el aire.,pos
 "La angustia se profundiza, un viaje solitario a traves del abismo de la desesperacion.",neutral
 "La ansiedad se apodera de mi corazon, la preocupacion nubla mis pensamientos.",negativo
 "La ansiedad se apodera de mi pecho, un control implacable de mis pensamientos.",negativo
-La armonia resuena cuando los musicos tocan una melodia de unidad y union.,neutral
-La armonia resuena mientras los musicos tocan una sinfonia de unidad.,neutral
+La armonia resuena cuando los musicos tocan una melodia de unidad y union.,positivo
+La armonia resuena mientras los musicos tocan una sinfonia de unidad.,positivo
 La bondad presenciada hoy restablecio mi fe en la humanidad.,positivo
 La bondad presenciada hoy restaura mi fe en la humanidad.,positivo
 La calma prevalece mientras practico la atencion plena.,neutral
@@ -430,8 +430,8 @@ La confusion nubla mi mente mientras tomo decisiones.,neutral
 La curiosidad surgio al explorar unas misteriosas ruinas antiguas.,neutral
 "La desesperacion es como una espesa niebla que envuelve cada pensamiento, desdibujando el camino que tenemos por delante, un viaje en el laberinto de la desesperanza absoluta.",neutral
 "La desesperacion nubla la mente, sintiendose a la deriva en un mar interminable de oscuridad.",neutral
-"La determinacion arde como la polvora, superando obstaculos, convirtiendo los sueños en realidad.",neutral
-La determinacion como fuerza motriz que me impulsa hacia adelante en el camino hacia logros extraordinarios.,neutral
+"La determinacion arde como la polvora, superando obstaculos, convirtiendo los sueños en realidad.",positivo
+La determinacion como fuerza motriz que me impulsa hacia adelante en el camino hacia logros extraordinarios.,positivo
 La emocion aumenta a medida que comienza la cuenta regresiva para unas vacaciones tan esperadas.,neutral
 La emocion aumenta mientras se prepara para una celebracion sorpresa.,neutral
 La emocion aumenta por una fiesta de cumpleaños sorpresa.,neutral
@@ -456,9 +456,9 @@ La inspiracion llega al observar los colores de una vibrante puesta de sol.,neut
 "La melancolia pinta el mundo con tonos de nostalgia, un lienzo de recuerdos agridulces.",neutral
 La nostalgia te invade mientras hojeas un viejo album de fotos.,neutral
 La oscuridad desciende y envuelve el alma en las sombras de la desesperacion.,neutral
-La risa alegre resuena en un animado carnaval de verano.,neutral
-La risa es la clave de la alegria: asistir a un espectaculo de comedia.,neutral
-La risa es la mejor medicina: disfrutar de un espectaculo de comedia.,neutral
+La risa alegre resuena en un animado carnaval de verano.,positivo
+La risa es la clave de la alegria: asistir a un espectaculo de comedia.,positivo
+La risa es la mejor medicina: disfrutar de un espectaculo de comedia.,positivo
 "La risa resuena en el aire, un coro de felicidad que eleva el espiritu.",positivo
 La soledad aparece a medida que la noche se vuelve mas fria.,neutral
 "La soledad resuena en los espacios vacios, el anhelo de conexion.",neutral
@@ -471,7 +471,7 @@ La victoria de nuestro equipo trajo euforia a la ciudad.,positivo
 "Lagrimas, la tinta que mancha las paginas de un diario, testimonio de un dolor silencioso.",negativo
 Las discusiones politicas se intensifican en la linea de tiempo.,negativo
 "Las lagrimas caen como gotas de lluvia, lamentando el fin de una amistad querida.",negativo
-Las risas y la alegria resuenan en el aire durante una cita para jugar con los niños.,neutral
+Las risas y la alegria resuenan en el aire durante una cita para jugar con los niños.,positivo
 Lastima por no ser fiel a mis valores en una situacion dificil.,neutral
 Les envio amor a todos mis seguidores en este hermoso dia!??,positivo
 Lidiar con un reves personal.A veces la vida presenta desafios inesperados.,negativo
@@ -523,9 +523,9 @@ No puedo creer la injusticia que esta sucediendo en nuestra sociedad.,negativo
 Optimismo para un futuro brillante en tiempos dificiles.,positivo
 Organizar un evento de limpieza comunitaria para un vecindario mas limpio.Promocion de la conciencia ambiental.,neutral
 Organizar una fiesta de pijamas con amigos este fin de semana.¡Preparandonos para una noche de risas y recuerdos!,neutral
-Organizar una maraton de peliculas con amigos.¡Te esperan palomitas de maiz y aventuras cinematograficas!,neutral
-Organizo con exito una fiesta sorpresa de cumpleaños para un amigo.Modo experto en planificacion de fiestas: ¡Logrado!,neutral
-"Organizo un evento de pintura comunitario, convirtiendo lienzos en blanco en una obra maestra de creatividad compartida.#EventodePintura #ArtistaSenior",neutral
+Organizar una maraton de peliculas con amigos.¡Te esperan palomitas de maiz y aventuras cinematograficas!,positivo
+Organizo con exito una fiesta sorpresa de cumpleaños para un amigo.Modo experto en planificacion de fiestas: ¡Logrado!,positivo
+"Organizo un evento de pintura comunitario, convirtiendo lienzos en blanco en una obra maestra de creatividad compartida.#EventodePintura #ArtistaSenior",positivo
 "Organizo un picnic en el parque, disfrutando de la calidez de la amistad y el sol.Alegrias simples, recuerdos eternos. #ParquePicnic",positivo
 "Organizo una cena familiar, donde las risas resonaron con mas fuerza que el tintineo de los utensilios.La familia, el corazon de la felicidad. #CenaFamilia #AnfitrionSenior",positivo
 Organizo una exposicion de fotografias que presenta instantaneas de una vida bien vivida.Cada foto tiene una historia que contar. #ExposicionDeFotografia #FotografoSenior,positivo
@@ -538,14 +538,14 @@ Participar en un club de debate para mejorar el pensamiento critico y las habili
 Participar en una exposicion de arte en toda la escuela.¡Siendo testigo de la creatividad y difundiendo vibraciones positivas!,positivo
 Participar en una feria de ciencias para mostrar un experimento unico.Compartir conocimientos con compañeros.,neutral
 "Participo en una carrera benefica, lo que demuestra que la edad no es una barrera para apoyar causas significativas.",neutral
-"Participo en una clase de arte comunitaria, desatando la creatividad en los años dorados.El arte no tiene limite de edad. #ClasedeArte",neutral
-"Participo en una produccion de teatro local, demostrando que el escenario es de todas las epocas. #ProduccionTeatral #ActorSenior",neutral
+"Participo en una clase de arte comunitaria, desatando la creatividad en los años dorados.El arte no tiene limite de edad. #ClasedeArte",positivo
+"Participo en una produccion de teatro local, demostrando que el escenario es de todas las epocas. #ProduccionTeatral #ActorSenior",positivo
 "Pasando el dia con aire de indiferencia, indiferente a las trivialidades de la vida.",neutral
 "Pasar el dia con un comportamiento indiferente, abrazando el arte de la indiferencia.",neutral
-Pase el dia viendo una nueva serie.Nivel de productividad: Cero.#LazyDay #TVSeriesMarathon,neutral
+Pase el dia viendo una nueva serie.Nivel de productividad: Cero.#LazyDay #TVSeriesMarathon,positivo
 "Pase horas bailando en TikTok, solo para darme cuenta de que tengo dos pies izquierdos.Fallo de baile: ¡Desatado!",negativo
-Pase horas creando la lista de reproduccion perfecta para cada estado de animo.La musica es mi terapia.#CreadorListasReproduccion,neutral
-Pase horas perfeccionando un experimento de quimica.¡Mezclando pociones como un mago!,neutral
+Pase horas creando la lista de reproduccion perfecta para cada estado de animo.La musica es mi terapia.#CreadorListasReproduccion,positivo
+Pase horas perfeccionando un experimento de quimica.¡Mezclando pociones como un mago!,positivo
 "Pase la tarde en un museo, fingiendo ser culto.Entusiasta del arte en ciernes. #DiaDeLosMuseos #DiaDelPatrimonio",neutral
 Pase una hora eligiendo el filtro perfecto para una selfie. La lucha por esa estetica de Instagram es real.,neutral
 "Paseando por las calles historicas de Kioto, cada paso sera un viaje al corazon de las tradiciones de Japon.",neutral
@@ -561,27 +561,27 @@ Perdi mis auriculares nuevamente.¿Como se desvanecen en el aire? #Misterio de l
 "Perdido en la sinfonia de la noche, una serenata iluminada por la luna que susurra historias de pasion por los viajes y sueños iluminados por la luna.",neutral
 "Perdido en las paginas de una novela cautivadora, transportado a otro mundo.",neutral
 "Perdidos en el encanto de Disneylandia, cada uno de ellos emprende un viaje al reino de las fantasias infantiles.",positivo
-Perfeccionando el arte de crear origami durante una conferencia aburrida.Dominio del origami: ¡A+!,neutral
+Perfeccionando el arte de crear origami durante una conferencia aburrida.Dominio del origami: ¡A+!,positivo
 "Persiguiendo sueños bajo el cielo vibrante, un viaje alimentado por la esperanza y el entusiasmo.",positivo
 Persiguiendo sueños como una cometa volando alto en el vasto cielo abierto.,positivo
 "Pintura derramada accidentalmente en clase de arte.Arte abstracto, ¿verdad? #EscuelaArte",negativo
 Planificacion de una busqueda del tesoro sorpresa para amigos.¡Anticipando la emocion y la emocion!,neutral
 Planificando una renovacion del jardin para la primavera.,positivo
 Practicando la atencion plena con la meditacion.,positivo
-Practicando una rutina de monologo para el proximo concurso de talentos.Concierto de comedia: ¡En proceso!,neutral
+Practicando una rutina de monologo para el proximo concurso de talentos.Concierto de comedia: ¡En proceso!,positivo
 Probando una nueva receta de batidos para empezar la semana de forma saludable.Entusiasta de los batidos: ¡Sube de nivel!,neutral
 Probando una nueva receta de postre.,positivo
 Probando una nueva receta para cenar esta noche.,neutral
 Probando una nueva tecnica de estudio para los proximos examenes.Explorar diferentes estrategias de aprendizaje.,neutral
 Pura felicidad: ¡celebrar el logro de un ser querido!,positivo
-"Rebosante de alegria, una taza de risa compartida con amigos, un momento apreciado.",neutral
+"Rebosante de alegria, una taza de risa compartida con amigos, un momento apreciado.",positivo
 Rebosante de gratitud por las bendiciones de la vida.,positivo
 Recaudacion de fondos exitosa para una iniciativa benefica escolar.¡La alegria de retribuir a la comunidad!,positivo
 Recibio una calificacion no tan buena en un proyecto importante.La frustracion academica se instala.,negativo
 Recibir una carta sincera de un amigo por correspondencia en otro pais.¡Conectando en todo el mundo!,positivo
 "Reconectarse con viejos amigos tomando una taza de te.Amistad, la verdadera esencia del compañerismo.#ViejosAmigos #Compañerismo",positivo
 "Redescubri el placer de cocinar recetas familiares tradicionales.La cocina, un lugar de recuerdos preciados. #RecetasFamilias #CocinaSenior",positivo
-Redescubri los dibujos animados de la infancia y disfrute de una maraton llena de nostalgia.,neutral
+Redescubri los dibujos animados de la infancia y disfrute de una maraton llena de nostalgia.,positivo
 "Reflexionando sobre el camino de la vida, agradecido por las lecciones aprendidas.",positivo
 Reflexionando sobre el pasado y mirando hacia el futuro.,positivo
 Reflexionando sobre la belleza de la diversidad en nuestro mundo.,neutral
@@ -601,7 +601,7 @@ Reverencia por las maravillas de la naturaleza en una ruta de senderismo.,positi
 "Revisando viejos recuerdos, sintiendo una sensacion de euforia.",positivo
 "Rockeando con los solos de guitarra en un concierto tributo a Queen, un viaje al pasado con el espiritu de Freddie.",neutral
 "Rockeando en un show de Guns N' Roses, los riffs iconicos de 'Sweet Child o' Mine' resuenan en la noche.",neutral
-"Rodeado de los colores de la alegria, un lienzo pintado de risas y sonrisas infinitas.",neutral
+"Rodeado de los colores de la alegria, un lienzo pintado de risas y sonrisas infinitas.",positivo
 "Rodeado de los colores vibrantes de un jardin de flores, el jardinero cuida las flores y disfruta de la belleza del lienzo en constante cambio de la naturaleza.",positivo
 Saboreando el calor de una taza de chocolate en una fria noche de invierno.,neutral
 Saborear los sabores de una comida casera.Las alegrias simples son el corazon de la felicidad. #CocinaEnCasa #AlegriasSimples,positivo
@@ -609,13 +609,13 @@ Satisfaccion ante la sencillez de una comida casera.,neutral
 Satisfaccion derivada de finalizar con exito un proyecto de bricolaje.,neutral
 Satisfaccion en el abrazo de un ser querido.,neutral
 Se embarco en un proyecto de decoracion del hogar de bricolaje.Esperemos que salga mejor que la ultima vez. #DIYAventura #TeenHomeDecor,neutral
-"Se embarco en un viaje por carretera para volver a visitar lugares preciados del pasado.Nostalgia, la compañera de viaje definitiva.",neutral
-"Se inscribio en una clase de baile para personas mayores, moviendose al ritmo de la vida.La edad es solo un numero en la pista de baile. #ClasedeDanza #BailarinaSenior",neutral
+"Se embarco en un viaje por carretera para volver a visitar lugares preciados del pasado.Nostalgia, la compañera de viaje definitiva.",positivo
+"Se inscribio en una clase de baile para personas mayores, moviendose al ritmo de la vida.La edad es solo un numero en la pista de baile. #ClasedeDanza #BailarinaSenior",positivo
 Se pincho una llanta camino a una reunion importante.¡Habla de una serie de malos acontecimientos!,negativo
 Se quedo sin bocadillos durante una maraton de peliculas.Nivel de crisis: ¡Emergencia! #LuchasNochesDePelicula #ProblemasAdolescentes,neutral
 "Se unio a un club de astronomia para personas mayores, donde observo las estrellas y encontro maravillas en la inmensidad del cosmos. #ClubAstronomia #SeniorStargazer",neutral
-Se unio a un club de fotografia de naturaleza y capturo la belleza del aire libre.Cada clic es una conexion con la naturaleza. #FotografiaDeNaturaleza #FotografoSenior,neutral
-"Se unio a un coro comunitario, armonizando con otras voces.La musica crea vinculos que resisten el tiempo.#Coro Comunitario #ArmoniaEnEnvejecimiento",neutral
+Se unio a un club de fotografia de naturaleza y capturo la belleza del aire libre.Cada clic es una conexion con la naturaleza. #FotografiaDeNaturaleza #FotografoSenior,positivo
+"Se unio a un coro comunitario, armonizando con otras voces.La musica crea vinculos que resisten el tiempo.#Coro Comunitario #ArmoniaEnEnvejecimiento",positivo
 "Se unio a un grupo de escritura, anotando pensamientos y reflexiones.Escribir, un viaje a lo mas profundo del alma.#Grupo de escritura #Escritor senior",positivo
 Se unio al equipo de debate de la escuela.¡Las palabras son mis armas y estoy listo para la batalla!,neutral
 Sentida tristeza tras despedirnos de un querido amigo.,negativo
@@ -701,8 +701,8 @@ Una visita sorpresa de un viejo amigo le hizo llorar de alegria.,neutral
 Vertiginosos de emocion mientras los primeros copos de nieve bailan desde el cielo.,neutral
 "Viajando a traves de la serenidad de Santorini, donde cada atardecer pinta el cielo con tonos de tranquilidad.",positivo
 Viaje por carretera de fin de semana para explorar vistas panoramicas.,positivo
-Vinculandose con amigos a traves de la ultima sensacion del K-pop.¡Fangirling en su maxima expresion!,neutral
-"Visito una galeria de arte, apreciando las pinceladas que cuentan historias de creatividad.El arte, un eterno compañero.#GaleriadeArte #SeniorArtLover",neutral
+Vinculandose con amigos a traves de la ultima sensacion del K-pop.¡Fangirling en su maxima expresion!,positivo
+"Visito una galeria de arte, apreciando las pinceladas que cuentan historias de creatividad.El arte, un eterno compañero.#GaleriadeArte #SeniorArtLover",positivo
 "Volando sobre las alas de un espiritu libre, libre de las cadenas del conformismo, pintando el cielo con independencia.",neutral
 termine bien abrumado despues de hoy,negativo
 me siento abrumado,negativo
