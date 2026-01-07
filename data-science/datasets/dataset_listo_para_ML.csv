@@ -1,11 +1,11 @@
-Texto_Limpio,Sentimiento_Final
+﻿Texto_Limpio,Sentimiento_Final
 ¡Acabo de adoptar a un lindo amigo peludo!??,positivo
 ¡Acabo de terminar un entrenamiento increible!??,positivo
 ¡Adoracion desbordante por un lindo cachorro rescatado!??,positivo
 "¡Año nuevo, nuevos objetivos de fitness!??",positivo
 ¡Celebrando el cumpleaños de un amigo esta noche!??,positivo
 ¡Celebrando un hito en el trabajo!??,positivo
-¡Compartiendo amor y vibraciones positivas con todos!??,positivo
+¡Compartiendo amor y vibraciones positivas con todos!??,neutral
 ¡Disfrutando de un hermoso dia en el parque!,positivo
 ¡El estreno de la nueva pelicula es imprescindible!,positivo
 ¡Emocion creciente por las proximas vacaciones!,neutral
@@ -67,7 +67,7 @@ Ahogandose en el dolor mientras resurgen los recuerdos del amor perdido.,negativ
 "Al presenciar un maraton que bate records, los espectadores se llenan de asombro y admiracion por la resistencia y dedicacion de los corredores.",positivo
 "Al reflexionar sobre toda una vida de recuerdos, cada arruga cuenta una historia.Abrazando la belleza del envejecimiento. #ReflexionesDeVida #BellezaEnElEnvejecimiento",positivo
 "Al transmitir la ultima serie web, el espectador queda absorto en el viaje de los personajes y siente una sensacion de conexion y empatia.",positivo
-"Al ver un conmovedor drama familiar, las lagrimas fluyen libremente mientras los personajes superan los desafios, dejando al espectador con un calido brillo.",positivo
+"Al ver un conmovedor drama familiar, las lagrimas fluyen libremente mientras los personajes superan los desafios, dejando al espectador con un calido brillo.",neutral
 "Al ver una emocionante serie policial, el suspenso mantiene al espectador al borde de su asiento, creando una descarga de adrenalina.",positivo
 Alegria del calor de una acogedora chimenea en una tarde de invierno.,positivo
 Alegria radiante similar a las flores floreciendo en una mañana de primavera bañada por el sol.,positivo
@@ -247,7 +247,7 @@ Empoderamiento a traves del aprendizaje de una nueva habilidad.,positivo
 Empoderamiento a traves del aprendizaje y el crecimiento personal.,positivo
 Emprender un viaje de aprendizaje de un nuevo idioma.La mente se mantiene joven con cada nueva palabra. #AprendizajedeIdiomas #NuncaDemasiado Tarde,neutral
 "En el abrazo de la brisa otoñal, hojas de ambivalencia bailando en un vals entre elecciones e incertidumbres.",neutral
-"En el abrazo del amor, cada latido es una melodia que baila al ritmo del afecto.",positivo
+"En el abrazo del amor, cada latido es una melodia que baila al ritmo del afecto.",neutral
 "En el abrazo del Gran Cañon, la obra maestra de la naturaleza, un momento para maravillarse ante la grandeza de la Tierra.",positivo
 "En el ambito de la literatura, una novela cautivadora transporta al lector a tierras lejanas, tejiendo un tapiz de imaginacion y evasion.",neutral
 "En el ambito de la moda, el diseñador presenta una coleccion que cuenta una historia, mezclando innovacion y tradicion en la pasarela de la creatividad.",positivo
@@ -473,7 +473,7 @@ Las discusiones politicas se intensifican en la linea de tiempo.,negativo
 "Las lagrimas caen como gotas de lluvia, lamentando el fin de una amistad querida.",negativo
 Las risas y la alegria resuenan en el aire durante una cita para jugar con los niños.,positivo
 Lastima por no ser fiel a mis valores en una situacion dificil.,neutral
-Les envio amor a todos mis seguidores en este hermoso dia!??,positivo
+Les envio amor a todos mis seguidores en este hermoso dia!??,neutral
 Lidiar con un reves personal.A veces la vida presenta desafios inesperados.,negativo
 "Llega el aburrimiento, el dia se siente infinitamente aburrido.",negativo
 Llevar bocadillos a clase como un profesional.¡El arte del contrabando de snacks es una habilidad sagrada!,positivo
