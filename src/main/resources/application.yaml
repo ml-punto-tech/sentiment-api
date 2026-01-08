@@ -7,6 +7,21 @@ spring:
   profiles:
     active: dev
 
+  # postgresql
+  datasource:
+      url: jdbc:postgresql://localhost:5432/sentiment_db
+      username: sentiment_user
+      password: sentimentpass
+
+  # jpa
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+
 # API configuration
 api:
   version: ${API_VERSION:v1}
