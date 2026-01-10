@@ -21,12 +21,16 @@ public class SentimentLog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
 
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String text;
 
+    @Column(nullable = false)
     private String prediction;
 
+    @Column(nullable = false)
     private double probability;
 
+    @Column(nullable = false)
     private LocalDateTime createdAt;
 
 }
