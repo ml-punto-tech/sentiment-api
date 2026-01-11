@@ -183,5 +183,3 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 
 Fecha de actualización: 2026-01-05
-
-
