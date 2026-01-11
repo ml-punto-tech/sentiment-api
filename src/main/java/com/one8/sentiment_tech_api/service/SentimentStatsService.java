@@ -25,18 +25,17 @@ public class SentimentStatsService{
     private final SentimentRepository repository;
 
 
-    public SentimentResponseDTO analyzeAndSave(SentimentRequestDTO request) {
-        log.info("Analizando sentimiento y guardando resultado");
+    public void saveLog(String text,SentimentResponseDTO responseDTO) {
+        log.info("Guardando resultado");
 
-        SentimentResponseDTO response = sentimentService.predict(request);
+        SentimentLog logSentiment = SentimentLog.builder().text(text)
+                        .prediction(responseDTO.prevision())
+                        .probability(responseDTO.probabilidad())
+                        .createdAt(LocalDateTime.now()).build();
 
-        SentimentLog logEntity = SentimentLog.builder().text(request.text())
-                .prediction(response.prevision()).probability(response.probabilidad())
-                .createdAt(LocalDateTime.now()).build();
+         repository.save(logSentiment);
 
-        repository.save(logEntity);
-        log.info("Sentimiento guardado correctamente");
-        return response;
+         log.info("Sentimiento guardado correctamente");
     }
 
     public SentimentStatsResponseDTO getStats(int limit){
@@ -50,12 +49,12 @@ public class SentimentStatsService{
             return new SentimentStatsResponseDTO(0,0,0,0,0.0,0.0,0.0);
         }
         long total = logs.getContent().size();
-        long positivos = logs.stream().filter(log -> "POSITIVO".equalsIgnoreCase(log.getPrediction()))
-                .count();
-        long negativos = logs.stream().filter(log -> "NEGATIVO".equalsIgnoreCase(log.getPrediction()))
-                .count();
-        long neutros = logs.stream().filter(log -> "NEUTRO".equalsIgnoreCase(log.getPrediction()))
-                .count();
+        long positivos = logs.stream().filter(log -> "positivo".equalsIgnoreCase(log.getPrediction()
+                .trim())).count();
+        long negativos = logs.stream().filter(log -> "negativo".equalsIgnoreCase(log.getPrediction()
+                .trim())).count();
+        long neutros = logs.stream().filter(log -> "neutral".equalsIgnoreCase(log.getPrediction()
+                .trim())).count();
 
         double porcentajePositivos = (positivos * 100.0) / total;
         double porcentajeNegativos = (negativos * 100.0) / total;
