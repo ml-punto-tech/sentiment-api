@@ -31,3 +31,15 @@ build/
 
 ### VS Code ###
 .vscode/
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+

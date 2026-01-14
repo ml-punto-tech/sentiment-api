@@ -1,6 +1,9 @@
 package com.one8.sentiment_tech_api.exceptions;
 
 import com.one8.sentiment_tech_api.dtos.response.ApiResponse;
+import jakarta.validation.ConstraintViolationException;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -9,6 +12,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.time.LocalDateTime;
 
+
+@Slf4j
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -31,7 +36,7 @@ public class GlobalExceptionHandler {
 
         String errors = ex.getBindingResult()
                 .getFieldErrors()
-                .get(0)
+                .getFirst()
                 .getDefaultMessage();
 
         return ResponseEntity
@@ -47,12 +52,39 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApiResponse<Void>> handleGenericException(
             Exception ex) {
+        log.error("Error inesperado en la aplicación", ex);
 
         return ResponseEntity
                 .status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(ApiResponse.<Void>builder()
                         .success(false)
                         .message("Error interno del servidor")
+                        .timestamp(LocalDateTime.now())
                         .build());
+    }
+
+    @ExceptionHandler(DataAccessException.class)
+    public ResponseEntity<ApiResponse<Void>> handleDataAccessException(DataAccessException ex){
+        log.error("Error al acceder a la base de datos", ex);
+
+        ApiResponse<Void> response = ApiResponse.<Void>builder().success(false)
+                .data(null)
+                .message("Error al guardar en la base de datos")
+                .build();
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
+    }
+
+    @ExceptionHandler(ConstraintViolationException.class)
+    public ResponseEntity<ApiResponse<Void>> handleConstraintViolationException(
+            ConstraintViolationException ex){
+
+        String errors = ex.getMessage().split(":")[1].trim();
+
+        ApiResponse<Void> response = ApiResponse.<Void>builder()
+                .success(false)
+                .data(null)
+                .message(errors)
+                .build();
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
     }
 }
