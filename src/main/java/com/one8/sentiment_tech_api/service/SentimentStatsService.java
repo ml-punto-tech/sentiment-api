@@ -1,19 +1,20 @@
 package com.one8.sentiment_tech_api.service;
 
-
-import com.one8.sentiment_tech_api.dtos.request.SentimentRequestDTO;
 import com.one8.sentiment_tech_api.dtos.response.SentimentResponseDTO;
 import com.one8.sentiment_tech_api.dtos.response.SentimentStatsResponseDTO;
 import com.one8.sentiment_tech_api.entity.SentimentLog;
 import com.one8.sentiment_tech_api.repository.SentimentRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 
 @Slf4j
@@ -21,10 +22,10 @@ import java.time.LocalDateTime;
 @Service
 public class SentimentStatsService{
 
-    private final SentimentService sentimentService;
     private final SentimentRepository repository;
 
 
+    @Transactional
     public void saveLog(String text,SentimentResponseDTO responseDTO) {
         log.info("Guardando resultado");
 
@@ -42,19 +43,20 @@ public class SentimentStatsService{
         log.info("Calculando estadísticas de los últimos {} registros",limit);
 
         Pageable pageable = PageRequest.of(0, limit);
-        Page<SentimentLog> logs = repository.findAllByOrderByCreatedAtDesc(pageable);
-
+        List<SentimentLog> logs = repository.findAllByOrderByCreatedAtDesc(pageable);
 
         if(logs.isEmpty()){
             return new SentimentStatsResponseDTO(0,0,0,0,0.0,0.0,0.0);
         }
-        long total = logs.getContent().size();
-        long positivos = logs.stream().filter(log -> "positivo".equalsIgnoreCase(log.getPrediction()
-                .trim())).count();
-        long negativos = logs.stream().filter(log -> "negativo".equalsIgnoreCase(log.getPrediction()
-                .trim())).count();
-        long neutros = logs.stream().filter(log -> "neutral".equalsIgnoreCase(log.getPrediction()
-                .trim())).count();
+        long total = logs.size();
+
+        Map<String, Long> conteos = logs.stream()
+                .collect(Collectors.groupingBy(log -> log.getPrediction()
+                .trim().toLowerCase(), Collectors.counting()));
+
+        long positivos = conteos.getOrDefault("positivo", 0L);
+        long negativos = conteos.getOrDefault("negativo", 0L);
+        long neutros = conteos.getOrDefault("neutral", 0L);
 
         double porcentajePositivos = (positivos * 100.0) / total;
         double porcentajeNegativos = (negativos * 100.0) / total;
