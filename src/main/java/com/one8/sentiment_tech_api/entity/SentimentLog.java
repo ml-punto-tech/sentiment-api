@@ -1,5 +1,6 @@
 package com.one8.sentiment_tech_api.entity;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,25 +9,28 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-
-
 @Entity
-@Table(name ="sentiment_logs")
+@Table(name = "sentiment_logs")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class SentimentLog {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private  Long id;
 
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String text;
 
-    private String prediccion;
+    @Column(nullable = false)
+    private String prediction;
 
+    @Column(nullable = false)
     private double probability;
 
-    private LocalDateTime creationDate;
+    @Column(nullable = false)
+    private LocalDateTime createdAt;
+
 }
