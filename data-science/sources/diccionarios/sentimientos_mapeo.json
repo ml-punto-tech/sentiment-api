@@ -1,9 +1,9 @@
 {
   "abrumado": "negativo",
   "aburrimiento": "negativo", 
-  "aceptación": "positivo",
+  "aceptacion": "positivo",
   "admiracion": "positivo",
-  "adoración": "positivo",
+  "adoracion": "positivo",
   "agradecido": "positivo",
   "aislamiento": "negativo",
   "alegria": "positivo",
@@ -46,7 +46,7 @@
   "elegancia": "positivo",
   "emocion": "positivo",
   "empoderamiento": "positivo",
-  "empatíco": "positivo",
+  "empatico": "positivo",
   "encantamiento": "positivo",
   "energia": "positivo",
   "enojo": "negativo",
@@ -65,7 +65,6 @@
   "inspiracion": "positivo",
   "inspirado": "positivo",
   "intimidacion": "positivo",
-  "irrelevante": "neutral",
   "jugueton": "positivo",
   "logro": "positivo",
   "lastima": "negativo",
@@ -105,7 +104,5 @@
   "verguenza": "negativo",
   "ánimo": "positivo",
   "exito": "positivo",
-  "extasis": "positivo",
-  "positiva": "positivo",
-  "negativa": "negativo"
+  "extasis": "positivo"
 }
