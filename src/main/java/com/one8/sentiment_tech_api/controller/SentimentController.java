@@ -56,7 +56,7 @@ public class SentimentController {
     public ResponseEntity<SentimentStatsResponseDTO>getStats(
             @RequestParam(defaultValue = "10")
             @Min(value = 5, message = "Debe haber al menos 5 últimas predicciones")
-            @Max(value = 100, message ="No puede exceder 1000 últimas predicciones")
+            @Max(value = 100, message ="No puede exceder 100 últimas predicciones")
             int last){
         log.info("GET /sentiment/stats?last={}", last);
 
