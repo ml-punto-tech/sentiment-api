@@ -17,18 +17,20 @@ import java.time.LocalDateTime;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
+    @ExceptionHandler(CsvProcessingException.class)
+    public ResponseEntity<ApiResponse<Void>> handleCsvProcessingException(CsvProcessingException ex){
+        return buildErrorResponse(HttpStatus.BAD_REQUEST, ex.getMessage());
+    }
+
+    @ExceptionHandler(FileSizeExceededException.class)
+    public ResponseEntity<ApiResponse<Void>> handleFileSizeExceededException(FileSizeExceededException ex){
+        return buildErrorResponse(HttpStatus.PAYLOAD_TOO_LARGE, ex.getMessage());
+    }
 
     @ExceptionHandler(ServiceUnavailableException.class)
     public ResponseEntity<ApiResponse<Void>> handleServiceUnavailable(ServiceUnavailableException ex){
-
-        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
-                .body(ApiResponse.<Void>builder()
-                        .success(false)
-                        .message(ex.getMessage())
-                        .timestamp(LocalDateTime.now())
-                        .build());
+        return buildErrorResponse(HttpStatus.SERVICE_UNAVAILABLE, ex.getMessage());
     }
-
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ApiResponse<Void>> handleValidationErrors(
@@ -39,26 +41,22 @@ public class GlobalExceptionHandler {
                 .getFirst()
                 .getDefaultMessage();
 
-        return ResponseEntity
-                .status(HttpStatus.BAD_REQUEST)
-                .body(ApiResponse.<Void>builder()
-                        .success(false)
-                        .message(errors)
-                        .timestamp(LocalDateTime.now())
-                        .build());
+        return buildErrorResponse(HttpStatus.BAD_REQUEST, errors);
     }
-
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApiResponse<Void>> handleGenericException(
             Exception ex) {
         log.error("Error inesperado en la aplicación", ex);
 
-        return ResponseEntity
-                .status(HttpStatus.INTERNAL_SERVER_ERROR)
+        return buildErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, "Error interno del servidor");
+    }
+
+    private ResponseEntity<ApiResponse<Void>> buildErrorResponse(HttpStatus status, String message) {
+        return ResponseEntity.status(status)
                 .body(ApiResponse.<Void>builder()
                         .success(false)
-                        .message("Error interno del servidor")
+                        .message(message)
                         .timestamp(LocalDateTime.now())
                         .build());
     }
@@ -67,8 +65,8 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ApiResponse<Void>> handleDataAccessException(DataAccessException ex){
         log.error("Error al acceder a la base de datos", ex);
 
-        ApiResponse<Void> response = ApiResponse.<Void>builder().success(false)
-                .data(null)
+        ApiResponse<Void> response = ApiResponse.<Void>builder()
+                .success(false)
                 .message("Error al guardar en la base de datos")
                 .build();
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
@@ -82,7 +80,6 @@ public class GlobalExceptionHandler {
 
         ApiResponse<Void> response = ApiResponse.<Void>builder()
                 .success(false)
-                .data(null)
                 .message(errors)
                 .build();
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
