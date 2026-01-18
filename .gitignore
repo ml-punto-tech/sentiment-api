@@ -43,3 +43,5 @@ __pycache__/
 # OS
 .DS_Store
 
+# Environment variables - NO SUBIR
+*.env
