@@ -7,7 +7,7 @@ import com.one8.sentiment_tech_api.dtos.response.SentimentResponseDTO;
 import com.one8.sentiment_tech_api.dtos.response.SentimentStatsResponseDTO;
 import com.one8.sentiment_tech_api.service.BatchSentimentService;
 import com.one8.sentiment_tech_api.service.SentimentService;
-import com.one8.sentiment_tech_api.service.SentimentStatsService;
+import com.one8.sentiment_tech_api.service.impl.SentimentStatsServiceImpl;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
@@ -30,7 +30,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class SentimentController {
 
     private final SentimentService sentimentService;
-    private final SentimentStatsService sentimentStatsService;
+    private final SentimentStatsServiceImpl sentimentStatsService;
     private final BatchSentimentService batchSentimentService;
 
     /**
