@@ -59,12 +59,20 @@ public class SentimentStatsServiceImpl implements SentimentStatsService {
         long negativos = conteos.getOrDefault("negativo", 0L);
         long neutros = conteos.getOrDefault("neutral", 0L);
 
-        double porcentajePositivos = (positivos * 100.0) / total;
-        double porcentajeNegativos = (negativos * 100.0) / total;
-        double porcentajeNeutros = (neutros * 100.0) / total;
+        double porcentajePositivos = calcularPorcentaje(positivos,total);
+        double porcentajeNegativos = calcularPorcentaje(negativos,total);
+        double porcentajeNeutros = calcularPorcentaje(neutros,total);
 
         return new SentimentStatsResponseDTO(total,positivos,negativos,neutros,
                 porcentajePositivos,porcentajeNegativos,porcentajeNeutros);
 
+    }
+
+    private double calcularPorcentaje(long prevision, long total) {
+        if (total == 0) {
+            return 0.0;
+        }
+        double valor = (prevision * 100.0) / total;
+        return Math.round(valor * 10.0) / 10.0;
     }
 }
