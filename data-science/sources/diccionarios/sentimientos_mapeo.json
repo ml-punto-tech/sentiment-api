@@ -42,7 +42,6 @@
   "disfrute": "positivo",
   "diversion": "positivo",
   "dolor": "negativo",
-  "elacion": "positivo",
   "elegancia": "positivo",
   "emocion": "positivo",
   "empoderamiento": "positivo",
@@ -103,6 +102,5 @@
   "triunfo": "positivo",
   "verguenza": "negativo",
   "ánimo": "positivo",
-  "exito": "positivo",
-  "extasis": "positivo"
+  "exito": "positivo"
 }
