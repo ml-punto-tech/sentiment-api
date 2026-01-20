@@ -7,8 +7,6 @@ import numpy as np
 import logging
 import re
 import unicodedata
-import nltk
-from nltk.corpus import stopwords
 from starlette.datastructures import State
 
 # -------------------------------------------------------------------
@@ -23,46 +21,47 @@ logger = logging.getLogger(__name__)
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "modelo_entrenado.joblib"
 
+# Stopwords manuales del Colab para evitar descargas en el servidor
+STOP_WORDS_MANUAL = {
+    'de', 'la', 'que', 'el', 'en', 'y', 'a', 'los', 'del', 'se', 'las', 'por', 'un', 'para',
+    'con', 'una', 'su', 'al', 'lo', 'como', 'mas', 'pero', 'sus', 'le', 'ya', 'o', 'este',
+    'si', 'porque', 'esta', 'entre', 'cuando', 'muy', 'sin', 'sobre', 'tambien', 'me', 'hasta',
+    'hay', 'donde', 'quien', 'desde', 'todo', 'nos', 'durante', 'todos', 'uno', 'les',
+    'contra', 'otros', 'ese', 'eso', 'ante', 'ellos', 'e', 'esto', 'mi', 'antes', 'algunos',
+    'unos', 'yo', 'otro', 'otras', 'otra', 'cual', 'poco', 'ella', 'estar',
+    'estas', 'algunas', 'algo', 'nosotros', 'mis', 'tu', 'te', 'ti', 'tus',
+    'ellas', 'nosotras', 'vosotros', 'vosotras', 'os', 'mio', 'mia', 'mios', 'mias', 'tuyo',
+    'tuya', 'tuyos', 'tuyas', 'suyo', 'suya', 'suyos', 'suyas', 'nuestro', 'nuestra',
+    'nuestros', 'nuestras', 'vuestro', 'vuestra', 'vuestros', 'vuestras', 'es', 'son', 'fue',
+    'era', 'eramos', 'fui', 'fuiste', 'fueron'
+}
+NEGACIONES_A_PRESERVAR = {'no', 'ni', 'nunca', 'jamas', 'tampoco', 'nada', 'sin'}
+STOP_WORDS_FINAL = STOP_WORDS_MANUAL - NEGACIONES_A_PRESERVAR
+
 # -------------------------------------------------------------------
-# FUNCIONES DE LIMPIEZA (Traídas del Colab)
+# FUNCIONES DE LIMPIEZA (Adaptadas exactamente del Colab)
 # -------------------------------------------------------------------
-def descargar_recursos_nltk():
-    """Descarga stopwords si no existen"""
-    try:
-        nltk.data.find('corpora/stopwords')
-    except LookupError:
-        nltk.download('stopwords')
-        logger.info("Stopwords descargadas.")
 
 def limpiar_texto_para_modelo(texto: str) -> str:
-    # 1. Minúsculas
+    """Aplica la limpieza exacta que usó el modelo en entrenamiento"""
+    if not isinstance(texto, str):
+        return ""
+    
+    # 1. Normalización y minúsculas
     texto = texto.lower()
     
-    # 2. Normalización Unicode (quitar tildes)
-    texto = unicodedata.normalize('NFD', texto)
-    texto = texto.encode('ascii', 'ignore').decode("utf-8")
-    
-    # 3. Eliminar URLs, Hashtags, Menciones
-    texto = re.sub(r'https?://\S+|www\.\S+', '', texto)
-    texto = re.sub(r'#\w+', '', texto)
-    texto = re.sub(r'@\w+', '', texto)
-    
-    # 4. Eliminar puntuación y caracteres especiales
+    # 2. Eliminar caracteres especiales (manteniendo letras para el vectorizador)
     texto = re.sub(r'[^\w\s]', '', texto)
     
-    # 5. Eliminar números
-    texto = re.sub(r'\d+', '', texto)
-
-    # 6. Stopwords (Usando NLTK)
-    stop_words = set(stopwords.words('spanish'))
-    palabras = [word for word in texto.split() if word not in stop_words]
+    # 3. Filtrar stopwords preservando negaciones
+    palabras = [word for word in texto.split() if word not in STOP_WORDS_FINAL]
+    
     return " ".join(palabras).strip()
 
 # -------------------------------------------------------------------
-# MODELOS Pydantic
+# MODELOS Pydantic (Sin cambios)
 # -------------------------------------------------------------------
 class SentimentRequest(BaseModel):
-    # Ajusté min_length a 1 para permitir frases cortas como "Hola"
     text: str = Field(..., min_length=1, description="Texto a analizar")
 
 class SentimentResponse(BaseModel):
@@ -70,34 +69,26 @@ class SentimentResponse(BaseModel):
     probabilidad: float
 
 # -------------------------------------------------------------------
-# LIFESPAN (startup / shutdown)
+# LIFESPAN (Sin cambios en lógica)
 # -------------------------------------------------------------------
 @asynccontextmanager
 async def lifespan(api: FastAPI):
     api.state = State()
-
-    # 🔼 STARTUP
     logger.info("Iniciando API...")
     
-    # 1. Descargar recursos NLTK
-    descargar_recursos_nltk()
-
-    # 2. Cargar Modelo
     if not MODEL_PATH.exists():
         logger.error("Modelo no encontrado en %s", MODEL_PATH)
         raise RuntimeError(f"No se encontró el archivo {MODEL_PATH}")
 
     try:
+        # Cargamos el pipeline completo (Tfidf + Modelo)
         api.state.model = joblib.load(MODEL_PATH)
-        logger.info("✅ Modelo cargado exitosamente: %s", MODEL_PATH)
+        logger.info("✅ Modelo cargado exitosamente")
     except Exception as e:
         logger.exception("Error crítico cargando el modelo")
         raise RuntimeError("Fallo al cargar el modelo") from e
-
     yield
-
-    # 🔽 SHUTDOWN
-    logger.info("Apagando API de Sentimiento")
+    logger.info("Apagando API")
 
 # -------------------------------------------------------------------
 # APP
@@ -109,32 +100,28 @@ app = FastAPI(
 )
 
 # -------------------------------------------------------------------
-# ENDPOINTS
+# ENDPOINTS (Misma estructura de retorno)
 # -------------------------------------------------------------------
-@app.post(
-    "/predict",
-    response_model=SentimentResponse,
-    summary="Analiza el sentimiento de un texto",
-)
+@app.post("/predict", response_model=SentimentResponse)
 def predict_sentiment(request: SentimentRequest, req: Request):
     model = req.app.state.model
 
     try:
-        # A. Limpieza (CRÍTICO: Igualar condiciones del entrenamiento)
+        # A. Limpieza con lógica del Colab
         texto_procesado = limpiar_texto_para_modelo(request.text)
         
-        # Validación: Si la limpieza deja el texto vacío (ej: solo mandaron emojis o stopwords)
         if not texto_procesado:
-            return SentimentResponse(
-                prevision="Neutral",
-                probabilidad=0.0
-            )
+            return SentimentResponse(prevision="neutral", probabilidad=0.0)
 
-        # B. Predicción
+        # B. Predicción (Usando el pipeline cargado directamente)
         input_data = [texto_procesado]
         prediction = model.predict(input_data)[0]
         probs = model.predict_proba(input_data)[0]
-        max_prob = float(np.max(probs))
+        
+        # Obtenemos la probabilidad de la clase predicha
+        class_labels = list(model.classes_)
+        predicted_idx = class_labels.index(prediction)
+        max_prob = float(probs[predicted_idx])
 
         return SentimentResponse(
             prevision=str(prediction),
@@ -143,12 +130,9 @@ def predict_sentiment(request: SentimentRequest, req: Request):
 
     except Exception as e:
         logger.exception("Error procesando la solicitud")
-        raise HTTPException(
-            status_code=500,
-            detail="Error interno procesando la predicción"
-        )
+        raise HTTPException(status_code=500, detail="Error interno")
 
-@app.get("/", summary="Health check")
+@app.get("/")
 def health_check(request: Request):
     return {
         "status": "online",
