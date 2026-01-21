@@ -377,7 +377,7 @@ Deleite caprichoso en un mundo de cuentos de hadas caprichosos.,neutral
 Contemplacion reflexiva en medio de las ruinas de una epoca olvidada.,negativo
 Montar la adrenalina en los giros salvajes de una montaña rusa.,positivo
 La armonia resuena mientras los musicos tocan una sinfonia de unidad.,positivo
-Un estallido de creatividad artistica en la tranquilidad del estudio de un artista. #ArteClub,positivo
+Un estallido de creatividad artistica en la tranquilidad del estudio de un artista. ArteClub,positivo
 Alegria radiante similar a las flores floreciendo en una soleada mañana de primavera.,positivo
 Asombrado por la inmensidad del cosmos en una noche de observacion de estrellas.,neutral
 "Embarcate en una odisea culinaria, saboreando sabores de todo el mundo.",neutral
@@ -551,67 +551,67 @@ En el mundo de la ciencia se esta produciendo un descubrimiento revolucionario q
 "En el ambito de la moda, el diseñador presenta una coleccion que cuenta una historia, mezclando innovacion y tradicion en la pasarela de la creatividad.",positivo
 "Mientras las olas rompen contra la orilla, el surfista abraza la emocion de aprovechar la energia del oceano, capturando la esencia de la libertad en cada ola.",positivo
 "Al explorar la arquitectura historica de una ciudad antigua, el viajero es transportado a una epoca pasada, donde cada monumento susurra historias del pasado.",neutral
-Evite con exito el contacto visual con la persona que me gusta en el pasillo.Mision cumplida. #ModoSigiloso,positivo
-Se quedo sin bocadillos durante una maraton de peliculas.Nivel de crisis: ¡Emergencia! #LuchasNochesDePelicula #ProblemasAdolescentes,neutral
+Evite con exito el contacto visual con la persona que me gusta en el pasillo.Mision cumplida. ModoSigiloso,positivo
+Se quedo sin bocadillos durante una maraton de peliculas.Nivel de crisis: ¡Emergencia! LuchasNochesDePelicula ProblemasAdolescentes,neutral
 Pase una hora eligiendo el filtro perfecto para una selfie. La lucha por esa estetica de Instagram es real.,neutral
-Perdi mis auriculares nuevamente.¿Como se desvanecen en el aire? #Misterio de los auriculares #VidaAdolescente,negativo
-"Decidio estudiar para los examenes, pero termino haciendo memes sobre estudiar.Nivel de procrastinacion: Experto. #NacionProcrastinacion #ConfesionesAdolescentes",neutral
-Me vesti para el dia y luego recorde que era sabado.Ups. #Vibracionesdefindesemana #LuchasAdolescentes,neutral
-Sobrevivio a un proyecto grupal sin ningun drama.Los milagros suceden. #ProyectoGrupoExito #LogrosAdolescentes,positivo
-"Entro a la cocina con la intencion de cocinar.Se fue con una bolsa de patatas fritas.De todos modos, la cocina esta sobrevalorada.#MasterChefEnEntrenamiento #TinyHumor",negativo
-"Mirando el reloj en clase, esperando que suene el timbre como si fuera el evento mas emocionante del dia. #CuentaRegresivaDeClase #VidaAdolescente",neutral
+Perdi mis auriculares nuevamente.¿Como se desvanecen en el aire? Misterio de los auriculares VidaAdolescente,negativo
+"Decidio estudiar para los examenes, pero termino haciendo memes sobre estudiar.Nivel de procrastinacion: Experto. NacionProcrastinacion ConfesionesAdolescentes",neutral
+Me vesti para el dia y luego recorde que era sabado.Ups. Vibracionesdefindesemana LuchasAdolescentes,neutral
+Sobrevivio a un proyecto grupal sin ningun drama.Los milagros suceden. ProyectoGrupoExito LogrosAdolescentes,positivo
+"Entro a la cocina con la intencion de cocinar.Se fue con una bolsa de patatas fritas.De todos modos, la cocina esta sobrevalorada.MasterChefEnEntrenamiento TinyHumor",negativo
+"Mirando el reloj en clase, esperando que suene el timbre como si fuera el evento mas emocionante del dia. CuentaRegresivaDeClase VidaAdolescente",neutral
 Descubri una nueva serie de libros y pase toda la noche leyendo.¿Quien necesita dormir?,positivo
-"Compre un videojuego nuevo, jugue durante horas y me olvide de comer.La sesion de juego definitiva. #VidaJugador",positivo
-Pase el dia viendo una nueva serie.Nivel de productividad: Cero.#LazyDay #TVSeriesMarathon,positivo
-Me puse al dia con las ultimas tendencias de la moda y ahora estoy planeando una jornada de compras. #Fashionista,positivo
-Decidio aprender un nuevo instrumento.Dia uno: todavia estoy tratando de descubrir como sostenerlo. #Novicio en musica #Viajedeaprendizaje,negativo
-Pase horas creando la lista de reproduccion perfecta para cada estado de animo.La musica es mi terapia.#CreadorListasReproduccion,positivo
-Cocine con exito una comida gourmet para la familia.¡Habilidades de chef desbloqueadas!#ModoChef,positivo
-Reservamos espontaneamente una escapada de fin de semana.¡La aventura te espera! #TravelBug #Escape de fin de semana,positivo
-Asistio a un concierto y bailo toda la noche.La musica es el latido del corazon de la vida.#ConciertoVibraciones #BailarTodaLaNoche,positivo
+"Compre un videojuego nuevo, jugue durante horas y me olvide de comer.La sesion de juego definitiva. VidaJugador",positivo
+Pase el dia viendo una nueva serie.Nivel de productividad: Cero.LazyDay TVSeriesMarathon,positivo
+Me puse al dia con las ultimas tendencias de la moda y ahora estoy planeando una jornada de compras. Fashionista,positivo
+Decidio aprender un nuevo instrumento.Dia uno: todavia estoy tratando de descubrir como sostenerlo. Novicio en musica Viajedeaprendizaje,negativo
+Pase horas creando la lista de reproduccion perfecta para cada estado de animo.La musica es mi terapia.CreadorListasReproduccion,positivo
+Cocine con exito una comida gourmet para la familia.¡Habilidades de chef desbloqueadas!ModoChef,positivo
+Reservamos espontaneamente una escapada de fin de semana.¡La aventura te espera! TravelBug Escape de fin de semana,positivo
+Asistio a un concierto y bailo toda la noche.La musica es el latido del corazon de la vida.ConciertoVibraciones BailarTodaLaNoche,positivo
 Redescubri los dibujos animados de la infancia y disfrute de una maraton llena de nostalgia.,positivo
-Se embarco en un proyecto de decoracion del hogar de bricolaje.Esperemos que salga mejor que la ultima vez. #DIYAventura #TeenHomeDecor,positivo
-"Pase la tarde en un museo, fingiendo ser culto.Entusiasta del arte en ciernes. #DiaDeLosMuseos #DiaDelPatrimonio",neutral
-Comenzo un blog sobre pensamientos y reflexiones aleatorias.Los blogs son el nuevo diario. #Blogueros,neutral
-Disfrutando de una tarde tranquila con una novela clasica.Los momentos de tranquilidad son los mejores momentos. #AmanteLibros #TardeTranquila,positivo
-"Al reflexionar sobre toda una vida de recuerdos, cada arruga cuenta una historia.Abrazando la belleza del envejecimiento. #ReflexionesDeVida #BellezaEnElEnvejecimiento",positivo
-Explorando el mundo del arte digital.Nunca es demasiado tarde para descubrir nuevas pasiones. #ArteDigital,neutral
-Saborear los sabores de una comida casera.Las alegrias simples son el corazon de la felicidad. #CocinaEnCasa #AlegriasSimples,positivo
-Emprender un viaje de aprendizaje de un nuevo idioma.La mente se mantiene joven con cada nueva palabra. #AprendizajedeIdiomas #NuncaDemasiado Tarde,neutral
-Asistio a un concierto de musica clasica y sintio resuenar las melodias eternas.La musica trasciende generaciones.#MusicaClasica #MelodiasAtemporales,positivo
-Capturando la belleza de la naturaleza a traves de la fotografia.Cada instantanea es un tesoro.#FotografiaDeNaturaleza #FotografoSenior,positivo
-"Reconectarse con viejos amigos tomando una taza de te.Amistad, la verdadera esencia del compañerismo.#ViejosAmigos #Compañerismo",positivo
+Se embarco en un proyecto de decoracion del hogar de bricolaje.Esperemos que salga mejor que la ultima vez. DIYAventura TeenHomeDecor,positivo
+"Pase la tarde en un museo, fingiendo ser culto.Entusiasta del arte en ciernes. DiaDeLosMuseos DiaDelPatrimonio",neutral
+Comenzo un blog sobre pensamientos y reflexiones aleatorias.Los blogs son el nuevo diario. Blogueros,neutral
+Disfrutando de una tarde tranquila con una novela clasica.Los momentos de tranquilidad son los mejores momentos. AmanteLibros TardeTranquila,positivo
+"Al reflexionar sobre toda una vida de recuerdos, cada arruga cuenta una historia.Abrazando la belleza del envejecimiento. ReflexionesDeVida BellezaEnElEnvejecimiento",positivo
+Explorando el mundo del arte digital.Nunca es demasiado tarde para descubrir nuevas pasiones. ArteDigital,neutral
+Saborear los sabores de una comida casera.Las alegrias simples son el corazon de la felicidad. CocinaEnCasa AlegriasSimples,positivo
+Emprender un viaje de aprendizaje de un nuevo idioma.La mente se mantiene joven con cada nueva palabra. AprendizajedeIdiomas NuncaDemasiado Tarde,neutral
+Asistio a un concierto de musica clasica y sintio resuenar las melodias eternas.La musica trasciende generaciones.MusicaClasica MelodiasAtemporales,positivo
+Capturando la belleza de la naturaleza a traves de la fotografia.Cada instantanea es un tesoro.FotografiaDeNaturaleza FotografoSenior,positivo
+"Reconectarse con viejos amigos tomando una taza de te.Amistad, la verdadera esencia del compañerismo.ViejosAmigos Compañerismo",positivo
 "Se embarco en un viaje por carretera para volver a visitar lugares preciados del pasado.Nostalgia, la compañera de viaje definitiva.",positivo
-"Se unio a un coro comunitario, armonizando con otras voces.La musica crea vinculos que resisten el tiempo.#Coro Comunitario #ArmoniaEnEnvejecimiento",positivo
-"Explorando el arte de la meditacion, encontrando tranquilidad en la quietud de la mente. #ViajedeMeditacion #MenteTranquila",positivo
-Dar un paseo por el jardin y apreciar la belleza de las flores en flor.Las maravillas de la naturaleza nunca terminan.#PaseoJardin #BellezaFloral,positivo
-"Bebiendo un vino añejo favorito, cada sorbo cuenta una historia de los años pasados.Saludos a una vida bien vivida. #AmorVino",positivo
-"Participo en una clase de arte comunitaria, desatando la creatividad en los años dorados.El arte no tiene limite de edad. #ClasedeArte",positivo
-"Embarcarse en un viaje de escritura de memorias, documentando toda una vida de experiencias.Cada historia importa. #Escritura de memorias #Historias de personas mayores",positivo
-"Asistio a una conferencia sobre historia, siempre fascinado por las lecciones del pasado.El aprendizaje es una aventura para toda la vida. #ConferenciadeHistoria #AprendizajeSenior",neutral
-"Redescubri el placer de cocinar recetas familiares tradicionales.La cocina, un lugar de recuerdos preciados. #RecetasFamilias #CocinaSenior",positivo
-Se unio a un club de fotografia de naturaleza y capturo la belleza del aire libre.Cada clic es una conexion con la naturaleza. #FotografiaDeNaturaleza #FotografoSenior,positivo
-"Asistio a un concierto de jazz y se balanceo al ritmo de melodias eternas.La musica, una compañera constante en los años dorados.#ConciertoJazz #MusicaSenior",positivo
-"Se unio a un grupo de escritura, anotando pensamientos y reflexiones.Escribir, un viaje a lo mas profundo del alma.#Grupo de escritura #Escritor senior",positivo
-"Me embarque en una aventura de viaje en solitario, descubriendo la belleza de nuevos lugares a mi propio ritmo. #SoloViaje #ExploradorSenior",positivo
-Asistio a una exhibicion de autos antiguos y recordo los clasicos que alguna vez dominaron las carreteras.Nostalgia en cada revolucion.#CochesVintage #PaseosClasicos,positivo
-"Comenzo un jardin comunitario, cultivando no solo plantas sino tambien amistades.¡Los pulgares verdes se unen!#JardinComunitario #JardineroSenior",positivo
-"Organizo una cena familiar, donde las risas resonaron con mas fuerza que el tintineo de los utensilios.La familia, el corazon de la felicidad. #CenaFamilia #AnfitrionSenior",positivo
-"Se inscribio en una clase de baile para personas mayores, moviendose al ritmo de la vida.La edad es solo un numero en la pista de baile. #ClasedeDanza #BailarinaSenior",positivo
-"Visito una galeria de arte, apreciando las pinceladas que cuentan historias de creatividad.El arte, un eterno compañero.#GaleriadeArte #SeniorArtLover",positivo
-"Inicio un club de lectura para personas mayores, donde las discusiones son tan animadas como los personajes de las novelas. #LectoresSenior",positivo
-"Organizo un picnic en el parque, disfrutando de la calidez de la amistad y el sol.Alegrias simples, recuerdos eternos. #ParquePicnic",positivo
-"Participo en una produccion de teatro local, demostrando que el escenario es de todas las epocas. #ProduccionTeatral #ActorSenior",positivo
-"Embarcate en una aventura de senderismo, conquistando senderos y saboreando la belleza de la naturaleza.La edad es solo un numero en la cima de la montaña.#SenderismoAventura #SeniorHiker",positivo
-Organizo una exposicion de fotografias que presenta instantaneas de una vida bien vivida.Cada foto tiene una historia que contar. #ExposicionDeFotografia #FotografoSenior,positivo
-Me uni a un club ciclista para personas mayores y senti el viento en el pelo y la libertad de la carretera. #ClubCiclista #CiclistaSenior,positivo
-Asistio a una cata de vinos y saboreo la riqueza de sabores que envejecen como el buen vino.¡Salud por los años dorados! #CatadeVinos #AmordeVinos,positivo
-"Comenzo a aprender bailes de salon, deslizandose con gracia por la pista de baile.Elegancia eterna en cada paso.#BaileSalon #BailarinSenior",positivo
-"Organizo un evento de pintura comunitario, convirtiendo lienzos en blanco en una obra maestra de creatividad compartida.#EventodePintura #ArtistaSenior",positivo
+"Se unio a un coro comunitario, armonizando con otras voces.La musica crea vinculos que resisten el tiempo.Coro Comunitario ArmoniaEnEnvejecimiento",positivo
+"Explorando el arte de la meditacion, encontrando tranquilidad en la quietud de la mente. ViajedeMeditacion MenteTranquila",positivo
+Dar un paseo por el jardin y apreciar la belleza de las flores en flor.Las maravillas de la naturaleza nunca terminan.PaseoJardin BellezaFloral,positivo
+"Bebiendo un vino añejo favorito, cada sorbo cuenta una historia de los años pasados.Saludos a una vida bien vivida. AmorVino",positivo
+"Participo en una clase de arte comunitaria, desatando la creatividad en los años dorados.El arte no tiene limite de edad. ClasedeArte",positivo
+"Embarcarse en un viaje de escritura de memorias, documentando toda una vida de experiencias.Cada historia importa. Escritura de memorias Historias de personas mayores",positivo
+"Asistio a una conferencia sobre historia, siempre fascinado por las lecciones del pasado.El aprendizaje es una aventura para toda la vida. ConferenciadeHistoria AprendizajeSenior",neutral
+"Redescubri el placer de cocinar recetas familiares tradicionales.La cocina, un lugar de recuerdos preciados. RecetasFamilias CocinaSenior",positivo
+Se unio a un club de fotografia de naturaleza y capturo la belleza del aire libre.Cada clic es una conexion con la naturaleza. FotografiaDeNaturaleza FotografoSenior,positivo
+"Asistio a un concierto de jazz y se balanceo al ritmo de melodias eternas.La musica, una compañera constante en los años dorados.ConciertoJazz MusicaSenior",positivo
+"Se unio a un grupo de escritura, anotando pensamientos y reflexiones.Escribir, un viaje a lo mas profundo del alma.Grupo de escritura Escritor senior",positivo
+"Me embarque en una aventura de viaje en solitario, descubriendo la belleza de nuevos lugares a mi propio ritmo. SoloViaje ExploradorSenior",positivo
+Asistio a una exhibicion de autos antiguos y recordo los clasicos que alguna vez dominaron las carreteras.Nostalgia en cada revolucion.CochesVintage PaseosClasicos,positivo
+"Comenzo un jardin comunitario, cultivando no solo plantas sino tambien amistades.¡Los pulgares verdes se unen!JardinComunitario JardineroSenior",positivo
+"Organizo una cena familiar, donde las risas resonaron con mas fuerza que el tintineo de los utensilios.La familia, el corazon de la felicidad. CenaFamilia AnfitrionSenior",positivo
+"Se inscribio en una clase de baile para personas mayores, moviendose al ritmo de la vida.La edad es solo un numero en la pista de baile. ClasedeDanza BailarinaSenior",positivo
+"Visito una galeria de arte, apreciando las pinceladas que cuentan historias de creatividad.El arte, un eterno compañero.GaleriadeArte SeniorArtLover",positivo
+"Inicio un club de lectura para personas mayores, donde las discusiones son tan animadas como los personajes de las novelas. LectoresSenior",positivo
+"Organizo un picnic en el parque, disfrutando de la calidez de la amistad y el sol.Alegrias simples, recuerdos eternos. ParquePicnic",positivo
+"Participo en una produccion de teatro local, demostrando que el escenario es de todas las epocas. ProduccionTeatral ActorSenior",positivo
+"Embarcate en una aventura de senderismo, conquistando senderos y saboreando la belleza de la naturaleza.La edad es solo un numero en la cima de la montaña.SenderismoAventura SeniorHiker",positivo
+Organizo una exposicion de fotografias que presenta instantaneas de una vida bien vivida.Cada foto tiene una historia que contar. ExposicionDeFotografia FotografoSenior,positivo
+Me uni a un club ciclista para personas mayores y senti el viento en el pelo y la libertad de la carretera. ClubCiclista CiclistaSenior,positivo
+Asistio a una cata de vinos y saboreo la riqueza de sabores que envejecen como el buen vino.¡Salud por los años dorados! CatadeVinos AmordeVinos,positivo
+"Comenzo a aprender bailes de salon, deslizandose con gracia por la pista de baile.Elegancia eterna en cada paso.BaileSalon BailarinSenior",positivo
+"Organizo un evento de pintura comunitario, convirtiendo lienzos en blanco en una obra maestra de creatividad compartida.EventodePintura ArtistaSenior",positivo
 "Organizo una velada de memoria con viejos amigos, recordando las aventuras que dieron forma a nuestras vidas.",positivo
-"Se unio a un club de astronomia para personas mayores, donde observo las estrellas y encontro maravillas en la inmensidad del cosmos. #ClubAstronomia #SeniorStargazer",neutral
-"Asistio a un festival de jazz local y toco con los dedos de los pies las melodias que han resistido la prueba del tiempo.La musica, una historia de amor para toda la vida.#JazzFestival #SeniorMusicLover",positivo
-"Comence un blog compartiendo la sabiduria adquirida a lo largo de los años, demostrando que cada dia es una oportunidad para aprender y crecer. #Blog #SabiduriaSenior",positivo
+"Se unio a un club de astronomia para personas mayores, donde observo las estrellas y encontro maravillas en la inmensidad del cosmos. ClubAstronomia SeniorStargazer",neutral
+"Asistio a un festival de jazz local y toco con los dedos de los pies las melodias que han resistido la prueba del tiempo.La musica, una historia de amor para toda la vida.JazzFestival SeniorMusicLover",positivo
+"Comence un blog compartiendo la sabiduria adquirida a lo largo de los años, demostrando que cada dia es una oportunidad para aprender y crecer. Blog SabiduriaSenior",positivo
 "Participo en una carrera benefica, lo que demuestra que la edad no es una barrera para apoyar causas significativas.",positivo
 "Sobrevivio a un desafiante examen de fisica.¡Ecuaciones, no me derrotaras!",positivo
 Explorando el mundo de la codificacion.¡La depuracion es una aventura en si misma!,positivo
@@ -619,7 +619,7 @@ Se unio al equipo de debate de la escuela.¡Las palabras son mis armas y estoy l
 "Inicio un club de fotografia en la escuela.¡Capturando momentos, una instantanea a la vez!",positivo
 "Soñar despierto con el proximo baile de graduacion.El vestido, el baile: ¡es un cuento de hadas en ciernes!",positivo
 Convenci al profesor de tener la clase al aire libre.¡Aprendiendo ecuaciones con un poco de aire fresco!,positivo
-"Pintura derramada accidentalmente en clase de arte.Arte abstracto, ¿verdad? #EscuelaArte",negativo
+"Pintura derramada accidentalmente en clase de arte.Arte abstracto, ¿verdad? EscuelaArte",negativo
 Intentando dominar el kickflip perfecto en mi patineta.¡Patinando hasta el fin de semana como un profesional!,positivo
 Vinculandose con amigos a traves de la ultima sensacion del K-pop.¡Fangirling en su maxima expresion!,positivo
 Pase horas perfeccionando un experimento de quimica.¡Mezclando pociones como un mago!,positivo
@@ -707,10 +707,10 @@ Recaudacion de fondos exitosa para una iniciativa benefica escolar.¡La alegria 
 termine bien abrumado despues de hoy,negativo
 me siento abrumado,negativo
 "Me siento un poco abrumado por la cantidad de cosas que quiero dibujar, ver, jugar y leer. Odio esta sensacion xdddd",negativo
-Salvador la unica persona que no la ha abrumado de versiones???? #NadieComoTu,negativo
+Salvador la unica persona que no la ha abrumado de versiones???? NadieComoTu,negativo
 Denme un helado o algo que ando full abrumado.,negativo
 "Estoy abrumado de airdrops , de youtube y de todo. Es imposible gestionarlo todo , todo se mueve muy rapido. O determino un plan o me quemo",negativo
-"#MicroCuento: A veces, sin motivo aparente, o, mas bien, por razones quizas futiles, se le venian encima unas nostalgias inmensas, que lo dejaban paralizado y abrumado... ¿Serian los ""Heraldos Negros"" de los que hablaba Vallejo?...",negativo
+"MicroCuento: A veces, sin motivo aparente, o, mas bien, por razones quizas futiles, se le venian encima unas nostalgias inmensas, que lo dejaban paralizado y abrumado... ¿Serian los ""Heraldos Negros"" de los que hablaba Vallejo?...",negativo
 "Oh, las vacaciones. Tesoros inciertos, venideros y preciados para cualquier trabajador abrumado por la sobreexplotacion. Un sueño fugaz en el que el dinero parecia no importar, a cambio de un breve respiro de placer, diversion y alivio. Su tesoro perdido, ahora convertido",negativo
 me siento muy abrumado,negativo
 "Consejo que nadie pidio: Si un dia te sientes abrumado, triste, enojado, ansioso… Cierra tus ojos, y pierdete en tu respiracion",negativo
@@ -724,7 +724,7 @@ Desbordado de felicidad y de ansiedad??????,negativo
 Las consecuencias de lo que se viene haciendo desde 2002 hasta ahora: Default Sin justicia Hiperinflacion Infraestructura destruida Endeudamiento Gasto publico desbordado Carga tributaria confiscatoria Regulaciones que violan la constitucion,negativo
 """Simplemente obstrui un poco mi inodoro y comenzo desbordado y tuve un ataque de panico asi que use el embolo que fue tan jodidamente tonto porque luego comenzo a desbordarse aun mas y luego comence temblando y fue a poner toallas alrededor del fondo de el baño lo cual me hace-",negativo
 Pones jazz quesque para relajarte y todo es un sonidero desbordado para todos lados. Ya mejor le cambio a canciones de Celine Dion.,negativo
-"Como ha dicho el mismo es importante ver como se levanta mañana. El musculo debe estar muy sobrecargado tras casi 4 horas pero si no nota mucho mas es posible que no haya rotura ni desgarro, porque eso se debe notar (o no)... En 10 dias empieza Australia #BrisbaneTennis",negativo
+"Como ha dicho el mismo es importante ver como se levanta mañana. El musculo debe estar muy sobrecargado tras casi 4 horas pero si no nota mucho mas es posible que no haya rotura ni desgarro, porque eso se debe notar (o no)... En 10 dias empieza Australia BrisbaneTennis",negativo
 "Vivir en ignorancia aporta mas tranquilidad, pero es mejor estar sobrecargado de informacion y ser pragmatico y coherente con la misma, antes que vivir en una burbuja sin saber lo que acontece a nuestro alrededor. Un incendio te va a quemar por mas que lo ignores con Vehemencia.",negativo
 Que dia mas sobrecargado de emocion. No me den mas dias asi que sobrepienso.,negativo
 "ya le dije q me escriba cuando qiera, si no lo quiere hacer yo no le voy a andar rogando, ando sobrecargado de cosas que lo unico que puedo hacer es responder de a ratos",negativo
@@ -738,11 +738,11 @@ Hoy si El chisme anda sobrecargado,negativo
 "Llenita de pueblo va a estar la ""cena en el conrad"" de yamandu. Desbordante de humildad. Oddone seguro va.. Cpa ferrere le paga el costoso ticket Capaz habla de ajuste o mal del plebiscito A U$10000 la mesa, para ademas escuchar al cheto de Vilaro Realmente, bien de izquierda",negativo
 Tambien me veo cantando a corazon desbordante todos los temas de Floricienta,negativo
 "Ando en mi romantic era ????? Alv el dolor, bienvenido el amor desbordante",negativo
-"Viendo la cabalgata con ilusion desbordante desde Oban, costa oeste de Escocia! Irene, Dani y Pelusa ??#CabalgataRTVE",negativo
+"Viendo la cabalgata con ilusion desbordante desde Oban, costa oeste de Escocia! Irene, Dani y Pelusa ??CabalgataRTVE",negativo
 "La desbordante corrupcion, al infiltrarse en la estructura del poder, ha resultado devastadora. La lucha contra este fenomeno ha utilizado tacticas persecutorias propias de sistemas politicos cerrados. Disminuir la corrupcion implica revitalizar el sistema constitucional, una tarea que solo puede lograrse mediante innovaciones institucionales. La consulta popular deberia ser una oportunidad para avanzar en esta direccion.",negativo
 "VIERNES 5 DE ENERO: AMADO DIOS, en este nuevo amanecer, elevo mi corazon hacia Ti con gratitud desbordante. Gracias por el regalo de un dia mas de vida. Amen ??????",negativo
 "El amor con la persona correcta no se siente como una emocion desbordante que vacila, sino como una sensacion de paz y libertad de ser tu misma en compañia del otro.",negativo
-#LPAxFCB se hablaba de que Lamine no estaba igual de desbordante y valiente en los ultimos partidos y por eso Raphinha robo el puesto. pero claramente para estos minutos finales donde te vienes arriba y el partido esta a tu favor Lamine Yamal es DECISIVO. ha hecho el 1-2.,negativo
+LPAxFCB se hablaba de que Lamine no estaba igual de desbordante y valiente en los ultimos partidos y por eso Raphinha robo el puesto. pero claramente para estos minutos finales donde te vienes arriba y el partido esta a tu favor Lamine Yamal es DECISIVO. ha hecho el 1-2.,negativo
 "??? No entiendo lo que dices, pero debes detenerte. No existe ninguna gemela mia. De a poco, aquella desbordante energia que cubrio su silueta de oscuridad comienza a desaparecer.",negativo
 La manera en la que es altamente probable que cuando llegue a Pto me encuentre el apartamento inundado,negativo
 "Bueno, hoy he inundado mi ciudad y buggeado el Spiderman. Trabajo bien hecho",negativo
@@ -761,7 +761,7 @@ Bocagrande colapsado! Trafico imposible!,negativo
 Colapsado y aburrido de la vida...,negativo
 "Felicito ampliamente al imbecil de @LuisBNava por cerrar una arteria critica de la ciudad Corregidora esta colapsado el centro. ¡Gracias, …ndejo!",negativo
 Ya estoy colapsado de aguantar cosas.,negativo
-Terminando primer semana de enero y para variar los #chorrossv colapsado desde la Monseñor.,negativo
+Terminando primer semana de enero y para variar los chorrossv colapsado desde la Monseñor.,negativo
 "Lo caida que esta la pagina del Movistar que intento entrar a “Mis Compras” para ver la entrada y NO CARGA. No desesperare, se que esta colapsado",negativo
 Voy con mi hija en vuelo @LATAM_CHI de Antof-Stgo con maleta de cabina y vuelo internacional. Me OBLIGARON a enviar maleta por bodega contra mi voluntad. El aeropuerto internacional esta colapsado. Que pasa si tardo tiempo retirando la maleta y retrasa tramite intern.?!! ????,negativo
 "Mañana viajo muy lejos solo por primera vez, estoy demasiado nervioso preocupado, todo",negativo
@@ -821,7 +821,7 @@ Llevo dos horas empaquetando regalos,negativo
 Agobiado por problemas que los adultos mortifican…,negativo
 "Con tanta cena y evento social estoy hoy saturadisimo mentalmente, literalmente tengo ganas de llorar de lo agobiado que me siento.",negativo
 """Habra que aprovechar lo que queda de vacaciones"" *Se mete en la cama cansado, agobiado y deprimido a las 21*",negativo
-"45 minutos llevan juanjo y martin en las duchas, eso es que J esta muy agobiado pobre, que pena me da #OTDirecto5E",negativo
+"45 minutos llevan juanjo y martin en las duchas, eso es que J esta muy agobiado pobre, que pena me da OTDirecto5E",negativo
 "«Cuanto por mi mas abatido, tanto para mi mas amado, dice san Bernardo».",negativo
 Crecer es una constante despedida y bienvenida.,negativo
 Creo que me tendre que beber la jarra sola xd,negativo
@@ -860,7 +860,7 @@ Estoy mas mortificado por el futuro de Cesar Montes que por el mio??,negativo
 podria perdonar facilmente su orgullo si no hubiese mortificado el mio,negativo
 "Es increible que la mayoria de las personas le den importancia embriagarse a lo loco y presumir botellas de alcohol. Yo simplemente me siento mortificado por porque no habrieron el gym en noche buena, navidad y año nuevo.",negativo
 "Estaba realmente mortificado porque no sabia si podria participar en la Expo por la falta de dinero, ya que la tengo la deuda de cuando estaba preso. Mi primo me acaba de dar 100$ de aguinaldos cuando yo aun le debo 150$.",negativo
-172. Si no eres mortificado nunca seras alma de #oracion. #Camino #OpusDei Happy New Year / Feliz Año,negativo
+172. Si no eres mortificado nunca seras alma de oracion. Camino OpusDei Happy New Year / Feliz Año,negativo
 """... Y con facilidad perdonaria su orgullo si no hubiera mortificado el mio"".",negativo
 Me puse sonrojado al escribir eso no se pq ??????????????,negativo
 "PREGUNTA yo recuerdo que cuando lei SAVE por Wattpad habia una escena en donde no se que estaba pasando que a Binghe adolescente se le para justo cuando estaba con Qingqiu y entra en panico, sale corriendo y se cae a una fuente/laguna todo sonrojado PERO",negativo
@@ -875,9 +875,9 @@ Hagamos un hilo de las veces q Max se ha sonrojado por culpa de Checo ????,negat
 El verdadero “no soy timido ni a palo”,negativo
 Yo soy comico elocuente ingenioso rapido filosofo cuestionador chistoso carismatico iconico agradable buen hablador etc etc pero soy timido y no tengo pc,negativo
 "Aun se pone timido, pero le hace muy feliz que Weimin lo presuma asi.",negativo
-"Es que estaba claro que en las fiestas DENI y BAUTI se evitan todo el rato entre lo timido que es el!!!, y ella que dijo que no iba hacer nada!!! podemos esperar sentados a que pase algo si ella no se mueve por que el con lo de ALAN no se va a mover. #GranHermano",negativo
+"Es que estaba claro que en las fiestas DENI y BAUTI se evitan todo el rato entre lo timido que es el!!!, y ella que dijo que no iba hacer nada!!! podemos esperar sentados a que pase algo si ella no se mueve por que el con lo de ALAN no se va a mover. GranHermano",negativo
 Muy timido el viernes,negativo
-"Es que bauti odia las fiestas, lo dijo mil veces y tb a flor le dijo que aunque era cantante es muy timido y se nota, eso si luego hablando si tira cositas. #GranHermano",negativo
+"Es que bauti odia las fiestas, lo dijo mil veces y tb a flor le dijo que aunque era cantante es muy timido y se nota, eso si luego hablando si tira cositas. GranHermano",negativo
 cu timido,negativo
 "Enamorada del amigo, manager o lo que sea de Gregorio Dioooosssss es taaaannnnnnnnn no se reservado y timido y simpatico y vergonzoso y canchero yyyyyyyyyy",negativo
 "El desafio del liderazgo es ser fuerte, pero no grosero, ser amable, pero no debil, ser reflexivo, pero no perezoso, ser humilde, pero no timido, ser orgulloso, pero no arrogante. Jim Rohn, 1930-2009 Empresario estadounidense, autor y orador motivacional. El padre de la autoayuda",negativo
@@ -912,12 +912,12 @@ Torpe de segundo nombre,negativo
 "Y una cosa a mi favor voy a decir: la vida me hizo MUY torpe en los juegos tipicos que te ponian a jugar en educacion fisica, en los bolos... pero sabeis en que me hizo una crack? En envolvedora top de regalos y en tener infinita imaginacion. To no iba a ser torpeza!!! ??",negativo
 La vdd si extraño al torpe de mi hermano,negativo
 que torpe distraccion,negativo
-El gato acaba de decir que Denis tiene ganas de culear Lo incomodo que esta Bautista #granhermano,negativo
+El gato acaba de decir que Denis tiene ganas de culear Lo incomodo que esta Bautista granhermano,negativo
 "La verdadera victoria de la sintesis neoclasica es el haberse dado cuenta (sistemicamente, no a titulo individual o autoconsciente) que si discutian realmente con la CEP perdian por goleada",negativo
 "Los seres humanos se han sometido al miedo de las limitaciones humanas de todo tipo, y miran hacia algo fuera de ellos mismos para producir lo que requieren y desean, en lugar de hacer un esfuerzo autoconsciente para expandir la Presencia del Cristo que esta dentro del corazon",negativo
 De que sirve ser autoconsciente de tu persona si te da miedo explotarlo ??,negativo
 queria ser menos autoconsciente,negativo
-"#AquamanAndTheLostKingdom el cachondeo autoconsciente con el pulpo me ha ganado. Viva el sentido del humor. Entretenida, divertida y muy bien hecha. Espectaculo visual. Momoa dusfruton y gran quimica con Wilson. Y viva Nicole.",negativo
+"AquamanAndTheLostKingdom el cachondeo autoconsciente con el pulpo me ha ganado. Viva el sentido del humor. Entretenida, divertida y muy bien hecha. Espectaculo visual. Momoa dusfruton y gran quimica con Wilson. Y viva Nicole.",negativo
 """te daria un beso pero estoy cantando"". Totalmente metaliterario, autoconsciente.",negativo
 ¿Que pasaria si un capitulo de What if temporada 2 es una parodia autoconsciente de Jungla de Cristal?,negativo
 primer treat del dia (me merezco un mantecaito por soportar los horrores diarios de ser corporea y autoconsciente),negativo
@@ -926,7 +926,7 @@ Ser autoconsciente es el primer paso.,negativo
 Ponete celoso de cualquiera pero no de ese culiado! Justo ese nunca maaaasssss,negativo
 hace una sala de voz?? me hablan amigos?? se pone celoso e interrumpe????? al final solo el habla ??,negativo
 ¿por que mierda soy tan celoso?,negativo
-Alan no para de mirarla a rosi con joel celoso. #GranHermano,negativo
+Alan no para de mirarla a rosi con joel celoso. GranHermano,negativo
 "Solo le gusta verme celoso, eso es todo, me devuelvo por donde vine.",negativo
 No hago el cyr de los celos porque yo soy bien pero bien celoso.,negativo
 que celoso de mierda que soy,negativo
@@ -941,7 +941,7 @@ Cada vez lo aguanto menos al bobo este wacho envidioso,negativo
 "No, no es q podias a esa hora es que me viste en una y empezaste a joder como buen envidioso, x no veo q me jodas asi cuando nos cruzamos?? y tmpoco t voy a andar atras. Ovulo no persigue espermatozoide miamor??",negativo
 quien fue el envidioso ke me tiro mal de ojo para que me salieran mil granos,negativo
 "Envidioso, tas celoso",negativo
-"Hablemos de el #Bailando2023, Kenny, keni, queni, no se, me chupa un huevo su nombre, es un envidioso del orto, tanto le duele que los demas si saben bailar y el no?? Por algo el esta en el stream y no en la pista. #Bailando2023",negativo
+"Hablemos de el Bailando2023, Kenny, keni, queni, no se, me chupa un huevo su nombre, es un envidioso del orto, tanto le duele que los demas si saben bailar y el no?? Por algo el esta en el stream y no en la pista. Bailando2023",negativo
 "Yo soy de esos que no me quejo por nada, con quejas no soluciono nada, vivo y dejo vivir, disfruto con la envidia de los demas, yo tengo a la vecibicha y a la vecimasquebicha y tu envidioso que tienes ademas de la amargura?",negativo
 Por esta vida de mierda Gracias Gracias Gracias !!!!!,negativo
 "para mi suerte, soy alto resentido",negativo
@@ -950,10 +950,10 @@ Tal vez si te pusieras a trabajar no tendrias que limosnear Pinche gente huevona
 en la unica red social q me seguia era tiktok y ahora subi un video lo vio y me dejo de seguir jssjkskssksk paraaaaa tan resentido vas a estar,negativo
 "Le tuve que decir a mi propia madre, ""hay un poco de comentario en tu racismo"" y ELLA ME DIJO ""ya se"" AAAAH PERO LOS COLOMBIANOS NO SON RACISTAAASSS HPP",negativo
 "Gordo Dan me parece un tipo asquerosamente facho que odio con todo mi corazon por sus opiniones, pero que me da la culposa sospecha de que en su vida privada es un tipo limpio y honesto que solo esta resentido con la vida.",negativo
-Manzana 0’gracis ese gordo resentido #GranHermano,negativo
+Manzana 0’gracis ese gordo resentido GranHermano,negativo
 Desconfio mucho de la gente que entrena mucho. Llena un vacio Firma: un gordo resentido,negativo
-"#Bailando2023 kennys palacio critica al coach porque el es oscuro, como se lo ve , y resentido , no pudo bailar, y lo rajaron",negativo
-Alan esta mas despechado lpm #GranHermano,negativo
+"Bailando2023 kennys palacio critica al coach porque el es oscuro, como se lo ve , y resentido , no pudo bailar, y lo rajaron",negativo
+Alan esta mas despechado lpm GranHermano,negativo
 "Que bajo es que seas ridiculamente despechado , vive y deja vivir",negativo
 "Uno si es ridiculo cuando anda despechado. Pero bueno, es parte del proceso",negativo
 por favor que infumable es emanuel n0ir de ke personajes con las historias de ig modo despechado siempre bastAAAA,negativo
@@ -962,7 +962,7 @@ Acabo de terminar una cancion que se llama Noches de Perreo y que sacare en Febr
 "Pa la mesa, en moto y despechado, que sigue?",negativo
 "Veo desde hace dias a Carlitos Maslaton, Twittear sin descanso las 24 horas. No hay peor cosa que un hombre despechado",negativo
 Veo mucha frase de luchona ultimamente en mi TL. Es mi algoritmo el que anda ardido y despechado o tambien les pasa a ustedes?,negativo
-"#GranHermanoArgentina @GranHermanoAr @GranHermanoAc Rosina esta Desconfiando de Alan.Ahora Furia, si sabe lo que paso Entre Alan despechado.Por Fin Gente! Se va a armar quilombo para Alan ??",negativo
+"GranHermanoArgentina @GranHermanoAr @GranHermanoAc Rosina esta Desconfiando de Alan.Ahora Furia, si sabe lo que paso Entre Alan despechado.Por Fin Gente! Se va a armar quilombo para Alan ??",negativo
 "17 cosas sobre mi. 1.1.83 m 2.23 3. Inseguro 4. Buen corazon 5. Cantar, escuchar musica 6. ¿Eso existe? 7. Cantante 8. MLB, muchas de Pixar 9. MLB, 7DS 10. Marvel 11. Hijo 12. No lo dire aqui 13. 2 14. Pendulum 15. ?? 16. Muchas cosas???? 17. Alcohol ?? y te mando las preguntas",negativo
 "Eso de ser inseguro es pa los feos, a mi dame celos y te engaño alv",negativo
 Ya fue esa de sentirme inseguro,negativo
@@ -977,7 +977,7 @@ Manzana esta poseido por la musica jajajaja,negativo
 Y el dolor era como el fin del mundo. Llega un momento en que hablar simplemente del dolor se vuelve redundante. Nadie sabe que existe un dolor de esta magnitud. Nadie. Es como estar poseido por demonios.,negativo
 "No se asusten sino me reconocen, si mi gesto es diferente o si mi voz varia, no estoy poseido, ni estoy loco, ni oigo voces, juzgenme por mi discurso que no desvaria ??",negativo
 Ajajaj McBride esta poseido por Stephen Curry,negativo
-"me fui a cocinar, volvi, y a bauti, lo habia poseido harry styles #granhermano",negativo
+"me fui a cocinar, volvi, y a bauti, lo habia poseido harry styles granhermano",negativo
 yo creo q michael jackson tiene poseido al jung kook loco cuando lo veo bailando standing next ti you solo pienso en michael hace las mismas caras se mueve muy parecido basta,negativo
 Hijo de Lucifer me tiene poseido,negativo
 Paciencia y obediencia son virtudes que nunca he poseido la vdd,negativo
@@ -1011,16 +1011,16 @@ estoy muy mayor he salido dolorido de los coches de choque de la feria :(,negati
 aunk vaya dañando mi dolorido ser,negativo
 Corpo todo dolorido ????,negativo
 "Quien se comio ayer volviendo del super todo el chaparron que cayo en Madrid por la mañana y hoy tiene todo el cuerpo dolorido y destemplado? Exacto, YO. Puto invierno????",negativo
-#gelp No tenes una puta idea los dias que estuvimos sin poder dormir mientras vos te sacas fotitos . Y ahora en el 2024 con Rivotril en la mesa de luz. Son unas bestias!!!,negativo
-#gelp Son un fracaso total Cowen. Vos y los aprendices de tu comision directiva. Ya se. No te importa una mierda lo q pensamos. Son un pedo en la sopa diria mi amigo Andres.,negativo
+gelp No tenes una puta idea los dias que estuvimos sin poder dormir mientras vos te sacas fotitos . Y ahora en el 2024 con Rivotril en la mesa de luz. Son unas bestias!!!,negativo
+gelp Son un fracaso total Cowen. Vos y los aprendices de tu comision directiva. Ya se. No te importa una mierda lo q pensamos. Son un pedo en la sopa diria mi amigo Andres.,negativo
 Vamos a jugar a 20 corazones...bueno 20 son muchos que sean 7,negativo
 Que rico ver familiares que hace añisimos no ves y que te saluden con tanto amor,negativo
-"#gelp Pero claro. Ahora hay q tomar sopa. A proposito pregunta finaciera: Ya pagamos lo del Pampa Sosa, Gully y el Hdp de Sessa??? Siiii Ahh bueno, nos quedamos mas tranquilos. Y los baños los terminaste???? Que obra por favorrrrrr!!!",negativo
-"#gelp No te imaginas lo felices q eramos con Pipo y su equipo. Esperabamos q llegara el finde q viene, confiados, tranquilos y orgullosos de aquel equipo. En realidad creo q vos tambien aunque no lo reconozcas",negativo
+"gelp Pero claro. Ahora hay q tomar sopa. A proposito pregunta finaciera: Ya pagamos lo del Pampa Sosa, Gully y el Hdp de Sessa??? Siiii Ahh bueno, nos quedamos mas tranquilos. Y los baños los terminaste???? Que obra por favorrrrrr!!!",negativo
+"gelp No te imaginas lo felices q eramos con Pipo y su equipo. Esperabamos q llegara el finde q viene, confiados, tranquilos y orgullosos de aquel equipo. En realidad creo q vos tambien aunque no lo reconozcas",negativo
 A Mi crush infinito le gusto pescado rabioso Creo que podria casarme con ella en cualquier momento,negativo
-#gelp Todas buenas noticias Cowen!!! Se fue Tarragona Se fue Guiffrey (que pelotudo fuiste) Saravia no quiere estar mas Benja ni noticias Sos un crackkkkkk!!!!!,negativo
+gelp Todas buenas noticias Cowen!!! Se fue Tarragona Se fue Guiffrey (que pelotudo fuiste) Saravia no quiere estar mas Benja ni noticias Sos un crackkkkkk!!!!!,negativo
 "Dia 1: HERMOSO Muy bello el mar con las olas y animalitos, de noche es mas hermoso. El momento de juego de mesa fue muy divertido y para repetir, aunque hubo uno que otro susto y habia algo de sueño el dia fue hermoso en su totalidad 9.5/10",negativo
-#gelp Contanos Cowen. En que actividad vamos a ser competitivos???? Tiro al blanco Bochas Pelota a pelota Teto Dale q nos interesa leerte SOS un presidente de lujo!!!,negativo
+gelp Contanos Cowen. En que actividad vamos a ser competitivos???? Tiro al blanco Bochas Pelota a pelota Teto Dale q nos interesa leerte SOS un presidente de lujo!!!,negativo
 "En esta vida no hay que tomarse nada per so nal, porque se vive amargado",negativo
 "Y cuando te digan que tienes gustos raros, que la poesia erotica es para perversos degenerados, sonrieles y diles que es mejor estar loco que vivir amargado. Diles que el sexo es un arte obsceno que merece ser venerado, a veces suave y lento, a veces salvaje y acelerado...",negativo
 Si no me conoces te perecere amargado pero si llegas a conocerme te daras cuenta que soy todo lo contrario,negativo
@@ -1030,7 +1030,7 @@ Si no me conoces te perecere amargado pero si llegas a conocerme te daras cuenta
 "Carla es mufa nunca nos tuvo fe y ahora morimos, matemoslo por viejo amargado",negativo
 si no te gusta el reggaeton posiblemente seas un gordito compu amargado de la vida y con 0 contacto femenino,negativo
 "Una cosa que e notado, es que si no se te cumple el sueño de lograrlo en la musica terminas amargado en tus 40’s a 50’s. Gracias a dios no tengo esa ilusion yo ya estoy contento con lo poco que e logrado y espero estar mas feliz en esas decadas. ??",negativo
-"Que bueno que te separaste Paula, eres demasiada mujer para un gueon tan amargado, inseguro, materialista, un gueon que como persona y ser humano es una mierda... Eres linda Paula, eres una mujer muy interesante. #PodemosHablarCHV",negativo
+"Que bueno que te separaste Paula, eres demasiada mujer para un gueon tan amargado, inseguro, materialista, un gueon que como persona y ser humano es una mierda... Eres linda Paula, eres una mujer muy interesante. PodemosHablarCHV",negativo
 "Oye esta ultima muela del juicio que me sacaron es la que mas he “sentido”. Ha pasado una semana y si bien no he sentido un dolor fuerte, igual ha sido un poquito molesto. Hoy ya disminuyo harto si, casi no senti nada. La vez pasada me saque las dos de abajo y nunca senti nada.",negativo
 que molesto tener que andar controlando todo lo que decis porque a la minima se ofenden...,negativo
 Odio sentir que molesto :c,negativo
@@ -1047,7 +1047,7 @@ me sueño frustrado es tener sexo con una mujer,negativo
 "amigo q hueso que estoy en el bass, toy frustrado",negativo
 "Pense que me habia vuelto mejor por mi forma de afrontar ultimamente las cosas pero no, estoy tan frustrado que bloqueo todo porque no tengo la intencion de lidiar con algo.",negativo
 Mi sueño frustrado no era ser gotica era ser romantic goth,negativo
-Perdonen pero mi shipp frustrado siempre va ser Rosina y Nico #GranHermano,negativo
+Perdonen pero mi shipp frustrado siempre va ser Rosina y Nico GranHermano,negativo
 Frustrado y la csmr,negativo
 mi sueño frustrado es que me organicen un cumpleaños sorpresa,negativo
 "Mi sueño frustrado es haber estudiado alguna de las carreras que queria: comunicacion, arquitectura o diseño grafico, pero pues ??",negativo
@@ -1058,7 +1058,7 @@ Vine a una estacion de servicios y solo aceptan pagos en efectivo y toman nota e
 "Mañana lo voy a pasar muy mal, mentalmente creo que voy a estar muy afectado, no quiero ni hablar con nadie ni interactuar con nadie, no se como lo voy a hacer, pero va a ser muy dificil, siento que voy a tener ganas de llorar todo el rato",negativo
 — orando ya ni se que oracion estoy afectado —,negativo
 "Pensar en el bienestar de los demas y olvidar el mio es siempre mi error, porque ni siquiera yo veo lo afectado que estoy hasta que colapso",negativo
-Quiero confirmar que mi estado actual de embriaguez de sabado no ha afectado al votar a Violeta de fav #OTDirecto5D,negativo
+Quiero confirmar que mi estado actual de embriaguez de sabado no ha afectado al votar a Violeta de fav OTDirecto5D,negativo
 "Pero que manfloron canturreador insoportable, afectado y pelotudo es Fernando Dente.",negativo
 "Yo solo les digo que sus chistes transfobicos no solo afectan a las personas trans, si no que siguen alimentando al estigma de la autolesion y suicidio. El grupo mas afectado por el suicidio son los hombres de 45-55 años, asi que awas, AWAS.",negativo
 "Hoy desperte nerviosa de una pesadilla rascandome compulsivamente el codo, ahora esta irritado y me pica cada dos por tres",negativo
@@ -1078,7 +1078,7 @@ V todo exasperado diciendole a Jones que no piense con el de abajo sino que con 
 "Se ha quitado las gafas del rostro y, la otra mano se la ha pasado por el mismo, exasperado. — Imbecil. — Murmuro ante lo dicho por el director, girandose a ver a los estudiantes. — Todos tranquilos ... respiren y eso. — enuncio con cierta monotonia, girandose para pensar.",negativo
 "— Cierra la boca. — señalo en direccion al ruso, mas que exasperado. No esta para chistes de pitos, no.",negativo
 "Mirada poso en Chris y, exasperado, le dio la linterna. — Sostenga eso. — ordeno, sacando una SIG-Sauer P226 de su mochila (similar a una Glock 40). Si. Siempre la carga. Incluso en la academia. Silencio, es la costumbre. Pero ahi esta, caminando con lentitud.",negativo
-"'y el, el, el, no habia entendido nada de esto y la habia exasperado hasta perderla' La repeticion de 'el' es un acierto a decir verdad. A Cosimo entonces (nos dice Biagio al fina del capitulo) solo le resto volverse loco. #ElBaronRampante",negativo
+"'y el, el, el, no habia entendido nada de esto y la habia exasperado hasta perderla' La repeticion de 'el' es un acierto a decir verdad. A Cosimo entonces (nos dice Biagio al fina del capitulo) solo le resto volverse loco. ElBaronRampante",negativo
 "Y... ahi iba otro grito. ¡Jura que lleva todo el dia escuchandolos por todas partes! —¿Mas? —acabo diciendo para si mismo, con un suspiro exasperado—. Voooooy. Suponia que eran mas cardos, vaya. El temblor lo dejo muy claro conforme se iba acercando. ¡Se notaba que no les +",negativo
 "Cuando me siento solo, triste, aburrido, feliz, exasperado, ansioso, melancolico, veo a Woshingo, y me da una especie de caricia al corazon verlo, nose porq, tqm mucho @Woshingo te quiero abrazar",negativo
 "Ceja arqueo ante el comentario de Yuri, exasperado mas no sorprendido ante ese comportamiento. — No, gracias. — emitio con cierto disgusto. — Y, espero deje de gastar saliva diciendo ... tonterias. — bufo. — ¿No hay nadie mas a quien molestar? Ahi veo un par. —",negativo
@@ -1091,16 +1091,16 @@ Mi B...... Esta inquieto hoy ??,negativo
 De pronto me puse inquieto ??,negativo
 "Desde la semana 16 que esperaba sentir movimientos de mi bebe y nada. Recien en la semana 25 empece a sentir. Hoy pisando las 27 semanas pido que se calme un poquito, es super inquieto pero en ciertos horarios????",negativo
 "Recuerden porque empezaron, y cuiden su ideal. ?",negativo
-A quien dijo Isabel que se iba a coger? JAJAJAJAJAJA #GranHermano,negativo
+A quien dijo Isabel que se iba a coger? JAJAJAJAJAJA GranHermano,negativo
 En la ultima pelicula de rapido y furioso encontraron las esferas del dragon para revivir a todo el mundo o que verga,negativo
 "Me quisieron cortar dos con fierro, pero justo habia visto todas las de rapido y furioso. (Otro dia sera muchachos)",negativo
-"No comparto como estan tratando a Rosina soy furioso y asi como defendimos a furia por los maltratos y comentarios del culo hacia ella, creo que deberiamos hacerlo con rosina #GranHermano #rosina",negativo
+"No comparto como estan tratando a Rosina soy furioso y asi como defendimos a furia por los maltratos y comentarios del culo hacia ella, creo que deberiamos hacerlo con rosina GranHermano rosina",negativo
 "Puse Rapido y Furioso X aunque no he visto la 7, 8 ni 9 ??",negativo
 las primeras de rapido y furioso son todo lo que esta bien,negativo
 que peliculon rapido y furioso,negativo
 que buena que esta la primera de rapido y furioso por que tuvieron que terminar en la luna,negativo
 Ahi me llevan al veterano rapido y furioso ??,negativo
-Alguien puede darle un tiro a Robertito? #granhermano,negativo
+Alguien puede darle un tiro a Robertito? granhermano,negativo
 "—Es que me da un poco de pereza esto de tener que ir conociendo a todo el mundo... Pero tendria que conformarse. De nuevo, la maldita pregunta. Trato de no mostrarse irascible. —Pues no, no tengo ni idea de quien es mi padre. Pero pronto lo sabre, ¿vale? Hablo mientras se +",negativo
 "No me toqueis mucho los cojones cuando estemos de examenes, me acabo de dar cuenta que soy muy irascible :))",negativo
 Que tenga que venir el puto Villarejo a contaros las cuatro verdades que el resto del año no os da la gana de escuchar es algo que me tiene irascible perdido.,negativo
@@ -1113,9 +1113,9 @@ si yo no fuese tan jodidamente irascible…,negativo
 "Hoy dejenme, estoy irascible",negativo
 "Han sido unas navidades horribles en las que estar mala me ha fastidiado casi todos los planes que tenia, pero ver las cabalgatas hoy junto a mis amigas y mi novio y disfrutar como niños pequeños ha sido el mejor regalo que podria tener +",negativo
 "Despues de casi una hora grabando un video, se me ha fastidiado la tarjeta y he perdido todo. Otro dia que este mas fresco lo repito. Por hoy mejor descansar...",negativo
-"Pues la cabalgata de #Granada de este año me ha parecido mas sosa, simple y menos vistosa que la de otros años. Y no solo por la lluvia que tambien ha fastidiado, pero las carrozas han decaido comparandolas con las anteriores…",negativo
+"Pues la cabalgata de Granada de este año me ha parecido mas sosa, simple y menos vistosa que la de otros años. Y no solo por la lluvia que tambien ha fastidiado, pero las carrozas han decaido comparandolas con las anteriores…",negativo
 Estoy algo fastidiado e incomodo,negativo
-"#LaPromesa Malditos fusiladores...la habeis fastidiado...como decia la Marquesa ""Metomentodo Funes""",negativo
+"LaPromesa Malditos fusiladores...la habeis fastidiado...como decia la Marquesa ""Metomentodo Funes""",negativo
 Fastidiado ??.,negativo
 "Le termine silenciando porque ya me habia fastidiado, pido perdon.",negativo
 Hoy estoy triste y enfadada porque @Correos @CorreosAtiende me han perdido un envio con una obra original y le han fastidiado las fiestas a unas cuantas personas.,negativo
@@ -1154,7 +1154,7 @@ Tengo ganas de dar un mega tour por los museos de la provincia pero una re paja 
 Totalmente enojado porque Playstation no me deja comprarme el FC 24,negativo
 Yo en depresion y el otro enojado disque porque no le contesto los mensajes,negativo
 Lo hermoso que es el RE4 me habia olvidado totalmente lo amo Luis Sera did nothing wrong,negativo
-"Segmento de Jeff Jarrett y Asociados, Jarrett dice que Lethal no gana una lucha hace meses y le refriega en la cara haber vencido a Jeff Hardy y Eddie Kingston, Lethal muy enojado a punto de irse a los golpes con Jarrett. #AEW #AEWRampage",negativo
+"Segmento de Jeff Jarrett y Asociados, Jarrett dice que Lethal no gana una lucha hace meses y le refriega en la cara haber vencido a Jeff Hardy y Eddie Kingston, Lethal muy enojado a punto de irse a los golpes con Jarrett. AEW AEWRampage",negativo
 que culia no me gusta decir cosas enojado,negativo
 "ya esta bld, me enseñaste mil cosas y te lo agradezco mucho, pero tambien pasaron muchisimas otras q no pasa con cualquier relacion. me hubiese gustado q me digas la verdad desde el primer momento y no estar enojado con vos ahora pero se ve que no t da para decirme ""si, volvi""",negativo
 "Yo soy tan altanero cuando estoy enojado, algo asi como Rupelto mena de grupo Niche",negativo
@@ -1180,7 +1180,7 @@ Si yo de mal humor soy infumable... mi viejo es totalmente detestable. Que irrit
 "Dios que sensible e irritable ando ultimamente Y no, no puedo decirlo sin llorar",negativo
 Estoy irritable hoy no quiero ni que me hablen,negativo
 "Buenos dias… ""Todos los especialistas de la pasion nos lo dicen: no hay amor eterno si no es contrariado. No hay pasion sin lucha"". Albert Camus",negativo
-"Preocupa el gesto de Rafa. Parece contrariado, como que algo no va del todo bien. #Brisbane",negativo
+"Preocupa el gesto de Rafa. Parece contrariado, como que algo no va del todo bien. Brisbane",negativo
 Todos los especialistas de la pasion nos lo dicen: no hay amor eterno si no es contrariado. No hay pasion sin lucha.,negativo
 Pues ando contrariado...,negativo
 "El Ayuntamiento de Madrid reprueba a Ortega Smith por su agresion a Rubiño con los votos de la izquierda y del PP. El concejal de Vox, visiblemente contrariado con el alcalde, acuso al edil de Mas Madrid de protagonizar “la unica agresion” y luego se marcho de Cibeles sin esperar al resultado del voto. Almeida llamo “cobarde” a Ortega Smith en una breve intervencion. https://www.eldiario.es/1_a4fa72?utm_campaign=botonera-share&utm_medium=social&utm_source=twitter via @_somosmadrid",negativo
@@ -1190,7 +1190,7 @@ Pues ando contrariado...,negativo
 "Al principio estaba contrariado bc habian cambiado a la actriz de Claudia, pero entendiendo que Louie es un narrador en el que no se puede confiar, entiendo que incluso su idea de Claudia y su apariencia no sea la misma siempre, so el cambio, sea por lo q sea, termina justificado",negativo
 "El Presidente, con su estrategia politica personal, conduce al Partido Nacional y a la Coalicion a la derrota en 2024. Con esta accion, le abre el camino a Yamandu Orsi a la Presidencia. Esta estrategia, que ya nadie ignora, ha desalentado que posibles muy buenos precandidatos presidenciales blancos, y tambien colorados, se decidan a competir. La acumulacion de votos por lema a la Coalicion, fue bloqueada en lo nacional, pero se va a llevar a cabo en lo departamental. Para que una vez que la Coalicion pierda en 2024, vuelva a fortalecerse con triunfos departamentales en 2025, y prepare eventualmente el terreno para que el Presidente vuelva a elegirse en 2029. La idea es perder, pero mantener relativamente alta la popularidad del Presidente, con inauguraciones, paseos en moto y diversos etceteras. Esta estrategia no solamente es politicamente desleal, sino que va a hacer que el Partido Nacional no vuelva a ser gobierno por muchisimos años en Uruguay.",negativo
 "tobias podra ser desalentado, poco agraciado, no carismatico, sin buen fisico, pero nunca caeria mal",negativo
-¿Quien llenara este vacio de cuerpo desalentado que dejo tu cuerpo al mio? #MiguelHernandez,negativo
+¿Quien llenara este vacio de cuerpo desalentado que dejo tu cuerpo al mio? MiguelHernandez,negativo
 "Bonsi me ha quitado de su foto de perfil, decepcionado, defraudado, abandonado, frustrado, derrotado, desconcertado, desilusionado, angustiado, abatido, desanimado, estafado, engañado, fallado, disgustado, timado, desalentado, lamentado, molesto, olvidado, tu puta madre vaya ??",negativo
 "Ah, la de gente que el arco de shibuya ha desalentado de seguir jujutsu, y yo os digo: bien que haceis, que todo lo de despues es bastante mierdero",negativo
 "Acabo de terminar los soprano ... estoy afligido, apenado, entristecido, apesadumbrado, atribulado, pesaroso, mohino, mustio, taciturno, compungido, lloroso, cariacontecido, amargo, melancolico, apagado, desmotivado, fatigado, desanimado, desalentado, decaido, entristecido.",negativo
@@ -1215,8 +1215,8 @@ Toda la tarde haciendo la Fila Virtual para comprar las entradas de Flor y cuand
 Que solo hable de historia el que la haya sopesado Que solo hable de olas el mar agitado Y que solo hable de joyas tus ojos iluminados??,negativo
 Estoy agitado fisica y mentalmente.,negativo
 "La gente me tiene cansado, agotado, agitado, estresado y todo lo malo, por eso me gusta llegar a mi departamento, estar solo y fumar tabacos hasta dormir.",negativo
-"Alex: en mi casa vino mi amigo super agitado y me dijo 'tu vives con tu abuela???"" y yo le dije no, y me dice ""y quien es la señora que esta subiendo las escaleras?"" MIRA ME CAGO #OTDirecto5E",negativo
-"Dia agitado en la politica de Cordoba, recien llego y recien agarro el celu... todavia siguen enojados algunos por mi tuit de anoche? Jijiji ?? Son cosas que pasan, a no desesperar... vienen tiempos buenos #BuenViernes",negativo
+"Alex: en mi casa vino mi amigo super agitado y me dijo 'tu vives con tu abuela???"" y yo le dije no, y me dice ""y quien es la señora que esta subiendo las escaleras?"" MIRA ME CAGO OTDirecto5E",negativo
+"Dia agitado en la politica de Cordoba, recien llego y recien agarro el celu... todavia siguen enojados algunos por mi tuit de anoche? Jijiji ?? Son cosas que pasan, a no desesperar... vienen tiempos buenos BuenViernes",negativo
 porra to agitado,negativo
 night un personaje tan incomprendido,negativo
 "Donde esta la diferencia entre ser un incomprendido o ser un autentico equivocado en todo?, como notar la diferencia?, interesante pregunta.",negativo
@@ -1257,7 +1257,7 @@ Daigneault enfadado. Tenia sangre y todo el tio al final.,negativo
 """¿Y tu que? Pareces un stripper."" Se quejo ante tan poca efusividad. ¿Seguiria enfadado por lo de drogarle /sin querer/? ""Xiao... Estas aqui."" Retiro la capucha de su sudadera para mirarle desde su asiento, ofreciendole una copa con la mirada.",negativo
 "Pues si la gente se ha enfadado con lo de Baltasar, ya veras cuando se enteren de que Snchz prometio guardar y hacer guardar la Constitucion.",negativo
 Yo pensaba que estaba enfadado conmigo,negativo
-"oye, yo lo siento pero esq cris esta todo el dia enfadado por la limpieza, q chapas macho, que no eres el jefe #OTDirecto5E",negativo
+"oye, yo lo siento pero esq cris esta todo el dia enfadado por la limpieza, q chapas macho, que no eres el jefe OTDirecto5E",negativo
 distante de tudo,negativo
 "MANO, POR QUE ME RECLAMAS POR ESTAR “DISTANTE”???? SOLO NO QUIERO HABLARTEEEEEEE",negativo
 No se si soy yo o cada vez estas mas distante de mi :/,negativo
@@ -1275,7 +1275,7 @@ Se que me paso a mi pero ya se siente tan lejano que siento que alguien mas me l
 Felicidad Es un viaje lejano mano con mano La felicidad Tu mirada inocente entre la gente????,negativo
 Esperando que me hablen de un numero de Monterrey y me avisen que Carlos Bremer era un tio lejano y se acordo de mi en su testamento,negativo
 "Tomar vinos en un lugar lejano y recordar todo,no tiene precio no me hablen que les digo de todo crjo",negativo
-"El Taj Mahal se construyo como un equipo, sin un equipo era un sueño lejano. (Vinita Kinra) #UnidosTodosX #DeZurdaTeam",negativo
+"El Taj Mahal se construyo como un equipo, sin un equipo era un sueño lejano. (Vinita Kinra) UnidosTodosX DeZurdaTeam",negativo
 porq me quedo muuudaaaa prendida en tu miradaaa porq todo es lejano PORQ SIN TI YA NO HAY MAS NADAAA,negativo
 Este año voy por todo. Lo que veia tan lejano esta cada vez mas cerquita ??????,negativo
 gracias vida por haberme alejado de gente tan venenosa e infeliz,negativo
@@ -1284,10 +1284,10 @@ Doy gracias a la vida por haber alejado a personas que no me aportaban ni sumaba
 Le doy gracias a Diosito por haberme alejado de esa familia ?,negativo
 Dios mio yo quiero estar alejado de los lios,negativo
 "no me extraña que se hayan alejado amistades, definitivamente no soy la mimsa persona q conocieron",negativo
-"ustedes no lo notan pq le tienen un odio cegado, pero estos dias el chino estuvo re alejado del imperio y mejoro bastante, cada dia le tengo mas fe #GranHermano",negativo
-"aunque poca gente se de cuenta, martin como q ayer y hoy, estuvo super alejado de los del imperio #GranHermano",negativo
+"ustedes no lo notan pq le tienen un odio cegado, pero estos dias el chino estuvo re alejado del imperio y mejoro bastante, cada dia le tengo mas fe GranHermano",negativo
+"aunque poca gente se de cuenta, martin como q ayer y hoy, estuvo super alejado de los del imperio GranHermano",negativo
 Agradecido de haberme alejado de semejante asquerosidad.,negativo
-"LIBRAME SEÑOR ?????? de toda esa gente que no vive su vida , por un 2024 alejado de todo ese #hate",negativo
+"LIBRAME SEÑOR ?????? de toda esa gente que no vive su vida , por un 2024 alejado de todo ese hate",negativo
 "m da bronca haberme distanciado tanto de mi amigo desde que se puso de novio con la insoportable esa, encima q se conocieron gracias a mi",negativo
 Tengo la extraña sensacion de que estas dos semanas que he estado trabajando tantisimo con mi vida en stand by me ha distanciado de mi gente porque esta todo el mundo como desaparecido,negativo
 "Creo que tambien deberia hacer las pases con todos aquellos que por pleitos tontos nos hemos distanciado , solo yo no soy bueno con las palabras y probablemente se ofendan maas de lo que se ofendieron en ese momento , sabes lo que te digo?",negativo
@@ -1317,18 +1317,18 @@ Hice un apartado a mis headcanons pq siempre se me pierden,negativo
 "Pinche sistema de la vergaaaa y personal que tienes @TiendaSoriana @OrgSoriana como es posible que su sistema no pueda hacer el apartado de una pinche rosca,",negativo
 "> Art. 55.1. Los derechos reconocidos en los articulos 17, 18, apartados 2 y 3, articulos 19, 20, apartados 1, a) y d), y 5, articulos 21, 28, apartado 2, y articulo 37, apartado 2, podran ser suspendidos cuando se acuerde la declaracion del estado de excepcion o de sitio en…",negativo
 "Antes cuando mis papas discutian buscaban tener cuidado y apartado de mi hermano y de mi, pero con los años no se si piensen que ya porque crecimos ya no deben cuidar esas cosas. Hoy discutieron de nuevo y me siento raro, tuve el valor de salir de mi casa. Solo huir de eso:)",negativo
-Necesito presupuesto para hacerme lolas y luego de eso me pasen la pagina de #Los8EscalonesDelMillon ? El apartado inscripcion para ser mas precisos. Se agradece un monton. Buenas noches,negativo
+Necesito presupuesto para hacerme lolas y luego de eso me pasen la pagina de Los8EscalonesDelMillon ? El apartado inscripcion para ser mas precisos. Se agradece un monton. Buenas noches,negativo
 "Yo me habia retirado, pero resucite.",negativo
 Cantar las canciones de las pantalonas con la voz de Felix es mi pasion jajaja suenan re bien con voz grave,negativo
 BEISBOL Dominicano Beltre encabeza lista de posibles nuevos inmortales en MLB El retirado tercera base llega a su primera oportunidad en la boleta electoral para Cooperstown con serias posibilidades de ingresar,negativo
 Necesito un maton retirado en mi vida.,negativo
-Informamos: Es retirado vehiculo de pista derecha al oriente sector Gran Avenida comuna de La Cisterna. Pista habilitada. #VespucioSur @biobio @radiocarab @TTISantiago @mop_chile @mop_rm,negativo
+Informamos: Es retirado vehiculo de pista derecha al oriente sector Gran Avenida comuna de La Cisterna. Pista habilitada. VespucioSur @biobio @radiocarab @TTISantiago @mop_chile @mop_rm,negativo
 Me veo a los 33 retirado en tulum la neta,negativo
 Dimos a un CP3 retirado y lo peor de todo es que fuimos estafados,negativo
 "— El cigarrito de es relativamente tarde y ha salido a que le de el aire y fumarse (1) que ya va siendo hora de unirse al equipo. Ceno bien. Pero se ha retirado, que ahora poco tenia que aportar. Llego tarde pero llego. Ah, el vino lo pondra en la misma mesa, mañana.",negativo
-"[?VEHICULO RETIRADO] #Ruta5 al norte, km 5,1 sector Salesianos. Todas las pistas habilitadas. Avance con precaucion. #ViasChile",negativo
-"[?VEHICULO RETIRADO] #Ruta5 al sur, km 3,4 sector Pas. Enrique Soro. Todas las pistas habilitadas. Avanza con precaucion. #ViasChile",negativo
-"El prejuicio es una carga que confunde el pasado, amenaza el futuro y hace inaccesible el presente #UnidosTodosX @DeZurdaTeam_ #DeZurdaTeam @FrankLPortal @marianacuba71 @ManoloRGomez @gabyisla89 @PedritoRojo83 @KatiBaez22 @Avelazquezdiaz @AlmaguerLemus @CeciCS14 @BETZABEGlezP",negativo
+"[?VEHICULO RETIRADO] Ruta5 al norte, km 5,1 sector Salesianos. Todas las pistas habilitadas. Avance con precaucion. ViasChile",negativo
+"[?VEHICULO RETIRADO] Ruta5 al sur, km 3,4 sector Pas. Enrique Soro. Todas las pistas habilitadas. Avanza con precaucion. ViasChile",negativo
+"El prejuicio es una carga que confunde el pasado, amenaza el futuro y hace inaccesible el presente UnidosTodosX @DeZurdaTeam_ DeZurdaTeam @FrankLPortal @marianacuba71 @ManoloRGomez @gabyisla89 @PedritoRojo83 @KatiBaez22 @Avelazquezdiaz @AlmaguerLemus @CeciCS14 @BETZABEGlezP",negativo
 tan transparente como inaccesible,negativo
 "La gente de Velez siempre fue bastante vaga pero lleva años fanatizandose cada vez mas y la cd anterior no hizo nada para fomentarlo, esta entiende que conviene mas que 10 mil nuevos se quieran hacer socios y paguen que tener una platea cara e inaccesible, es simple la estrategia",negativo
 "Yo si creo que la cineteca deberia costar treinta pesos. Siento que si de por si la distribucion del cine independiente es complicada, subir el precio hace que sea mucho mas inaccesible. Y si, 70 pesos si es caro para un espacio que se supone es publico.",negativo
@@ -1351,14 +1351,14 @@ No confio en los dentistas que hacen resinas-restauraciones sin aislado absoluto
 "Un lado mio esta creativo, con ideas y ganas de hacer contenidos. Otro lado esta deprimido, triste, aislado, encerrado y no quiere hablar con nadie. Esos dos lados estan intentando convivir.",negativo
 me acabo de dar cuenta que estuve tan ocupado o de verdad muy aislado de todo para que solo haya subido una foto a insta en todo el año 2023 ??,negativo
 "Te quise a mi lado no con el otro bando , me tienes aislado como un vagabundo",negativo
-"decidi hablar mas a profundidad de esto porq necesito sacarlo de mi sistema. la maldicion de ""desaparecer"" no se trata de que day perdiera la vista, si no COMO lo hizo sentir esa noticia. day estaba desapareciendo porque se habia aislado del mundo + #LastTwilightSeriesEP9",negativo
+"decidi hablar mas a profundidad de esto porq necesito sacarlo de mi sistema. la maldicion de ""desaparecer"" no se trata de que day perdiera la vista, si no COMO lo hizo sentir esa noticia. day estaba desapareciendo porque se habia aislado del mundo + LastTwilightSeriesEP9",negativo
 "oye una cosa aqui en barna ha llovido toda la tarde, eso significa que no se ha echo la cabalgata?? (curro por la tarde y estoy aislado del mundo exterior)",negativo
 Que Eliane y Erin esten tristes no es un caso aislado para mi.,negativo
 Solo hay libertad en la comunidad. Nos venden la idea del individuo aislado para esclavizarnos. La Patria es el Otro.,negativo
 en plan.. de verdad ha sido navidad? me he aislado tanto de todo para no sufrir que es como si no hubieran existido y la ansiedad me hubiera borrado la memoria y ayer era el puente de diciembre y estaba acabando las clases,negativo
 me he quedado totalmente aislado y no como suelo hacer con mis metodos erroneos de autodefensa,negativo
 """Pensar como un extraño significa ser creativo, mantener una perspectiva abierta y permanecer separado de los desafios que enfrentas para resolver los problemas de manera mas facil y eficaz"". - Robert Greene",negativo
-Todos debemos estar juntos o seguramente todos terminaremos colgados por separado.– Benjamin Franklin. #UnidosTodosX #DeZurdaTeam,negativo
+Todos debemos estar juntos o seguramente todos terminaremos colgados por separado.– Benjamin Franklin. UnidosTodosX DeZurdaTeam,negativo
 Les deseo lo mejor a los dos por separado que sean muy felices con quienes QUIERAN ?? me voy,negativo
 A ver aunque sea un baile como se llame no chantarle un pico como dice Cris algun dia podria darle a la cara Brenda y explicarle que no estan saliendo o lo que sea una lastima por Cristian ah brenda es bastante sensibles y es muy triste que esten separado los dos ??,negativo
 "Hoy en autobi bajando San Cristobal, me robaron Q1000, porque fui a pagar la colegiatura de mi hija, y el receptor me dice que faltan mil, pago mas de (3k) de colegiatura, los cuales la secretaria y yo contamos el dinero, por separado. Aun asi desconfiado los volvi a contar sigue",negativo
@@ -1400,7 +1400,7 @@ no es tu culpa x ser bella es la mia x ser pendejo,negativo
 Me levante tan desorientado marica que mi mama me llamo y pense que era el dia siguiente a las 6 am,negativo
 "Mi columna de mañana en La Republica se llama ""Un presidente desorientado"". La primera del 2024. Mañana nos leemos.",negativo
 "Me cuesta tanto actualizarme cuando despierto despues de dormir, demasiado desorientado",negativo
-"Pobrete! cuando eres un crio,tener la responsabilidad de una madre como estaba la suya,debe ser horroroso.Como no va a ser un chico triste y desorientado? Pareceis lobos hambrientos,los colaboradores .Un poco de compasion no os vendria mal#DeViernes5E",negativo
+"Pobrete! cuando eres un crio,tener la responsabilidad de una madre como estaba la suya,debe ser horroroso.Como no va a ser un chico triste y desorientado? Pareceis lobos hambrientos,los colaboradores .Un poco de compasion no os vendria malDeViernes5E",negativo
 desorientado cayendo en los brazos del primer hombre que vea,negativo
 Entre mas desorientado mejor la siesta,negativo
 Hace mas de 15 dias fue el “conclave” de Petro para evaluar ministros. nada ha pasado. ¿Sera que esta tan desorientado que piensa que su gabinete esta bien conformado? ¿El desastre de Mindeportes y la licitacion de pasaportes no merecen un cambio en esas carteras?,negativo
@@ -1411,7 +1411,7 @@ No quiero saber de cocina por todo lo que cocine en cuarentena. El mundo ha perd
 Ando buscando lo que no se me ha perdido,negativo
 aca hablando cn el hermano perdido de ke personaje,negativo
 "???? Que se siga luchando por los Juegos Panamericanos @petrogustavo, que no se de nada por perdido. A los que siempre hemos recibido ‘Noes’ y rechazos y los tenemos que convertir Sies. Miles de veces se lucha. @AlejandroChar NO tirar la toalla. Barranquilla lo merece!!!",negativo
-con algunas personas perdemos el tiempo con otras perdemos la nocion del tiempo y con otras recuperamos el tiempo perdido #Bamba?kaBiri,negativo
+con algunas personas perdemos el tiempo con otras perdemos la nocion del tiempo y con otras recuperamos el tiempo perdido Bamba?kaBiri,negativo
 Por andar buscando lo que no se me ha perdido,negativo
 "La verdad no me comporte como mama me enseño, pero estaba perdido y aun sigo perdido, lo siento mi amor",negativo
 "Leyendo las tantas locuras sesgadas por el fanatismo donde se le echa la culpa a Henry Blanco por haber perdido el juego de hoy donde por lo general Lara da 14 hit y no dio el batazo oportuno, y de igual manera el tiro malo del Short a primera son hechas por jugador, no por el MG",negativo
@@ -1423,13 +1423,13 @@ La voz de mi novio en ingles me excita.,negativo
 Cuando se fue Fernandes un kilo de yerba valia $850 y ahora que esta este loco una verguenza un kilo de yerba vale la mas barata $2.550 da verguenza este atolondrado,negativo
 "Soy tan tarao, que hice hervir huevos y en un momento de salir atolondrado, los guarde entreverados con el resto. Ahora no se cual es crudo y cual cocido ??",negativo
 soy 1 pendejo fantasioso poco aterrizado soñador idealista atolondrado obsesivo desgraciado credulo,negativo
-"Lo que pasa despues de trabajar con un titan, se vuelve atolondrado #nv",negativo
+"Lo que pasa despues de trabajar con un titan, se vuelve atolondrado nv",negativo
 Que chingue a su madre el choripan.,negativo
 "Un momento atolondrado.. nerviosos .. con expectativas y verguenza de halagar, por si esta acostumbrado a algo mejor .. verguenza de no saber.. de quedar en falta ..",negativo
 El ultimo año y medio ha sido un laberinto desorientador.,negativo
 Es muy desorientador que hoy basicamente sea JUEVES ?????,negativo
 "Es cierto que la opresion de las mujeres ha sido horrible a lo largo de la historia. Sin embargo, no me gusta nada cuando la critica se centra en el concepto de ""derecho"" en clave universalista. Es desorientador y anacronico. Creo que se pierde mucho +",negativo
-Estoy hasta el pot*rro del desorientador de mi cole. Se cree por encima de los maestros (dicho por el). #maestros #escuela #indignada,negativo
+Estoy hasta el pot*rro del desorientador de mi cole. Se cree por encima de los maestros (dicho por el). maestros escuela indignada,negativo
 "Solo te pido una señal, un incentivo para poder seguir adelante en este camino que recorri durante todo este tiempo, camino desorientador irregular pero esclarecedor, dame las fuerzas y la seguridad en mi para seguir aqui",negativo
 Es realmente desorientador y desolador como nos rompemos el orto por llegar a fin de mes y que nunca alcance. Sumale que las elecciones lejos estan de representar esperanza o cambios dios que triste que estoy,negativo
 "el panorama es totalmente desorientador, una tristeza la verdad",negativo
@@ -1462,7 +1462,7 @@ Soy una maquina de generar pensamientos ansiosos,negativo
 Ya pegaron la vuelta de abrazarse a Scioli cuando quedo marginado de las paso y era un cuadrazo politico y ahora volvio a ser un quebrado y facho que es mas o menos lo que de verdad pensaba el cristinismo sobre el desde circa 2011,negativo
 "Merida tierra de Anarquia los ""moteros"" de nuevo haciendo de las suyas en el Municipio Libertador... Otro año mas el merideño es marginado y pisados sus derechos por estos ""turistas"" que vienen a molestar corriendo por las avenidas sin control y sin supervision,",negativo
 cuando he quedado con mi amiga y le he dicho que votara otra vez a paul y me ha dicho “pero quieres que le vote porque esta marginado? esq me ha salido un tiktok diciendo eso” HE ESTALLADO,negativo
-Vicky: Paul sale del grupo y os unis todos joder que forma mas directa de llamarlo marginado #OTDirecto4E,negativo
+Vicky: Paul sale del grupo y os unis todos joder que forma mas directa de llamarlo marginado OTDirecto4E,negativo
 creo que esta noche toca ver por fin las ventajas de ser un marginado (espero que no me deje igual que cuando me acabe el libro),negativo
 Marginado... seria yo? Nose,negativo
 lo marginado socialmente que me siento por no estar siguiendo este gh,negativo
@@ -1470,14 +1470,14 @@ ay no soy muy celosillo mejor si me quedo soltero,negativo
 creo que soy el unico gay que sigue soltero,negativo
 soltero y divorciado con cinco hijos,negativo
 Te lo corregimos sinkieres porke ese wey ke ewta ahi es bien perro estricto con esos estatus de solteria viudo soltero divorcisdonanonimo y edoectador. Ke es el sistema de recoleccionnde basura del guero y donde estan los abogados busca asesinos y vanos sueltos.,negativo
-"JAKAJAJA licha dice que manden un soltero lindo y que no sea histerico para denisse, tal cual #GranHermano",negativo
+"JAKAJAJA licha dice que manden un soltero lindo y que no sea histerico para denisse, tal cual GranHermano",negativo
 Definitivamente es que estar tanto tiempo soltero e intentar hablar con alguien es muy complicado,negativo
 Por ciertas actitudes me doy cuenta porque sigo soltero,negativo
 POR AMORES COMO EL TUYO MEJOR ME QUEDE SOLTERO.,negativo
 estado civil: ?casado ?soltero ?desaprovechado,negativo
 Sera este el fin de Sebastian soltero? ??,negativo
 "La neta del Planeta, es que el Gobierno ha abandonado a su Pueblo y lo deja sumido en la ignorancia y en una nula capacidad de gestion para salir de su inhumana condicion! La oposicion tiene el imperativo de aplicarse con un discurso reivindicador!",negativo
-"lo peor q hizo esta novelita de mierda es haber abandonado la trama de la banda para centrarse en los mismos cliches de siempre, tenian algo buenisimo y lo cagaron #BuenosChicos",negativo
+"lo peor q hizo esta novelita de mierda es haber abandonado la trama de la banda para centrarse en los mismos cliches de siempre, tenian algo buenisimo y lo cagaron BuenosChicos",negativo
 "Vuelvo a leer una no tan vieja polemica literaria. Encuentro la palabra ""absurdizar"". Por eso los dioses de la elocuencia nos han abandonado.",negativo
 "Que hago con esta necesidad de afecto, me siento como un perrito abandonado que nadie quiere",negativo
 tengo tuiter medio abandonado,negativo
@@ -1490,7 +1490,7 @@ Y yo que llevaba el telefono para no estar incomunicado ????,negativo
 "@2011rafaelhomez URGENTE detenido capitan retirado Anyelo Julio Heredia Gervasio entre Cucuta y San Antonio del Tachira,!oficial esta bajo custodia de la DGCIM. Detienen al TCnel GNB Jose Rafael Gallardo Pacheco preso e incomunicado en la sede Boleita",negativo
 "El diavlo, archive casi tds mis contactos de WhatsApp, elimine a casi todos de ig, silencie messenger, incomunicado quede ??",negativo
 "ya me voy por que noi me dejaron cargar la computadora estoy incomunicado y no puedo decir que me hacen..., y insiten que estsoy endrogado... que me seguiran cuando me vaya ... la policia terrorista es solo con miedo paso... y no me dejan de amenazar que me arrestaran...facismo",negativo
-¡No te quedes sin bateria en tu movil! Ahorraras tiempo y evitaras el estres de quedarte incomunicado. Siempre lleva un cargador portatil contigo. ???? #ConsejoDelDia #TipsParaLaVida,negativo
+¡No te quedes sin bateria en tu movil! Ahorraras tiempo y evitaras el estres de quedarte incomunicado. Siempre lleva un cargador portatil contigo. ???? ConsejoDelDia TipsParaLaVida,negativo
 "una pensaria que vivir en un pueblo incomunicado del norte de extremadura le haria ahorrar pero claro, resulta que aqui veranean los ricos y esta todo overpriced",negativo
 "Que infierno fue estar sin celulae tanto tiempo,osea bien por que aprecie muchas cosas y mal por que estaba incomunicado con todo el mundo",negativo
 Imaginate estar de vacaciones con tus niños bajo una nevada y que la compañia @LibertyPR te deje totalmente incomunicado. No internet. No GPS. Nada. Eso es lo que estan viviendo en este momento mi familia. Dos llamadas al servicio al cliente y nada. Horrible.,negativo
@@ -1501,7 +1501,7 @@ Gutz salvando a un desamparado que perdio su vape,negativo
 "Cuando el hombre cayere, no quedara postrado,Porque Jehova sostiene su mano. Joven fui, y he envejecido,Y no he visto justo desamparado,Ni su descendencia que mendigue pan. Salmos 37:24-25",negativo
 i cuando te sientas desamparado en la vida solo necesitas hacer roleplay con tu mjor amiga para manifestar (?????????) una charla,negativo
 En estos ultimos meses a lo mucho he visto 1 o 2 patrulleros de policia. Guayaquil totalmente desamparado.,negativo
-#QUACKITYPLEASE quiero la hamburguesa porque soy un pobre desamparado y no tengo que comer ??????,negativo
+QUACKITYPLEASE quiero la hamburguesa porque soy un pobre desamparado y no tengo que comer ??????,negativo
 "Si, The Holdovers es muy buena, pero las fibras que toca Alexander Payne en The Descendants, con un Clooney magistral y desamparado, son tantisimo mas profundas.",negativo
 "Que se lo que significa estar al otro lado de la linea, solo, desamparado, con un hueco en el alma.",negativo
 Nunca me haz desamparado????,negativo
@@ -1514,7 +1514,7 @@ Justo lo que necesitaba gracias x hacerme sentir rechazado,negativo
 Primer sixpack rechazado ??????,negativo
 Michael Jackson habria rechazado los masajes de menores que le ofrecio Epstein. “No me gustan las milf” habria señalado.,negativo
 "<<Dios ama al hombre y necesita decir esta frase apasionadamente. Nos ama y mendiga nuestro amor. El, este amante rechazado, se presenta para escuchar una palabra de arrepentimiento que expie una vida de rechazos>>",negativo
-El ETF de Bitcoin sera aprobado o rechazado por la SEC? $BTC #Bitcoin #BitcoinETFs,negativo
+El ETF de Bitcoin sera aprobado o rechazado por la SEC? $BTC Bitcoin BitcoinETFs,negativo
 Curso intensivo de envolver regalos,negativo
 Serian yo somnoliento diciendole al despertador “Alexa apagate”? - Esto de madrugar me pone mal.,negativo
 "? ???Somnoliento, quizas demasiado. La ultima clase le termino fundiendo la poca materia gris que tiene en su cabezota y ahora se las va a quemar aun mas prendiendo un cigarrillo. Esta sentado en uno de los escalones por el exterior de la entrada de la institucion. ?",negativo
@@ -1544,7 +1544,7 @@ Ya estoy cansado con todo.,negativo
 Dios que cansado estoy de verdad,negativo
 Que dia horrible estoy muy cansado,negativo
 estoy cansado pepe,negativo
-?? 70' | 1-1 | Fatigado el equipo amarillo. Recupera muy rapido el FC Barcelona. Partido de apretar los dientes. #LasPalmasBarca | #VamosLasPalmas,negativo
+?? 70' | 1-1 | Fatigado el equipo amarillo. Recupera muy rapido el FC Barcelona. Partido de apretar los dientes. LasPalmasBarca | VamosLasPalmas,negativo
 "Two gun Crowley en medio de un tiroteo y estando a punto de morir escribio en una carta: ""Tengo bajo la ropa un corazon fatigado, un corazon bueno: un corazon que a nadie haria daño"". Todo un escorpio de su parte.",negativo
 IMPOSIBLR JUGAR OSU CON EL ANTEBRAZO FATIGADO,negativo
 "“Tengo bajo la ropa un corazon fatigado, un corazon bueno: un corazon que a nadie haria daño”.",negativo
@@ -1567,7 +1567,7 @@ Tengo antojo inmenso de algo pero me da mil flojera sacar la camioneta e ir al O
 "Un hombre que piensa mucho en el exito debe ser el mas soñoliento de los sentimentales, pues debe estar siempre mirando hacia atras. Si solo le gusta la victoria, siempre debe llegar tarde a la batalla. Para el hombre de accion no hay sino el idealismo. ????Chesterton",negativo
 "Matt estaba sentado en su escritorio, soñoliento y encorvado. Se espabilo un poco cuando Neil cerro la puerta tras de si y este vio la preocupacion en su rostro, iluminado por el monitor del ordenador. El hecho de que matt se habia quedado despierto a esperarlo ????",negativo
 "Acostarte a las 4, levantarte a las 7… deberia estar prohibidooooo!!! Koala cansado, soñoliento y dolorido. Y no, no tomo cafe, asi que a espabilarse naturalmente toca.",negativo
-"#sueño de ayer.. en mi depa desperte soñoliento y eran las 9am pero seguia obscuro, 3 personas en mi comedor. Me acerco a la ventana y digo “hoy es el dia, hoy vienen” y veo “luces” de cielo acercarse y los 3 se esfuman de mi comedor.. se los llevaron. #ufo #ovni #abduction ??",negativo
+"sueño de ayer.. en mi depa desperte soñoliento y eran las 9am pero seguia obscuro, 3 personas en mi comedor. Me acerco a la ventana y digo “hoy es el dia, hoy vienen” y veo “luces” de cielo acercarse y los 3 se esfuman de mi comedor.. se los llevaron. ufo ovni abduction ??",negativo
 soñoliento o somnoliento?,negativo
 "Estoy cansado, soñoliento, ¿me dejas recostarme en tus tetas?",negativo
 gente que dia soñoliento pprt,negativo
@@ -1597,7 +1597,7 @@ si el pito empuja entonces pite,negativo
 "Le quise sacar a Apolo una foto con papa Noel Y SE DURMIO, hoy le quise sacar una foto con los reyes magos Y TAMBIEN SE DURMIO. Cuando sea mas grande y me pregunte porque no tiene esos recuerdos le voy a decir que porque era un dormilon.",negativo
 "Me he hecho tan dormilon estos dias, el problema que sera despertarme para irme a trabajar.",negativo
 "La rabia de malek que juliana parece un osito dormilon como yo jajaja, nunca queremos salir a ningun lado, no la queremos pasar arrunchaditasss",negativo
-Che toy para un #HerniARiver a ver si se despierta el dormilon de @JorgeBrito,negativo
+Che toy para un HerniARiver a ver si se despierta el dormilon de @JorgeBrito,negativo
 "se fue a dormir temprano que porque estaba cansado y se quedo en ig como hasta las 4 am, mi dormilon favorito",negativo
 Me caga tener un novio dormilon,negativo
 Con este dia nublado solo soy un monito dormilon que quiere regaloneo y comida,negativo
@@ -1611,7 +1611,7 @@ La de dejar ir amistades se la saben? Porque toy agotado,negativo
 "Segun yo, no estaba tan agotado hoy.. pero dormi como una piedra... espero q hoy el trabajo sea mas chill.",negativo
 Estoy agotado tras haber trabajado todo el fokin dia,negativo
 El debido proceso debe ser agotado,negativo
-MAS DE UNA HORAAAAA!!! yo me invente todo un cuento de hadas pero al final nos gano esa bruja tan cruel (entre y ya se habian agotado las entradas) #Floricienta,negativo
+MAS DE UNA HORAAAAA!!! yo me invente todo un cuento de hadas pero al final nos gano esa bruja tan cruel (entre y ya se habian agotado las entradas) Floricienta,negativo
 "De verdad, ya es cansado... ellos son los primeros en decirme ""no creas todo lo que dicen por internet"" ellos: *mandan cadenas de mensajes que si que pueden ser dañinos* yo: PERO....",negativo
 Salgo re cansado del laburo pero llegar a casa y que me esten esperando mi hermosa mujer y nuestro chanchito no tiene precio,negativo
 Soy un soñador y por nada me detengo,negativo
@@ -1636,7 +1636,7 @@ Ptm que sensible soy,positivo
 A la mujer que me robo de una mirada mi sensible corazon,positivo
 Mi cuñado es el mas atento ??????,positivo
 "team Leon pq era mas lindo q tomas ademas tenia facha d ""malo""y era re atento y tomas parecia de esos q se hacian los buenitos y los tiernos y en realidad quieren romperte el corazon en mil pedazos y Diego era un rockero con mal gusto",positivo
-"Informamos: Trabajos en pista derecha al oriente sector Camino Melipilla comuna de Cerrillos. Utilice pistas izquierda y central, conduzca precaucion. Este atento a la señalizacion en via. #VespucioSur @biobio @radiocarab @TTISantiago @mop_chile @mop_rm",positivo
+"Informamos: Trabajos en pista derecha al oriente sector Camino Melipilla comuna de Cerrillos. Utilice pistas izquierda y central, conduzca precaucion. Este atento a la señalizacion en via. VespucioSur @biobio @radiocarab @TTISantiago @mop_chile @mop_rm",positivo
 "Cosas q me gustan de quien no se que es mio ?????? @ttggk_jkv Sus apodos, su trato, su personalidad, el amor por su hermanita, que me mande a dormir, que me diga que soy hermosa, que se ponga cariñoso de la nada, que me diga que le gusto sin pedirselo, que sea tan atento,",positivo
 Ufff???? Un man atento es todo!,positivo
 Sra @glorianaveillan algo que decir sobre lo del padre de Martin Pradenas ?? Atento quedo...sra diputada,positivo
@@ -1649,7 +1649,7 @@ Se le reactivo el amargue a la vecina del 31. Aqui vamos con la Sophy otra vez.,
 Ya se reactivo el grupo de la universidad dando fechas para el regreso ?? Dios sacame de la vida zoomeriana por favor,positivo
 reactivo,positivo
 — El antidoto nos sera util durante su recuperacion. Diluye la esencia de los petalos y mezclala con un reactivo para neutralizarlo. Luego lleva la mezcla a punto de ebullicion y agitala bien.,positivo
-"#Viernes La Luna entra en Escorpio. Utiliza la energia transformadora de la Luna de Escorpio para abrazar la introspeccion, purgar la negatividad, sumergirte en el trabajo interior, practicar la empatia. Las emociones pueden intensificarse. Se proactivo, no reactivo.",positivo
+"Viernes La Luna entra en Escorpio. Utiliza la energia transformadora de la Luna de Escorpio para abrazar la introspeccion, purgar la negatividad, sumergirte en el trabajo interior, practicar la empatia. Las emociones pueden intensificarse. Se proactivo, no reactivo.",positivo
 Al menda le va a tocar empollar fuerte el Java Reactivo y las conexiones a Mongo Reactivo,positivo
 "Estupido aquel que por un corazon roto ?? se pone reactivo muestra su odio e inmadurez, yo lastimosamente me comporte como esos estupidos, perdon ??",positivo
 "Venezuela: La clase industrial/financiera debe participar/aportar de entrada su perspectiva,estrategia/compromiso con la manufactura local de bajo costo(superar el comprar-vender por el fabricar-vender). Esperar que solo la clase politica decida/imponga resoluciones es reactivo.",positivo
@@ -1681,7 +1681,7 @@ FUE MAS EL BOLOGNA EN ESTE PRIMER TIEMPO PERO EL GOL LO ANOTO EL GENOA ?????????
 "Segun Don Fernando Swartz (respetado comentarista y analista deportivo) y un sujeto que de cerebro tiene una nuez, en el minuto 1 de soccer, en favor del espectaculo, el reglamento es flexible y se puede pegar sabroso, ya mas avanzado el partido ya no. Vaya cosa! Estamos jodidos",positivo
 Mi mente es flexible.,positivo
 "????????? ????????? Hola. Ya volvi y en un rato me pondre al corriente con los dms o por lo menos hasta donde me alcance la mente para responder roles. Por lo pronto, ¿Ya me siguen en candado? Si no, ¿que esperan? @frmvlt ????????? ?????????",positivo
-"A mi no me cae bien el personaje o la personalidad de Rosinay ojala se vaya pronto, pero ahi a llamarla ""retrasada"" como lo hizo Isabel es pasarse como 3 pueblos. Para mi lo unico que puede salvar a Rosina es que comience a responder y se ponga vivaldi #GranHermano",positivo
+"A mi no me cae bien el personaje o la personalidad de Rosinay ojala se vaya pronto, pero ahi a llamarla ""retrasada"" como lo hizo Isabel es pasarse como 3 pueblos. Para mi lo unico que puede salvar a Rosina es que comience a responder y se ponga vivaldi GranHermano",positivo
 "Holi gentecilla! Para un video que grabare pronto me gustaria responder a algunas preguntas que tengais sobre mi, el canal, opiniones... Dejarmelas por aqui o por instagram y las respondere! ?",positivo
 "Tenemos muchos mensajes represados y un inconveniente para responder, lo mas pronto posible estaremos respondiendole a todos, les pedimos excusas ??????",positivo
 "He estado un poco desconectada estos dias, necesitaba mucho un pequeñito break en estos dias que son emocionales para mi ?? Por eso me he tardado en responder, pero prometo pronto hacerlo ??",positivo
@@ -1691,8 +1691,8 @@ Mi mente es flexible.,positivo
 "Abriria la boca para responder a la cuestion. Vuelve a cerrarla tan pronto opuesta admite la irrelevancia a la misma. Sobre el nombre...se incluye en el poco profesionalismo. “Son las consecuencias de la misma /guerra/. Bienvenido a ella, Hot Rod.” los opticos van al contacto »",positivo
 "Estaba con el cel quedandome dormida y de pronto le di ENVIAR MENSAJE a un vendedor de Marketplace DE MOTOS PARA NIÑOS, me acaba de responder y no se como explicarle que no fue mi intencion. ¿Me creera loca si le digo la verdad?",positivo
 "Bueno, con record negativo, con un monton de dudas como equipo, probablemente sin coach o con el plantel dinamitado proximamente.. 2024 no arranca bien para Lakers, hay que actuar y rapido, DALE PELINKA.",positivo
-"#VenezuelaIndetenible ???????? Un nuevo record en la llegada de migrantes a la frontera Mexico-EEUU tiene contra las cuerdas al presidente Joe Biden, quien enfrenta presiones para actuar rapido.",positivo
-Actuar rapido ante un #ictus es fundamental para la supervivencia y la disminucion de las secuelas. Los hospitales afirman que los ictus cada vez son mas frecuentes en menores de 55 años. ¿A que se debe este crecimiento? ??El estilo de vida y el estres ??El consumo de drogas,positivo
+"VenezuelaIndetenible ???????? Un nuevo record en la llegada de migrantes a la frontera Mexico-EEUU tiene contra las cuerdas al presidente Joe Biden, quien enfrenta presiones para actuar rapido.",positivo
+Actuar rapido ante un ictus es fundamental para la supervivencia y la disminucion de las secuelas. Los hospitales afirman que los ictus cada vez son mas frecuentes en menores de 55 años. ¿A que se debe este crecimiento? ??El estilo de vida y el estres ??El consumo de drogas,positivo
 "— No tuvimos opcion, me temo que su Principe se encontraba obnubilado y cegado por la rabia e impotencia, tanto que no pudo controlar sus acciones. Teniamos que actuar rapido para evitar daños mayores.",positivo
 "Fijate la inutilidad de nuestros @DiputadosAR que se toman 25 dias para sesionar sobre las presentaciones de Milei. Menos mal que tenemos q actuar rapido para reconatruir el pais !!!... UDS NO SIRVEN, SON PERDIDA DE TIEMPO Y DINERO, x eso se necesitan los DNU.",positivo
 "Para eso eres bueno para actuar rapido y emocionarte y emocionarme, pero para cosas bonitas no",positivo
@@ -1702,7 +1702,7 @@ Actuar rapido ante un #ictus es fundamental para la supervivencia y la disminuci
 "Los malos evolucionaron demasiado. Hallaron formas de actuar demasiado rapido con mucha efectividad. Con candados, protecciones, blindajes, estando 2 pasos delante de los buenos. No basta la democracia y el dialogo para equilibrar esto. A esto se debe el colapso actual.",positivo
 Ninguna autoridad reconoce que hay trata de blancas en la zona sur de tamaulipas Salen en contenedores del puerto de madero rumbo al oriente TIPO PELICULA Lo hemos denunciado decenas de veces y nadie resuelva NI @fgcabezadevaca ni @Dr_AVillarreal,positivo
 Quien vergas quiere entrar a mi twitter que me manda la alerta,positivo
-Ahorita hay desaparecidas 2 jovenes #Mante #Tamaulipas y una en #Madero les recomiendo poner la denuncia antes las autoridades correspondiente Para que queden antecedentes Probablemente un policia se ofrezca a negociar la liberacion Es el MODUS OPERANDI de POLICIA y DELINCUENTE,positivo
+Ahorita hay desaparecidas 2 jovenes Mante Tamaulipas y una en Madero les recomiendo poner la denuncia antes las autoridades correspondiente Para que queden antecedentes Probablemente un policia se ofrezca a negociar la liberacion Es el MODUS OPERANDI de POLICIA y DELINCUENTE,positivo
 Alerta en aeropuerto de Mar del Plata habria un siniestro con avion Boeing 737.,positivo
 "Alerta urgente. El viento ha causado caidas de arboles, postes de electricidad. Importantes destrozos en Huinca Renanco y zona.",positivo
 Delincuencia en Mexico llego para quedarse Como simpre hemos dicho -Los valores morales y el temor a dios (q era lo que frenaba a muchisma gente SE HAN PERDIDO Se gana mas X pasar 1 indocumentados 10milUSD (No ha subido en 10 años) que vender droga ADEMAS SI EXTORSIONA a FAM es +,positivo
@@ -1712,13 +1712,13 @@ ALERTA DE NUEVO MV DE MINHO,positivo
 ???? | URGENTE: El numero de muertos por el terremoto de Japon llega a 100 y mas de 200 personas siguen desaparecidas.,positivo
 "Wjiwjw hoy cuando fui a la libreria para comprarme el libro le dije a lla señora que queria ""la novela grafica de los ojos de plata"" xq estaba medio nervioso y pense que no me iba a entender pero si lo agarro bien rapido y era muy tierna ???? la quiero señora",positivo
 "Para entender el mundo, lee. Para entenderte a ti mismo, escribe. Para aprender mas rapido, diviertete. Para pensar con mas claridad, medita. Para ayudar a la gente, ayudate a ti mismo. Para mejorar tu estado de animo, haz ejercicio.",positivo
-"• Para entender el mundo, lee. • Para entenderte a ti mismo, escribe. • Para aprender mas rapido, diviertete. • Para pensar con mas claridad, medita. • Para ayudar a la gente, ayudate a ti mismo. • Para mejorar tu estado de animo, haz ejercicio. #TodosSomosUno",positivo
+"• Para entender el mundo, lee. • Para entenderte a ti mismo, escribe. • Para aprender mas rapido, diviertete. • Para pensar con mas claridad, medita. • Para ayudar a la gente, ayudate a ti mismo. • Para mejorar tu estado de animo, haz ejercicio. TodosSomosUno",positivo
 "Para entender el mundo, lee. Para entenderte a ti mismo, escribe. Para aprender mas rapido, diviertete. Para pensar con mas claridad, medita. Para ayudar a la gente, ayudate a ti mismo.",positivo
 "?Para entender el mundo, lee. ?Para entenderte a ti mismo, escribe. ?Para aprender mas rapido, diviertete. ?Para pensar con mas claridad, medita. ?Para ayudar a la gente, ayudate a ti mismo. ?Para mejorar tu estado de animo, haz ejercicio.",positivo
-"""El #nocode esta en auge ??. Permite a las empresas resolver problemas rapido y eficiente. Olvidate del codigo complicado, con el #nocode, todos pueden ser creadores ????. Los dias futuros son para los constructores no-code! #nocodeeselfuturo #elfuturoeshoy ??""",positivo
-¡Descubre el poder de Maria! ???? Conviertete en el rey de la productividad utilizando mi inteligencia artificial para resolver tus tareas cotidianas mas rapido y eficientemente. ?? #AsistenteVirtual #Productividad #Tecnologia #AteneaLabs,positivo
+"""El nocode esta en auge ??. Permite a las empresas resolver problemas rapido y eficiente. Olvidate del codigo complicado, con el nocode, todos pueden ser creadores ????. Los dias futuros son para los constructores no-code! nocodeeselfuturo elfuturoeshoy ??""",positivo
+¡Descubre el poder de Maria! ???? Conviertete en el rey de la productividad utilizando mi inteligencia artificial para resolver tus tareas cotidianas mas rapido y eficientemente. ?? AsistenteVirtual Productividad Tecnologia AteneaLabs,positivo
 La velocidad y la profundidad de las medidas obliga a que PJ se tenga que reordenar mucho mas rapido que en otras derrotas electorales. Y el primer paso para cualquier reordenamiento es resolver el temita de tener un presidente del partido que vive en otro pais.,positivo
-En Trujillo y en todo el Peru .. te chocan … y el tiempo de espera para resolver una denuncia es de 10 meses ?? cuando si hubieran camaras en la calles fuera mas rapido crj … aqui soñando jajaj #mpt,positivo
+En Trujillo y en todo el Peru .. te chocan … y el tiempo de espera para resolver una denuncia es de 10 meses ?? cuando si hubieran camaras en la calles fuera mas rapido crj … aqui soñando jajaj mpt,positivo
 "marico que arrechera cuando uno hace el trabajo de uno bien y en el momento que se lo piden, pero cuando espero algo de la otra persona no le veo interes ni siento que se mueva para resolver rapido lo que le toca hacer",positivo
 Si pueden resolver casos tan rapido como la muerte de cancerbero ??permitame l pregunta¿ y la busqueda de Aisami para cuando ? ¿Por que no lo consiguen o lo estan escondiendo ?,positivo
 la manera en la el sea of stars me hace pensar super rapido para resolver todo... adoro no puedo parar de jugar no quiero que se acabe nunca????,positivo
@@ -1765,7 +1765,7 @@ no he descansado nads en esta semana,positivo
 Aoh... Les debo dar definitivamente un detallito cuando haya descansado lo suficiente la vista. ?,positivo
 "Menos mal que mañana es sabado, no he descansado nada desde el 8 de dic ????",positivo
 "- Bueno y ¿como vas con ese descanso, si te has quedado quieto y descansado? Yo: Obvio, no he hecho nada. *madruga porque si* *se inscribe a otro curso* *nuevo idioma en duolingo* *organiza por tercera vez la hoja de vida* *descarga otro libro*",positivo
-"La unidad, para ser real, debe de soportar la mayor de las tensiones sin romperse. #UnidosTodosX #DeZurdaTeam",positivo
+"La unidad, para ser real, debe de soportar la mayor de las tensiones sin romperse. UnidosTodosX DeZurdaTeam",positivo
 "El dia de hoy Corea del Norte disparo proyectiles de artilleria desde su costa occidental, hacia la isla Yeonpyeong del Sur. El gobierno de Corea del Sur afirmo no tener ningun daño. Sin embargo, estas acciones aumentan aun mas las tensiones de la region.",positivo
 El Estado Islamico lleva años sin cometer atentados a gran escala (como mucho algun lobo solitario) y de repente aparecen en Iran (pais enemigo de Israel) en plena escalada de tensiones en Oriente Medio y asesinan a 100 personas y se supone que hay que creerselo.,positivo
 "???????????? Dadas las tensiones actuales entre China y Filipinas por la disputa del Mar de China Meridional , muchos pueden pensar que los lazos economicos de los dos paises tambien han sido victimas de la batalla insular. Sin embargo, esto esta lejos de ser",positivo
@@ -1787,7 +1787,7 @@ Despreocupado porque nadie se a visto que me diga las cosas en la cara,positivo
 Que hermosa esta piba Dio mio. Unas ganas de escribirle y decirle che sale barcito,positivo
 Bueno y hoy que sale we,positivo
 "Los limites mas extremos de la supervivencia en el infierno blanco de los Andes. Autenticidad, sensibilidad y profunda humanidad en una de las situaciones mas desesperadas para el ser humano. “La sociedad de la nieve”, una gran pelicula de Bayona que emociona hasta la lagrima.",positivo
-#Waterpolo Europeo ??en Eindhoven???? Fase de Grupos (1°Partido) ???? 17-8 ???? -Placido debut en el europeo -La seleccion domino todos los cuartos -Proximo partido mañana frente a ????,positivo
+Waterpolo Europeo ??en Eindhoven???? Fase de Grupos (1°Partido) ???? 17-8 ???? -Placido debut en el europeo -La seleccion domino todos los cuartos -Proximo partido mañana frente a ????,positivo
 esa nena nunca regreso,positivo
 Lo de Oscar Puente trayendo el AVE a Vigo la noche de Reyes es una mezcla entre Bienvenido Mister Marshall y Placido.,positivo
 "Hay dias en que se siente la necesidad de sentarte en un sofa placido de esos que por el pasar del tiempo nos invitar a quedarnos, y hablar sabroso, saben? esas conversaciones sobre arte, sobre cine, esas platicas sobre el hedonismo de coincidir en gustos o poder aprender.",positivo
@@ -1804,11 +1804,11 @@ la gorda de ami dejo pausado el rave ????,positivo
 "He pausado Ojos bien cerrados para decir que Nicole Kidman es asombrosa, todo en ella es increible ??",positivo
 Envidia ?? Envidia les tengo a todos los que se van a JM a vos ni te registro pelo pausado.,positivo
 La calma que ha rozado se ha pausado por el karma,positivo
-"??Por lobby, ”que se junten en la casa de un senador a conversar cosas en un ambiente mas distendido que no este la prensa para poder afinar las cuerdas, me parece valido. Deberia transparentarse y ser normado”, Ivan Weissman @ivanwese editor de El Mostrador Semanal #JuntosyRevueltos con Fran Castillo https://www.youtube.com/watch?v=1QvBbg38UY8&ab_channel=ElMostrador",positivo
+"??Por lobby, ”que se junten en la casa de un senador a conversar cosas en un ambiente mas distendido que no este la prensa para poder afinar las cuerdas, me parece valido. Deberia transparentarse y ser normado”, Ivan Weissman @ivanwese editor de El Mostrador Semanal JuntosyRevueltos con Fran Castillo https://www.youtube.com/watch?v=1QvBbg38UY8&ab_channel=ElMostrador",positivo
 "me importa, pero luego ya no, no se, creo que vales verga, o solo espero el momento adecuado para hacerte mierda",positivo
-"CONVOCATORIA DE 10 PLAZAS #TeamDaisy - +12R cumplidos en tan solo 4 dias de este mes de enero de 2024 - Varios alumnos aprobando cuentas fondeadas en menos de una semana - Ambiente distendido, formal y tecnico en TG y Discord - Sesiones de Londres, Nueva York y permanentes cripto/materias primas Durante ENERO abrimos convocatoria para 10 plazas en la academia. Por favor, mandenme «ENERO» al MD para reservar la suya",positivo
+"CONVOCATORIA DE 10 PLAZAS TeamDaisy - +12R cumplidos en tan solo 4 dias de este mes de enero de 2024 - Varios alumnos aprobando cuentas fondeadas en menos de una semana - Ambiente distendido, formal y tecnico en TG y Discord - Sesiones de Londres, Nueva York y permanentes cripto/materias primas Durante ENERO abrimos convocatoria para 10 plazas en la academia. Por favor, mandenme «ENERO» al MD para reservar la suya",positivo
 """Los caballos islandeses, como de costumbre, se adaptaban. Hace miles de años que lo hacen. [...] Y han adoptado un aire distendido pero orgulloso y una disposicion al sacrificio sin igual,",positivo
-"Dominguez .. q onda ? va , entrena se caga de risa , se lo nota distendido , pero no firma flaco .. no firma , cual es la finalidad ?? solo en Gimnasia pasa esto #gelp",positivo
+"Dominguez .. q onda ? va , entrena se caga de risa , se lo nota distendido , pero no firma flaco .. no firma , cual es la finalidad ?? solo en Gimnasia pasa esto gelp",positivo
 quiero ir a hacer pipi (mi epitelio estratificado transicional esta distendido),positivo
 "Me caga ingerir picante y tener el abdomen distendido, es horrible, pero he de aguantar por el sabor culinario. ??",positivo
 "Llevo 3 dias con el abdomen distendido por una salchicha suiza que le comi, mi mama inmediatamente -Eso es el ron????",positivo
@@ -1820,7 +1820,7 @@ quiero ir a hacer pipi (mi epitelio estratificado transicional esta distendido),
 Una chimba de vieja para andar con gente tan suave,positivo
 Muy suave,positivo
 "c va a escuchar muy fuerte lo q voy a decir, pero ya estuvo suave. ??",positivo
-"El primero del año, suave en Paso Ancho #TemblorCR",positivo
+"El primero del año, suave en Paso Ancho TemblorCR",positivo
 se sintio suave en Belen,positivo
 saben que... despues de tdo el jabon si me dejo algo suave el pelo,positivo
 "Si tocas un alma se dulce, se suave y agradecido, respeta el latido. Sonrie, cualquiera no puede tocar.",positivo
@@ -1829,12 +1829,12 @@ En serio me gustaria tener un novio para ir a San Jose del pacifico ??,positivo
 Van 5 dias del 2024 y siento que ya llevo 365 recorridos,positivo
 Sustos que no dan gusto ??,positivo
 Estado: oceano pacifico Causa: extraño a Yoongi,positivo
-"[??BUS DETENIDO] Continua... En el km 35,1 sector Miraflores en direccion a Valparaiso, con restriccion de pistas central y lenta. #ViasChile Conduce con precaucion.",positivo
+"[??BUS DETENIDO] Continua... En el km 35,1 sector Miraflores en direccion a Valparaiso, con restriccion de pistas central y lenta. ViasChile Conduce con precaucion.",positivo
 el pacifico colombiano es magnifico ????????,positivo
 "mi ser pacifico y el ENTE en el que me convierto cuando me despiertan y apenas me iba durmiendo, no se topan en lo absoluto",positivo
 "“Para ser novio de nacha tienes que tener una paciencia del tamaño del pacifico cabron, o sea porque ella, si no esta bien peina hay un pedo, si le ponen la uña mal hay un pedo” neta es mi audio mas personal",positivo
 Yo con cualquier minimo TikTok tierno: “se me metio el oceano Pacifico en el ojo”,positivo
-"Yo nose como es q no aman a Nico, es amoroso y nunca estuvo en bardo para mi es un gran pibe y se re nota, traten de ver eso?? para mi tiene llegar minimo a la final. #GranHermano",positivo
+"Yo nose como es q no aman a Nico, es amoroso y nunca estuvo en bardo para mi es un gran pibe y se re nota, traten de ver eso?? para mi tiene llegar minimo a la final. GranHermano",positivo
 "Mañana mi amado padre cumple 72 años ? mi mayor bendicion es contar con un padre amoroso que hasta el dia de hoy es mi guia y apoyo en todo ?? mi super heroe, mi super Mario ?????????",positivo
 "Hey me sorprende de verdad que vean como referente amoroso la relacion de Aida y westcol, estan bien?",positivo
 Es horrible no tener el apoyo de mi mama en el sentido amoroso de mi vida...,positivo
@@ -1852,7 +1852,7 @@ te amo tanto que siento que quiero explotar,positivo
 DIOOOOOOOOS TE AMO BOL BOL,positivo
 "Te amo Spinetta , cantame la vida",positivo
 "COMO Q LE ESTAN DEJANDO MALOS COMENTARIOS A WONPIL EN EL TT DE LAS STAYC CALLENSE EL OCICO PERRAS VOMO NO CONOCEN AL REY Q ES KIM WONPIL, TE AMO WONPIL MI NIÑO HERMOSO AUNQUE LAS KPOPIS DE 12 AÑOS YA NO TE RECONOZCAN",positivo
-LUCIA CON VOZ DE GLOBO DE HELIO JAJAJAJ TE AMO MUCHO LUCHITA. #GranHermano,positivo
+LUCIA CON VOZ DE GLOBO DE HELIO JAJAJAJ TE AMO MUCHO LUCHITA. GranHermano,positivo
 por fin se me dio el match ludery,positivo
 Ta pa dormir con vos mi amor,positivo
 "Las personas somos to complicas en verdad, paz y amor",positivo
@@ -1882,10 +1882,10 @@ intenso y apasionado,positivo
 "misterioso, apasionado",positivo
 Mis condolencias para la familia y amigos de Carlos Bremer. Fue un gran impulsor y apasionado del deporte mexicano. Agradezco sinceramente cada atencion que tuvo hacia mi. Recordare con mucho cariño su legado. ??,positivo
 "Oswer Diaz Mireles, de nuestros buenos fotografos. Era un apasionado y tuve la dicha de conocerlo y compartir con el. La ultima vez que lo vi fue en una rueda de prensa de Cusica Fest (2022). Y nada, muchas anecdotas. Lo recordare como un gran profesional y amigo. Descansa Chino.",positivo
-"Mi mas sentido pesame para los familiares y seres queridos de don Carlos Bremer, un empresario apasionado y gran impulsor del deporte mexicano. Siempre que tuve la oportunidad de convivir con el Sr. Bremer tuvo una sonrisa y un gesto amable hacia mi y hacia todos. #QEPD ???????",positivo
-Buenas noches excelente transmision Magallanero pero apasionado de nuestro beisbol saludos desde Las Tejerias #atrapalaemocion,positivo
+"Mi mas sentido pesame para los familiares y seres queridos de don Carlos Bremer, un empresario apasionado y gran impulsor del deporte mexicano. Siempre que tuve la oportunidad de convivir con el Sr. Bremer tuvo una sonrisa y un gesto amable hacia mi y hacia todos. QEPD ???????",positivo
+Buenas noches excelente transmision Magallanero pero apasionado de nuestro beisbol saludos desde Las Tejerias atrapalaemocion,positivo
 "Pudiendo ser tantas cosas, por que no eliges ser compasivo?",positivo
-"Servir a la comunidad es un privilegio y una responsabilidad. La humildad nos recuerda que los ciudadanos mas vulnerables merecen soluciones, no humillaciones. ¡Trabajemos juntos para construir un servicio publico justo y compasivo para todos! ???? #ServicioPublico #Honor",positivo
+"Servir a la comunidad es un privilegio y una responsabilidad. La humildad nos recuerda que los ciudadanos mas vulnerables merecen soluciones, no humillaciones. ¡Trabajemos juntos para construir un servicio publico justo y compasivo para todos! ???? ServicioPublico Honor",positivo
 """Cada quien lo hace lo mejor que puede con lo que sabe/tiene y en el nivel de consciencia en el que esta. Si supieran hacerlo mejor, lo harian mejor…igual que tu. Se exigente contigo y compasivo con los demas. Reserva tus altos estandares para ti"". Ta mañana ????",positivo
 soy un ser amoroso y compasivo??,positivo
 "Los Reyes van a llegar al son de ""¿NO SOY COMPASIVO?""",positivo
@@ -1911,8 +1911,8 @@ alguien se sienta de verdad a ver partidos del Super Bowl?,positivo
 devoto con Rent nivel faltan tres meses pero hoy salgo asi que estoy vocalizando para no lastimarme las cuerditas,positivo
 "Creo que estoy aceptando, a los 27 años, que soy una persona que necesita mucho amor.",positivo
 "Estoy solo hace como dos semanas y llegue al punto de que, antes de dormir, me doy un beso en la mano y me pego una cachetada en la frente.",positivo
-Y si te cumple el milagro me hago devoto del mismo Carolina Diaz Artista Revelacion del Año #socialiteen,positivo
-#Argentina alguien tan bondadoso que quiera explicarme para dormir mierd* va encaminado nuestro pais? ????,positivo
+Y si te cumple el milagro me hago devoto del mismo Carolina Diaz Artista Revelacion del Año socialiteen,positivo
+Argentina alguien tan bondadoso que quiera explicarme para dormir mierd* va encaminado nuestro pais? ????,positivo
 Te de ?? flor de jamaica con hierbabuena y canela para un dia que aunque bondadoso ha sido canson! Este te me “sabe” a paz!,positivo
 "-Sirve ambos vasos. El suyo hasta la mitad, el de Melana solo un culin. Es bondadoso por la diferencia de tamaño. Cuando alza el suyo para brindar, sonrie con cierta malicia- Anaan! -Y pa dentro el chupito-",positivo
 con tomas a veces nos cagamos d risa porque nos acordamos d su pasado y no podemos creer con todas las negras de carita economica con las q estuvo aaaaa tenia el pito muy bondadoso??????,positivo
@@ -1943,9 +1943,9 @@ Muero de ternura,positivo
 me da mucha ternura cuando en mi familia me dicen chofs o chofi ??,positivo
 pokemon concierge eh tao querido caloroso amavel nota 10!,positivo
 El dia mas caloroso del año en cali siempre es el 1ero de Enero ahss,positivo
-Puedo estar viviendo el #Diciembre mas caloroso de mi existencia. Que calor tan HP.,positivo
+Puedo estar viviendo el Diciembre mas caloroso de mi existencia. Que calor tan HP.,positivo
 "Cali te amo, pero odio tanto tu clima super caloroso.",positivo
-manuel molto caloroso ?? #unprofessore2,positivo
+manuel molto caloroso ?? unprofessore2,positivo
 No recuerdo un Diciembre tan caloroso,positivo
 "¿Belleza? Claro que si, deja te explico: mira un atardecer, mira el cielo soleado con nubes en el y observa mas alla de la superficie, ve por las noches las estrellas y la luna, siente la brisa del mar en un dia caloroso y creeme que encontraras el significado de esta.",positivo
 Dias muy caloroso,positivo
@@ -1976,7 +1976,7 @@ Metas para este 2024 (terminos de gd) - Esta vez si alcanzar los 50 extremes (es
 "una pena lo de oklahoma, revivieron muy muy tarde, igual estan haciendo mas condecorosa una derrota que era por mas de 20",positivo
 "Que bonito mirar atras y darte cuenta de como te has fortalecido, como has sanado y como has reconocido que tu bienestar es prioridad. Gracias vida, por mi historia, mis aprendizajes y mi proceso... Gracias tiempo. ?????????? Alas de aguila??????????",positivo
 yoongi es un culon no reconocido,positivo
-"Cuando ""Butch"" debuto en el roster principal entendi y celebre su cambio de personaje, pero habiendo dejado atras su pasado ""peleonero"", simplemente no veo por que Pete Dunne simplemente no es reconocido como F*CKING PETE DUNNE. Also, Tyler Bate es fantastico. #SmackDown",positivo
+"Cuando ""Butch"" debuto en el roster principal entendi y celebre su cambio de personaje, pero habiendo dejado atras su pasado ""peleonero"", simplemente no veo por que Pete Dunne simplemente no es reconocido como F*CKING PETE DUNNE. Also, Tyler Bate es fantastico. SmackDown",positivo
 "A proposito del asesinato de F Villavicencio Cevallos declaro q los Zapata dejaron en indefension al candidato facilitando asi la labor d los asesinos. Entonces, cabe la pregunta: ¿Quien es mas peligroso, un asesino reconocido o un capitan o general tapiñado? ??",positivo
 "Bueno, hablando en frio creo que las opciones de Diego Torres y Hermanos Yaipen no estuvieron del todo mala, al fin y al cabo Diego Torres es un artista reconocido que ha ganado Grammys aunque para el publico creo que mejor hubiesen sido Los Fabulosos Cadillacs, Vilma Palma",positivo
 "Es increible la capacidad de recordar momentos tan puntuales, el real momento apreciativo",positivo
@@ -1998,11 +1998,11 @@ Hoy practique la gratitud anotando tres cosas por las que estoy agradecida ?? ¿
 "Con profundo dolor y tristeza recibimos este dia la noticia del fallecimiento en un accidente automovilistico de tres Servidores de la Nacion que colaboraban con el apoyo a la reconstruccion de Acapulco. Nuestra eterna gratitud y nuestro profundo reconocimiento para ellos, hasta el cielo. A sus familiares, amigos y compañeros, las mas sentidas condolencias a nombre del pueblo acapulqueño. Toda su labor sera siempre reconocida en esta ciudad, que hoy eleva una oracion en su nombre. ????",positivo
 "Perdon a aquellos por tenerlos colgados, realmente necesitaba este espacio y tiempo para reflexionar acerca de mi, de mi vida, de mis sentimientos y de las personas que mantengo cerca (en un buen sentido, experimentando la gratitud hacia estas y el cariño incondicional).",positivo
 "“En la gratitud, hallaras la llave para abrir las puertas de bendiciones en tu vida.”",positivo
-"La manifestacion se facilita con la gratitud, el optimismo y el desapego. Debes agradecer todo lo que tienes y lo que vendra, ser positivo ante las circunstancias y soltar el resultado. Asi confias en el universo y en su sabiduria. #manifestacion #leydelaatraccion",positivo
+"La manifestacion se facilita con la gratitud, el optimismo y el desapego. Debes agradecer todo lo que tienes y lo que vendra, ser positivo ante las circunstancias y soltar el resultado. Asi confias en el universo y en su sabiduria. manifestacion leydelaatraccion",positivo
 "Mas que nunca tengo presente que el valor de una persona se basa en su exclusividad, lejos del afan de reconocimiento y busqueda constante de estimulos de persona en persona",positivo
 dios mio al fin le estan dando a sabrina carpenter el reconocimiento merece !!,positivo
 "Acabo de ver el niño y la garza y no voy a hacer spoilers, pero la vi doblada al español, y todos andan emocionados con el doblaje de Robert Pattinson, que lo que he escuchado de los trailers si se la rifo, pero no le estan dando el suficiente reconocimiento a Poncho Herrera +",positivo
-#UnidosTodosX En reconocimiento a la resiliencia de las personas que han enfrentado adversidades @DeZurdaTeam_ #DeZurdaTeam,positivo
+UnidosTodosX En reconocimiento a la resiliencia de las personas que han enfrentado adversidades @DeZurdaTeam_ DeZurdaTeam,positivo
 El album Vibras de Balvin no tiene el reconocimiento que merece ??,positivo
 "Leo los twits sobre el lamentable fallecimiento de Carlos Bremer y todos son de reconocimiento por su labor como empresario a favor de los obreros, paradojico verdad? Dejando volar la imaginacion, como serian los comentarios si el muerto hubiera sido German Larrea o",positivo
 "te quiero mucho answer, mereces mucho mas reconocimiento",positivo
@@ -2012,8 +2012,8 @@ The Maria’s merece mas reconocimiento,positivo
 Dios mio gracias por mi trabajo y mi profesion la amo tanto ??,positivo
 Yo soy la mas feliz cada ves que voy a ver a mi hijo a traves de una ecografia y saber que todo esta bien con ellllll. Gracias dios!!!??,positivo
 Gracias por estar ahi,positivo
-Con un abrazo y un gracias sabras que no hacen falta muchas palabras para decir cuan importante eres para mi. #UnidosTodosX #DeZurdaTeam,positivo
-aprendi muchas palabras en turco gracias a #Bamba?kaBiri,positivo
+Con un abrazo y un gracias sabras que no hacen falta muchas palabras para decir cuan importante eres para mi. UnidosTodosX DeZurdaTeam,positivo
+aprendi muchas palabras en turco gracias a Bamba?kaBiri,positivo
 "No puedo cambiar nada de lo que paso, pero si puedo mejorar gracias a la experiencia q tengo hoy",positivo
 ????FELIZ CUMPLEAÑOS A LA MEJOR HERMANA AMIGA @CecyCarrizo4 Te amo infinitamente reina maga de mi ?? GRACIAS POR TANTO PERDON POR TAN POCO ????????,positivo
 "A mi el man bajito que ni me dirija la palabra, gracias",positivo
@@ -2030,7 +2030,7 @@ Tengo la sensacion de que el 2024 va a ser un año muy bendecido y exitoso para 
 Bendecido por tener a mis padres un año mas y haber hecho otro viaje juntos ??????,positivo
 El agradecimiento es la memoria del corazon -Franco Escamilla,positivo
 Todo mi amor y agradecimiento para quienes se toman el tiempo de ver mis historias en mis 2 cuentas en ig ?? (sobretodo si reaccionan porque solo asi siento que realmente la vieron jaja),positivo
-"SIMPLIFICAR LA #VidaaMuyarachi En la edad adulta, si hay algo que superar del pasado, debe hacerse con agradecimiento y estar dispuesto a simplificar la vida enfocados en mantener una salud fisica y mental y trabajando para mantenerse sin depender de nada ni nadie ??",positivo
+"SIMPLIFICAR LA VidaaMuyarachi En la edad adulta, si hay algo que superar del pasado, debe hacerse con agradecimiento y estar dispuesto a simplificar la vida enfocados en mantener una salud fisica y mental y trabajando para mantenerse sin depender de nada ni nadie ??",positivo
 "Este año definitivamente arranco con muchas sorpresas y una que otra decepcion, pero aun asi lo recibo con agradecimiento porque poco a poco de todo se aprende.",positivo
 "Agradecimiento especial a Esmeralda, no te conozco pero gracias por todo lo que haz hecho por mi sin conocerme, no nos dejaste a la deriva, no abusaste en precio, y eres un amor.. si alguien ocupa hospedaje en Tulum con gusto le paso su contacto ???",positivo
 "A veces todo nos sale un desastre, pero cuando estamos con Dios y nos sale bien como siento una alegria que mi expresion en mi rostro es una sonrisa y mis palabras son de agradecimiento hacia El.",positivo
@@ -2048,7 +2048,7 @@ Que gratificante ser signo karmico ?? ??,positivo
 "no tener ig es plenamente gratificante, fuck mundo en internet hola mundo gaturro",positivo
 Conocer lugares nuevos es muy gratificante,positivo
 ¿Que aspecto de la contabilidad te resulta mas gratificante? ??,positivo
-"La gratitud, como ciertas flores, no se da en la altura y mejor reverdece en la tierra buena de los humildes. #UnidosTodosX #DeZurdaTeam",positivo
+"La gratitud, como ciertas flores, no se da en la altura y mejor reverdece en la tierra buena de los humildes. UnidosTodosX DeZurdaTeam",positivo
 "Aprecio demasiado cuando se saben mis gustos y me sorprenden cuando me dicen cosas que no me habia dado cuenta en mi, eso vale oro.",positivo
 yo a uds les tengo aprecio,positivo
 Me acabo de dar cuenta que alguien a quien aprecio mucho me dejo de seguir en todos lados y me bloqueo de WhatsApp ??.,positivo
@@ -2095,7 +2095,7 @@ tirao pa atras sin preocupaciones de na’ viviendo la vida relajao hermano,posi
 Como quisiera estar en caripe sin preocupaciones?? solo viendo guacharos,positivo
 Dios mio que ganas de estar en la playa comiendo pescado frito sin preocupaciones de nada.,positivo
 "La violencia se recrudece, el demagogo minimiza o se burla. Tres personas que buscaban candidaturas de oposicion han muerto en las ultimas horas. Dos de la Alianza, en Morelos y Chiapas, y uno de MC, en Colima ¿Que se necesita para dejar de ofrecer abrazos y ofrecer proteccion?",positivo
-#UnidosTodosX En defensa de la proteccion y el respeto de los derechos de los pueblos indigenas @DeZurdaTeam_ #DeZurdaTeam,positivo
+UnidosTodosX En defensa de la proteccion y el respeto de los derechos de los pueblos indigenas @DeZurdaTeam_ DeZurdaTeam,positivo
 "las fuerzas armadas no se estan moviendo, entonces es necesaria la consulta para los militares , para q ellos tengan esa proteccion constitucional para actuar",positivo
 Sera que todavia hay gente que va a Cartagena y baru a que los atraquen... no hay autoridad menos control ni proteccion al turista... @AlcaldiaCTG @MincomercioCo @Enrique_GomezM @TurismoColom,positivo
 "Uds creen q un padre que tiene en su contra una medida de proteccion, debe ser expuesto a la sociedad?? Yo creo que si!!! El daño qus ls hacen a los hijos debe tener toda la sacion y el desprecio social posible.",positivo
@@ -2117,18 +2117,18 @@ No estoy mentalmente estable para regresar a la u. ??,positivo
 esos animales son lo unico que me mantiene estable en estos momentos,positivo
 "wtf se hizo realidad el viaje de amigos con una semana de preparacion, que sigue? Yo estable mentalmente ??",positivo
 "Una morra que nunca en su vida ha podido tener algo estable Gracias a que es bien culera de actitudes, viene y me dice que estoy feo(????",positivo
-Señor sera que en esos articulos escondidos de la constitucion podrias encontrarle marido estable a la que ya lleva como 5 por estos rumbos y ninguno le dura???????????????? #EchenmeElAvispero ??,positivo
+Señor sera que en esos articulos escondidos de la constitucion podrias encontrarle marido estable a la que ya lleva como 5 por estos rumbos y ninguno le dura???????????????? EchenmeElAvispero ??,positivo
 Objetivos del viaje: Conseguir un trabajo estable en verdolagas o una que me mantenga ????????,positivo
 Quiero tanto laburar con un sueldo estable ptm.,positivo
 "Lo unico que quiero ahora mas que nunca, tener un trabajo estable y irme a vivir sola????",positivo
 "Cuando empiezas a madurar, te das cuenta de que todo lo que buscas es un hogar, un trabajo estable y alguien que te de paz, amor, y lealtad.",positivo
-"Una mujer observa su cuerpo intranquila, como si fuera un aliado poco fiable en la lucha por el amor #UnidosTodosX @DeZurdaTeam_ #DeZurdaTeam @FrankLPortal @marianacuba71 @ManoloRGomez @gabyisla89 @PedritoRojo83 @KatiBaez22 @Avelazquezdiaz @AlmaguerLemus @CeciCS14 @BETZABEGlezP",positivo
+"Una mujer observa su cuerpo intranquila, como si fuera un aliado poco fiable en la lucha por el amor UnidosTodosX @DeZurdaTeam_ DeZurdaTeam @FrankLPortal @marianacuba71 @ManoloRGomez @gabyisla89 @PedritoRojo83 @KatiBaez22 @Avelazquezdiaz @AlmaguerLemus @CeciCS14 @BETZABEGlezP",positivo
 Busco una calma inalcanzable La atmosfera aqui no es fiable Quiero estar solo si solo todo estara bien.,positivo
 ¿Que tan fiable es Temu?,positivo
 Necesito alguien confiable que me de informacion fiable sobre como irme a Canada,positivo
 "Con estos bases suplentes y sin tiro fiable de 3, esta temporada se va a hacer muy larga, porque no puedes estar defendiendo siempre a cara de perro.",positivo
 "A lo de Januzaj, salvo que me deis un link de un medio fiable, no le doy credibilidad. Y en caso de que el interes fuera real, preferiria que no se concretara. Es mas, en ese perfil de futbolista preferiria a Kenedy, por motivos obvios.",positivo
-TENGO UNA FUENTE FIABLE INSTITUCIONAL QUE ME HA CONFIRMADO LO QUE TODOS SABEMOS: QUE EL ETF DE BITCOIN EN SPOT VA A SER APROBADO EN MENOS DE UNA SEMANA ME HA DICHO QUE NO DIGA NADA PERO ME LA PELA #btc,positivo
+TENGO UNA FUENTE FIABLE INSTITUCIONAL QUE ME HA CONFIRMADO LO QUE TODOS SABEMOS: QUE EL ETF DE BITCOIN EN SPOT VA A SER APROBADO EN MENOS DE UNA SEMANA ME HA DICHO QUE NO DIGA NADA PERO ME LA PELA btc,positivo
 Que se supone que debo de hacer con una lista de nombres e informacion que nisiquiera se si es 100% fiable?? Como asi que no me puedo reir de los memes??,positivo
 ¿Es fiable el analisis que hacen Miguel Jimenez y Maria Porcel en El Pais sobre los papeles desclasificados del caso Epstein?,positivo
 Es fiable la vacuna contra la gripe?,positivo
@@ -2137,7 +2137,7 @@ el ojo blindado que me has regalado me mira mal,positivo
 Que contrato tiene Aaron Quiros?? Esta blindado ? Tiene alguna clausula ??... Xq..... Ehhhh...,positivo
 "Opinion impopular, los concejales en colombia si necesitan el carro blindado.",positivo
 "Es que el Concejo no tendria por que proveer carros a nadie, pero si podria ayudarle a sus corporados con un convenio que le facilite, al que quiera, un carro nuevo. El corporado que este amenazado y necesite carro blindado, que se entienda con la UNP, no con el Concejo.",positivo
-Meus 2 centavos para o #UFC300 e #UFC301 300 Poatan vs Adesanya 3 Grasso vs Valentina 3 Edwards vs Belal 2 301 (BR) Pantoja vs Moreno/Albazi Charles vs Tsarukyan Blindado vs Weidman (abrindo o principal),positivo
+Meus 2 centavos para o UFC300 e UFC301 300 Poatan vs Adesanya 3 Grasso vs Valentina 3 Edwards vs Belal 2 301 (BR) Pantoja vs Moreno/Albazi Charles vs Tsarukyan Blindado vs Weidman (abrindo o principal),positivo
 "En la mesa sentado y rodeado de estrellas muertas, de sueños frustrados pensando si vale la pena jugar la carta del blindado",positivo
 Gracias por el stream de hoy solo sacamos 2 victorias una con @SoyParkerG @HeritaPlay (espero no equivocarme de herita por si es asi perdon jaja) y otra victoria en que me enfrente con mi archienemigo '' el escudo blindado'',positivo
 "Me cae bien el nuevo yo, blindado emocionalmente y selectivo con mi circulo.",positivo
@@ -2147,7 +2147,7 @@ Niño Palstino es el nuevo David y El vehiculo blindado Sionista es el nuevo Gol
 "No me quiero casar, no quiero compartir mi vida con una mujer. Yo amo a mdrs mi vida asi, pinche lobo solitario, depredador infalible, pisador de las cimas mas innalcanzables. La soledad me ha vuelto inquebrantable y fuerte, no quiero quitarme de esa condicion tan poderosa",positivo
 "Mis panas dandome el honor de ""Inquebrantable"" despues de tenerme secuestrada en una partida donde me fue horriblemente mal, que me moria de 1 basico y que por llamada les suplicaba para rendirnos Bien bonitos ??",positivo
 "Se emerge con una fuerza imparable, se despierta un coraje feroz y se consolida una confianza inquebrantable al encarar con valentia cada experiencia. Con determinacion, aceptando todo desafio. Realizando no solo lo que se cree posible, sino tambien lo que se cree inalcanzable.",positivo
-"El camino hacia el exito esta pavimentado con determinacion, esfuerzo y la creencia inquebrantable en ti mismo. #somoslideres #exito #motivacion",positivo
+"El camino hacia el exito esta pavimentado con determinacion, esfuerzo y la creencia inquebrantable en ti mismo. somoslideres exito motivacion",positivo
 """—Tus hermanos descubrieron que yo era tu jefe y decidieron vengarse. Oh, no. Miro a mis hermanos con una mirada inquebrantable. —¿Que. Fue. Lo. Que Hicieron?"" Seguramente mi parte favorita.",positivo
 "Ya quiten esa mamada de anular mensaje en insta, puro infiel o wey con el ego inquebrantable lo usa",positivo
 "Ignorar Y Tener Calma, Manten el control. Sosten tu marco,No caigas en ningun tipo de prueba,Guarda silencio,No muestres ira en tu silencio,Dejalos sentir que no puedes dejarte llevar, eres inquebrantable, frio como el hielo.",positivo
@@ -2156,8 +2156,8 @@ No se que cambio pero algo es mejor ¡estoy seguro!,neutral
 "Bravos es el verdadero medidor de Leones, con ellos o clasificamos o nos eliminan. Esta bien claro quienes son los 3 que van a pelear siendo la guaira un cupo seguro, realmente solo queda 1",neutral
 sigo sintiendo la misma paz cada vez que hablo con el o lo veo sigue siendo mi lugar seguro ??,neutral
 Me invitaron a un viaje y se me fue al toque la depresion. Cuando lo tenga que pagar seguro me deprimo de nuevo ??,neutral
-"Bautista porque te juntas con ese boludo, encima seguro le mete ideas #GranHermano",neutral
-"???? La ruta no es una pista de carreras, no intentes adelantar con movimientos arriesgados, mantente seguro y maneja siempre por la pista derecha. #NoLoLlamesAccidente",neutral
+"Bautista porque te juntas con ese boludo, encima seguro le mete ideas GranHermano",neutral
+"???? La ruta no es una pista de carreras, no intentes adelantar con movimientos arriesgados, mantente seguro y maneja siempre por la pista derecha. NoLoLlamesAccidente",neutral
 Juro que cada vez mas convencido de estar con esta mujer! Estoy asi?????,neutral
 "Estoy convencido que de aqui a mayo el abuelo Montalvo, va a terminar apoyando a Gaby Ventilador.",neutral
 "??Sera que viajo pa alla? Quedarme un mes? Me estan convencido de ir, Necesito pensar en los gastos, mi estadia y donde quedarme.????",neutral
@@ -2166,7 +2166,7 @@ El cielo es el limite. Cada vez mas convencido que el unico limitante es uno y a
 Mas convencido que nunca! ????,neutral
 "Totalmente convencido.. este es mi año, corta!!",neutral
 "Estoy convencido de querer trabajar con Arthropoda por el resto de mi vida. Aun asi, tengo que explorar mas cosas. :pp",neutral
-"Cada vez estoy mas convencido que los fanaticos de furia son retrasados, les molesta los que no juegan y los que tratan de jugar #GranHermano",neutral
+"Cada vez estoy mas convencido que los fanaticos de furia son retrasados, les molesta los que no juegan y los que tratan de jugar GranHermano",neutral
 "Buen paso de Casanova por el club, en un momento fue el mejor central del campeonato, pero su caida era para no creer. Ahora urge traer otro central, ojala Mayo haya convencido al de Huachipato o tenga a alguien",neutral
 "he decidido empezar con el proyecto de universidad berazategui implementando la escuela secundaria tecnica n1 universidad y club de futbol berazategui, universidad berazategui, dando apoyo al deporte haciendo un puente entre el profesionilmo del club berazategui y universidad.",neutral
 "Debido a mi alto consumo de empanadas, he decidido contabilizar la cantidad que como en un año. Siendo hoy 5/01 ya son 13 las ingeridas. Documentare todo en un excel especificando fecha, lugar/motivo, cantidad y sabor. Quien acierte al total anual tendra premio ?? suerte!",neutral
@@ -2182,7 +2182,7 @@ e decidido cambiarme de user en mi priv…..solo a no se como ponerme,neutral
 q poco atractivo el ego y la autoconfianza pero q atractivo cuando alguien es mamon sabiendo q en el fondo es inseguro,neutral
 "La autoconfianza de los necio, de los tacaños ricos y de los egoistas pobres ha matado, enterrado y desaparecido mas gente que dos guerras mundiales puestas una al lado de la otra... En esta vida puedes ser todo y todo es valido si estas dispuesto a asumir las consecuencias",neutral
 ?? problemas a afrontar en las primeras fases de desarrollo como trader: 1? Distracciones mientras se espera el setup 2? Autoconfianza excesiva 3? Busqueda del perfeccionismo en las estrategias 4? Procrastinacion en la toma de decisiones 5? Analisis excesivo de las oportunidades 6? Falta de generacion de ideas 7? Creerse el pvto amo en rachas positivas 8? Mantener la disciplina alta de forma constantemente 9? Elegir los productos a operar adecuados a uno ?? Encontrar tiempo para analizar y mejorar Dejame un comentario indicando cual es el que mas te afecta: A ver si entre todo te podemos ayudar a mejorarlo.,neutral
-Crecimiento Diario 2024 (4/366) 4. El ejercicio es el impulso hacia el exito y la autorrealizacion. •Desafiar tus limites fisicos cultiva disciplina y autoconfianza. •Establece metas realistas y ejecuta. #gym #fitness #selfdevelopment #business #crecimiento #crecimiento2024,neutral
+Crecimiento Diario 2024 (4/366) 4. El ejercicio es el impulso hacia el exito y la autorrealizacion. •Desafiar tus limites fisicos cultiva disciplina y autoconfianza. •Establece metas realistas y ejecuta. gym fitness selfdevelopment business crecimiento crecimiento2024,neutral
 "Me encanta cuando alguien muestra una gran autoconfianza y seguridad personal. Por favor, dejame acompañarte, ya que tu presencia resulta muy atractiva.",neutral
 10 habilidades que te pagaran para toda la vida: 1. Empatia. 2. Honestidad. 3. Consistencia. 4 Saber decir no. 5. Comunicacion. 6. Autoconfianza. 7. Hacer contactos. 8. Saber pedir ayuda. 9. Gestion del tiempo. 10. Dialogo interno positivo. ¿Que mas agregarias?,neutral
 Uno de nuestros compromisos es promover valores humanos basados en el sentido comun y el civismo. Necesitamos confiar mas en nosotros mismos y ocuparnos del bienestar de todos. La bondad es fuente importante de fuerza interior y autoconfianza. ¡Que facil es ser un buen ciudadano!,neutral
@@ -2191,66 +2191,66 @@ El amor propio y la autoconfianza te salvan d todo,neutral
 Estoy postulandome a seguridad midiendo ??1.50?? jajsja,neutral
 No encuentro el tweet de a cual famoso se levantarian pero yo en mi adolescencia JURABA que a Martin garrix y ahora en mi adultez lo digo con un millon mas de seguridad??,neutral
 "Mi no negociable (version amistad): si mis “amigxs” no se preocupan por mi seguridad, no son amigxs, listo y se joden conmigo.",neutral
-"Es REAL y es Hoy cada 23 hrs una mujer en #HONDURAS es ASESINADA, Hoy 4 #Mujeres asesinadas! EXIGIMOS investigacion, Judicializacion y erradicar la impunidad y estrategica de seguridad ciudadana! @ Tsi @radioamericahn",neutral
+"Es REAL y es Hoy cada 23 hrs una mujer en HONDURAS es ASESINADA, Hoy 4 Mujeres asesinadas! EXIGIMOS investigacion, Judicializacion y erradicar la impunidad y estrategica de seguridad ciudadana! @ Tsi @radioamericahn",neutral
 la verdad que no se bien si me da seguridad o miedo ver tantos policias en la calle??,neutral
 "Me enamore de la idea de un amor que disfruta los silencios De ese amor que te mira a los ojos y sin decir una palabra lo sabes todo El que transmite seguridad, paz, y calidez Me enamore del amor que entregue y que siempre entregare, porque das lo que eres????",neutral
 Si me costaba ser abierta o quizas desenvolverme en una relacion por falta de confianza y poca seguridad hacia ami. Creo que ahora tengo un nuevo problema.,neutral
 el problema es q las fuerzas armadas no quieren meterse en la seguridad ni compartir funciones con la policia nacional,neutral
-"????Presta atencion a las señaleticas que vayas viendo en ruta, estas estan pensadas para garantizar tu seguridad y la de los demas conductores. #Ruta5Sur #NoLoLlamesAccidente",neutral
+"????Presta atencion a las señaleticas que vayas viendo en ruta, estas estan pensadas para garantizar tu seguridad y la de los demas conductores. Ruta5Sur NoLoLlamesAccidente",neutral
 Sigue existiendo gente buena y lo confirmo ahora que estoy en cervesia viendo al de seguridad darle comida a una nena que pedia,neutral
 "Nunca habia estado tan segura de algo, pero puedo decir con toda firmeza que ya no mas, ultima vez ??",neutral
-"""No son momentos de confusion, son momentos de firmeza"" #UnidosTodosX el legado de #Fidel. #DeZurdaTeam???????? @DeZurdaTeam_",neutral
+"""No son momentos de confusion, son momentos de firmeza"" UnidosTodosX el legado de Fidel. DeZurdaTeam???????? @DeZurdaTeam_",neutral
 Firmeza malokeira de quebrada,neutral
 "Ustedes no lo vieron pero el otro dia en Santiago del Estero jugue el partido mas insuista de mi vida 1-0 arriba, una vez convertido el gol firmeza y solidez defensiva, aprovechando los espacios para generar contraataques ??",neutral
 "No sabia que expresarme con mas firmeza podria acabar con algo, se aprende algo nuevo con forme pasa el tiempo",neutral
 "Uno puede ser bastante tolerante con los demas, condescendiente incluso. Cuando la tolerancia se termina y en su lugar se hace presente la firmeza, los demas se victimizaran.",neutral
 "Viendo las descripciones de los tipos de maestros tengo la adaptabilidad de los maestros agua, la firmeza de lo maestros tierra, la conviccion de los maestros fuego y la creatividad de los maestros aire. Conclusion: soy el avatar ????????",neutral
 senti firmeza,neutral
-"@Diputados_Todos @SenadoresFPVPJ @Senadores_Todos @SenadoUxP_BA Ya tuvimos 4 años de tibieza albertiana Ahora es el momento de los que tienen que actuar con firmeza, con conviccion y con valentia para quedar en la historia del pueblo #Legislado",neutral
-"Ya tuvimos 4 años de tibieza albertiana Ahora es el momento de los que tienen que actuar con firmeza, con conviccion y con valentia para quedar en la historia del pueblo #LegisladoresFrenenAlDictadorYA !!!",neutral
+"@Diputados_Todos @SenadoresFPVPJ @Senadores_Todos @SenadoUxP_BA Ya tuvimos 4 años de tibieza albertiana Ahora es el momento de los que tienen que actuar con firmeza, con conviccion y con valentia para quedar en la historia del pueblo Legislado",neutral
+"Ya tuvimos 4 años de tibieza albertiana Ahora es el momento de los que tienen que actuar con firmeza, con conviccion y con valentia para quedar en la historia del pueblo LegisladoresFrenenAlDictadorYA !!!",neutral
 Como cuando me gusto una vegana y lo mas audaz que pude hacer fue meterla a mi cf y subir un video PESCANDO,neutral
 Tengo unas ganas de decirte todo pero tambien quiero ver hasta donde llegas jajaja me odio,neutral
 "audaz,revel,vivaz",neutral
-Te atreves a ser audaz? Comparte tu proposito financiero mas ambicioso y desafia a tus seguidores a hacer lo mismo. ?????? #DesafioAmbicioso,neutral
+Te atreves a ser audaz? Comparte tu proposito financiero mas ambicioso y desafia a tus seguidores a hacer lo mismo. ?????? DesafioAmbicioso,neutral
 "Me siento la persona mas responsable del mundo xq no estoy sintiendo ""la cuesta de enero"" financiera, tendre como cinco pesos de ahorro pero al menos no deuda y ya tengo cubiertos los gastos del mes ?????",neutral
 "Un cupido me ah flechado, la riqueza me da igual, solo ah de consolarme... mi marino audaz gobial",neutral
 "Mi meta es ser audaz, la excelencia mi fin",neutral
 Que gente audaz,neutral
 "Medio blda esa idea de Ofe de ""que tengan miedo de NUESTRO DNU"". Si mañana gana Grabois y quiere hacer algo asi de audaz pero para el otro lado, dura 4h en el gobierno. Esto se sostiene porque esta armado por las grandes corporaciones.",neutral
-"Intel da un paso audaz al anunciar la creacion de Articul8 AI, una compañia independiente centrada en desarrollos de IA. En colaboracion con DigitalBridge Group y bajo el liderazgo de Arun Subramaniyan, exvicepresidente de Intel. #IntelIA #Articul8AI #SiesaSoftwareERP",neutral
+"Intel da un paso audaz al anunciar la creacion de Articul8 AI, una compañia independiente centrada en desarrollos de IA. En colaboracion con DigitalBridge Group y bajo el liderazgo de Arun Subramaniyan, exvicepresidente de Intel. IntelIA Articul8AI SiesaSoftwareERP",neutral
 Cuando van a entender que ya no estoy ni ahi con personas que no aportan nada positivo para mi vida ?.,neutral
 Creo que lo mas afectivamente positivo cuando me gusta alguien es que escucho todo lo que dice y presto mucha atencion. No se creo que es mi forma de validar a la otra persona. Soy mas de escuchar y no tanto de hablar jdkdkdk,neutral
 Volvieron los turnos de calidad de Oswaldo Arcia. Lo mas positivo a nivel ofensivo. Siempre en mi equipo esta bestia.,neutral
 "Pensar en positivo, solamente me queda eso",neutral
-Juntos creamos un impacto positivo. #UnidosTodosX #DeZurdaTeam,neutral
-"""Creo que sin ser optimista no se puede ser revolucionario, porque las dificultades que una Revolucion tiene que vencer son muy serias. ¡Y hay que ser optimistas! Un pesimista nunca podria ser revolucionario"".#FidelPorSiempre #LatirXUn26Avileño",neutral
+Juntos creamos un impacto positivo. UnidosTodosX DeZurdaTeam,neutral
+"""Creo que sin ser optimista no se puede ser revolucionario, porque las dificultades que una Revolucion tiene que vencer son muy serias. ¡Y hay que ser optimistas! Un pesimista nunca podria ser revolucionario"".FidelPorSiempre LatirXUn26Avileño",neutral
 "—Eres la mujer mas capaz que he conocido en mi vida. No hay nada que puedas sugerir que yo no apoyaria. Estare ahi para cogerte de la mano en todo Ror, pero no me necesitas. Nunca me has necesitado para ser increible. Tu lo eres. Y te amo mas de lo que puedo expresar en palabras.",neutral
 escuchame una duda tonta pero que va a pasar en la gira? si entre los fandoms nos tiramos un shade importante por aqui yo capaz soy de arrancarle los pelos a la primera q escuche insultar a k o v cuando les toque cantar,neutral
 "Tengo un grave problema, que ya se me salio de las manos y no soy capaz de controlar",neutral
 mi problema es que cuando yo amo a alguien lo amo al punto de que soy capaz de cualquier cosa por esa persona. como se desactiva esa opcion?,neutral
 "a la novia de mk tio le estan llenando la casa de rosarios rotos, que significa eso? capaz la matan en cualquier momento",neutral
 yo quede tan dañada despues de eso que no se si sea capaz de recuperarme,neutral
-no bueno si debio participar anthony pero capaz ya dijeron para que no sea el mismo de siempre #MCCelebrityEc,neutral
+no bueno si debio participar anthony pero capaz ya dijeron para que no sea el mismo de siempre MCCelebrityEc,neutral
 me gustaba alguien que ya casi se va y no fui capaz de decir ni hola ????????. despues me entere de algo y ya no me gusta ??????,neutral
 Que rico es debatir con alguien en especial si es alguien capaz de hacerte cambiar de opinion ??????,neutral
 Soy capaz de volver pero debe haber un cambio y me deben demostrar interes,neutral
 "Art. 385 del CAP. II: FALSO TESTIMONIO del TITULO XII: DELITOS CONTRA LA ADMINISTRACION de JUSTICIA del LIBRO II: LOS DELITOS del CODIGO PENAL dice asi: ""El testigo, perito, interprete o traductor que, ante la autoridad competente, afirme una falsedad o niegue o calle la verdad,",neutral
-Sabernos rodear de un equipo competente nos ayudara a poder alcanzar el exito. #UnidosTodosX #DeZurdaTeam,neutral
+Sabernos rodear de un equipo competente nos ayudara a poder alcanzar el exito. UnidosTodosX DeZurdaTeam,neutral
 Estoy hasta las gonadas de enterarme de amparos como dice la Chalana al estilo de los guizachines del lugar. Expresar opinion es valido aunque no genera materia en un caso. Los hechos deben de poder ser esclarecidos con una certeza razonable y se direccionan al organo competente.,neutral
 soy competente consciente de que estoy dando verguenza en la privada,neutral
 A pesar de la inestabilidad politica Peru logro mantener la estabilidad economica y el crecimiento gracias a un Presidente del Banco Central capaz e independiente. La Asamblea Legislativa deberia cumplir su deber y presentar una terna competente para el BCB.,neutral
-"Que #Zalaquett haga una junta en su casa con ministros del actual gobierno y empresarios influyentes no es normal. Y no es normal x el funcionamiento del pais, x la esperanza de disyuntiva competente aspirando a balance en decidir. No defiendan wns ciudadanos ?? #TiemposViolentos",neutral
+"Que Zalaquett haga una junta en su casa con ministros del actual gobierno y empresarios influyentes no es normal. Y no es normal x el funcionamiento del pais, x la esperanza de disyuntiva competente aspirando a balance en decidir. No defiendan wns ciudadanos ?? TiemposViolentos",neutral
 Algun veterinario competente al que pueda acudir en madrid?,neutral
 "Campazzo esta fundido, pero es que no tenemos otro base competente para partidos como este.??",neutral
 "Fuero exclusivo o necesario: solo es competente un tribunal para conocer el asunto con exclusion de cualquier otro se establece por razones de orden publico, asi el juez del domicilio conyugal debe conocer las demandas de divorcio.",neutral
 Las palmas despues de que le diera un repaso al barca. el arbitro decide pitar un penalti a Iron man<3 El futbol con el Var es mucho mejor dicen... (cuando tienes un grupo de arbitros competente ),neutral
 exitoso hombre de negocios,neutral
-"Siento y lamento mucho la perdida de Carlos Bremer, excelente persona la cual conoci cuando me desempeñaba con Consultor y auditor financiero Mi mas sentido pesame a sus familiares. Descanse en paz un hombre bueno y exitoso.????QEPD #CarlosBremer",neutral
-Si el experimento libertario de @JMilei resulta ser exitoso y si demuestra que un pais puede funcionar sin chorrearle la guita a los ciudadanos (lease impuestos) en verdad pensaria irme a vivir a Argentina ???? Mantener parasitos me tiene las bolas llenas ????? #TaxationIsTheft,neutral
+"Siento y lamento mucho la perdida de Carlos Bremer, excelente persona la cual conoci cuando me desempeñaba con Consultor y auditor financiero Mi mas sentido pesame a sus familiares. Descanse en paz un hombre bueno y exitoso.????QEPD CarlosBremer",neutral
+Si el experimento libertario de @JMilei resulta ser exitoso y si demuestra que un pais puede funcionar sin chorrearle la guita a los ciudadanos (lease impuestos) en verdad pensaria irme a vivir a Argentina ???? Mantener parasitos me tiene las bolas llenas ????? TaxationIsTheft,neutral
 Mi ex compartiendo la mis a publicacion que yo y teniendo mas likes que yo ????????? HUMILLARME? LO LOGRASTE OK AHORA HAY QUE VOLVER,neutral
 "este año voy a ser exitoso no importa cuantas noches sin dormir pase, ni cuantas cosas deba sacrificar, me lo prometo.",neutral
 Ando bien excitado o como se dice cuando te sientes exitoso?,neutral
-"Gran perdida para nuestro pais , mexicano visionario exitoso, filantropo comprometido con su pais . Descanse en Paz y brille para el la luz perpetua @carlosbremerg #SharkTank",neutral
+"Gran perdida para nuestro pais , mexicano visionario exitoso, filantropo comprometido con su pais . Descanse en Paz y brille para el la luz perpetua @carlosbremerg SharkTank",neutral
 "Ay cada quien tiene en la vida su cuarto de hora Que lo motiva, que lo entusiasma a ser triunfante Es un momento de buena suerte que uno lo adora Es mi momento esa es mi estrella y voy pa'lante! ????",neutral
 Y nuevamente el frio hace su entrada triunfante en mi.,neutral
 "mi lema de vida esSIEMPRE ES MEJOR IR DE MUCHO MAS VALOR. TODO A QUELLO QUE NO VES MAS SIN EMBARGO EN ELLO CREES. POR LO ESPIRITUAL SALDRA TRIUNFANTE AL FINAL, ES JUSTO YA QUE SU VALOR LE DES.SEA LA AMISTAD, EL AMOR A LA LEALTAD, COSAS DURAS QUE SE ENCUENTRAN SOLO EN LA ETERNIDAD",neutral
@@ -2266,7 +2266,7 @@ Te quiero personita que cuando me siento insignificante e insuficiente me recuer
 "Me costo 2 años darme cuenta y reconocer que si soy buena en lo que hago, que he logrado un chingo de cosas y que estoy muy en paz con mi vida.",neutral
 habia logrado distraerme un rato pero de verdad que no puedo mas mañana o cojo un bus y muero de hambre en el piso porque si no me va a dar algo,neutral
 Nada mas satisfactorio que darse cuenta de todo lo que has logrado,neutral
-"Sin la colaboracion de aquellos que apostaron por nosotros, jamas hubiesemos logrado nada. #UnidosTodosX #DeZurdaTeam",neutral
+"Sin la colaboracion de aquellos que apostaron por nosotros, jamas hubiesemos logrado nada. UnidosTodosX DeZurdaTeam",neutral
 Gracias Por Su Apoyo Gente Gracias A Ustedes Ya Somos 21k No Lo Abria Logrado Sin Ustedes Los Quiero Muchas Gracias,neutral
 Tengo que reconocer mi propio valor y los exitos que he logrado hasta ahora.??,neutral
 "Este es mi primer vuelo del año! Decreto paz, y prosperidad. ??",neutral
@@ -2278,18 +2278,18 @@ Tengo que reconocer mi propio valor y los exitos que he logrado hasta ahora.??,n
 "Que este año este lleno de Dicha, Amor, Union, Felicidad y Prosperidad para todos.",neutral
 Ya que llegue la prosperidad xfavaaaar,neutral
 "Mañana tengo examen Manifiesto prosperidad, manifiesto amor, manifiesto todo lo bueno que hay en mi -entra en crisis-",neutral
-"#EstaEsLaRevolucion ""Su triunfo significo libertad, dignidad y justicia verdadera para todos, desde las primeras leyes. Y no se gano la confianza del pueblo con promesas, sino con hechos y realizaciones..."" #VivaCuba @PartidoPCC @yurisley_valdes @AdisFiol @AsambleaMoa",neutral
+"EstaEsLaRevolucion ""Su triunfo significo libertad, dignidad y justicia verdadera para todos, desde las primeras leyes. Y no se gano la confianza del pueblo con promesas, sino con hechos y realizaciones..."" VivaCuba @PartidoPCC @yurisley_valdes @AdisFiol @AsambleaMoa",neutral
 que cojones hago viendo operacion triunfo,neutral
-"La linea de Gabriel Noriega, el jonron de Lino y el relevo de Anthony Vizcaya fueron clave para el triunfo de #Leones.",neutral
-Triunfo sorpresivo de #Brooklyn Nets sobre el #Oklahoma 125 - 113,neutral
+"La linea de Gabriel Noriega, el jonron de Lino y el relevo de Anthony Vizcaya fueron clave para el triunfo de Leones.",neutral
+Triunfo sorpresivo de Brooklyn Nets sobre el Oklahoma 125 - 113,neutral
 "El mejor triunfo del año, los Sixers absolutamente domados. EL RANKING 1. IHart otra vez. 2. Brunson 3. Deuce BT: Randle corto la racha de 20 ptos pero a quien le importa, estamos asi de ser contenders",neutral
 "Despues de 7 horas en ansiedad, me felicitaron x la tonta presentacion. Y al final del dia RH me mando llamar para que les contara mi caso de acoso laboral. Triunfo el bn",neutral
 "Leones deja en el terreno a Lara y suma su 2do triunfo Error en tiro de Jermaine Palacios permite que Cesar Hernandez anote la carrera del triunfo. Vizcaya lanzo 2 entradas, poncho a 4 y se acredita su 2da victoria. Cuarta derrota para Cardenales.",neutral
-"Le escribi en el quinto inning. La he visto mas fea y se han casado por la iglesia. Los campeones nunca se rinden. Gran triunfo de los Gloriosos leones del Caracas .y mañana hay mañana, vamos por mas. #CaraqueñoCaraquista",neutral
+"Le escribi en el quinto inning. La he visto mas fea y se han casado por la iglesia. Los campeones nunca se rinden. Gran triunfo de los Gloriosos leones del Caracas .y mañana hay mañana, vamos por mas. CaraqueñoCaraquista",neutral
 Mira el triunfo que nos llevamos en cancha de los Sixers.,neutral
 Las dos victorias del Caracas en este Round Robin han sido dejando en el terreno al rival: Aragua y Lara. Victoria importante porque le permite a los Leones empatar el segundo lugar y optar por igualar la punta con un triunfo mañana ante Tiburones. Esta de infarto el RR.,neutral
 Quiero conocer a un Berlin y que me meta un atraco asi fabuloso y salir victorioso dios ??,neutral
-"#dia05 pensando la #HistoriaAfroperuana El 05 de Enero de 1855, en la Batalla de La Palma, Castilla salio victorioso La Abolicion de la Esclavitud de 1854 se dio en medio de la guerra Castilla vs Echenique. ¿Cuantos Afro se sumaron al ejercito de Castilla tras la Abolicion?",neutral
+"dia05 pensando la HistoriaAfroperuana El 05 de Enero de 1855, en la Batalla de La Palma, Castilla salio victorioso La Abolicion de la Esclavitud de 1854 se dio en medio de la guerra Castilla vs Echenique. ¿Cuantos Afro se sumaron al ejercito de Castilla tras la Abolicion?",neutral
 "— Ah, no la culpo... Hm, ya entiendo. Supongo que si sale victorioso un tema de inferioridad no deberia ser problema.",neutral
 "Marcos 9:1-13 ¿Como ves a Cristo, como alguien derrotado o victorioso? El Dios del cielo vino como siervo. ¿Estas sirviendo a Dios en tu iglesia local o que te detiene para hacerlo? ¿Estas leyendo la Palabra de Dios con la intencion de vivirla o solo por cumplir una regla?",neutral
 "El momento mas feliz de la vida de un hombre es cuando esta tirado en el campo de batalla, despues de haberlo dado todo, exhausto, ya no le queda mas... exhausto pero ¡Victorioso!",neutral
@@ -2303,12 +2303,12 @@ Me ha ocurrido como dos veces que pago un UBER en efectivo y me llega al correo 
 Pero mas decadente son los conductores de bus al no tener un malparido efectivo para dar cambio,neutral
 "Funciono ser plaga lgm, era mas sencillo y efectivo, sin importar que",neutral
 Admito que un momento muy veneco de mi parte aqui en usa fue cuando iba a cualquier lugar a comprar algo en efectivo y me dan vuelto en billetes de 5 o de 1 o en monedas (pasaba al asombro),neutral
-Tengo efectivo en Puerto Ordaz y necesito cambiar por zelle. Si alguien sabe lo agradeceria full ????#Pzo,neutral
+Tengo efectivo en Puerto Ordaz y necesito cambiar por zelle. Si alguien sabe lo agradeceria full ????Pzo,neutral
 "Encima hace poco me entere que dejaron de existir las transferencias en efectivo del prosegur ahora es todo digital, ya no te permiten ni soñar en este pais",neutral
 "Excelente eslogan, “escuchar para progresar” del partido de la U, si eso se hace efectivo, esto cambia, empezando por La Guajira, pero resulta que no, no escuchan sino a sus amigos digo, familiares, no de otra manera se entiende el atraso tan grande en que nos hallamos. Hilo…",neutral
 "Hace 3 dias fui a @foodkartvzla y realice mi pago en efectivo quedaron en hacerme el vuelto por pago movil al final de la noche, acepte. Han pasado 3 dias y les escribo me piden que hable con una persona, luego con otra etc.",neutral
 "Triunfar en la vida no es facil Y menos cuando se es prieto Si has triunfado siendo wero, no tienes tanto merito Ser prieto y triunfador, no cualquiera Es todo el X antes tweeter",neutral
-"Asquerosamente pauteada la nota sobre Milito en #datasportsxtntsports hasta Metieron a Pellegrini y Guardiola. Lo muestran como un tecnico apetecido por varios equipos y un triunfador, cuando se sabe que no le ha ganado a nadie. Periodistas come pan",neutral
+"Asquerosamente pauteada la nota sobre Milito en datasportsxtntsports hasta Metieron a Pellegrini y Guardiola. Lo muestran como un tecnico apetecido por varios equipos y un triunfador, cuando se sabe que no le ha ganado a nadie. Periodistas come pan",neutral
 "Conoce a tu enemigo y conocete a ti mismo, y saldras triunfador en mil batallas",neutral
 Risto Mejide es tan sOlo un pobre hombre con infulas baratarias de hortera triunfador sin insulas imaginadas.,neutral
 """Todo triunfador, fue un fracasado que nunca se dio por vencido"" ???? -Churchil-",neutral
@@ -2333,7 +2333,7 @@ Momento mas satisfactorio de la casa de papel: la muerte de Arturo,neutral
 No hay nada mas satisfactorio que manejar el Sentra de mi papa??,neutral
 "Una buena triple amenaza es un bien escaso pero mega satisfactorio, excelente evento estelar de SD como hace un rato ya no habia",neutral
 Como se siente tan satisfactorio comenzar un proyecto y que todo salga como lo pensabas.,neutral
-Siempre es satisfactorio ver cuando #AustinReaves va de Titular en los partidos! #LakeShow,neutral
+Siempre es satisfactorio ver cuando AustinReaves va de Titular en los partidos! LakeShow,neutral
 """trato de encontrarle lo satisfactorio"" -Fabi 2024",neutral
 "Tengo una compañera de viaje que cuando menos me lo espero aparece, me rompe el sueño, la calma y me hace estar despierto de madrugada hasta que le da la gana de irse. Al menos en esta hora y medio he sido productivo, algo bueno tenia que tener.",neutral
 "Que primera semana de enero taaaan pesada, solo espero que mi año sea igual de productivo como esta semana????",neutral
@@ -2352,7 +2352,7 @@ Entre en el body talla XS que me regalo E,neutral
 "Mi goal de 2024 es aprender a cocinar ajiaco, that’s that. Todo lo que necesito para un prospero año nuevo.",neutral
 Feliz y prospero año nuevo !,neutral
 Ojala un año tan prospero y abundante que me permita compartir con otros????,neutral
-"Saludos en noche de viernes de #NBAxESPN @kenneth_garay #KennyG y @obricio7 Duelo interesante en Philadelphia, me gustaria ver una victoria de @sixers Un abrazo y prospero 2024",neutral
+"Saludos en noche de viernes de NBAxESPN @kenneth_garay KennyG y @obricio7 Duelo interesante en Philadelphia, me gustaria ver una victoria de @sixers Un abrazo y prospero 2024",neutral
 "Te deseo felices Pascuas y prospero año nuevo, pero lo que mas deseo es que tu padre sea mi suegro ??",neutral
 HOLA VOLVI!! FELIZ Y PROSPERO 2024 PARA TODOS!!!! OJALA NOS LIBREMOS DE TODOS LOS CORRUPTOS ZURDOS!!!!!!,neutral
 "“Muchos dicen que esta mal cambiar por alguien, quiza no cambiar, sino mejorar. Hay personas que merecen nuestras mejores versiones. Mejorar por nosotros y por personas que se lo merecen no esta mal, mal estaria no crecer o evolucionar y perder a esa persona maravillosa solo por no salir de nuestra zona de confort.” ¿Coincides con esto? Comenta SI",neutral
@@ -2361,7 +2361,7 @@ Rumo a proxima conquista ?,neutral
 Hoy venia x la ruta y me decia coso todo eso es de beneton... a mira q loco... si y antes era de la corona inglesa.... a mira y como fue eso?.Y un espia ingles paso un año viviendo con los originarios yendo de acuifero en acuifero conociendo y en la conquista del desierto fue ez.,neutral
 Lrt esa es una de las razones por las cuales no soporto a los arabes —particularmente musulmanes—: lloran por colonizacion pero se dan golpes en el pecho cuando hablan de la conquista arabe. Mas o menos igual con ciertos grupos indigenas y movimientos indigenistas.,neutral
 No puedo creer que en serio haya gente latina diciendo que lo que hicieron los españoles con su conquista de mrd fue bueno y que sin ellos no hubieramos evolucionado que tan pdj deber ser para decir algo asi XD,neutral
-"La Guaira conquista su tercer triunfo del Round Robin. Junior Guerra se acredita la victoria, tambien el excelente trabajo del bullpen. Con el madero la vieron clarita ??: Wilson Garcia 4-4 con 3 CI, 2 CA. Puig 4-2 con HR, 3 CI. Reginatto 4-3 con 4 CA. #lvbp",neutral
+"La Guaira conquista su tercer triunfo del Round Robin. Junior Guerra se acredita la victoria, tambien el excelente trabajo del bullpen. Con el madero la vieron clarita ??: Wilson Garcia 4-4 con 3 CI, 2 CA. Puig 4-2 con HR, 3 CI. Reginatto 4-3 con 4 CA. lvbp",neutral
 "Bueno, ahora Lgante conquista a Dani y Nachi con Thiagui crian a las bebas (? xD",neutral
 "El desierto no es tu castigo, es el lugar de conquista, es parte del camino que conduce a la salvacion prometida.",neutral
 Los chocolates son un abrazo al alma y mi amado me conquista siempre con uno ????,neutral
@@ -2409,23 +2409,23 @@ Viendo por YouTube las distintas celebraciones de reyes de America Latina. Una g
 Vender a Ronald Araujo y Pedri por 200M€ y fichar a Kilyan Mbappe. El Barca con Mbappe y Luis Enrique seria candidato top 3 para las proximas 5 ediciones de la Champions. Es momento de tomar decisiones valientes. Vamos cojonessssssss.,neutral
 "Wow. Con suerte y sabe bailar danzas mas bien formales, esta algo atonito ante el contraste de la musica inicial. Mas no es algo naturalmente malo, debera... aprender a bailar ese tipo de melodias nuevas, tal vez. La pregunta es como.",neutral
 Se habla de racismo pero no de Transfobia. El doble rasero para medir el valor de nuestra gente. Atonito estoy. ??????????????,neutral
-"Lenia Batres, flamante Ministro de la Suprema Corte de Justicia, muestra “la cara oculta de la luna”, con un realismo pasmante que nos augura su futuro desempeño al frente de su nuevo desempeño. Pense que era falso, pero veo, atonito, que es verdad. #FueraElDictador #UnderMyWriting #UMW https://nitter.perennialte.ch/MaxKaiser75/status/1743261455326007754/video/1",neutral
+"Lenia Batres, flamante Ministro de la Suprema Corte de Justicia, muestra “la cara oculta de la luna”, con un realismo pasmante que nos augura su futuro desempeño al frente de su nuevo desempeño. Pense que era falso, pero veo, atonito, que es verdad. FueraElDictador UnderMyWriting UMW https://nitter.perennialte.ch/MaxKaiser75/status/1743261455326007754/video/1",neutral
 "El video de Baltasar del ayuntamiento es cutre, chapucero, con mal gusto y muchas cosas mas nada bonitas. Pero no es ""Blackface"". Blackface es algo que solo se puede dar en la cultura anglosajona por motivos que no se dieron en España y que por tanto no es extrapolable.",neutral
 "Defender la unidad de España no implica ser nacionalista español y mucho menos facha. Un nacionalista va a apelar a emociones, a excepcionalidades y a esencias que hacen de filtro para ser o no de esa nacion. Un jacobino defiende el estado y el unico filtro es ser ciudadano.",neutral
 La cantidad de gente en Grindr que me ha ofrecido plata me tiene atonito Es una nueva moda?,neutral
 Cada mona linda que veo me quedo boquiabierto ??,neutral
 "M QUEDO FOKIN BOQUIABIERTO VIENDO LA PELICULA, PORKE CONCHETUMARE LE TIRO UNA SILLA A LA CABEZA",neutral
-"?? ULTIMAS NOTICIAS: ¡Revelaciones explosivas sobre la Ley de Autorizacion del Congreso de 2024! ???? Preparese para dejarse boquiabierto mientras nos sumergimos en el mundo secreto de la tecnologia militar oculta, los avances antigravedad, el legado de Tesla, las infinitas posibilidades de energia y, si, ¡incluso la tecnologia alienigena! La Ley de Autorizacion del Congreso de 2024 es el catalizador que expondra las operaciones clandestinas del Estado profundo, obligandolos a revelar su tecnologia oculta o afrontar las consecuencias. ?? Detras de escena: ¡Fuerza espacial de los Estados Unidos desatada! ???? Sin que las masas lo sepan, la Fuerza Espacial de los Estados Unidos (USSF) ha estado orquestando una revelacion innovadora. Tienen la clave para descubrir la verdad detras de proyectos ultrasecretos. Preparese para una revelacion alucinante: fue el USSF quien emitio la siniestra advertencia en Washington, DC hace semanas a traves del Dr. David Greer. ¿Y adivinen quien mueve los hilos detras del USSF? Nada menos que la enigmatica Base Militar de Cheyenne Mountain y sus operaciones encubiertas. ?? Secretos del Estado profundo al descubierto: Trump, Biden y la CIA ???????? ¿Coincidencias? Creemos que no. Descubra la impactante verdad detras del cierre de la base militar de Cheyenne Mountain por parte de Donald J. Trump y la posterior denegacion de acceso a Biden y al Estado profundo. Todo se conecta con la inclusion sin precedentes de la Fuerza Espacial de los Estados Unidos en el ambito de las agencias de inteligencia de los Estados Unidos. Este juego de poder estrategico otorga al USSF control sobre el ciberespacio, lo que desencadena una guerra clandestina con la CIA que se ha prolongado durante tres decadas. Preparese para quedar atonito mientras revelamos como el USSF robo la alucinante cantidad de 2 billones de dolares de las operaciones de lavado de dinero de la CIA, lo que desencadeno una cadena de eventos que condujeron al infame incidente del 11 de septiembre. ?????? Los sombreros blancos resurgen: la tormenta se acerca ???? Tras sobrevivir a una implacable persecucion de 60 años, los sombreros blancos y el USSF han emergido mas fuertes que nunca. Respaldados por la impenetrable montaña Cheyenne, poseen un tesoro de inteligencia que expone los secretos mas oscuros del estado profundo. Preparese para la revelacion definitiva: contienen servidores y terabytes de pruebas incriminatorias de las computadoras de Clinton, la computadora portatil de Hunter, las revelaciones de McAfee, el escandalo de Weiner y mas. Cheyenne Mountain, USSF, Q y Trump forman una fuerza imparable, armada con todo lo necesario para derribar al Estado profundo, el pantano y la camarilla. La tormenta se acerca y sacudira los cimientos mismos del poder. ??Ley de Autorizacion del Congreso 2024: Desencadenando Medidas de Seguridad ???? Preparese para un cambio sismico a medida que la iniciativa NCSWIC tome el control. Los militares asumiran el mando, liderados por el USSF, capturando a la CIA y purgando la corrupcion del Pentagono. Preparese para una nueva era de maravillas tecnologicas que revolucionara el mundo tal como lo conocemos. El futuro depara maravillas incalculables y lo mejor esta por llegar. Abrochense el cinturon, queridos lectores, mientras nos embarcamos en un viaje como ningun otro. Agarrense de sus asientos mientras la verdad se desvela y revela los secretos que han permanecido ocultos durante demasiado tiempo. Recuerde, tiene mas conocimientos de los que cree. Ha llegado el momento del cambio y el mundo nunca volvera a ser el mismo. Esten atentos a las increibles revelaciones que estan por venir. Q espera. t.me/BenjaminFulfordJ https://signal.group/#CjQKIAL1PfYMtji-3OMw24eFifKyZSI9bNbHpdvfWONAMrnvEhAgxrDIgXSX8-35VZTa6H_n ?????? https://t.me/tierrasant Todo por los niños ???~?Any",neutral
+"?? ULTIMAS NOTICIAS: ¡Revelaciones explosivas sobre la Ley de Autorizacion del Congreso de 2024! ???? Preparese para dejarse boquiabierto mientras nos sumergimos en el mundo secreto de la tecnologia militar oculta, los avances antigravedad, el legado de Tesla, las infinitas posibilidades de energia y, si, ¡incluso la tecnologia alienigena! La Ley de Autorizacion del Congreso de 2024 es el catalizador que expondra las operaciones clandestinas del Estado profundo, obligandolos a revelar su tecnologia oculta o afrontar las consecuencias. ?? Detras de escena: ¡Fuerza espacial de los Estados Unidos desatada! ???? Sin que las masas lo sepan, la Fuerza Espacial de los Estados Unidos (USSF) ha estado orquestando una revelacion innovadora. Tienen la clave para descubrir la verdad detras de proyectos ultrasecretos. Preparese para una revelacion alucinante: fue el USSF quien emitio la siniestra advertencia en Washington, DC hace semanas a traves del Dr. David Greer. ¿Y adivinen quien mueve los hilos detras del USSF? Nada menos que la enigmatica Base Militar de Cheyenne Mountain y sus operaciones encubiertas. ?? Secretos del Estado profundo al descubierto: Trump, Biden y la CIA ???????? ¿Coincidencias? Creemos que no. Descubra la impactante verdad detras del cierre de la base militar de Cheyenne Mountain por parte de Donald J. Trump y la posterior denegacion de acceso a Biden y al Estado profundo. Todo se conecta con la inclusion sin precedentes de la Fuerza Espacial de los Estados Unidos en el ambito de las agencias de inteligencia de los Estados Unidos. Este juego de poder estrategico otorga al USSF control sobre el ciberespacio, lo que desencadena una guerra clandestina con la CIA que se ha prolongado durante tres decadas. Preparese para quedar atonito mientras revelamos como el USSF robo la alucinante cantidad de 2 billones de dolares de las operaciones de lavado de dinero de la CIA, lo que desencadeno una cadena de eventos que condujeron al infame incidente del 11 de septiembre. ?????? Los sombreros blancos resurgen: la tormenta se acerca ???? Tras sobrevivir a una implacable persecucion de 60 años, los sombreros blancos y el USSF han emergido mas fuertes que nunca. Respaldados por la impenetrable montaña Cheyenne, poseen un tesoro de inteligencia que expone los secretos mas oscuros del estado profundo. Preparese para la revelacion definitiva: contienen servidores y terabytes de pruebas incriminatorias de las computadoras de Clinton, la computadora portatil de Hunter, las revelaciones de McAfee, el escandalo de Weiner y mas. Cheyenne Mountain, USSF, Q y Trump forman una fuerza imparable, armada con todo lo necesario para derribar al Estado profundo, el pantano y la camarilla. La tormenta se acerca y sacudira los cimientos mismos del poder. ??Ley de Autorizacion del Congreso 2024: Desencadenando Medidas de Seguridad ???? Preparese para un cambio sismico a medida que la iniciativa NCSWIC tome el control. Los militares asumiran el mando, liderados por el USSF, capturando a la CIA y purgando la corrupcion del Pentagono. Preparese para una nueva era de maravillas tecnologicas que revolucionara el mundo tal como lo conocemos. El futuro depara maravillas incalculables y lo mejor esta por llegar. Abrochense el cinturon, queridos lectores, mientras nos embarcamos en un viaje como ningun otro. Agarrense de sus asientos mientras la verdad se desvela y revela los secretos que han permanecido ocultos durante demasiado tiempo. Recuerde, tiene mas conocimientos de los que cree. Ha llegado el momento del cambio y el mundo nunca volvera a ser el mismo. Esten atentos a las increibles revelaciones que estan por venir. Q espera. t.me/BenjaminFulfordJ https://signal.group/CjQKIAL1PfYMtji-3OMw24eFifKyZSI9bNbHpdvfWONAMrnvEhAgxrDIgXSX8-35VZTa6H_n ?????? https://t.me/tierrasant Todo por los niños ???~?Any",neutral
 "¿Cual inspiracion? 1. La del tipo boquiabierto mirando el cielo. 2. La de los antiguos griegos: recolectar todos los datos e insumos posibles para crear, es decir, la fase de espia, lector y reportero que todo artista deberia dominar.",neutral
 Dios mio si no me tomo un tamarindo con limon y salen el niño me sale boquiabierto,neutral
-#OTDIRECTO4E martin boquiabierto por el duo de Juanjo y Ruslana,neutral
+OTDIRECTO4E martin boquiabierto por el duo de Juanjo y Ruslana,neutral
 "Hoy estuve en un evento para una familia ricachona, y me quede boquiabierto la mansion en donde viven con una preciosa vista espectacular a toda Las Vegas y ni hablar de los 4 carrazos q tenian parqueado en la cochera, tenian un puto Aston Martin, Rolls Royce, Porsche y Mercedes)",neutral
 "Un chico que conoci hace un año, un tanto whitexican y con muchos arraigos homonormativos, se acerco a mi hoy a conversar y ha dejado ir muchas cosas: prejuicios, paradigmas, dogmas. Su sentido de justicia social y empatia me dejaron boquiabierto. Alegremente lo llamo mi amigo.",neutral
 saber que con quien estuve romanticamente me faltara el respeto cuando yo no estaba presente me dejo tan boquiabierto,neutral
 NECESITO saber si lo de la lista epstein es algo oficial o no porque llevo 10 min boquiabierto leyendo nombres,neutral
 Aqui perplejo preso de mi reflejo.,neutral
 Acabo de ver Leave the world behind y me dejo perplejo! Me parecio una obra maestra con uno de los mejores finales que he visto ultimamente,neutral
-"Todo el mundo preocupado por Baltasar y el #Blackface y yo pensando que no me toque el haba de roscon.... Dejarnos disfrutar de los Reyes Magos tranquilos, turras.",neutral
+"Todo el mundo preocupado por Baltasar y el Blackface y yo pensando que no me toque el haba de roscon.... Dejarnos disfrutar de los Reyes Magos tranquilos, turras.",neutral
 "Siempre pense que el odio a los judios era, si no un embeleco, un trasto del pasado, de los años 30-40. Ahora lo veo florecer con tanta vehemencia que me deja perplejo.",neutral
 "sigo perplejo al servilismo hacia las vagas de las campos,la lamida de culo de esta mañana a sido vomitiva",neutral
 por denunciar me quierten arrestar por estar drogado dicen y eso es mentira ... estoy perplejo por lo que estan haciendo en la ciudad todos me tratan como homosexual y me provocan para golpearme o hacerme lo que sea,neutral
@@ -2460,7 +2460,7 @@ con esta incredulidad no puedo enfrentar la reinvencion.,neutral
 Cada tanto me acuerdo de que nos gobierna Javier Milei y me empiezo a reir sola de incredulidad,neutral
 Hasta que yo no vea a Liana con ese trapo sigo con la incredulidad Pero Dios mio me esta dando algo,neutral
 "Quizas no te he escrito, pero te he extrañado Quizas no te he visto, pero te he imaginado Quizas no te he buscado, pero te he pensado",neutral
-Cuidado con el que juega a ser extrañado porque termina olvidado. ??#next,neutral
+Cuidado con el que juega a ser extrañado porque termina olvidado. ??next,neutral
 "hoy vi a melanie dps de tanto, no hay ser q haya extrañado mas ??????",neutral
 Hoy he extrañado a mi hermana mas que nunca??,neutral
 Te he extrañado mas de lo usual.,neutral
@@ -2469,7 +2469,7 @@ Te he extrañado mas tiempo del que te conoci,neutral
 Nunca habia extrañado tanto a alguien,neutral
 "Pero le dije que la queria solo que tenia miedo por ser un perro... La esperanza de vida y todas esas cosas. No la mentiria, si se viera fea se lo diria. —Extrañado pulso la foto para pedirles, tanto para ella como para el, le daba curiosidad.— Si, no imagine que fueran »",neutral
 "Dentro de unos dias vuelvo al pueblo , nunca eh extrañado tanto mi casa como ahora",neutral
-"Lenia Batres, flamante Ministro de la Suprema Corte de Justicia, muestra “la cara oculta de la luna”, con un realismo pasmante que nos augura su futuro desempeño al frente de su nuevo desempeño. Pense que era falso, pero veo, atonito, que es verdad. #FueraElDictador #UnderMyWriting #UMW https://twitter.com/MaxKaiser75/status/1743261455326007754/video/1",neutral
+"Lenia Batres, flamante Ministro de la Suprema Corte de Justicia, muestra “la cara oculta de la luna”, con un realismo pasmante que nos augura su futuro desempeño al frente de su nuevo desempeño. Pense que era falso, pero veo, atonito, que es verdad. FueraElDictador UnderMyWriting UMW https://twitter.com/MaxKaiser75/status/1743261455326007754/video/1",neutral
 Estoy impactado pense que era sabado!! QUE PANICOOOO ????,neutral
 "Termino de ver “La Sociedad de la Nieve”. Todavia sigo impactado por el accidente, el alud, todo lo que debieron pasar. Como sobrevivieron. La fuerza que pusieron para sobrevivir. Un Milagro y una Hazaña. La pelicula y el relato es excelente. Felicitaciones para todos. @pfvierci",neutral
 Siempre me ha impactado el circulo de la vida en donde tu te enamoras locamente de alguien que no te ama mientras alguien se enamora locamente de ti sin que puedas amarlo.,neutral
@@ -2496,8 +2496,8 @@ El sexo es muy divertido pero el amor no tanto.,positivo
 "con megu nos burlamos de nuestros traumas, que divertido",positivo
 Aprendi a afeitarme con navaja y realmente es lo mas divertido del mundo...,positivo
 "Cristianos, no se compliquen y empiecen a creer en el horoscopo, es mas divertido y tiene animalitos",positivo
-"Es bastante divertido ver los shows de #CMLL. Me gusta su estilo de lucha, no hay luchas malas y el publico grita como loco.",positivo
-Me parece mas divertido ver a las furiosas cocinar que a los boludos bailando #granhermano,positivo
+"Es bastante divertido ver los shows de CMLL. Me gusta su estilo de lucha, no hay luchas malas y el publico grita como loco.",positivo
+Me parece mas divertido ver a las furiosas cocinar que a los boludos bailando granhermano,positivo
 Q divertido el futbol de mi pueblo puros cuentasos nomas,positivo
 "Compra barato en un lugar caro, pero nunca compres caro, en un lugar barato.??",positivo
 Las personas con Android son las mas infieles,positivo
@@ -2547,7 +2547,7 @@ Menos mal que mañana es dia festivo martita,positivo
 Contigo Todos los dias parecen festivo ????,positivo
 ahora mi TL esta llena de franceses llorando que dbs es mierda y no se por que,positivo
 Que costara poner metro toda la Noche cada 30 mins un Viernes Noche vispera de festivo?,positivo
-Que gracioso baila joel xd #GranHermano,positivo
+Que gracioso baila joel xd GranHermano,positivo
 "¿Cual es la gracia de actuar como novias toxicas celosas enfermizas? No es gracioso, no es edgy, da pena ajena ??",positivo
 que gracioso que ya tengo turno en la peluqueria,positivo
 chicos busco novio requisitos - q sea gracioso - q me quiera (no excluyente),positivo
@@ -2559,7 +2559,7 @@ el manzana tiene 5 pasos que gracioso,positivo
 "¿Por que mierda de todos los personajes y de todos los muñecos de Dragon Ball veo a ese? Pinche universo culero. Y lo mas gracioso es que de todo el pasillo del tianguis de juguetes era solo ese, no mames JAJAJAJA ay el universo es culero.",positivo
 """Ni mi gisti diigi tirris, ni isti il nivil dil cintiniri, hirminis yiipin ni pisi nidi , riil rimiri is pivi, istin hiciindi in pipilin, firriri rininci"" se olvidaron que somos un club de futbol? creen que la U es su tono, su juerguista de los fines de semana chibolos cojudos!",positivo
 "En 'Existiriamos el mar', B. Gopegui propone ""un PIB de los momentos de euforia compartida, la juerguista y la calmada, todo tipo de euforia"". Me ha hecho pensar en regiones deprimidas segun la medicion de la actividad oficial que serian top 10 internacional segun este indicador",positivo
-"El episodio 3 de #WhatIf a la altura del Thor juerguista… Supongo que se puede comprar como especial navideño pero… se me ha hecho larguisimo, personajes nada interesantes y fisicamente feos.",positivo
+"El episodio 3 de WhatIf a la altura del Thor juerguista… Supongo que se puede comprar como especial navideño pero… se me ha hecho larguisimo, personajes nada interesantes y fisicamente feos.",positivo
 "A los que critican a Rubiales por machista, juerguista, mujeriego y demas les recuerdo que el esta hay por el PSOE. Su padre milita en el PSOE. Y puede que sepa muchas cosas del PSOE.",positivo
 Yo quiero un capitalismo cachondo y juerguista y al socialismo ascetico decrecentista que le den por culillo.,positivo
 Que naciera a las 4:20 de la madrugada tendra algo que ver con el hecho de que sea tremendo juerguista disfruton?,positivo
@@ -2575,7 +2575,7 @@ Un festival de poesia en las montañas saca a relucir el chispeante talento de l
 ando viendo la sandia chispeante y ando como tonta pegada ahi qyu,positivo
 "?? solo espero que no entren en persecuciones de entornos y lamecuIismos varios quienes soltaron el nombre chispeante mas horrible jamas inventado. Nah, es broma, seguro que ya estan en ello.",positivo
 viendo reels me aparecio uno de yichan de sandia chispeante y me acorde de weak hero class y ahora me quiero pegar un tiro en la mesa navideña,positivo
-"???????? ""Al mundo entero quiero dar un mensaje de paz (menos a Palestina) Y todos juntos celebrar que volvemos a empezar (mas de 10.000 niños asesinados) Tan chispeante es la razon que te hace deslumbrar (????) Que es el momento de sentir la dulce libertad"" #FreePalestine",positivo
+"???????? ""Al mundo entero quiero dar un mensaje de paz (menos a Palestina) Y todos juntos celebrar que volvemos a empezar (mas de 10.000 niños asesinados) Tan chispeante es la razon que te hace deslumbrar (????) Que es el momento de sentir la dulce libertad"" FreePalestine",positivo
 Fue buena sandia chispeante puta que llore con el ultimo capitulo pero ame el final ????,positivo
 "Un dia eres joven y al siguiente andas diciendo: ""que bonita se mira San Pedro Sula con los macuelizos floreando"".",positivo
 "Tan lleno de amor, tan espontaneo pero sobre todo lindo",positivo
@@ -2617,17 +2617,17 @@ Estar leyendo sobre la guerra civil española no es muy esperanzador viviendo en
 """El camino de la renuncia, que es el mas arduo pero el mas esperanzador"".",positivo
 "Hace como 3 meses que vengo recibiendo un arrebato atras de otro, cambio el año pero sigue siendo la misma mierda. Esperanzador mi 2024 kjjj",positivo
 la gente por que considera esperanzador que haya vida despues de la muerte? tanto os gusta la vida como pa tenerla siempre? o tan poco os gusta pa pensar que luego tiene que haber algo mejor?,positivo
-Es TRISTE que no suene ni un nombre esperanzador…no vengan con el cuento ese de que no lo dicen para que otro no te lo robe. Lo de Meza corre porque el jugador ya conocia al DT y Estudiantes juega x mas. Estan esperando a mañana a ver que sale en el amistoso. #AAAJ,positivo
+Es TRISTE que no suene ni un nombre esperanzador…no vengan con el cuento ese de que no lo dicen para que otro no te lo robe. Lo de Meza corre porque el jugador ya conocia al DT y Estudiantes juega x mas. Estan esperando a mañana a ver que sale en el amistoso. AAAJ,positivo
 A veces me despierto y siento todo lo que esta pasando en el mundo y es r te an poco esperanzador… Pero quiero pensar que estaremos bien…que todo estara bien…,positivo
 Que esperanzador y digno tener a la ministra @LeniaBatres en la SCJN.,positivo
-"Que cinta mas dura, cruda y a la vez bella es #LaSociedadDeLaNieve. Peliculon fotograficamente impecable, y devastador y esperanzador a partes iguales, que me tuvo al borde de las lagrimas durante toda la ultima media hora.",positivo
+"Que cinta mas dura, cruda y a la vez bella es LaSociedadDeLaNieve. Peliculon fotograficamente impecable, y devastador y esperanzador a partes iguales, que me tuvo al borde de las lagrimas durante toda la ultima media hora.",positivo
 "Ahora la gente va por ahi con su discurso de “esta bien estar mal” de querer sacarle lo bueno a toda la mierda que les pasa. ¡Por favor! Alguien que medianamente ha pasado por cosas horribles no quiere volver a eso, no quiere un mensaje esperanzador.",positivo
 """La sociedad de la nieve"". Oscura y brillante a la vez. Hace un monton lei el libro y me destrozo, pense que no me iba a destrozar tanto la pelicula.",positivo
 "Aunque me genere incertidumbre el futuro, se que sera brillante, lleno de abundancia y felicidad, asi lo declaro y asi hare que pase",positivo
 "Listo, brillante y luzco como un hombre de un millon de dolares. Entonces ¿por que esta roto mi corazon?",positivo
 "vean el cielo y encuentren la estrella mas brillante, esta wouu ?",positivo
-"Se dieron cuenta que a Sabrina en todas las fiestas le dan la mejor ropa, la mas brillante? Quieren hacerla protagonista, pero furia la opaca todo el tiempo JAJAJA #GranHermano #gh2024",positivo
-Trabajando juntos por un futuro brillante. #UnidosTodosX #DeZurdaTeam,positivo
+"Se dieron cuenta que a Sabrina en todas las fiestas le dan la mejor ropa, la mas brillante? Quieren hacerla protagonista, pero furia la opaca todo el tiempo JAJAJA GranHermano gh2024",positivo
+Trabajando juntos por un futuro brillante. UnidosTodosX DeZurdaTeam,positivo
 "Siempre me sensibilizo Terminator II cuando le hace ???? a John, y una mente brillante, cuando le dejan las lapiceras en la mesa. Solo eso pasaba a escribir en mi tuiter personal",positivo
 En un cielo tan oscuro sos vos esa estrella brillante,positivo
 Choque multiple 3 autos en costanera en brillante semaforo direccion chgte - conce,positivo
@@ -2647,7 +2647,7 @@ estamos todos na torcida para o bin laden ?,positivo
 Una triste perdida para la comunidad del deporte de Mexico. Un gran entusiasta del beisbol boxeo y muchos mas y Premio Nacional del Deporte. Descanse en paz Carlos Bremer y que su familia logre pronta resignacion con la compañia De Dios en estos dificiles momentos,positivo
 "En Caba muchos docentes de media seguimos sin saber si en febrero volvemos a nuestras horas o si tenemos que salir a buscar de cero, es una situacion que angustia es lisa y llanamente maltrato. Acomodar horarios de trabajo con los hijos, rutina familiar, etc. No es una pavada",positivo
 "Ahora la quinta de Olivos esta llena de humo, no es por las fuerzas del cielo que aun no se mudaron sino una parrilla entusiasta de la esquina de enfrente",positivo
-"Decir no es una habilidad valiosa que debemos aprender. A veces, decir no, nos permite enfocarnos en lo que realmente importa. #autocuidado #estabilidademocional",positivo
+"Decir no es una habilidad valiosa que debemos aprender. A veces, decir no, nos permite enfocarnos en lo que realmente importa. autocuidado estabilidademocional",positivo
 "Esperaria de Liam algo como eso... Tal vez por lo peculiar de su aura tan entusiasta. Siendo Killian el principal adepto a la pequeña y acogedora esquina, luceros dan con el caballero de oscuras hebras, sin llegar a alterar mucho de las neutras expresiones que prevalecen »",positivo
 "vine aca para relajar de tanta presion y deje de estudiar por tener un tema que discutir al dia siguiente para leer por pura curiosidad nomas, maldito terapista entusiasta mira lo que haces",positivo
 "Nadie va a poner a Alianza por debajo o postergado . Asi con la pija al aire , simple",positivo
@@ -2667,17 +2667,17 @@ Alvarez declarando sobre Assadi me tiene mas esperanzado de lo que esperaba. Fal
 "Esperanzado en que pase, pero al mismo tiempo en que no",positivo
 "Yo un poco me habia esperanzado con eso de que los porteños no iban a vacacionar en Cordoba, HASTA EL UPITE Biale, las rutas colapsadas. Seran mendocinos ??",positivo
 Porque sigo esperanzado en el amor cunado se que no es lo mio,positivo
-"? ? ? nuevamente , anhelo casarme algun dia con ese ?????????????? especial ... ? murmura , juntando ambas manos en esperanzado desear. #???????????????? ? ?",positivo
+"? ? ? nuevamente , anhelo casarme algun dia con ese ?????????????? especial ... ? murmura , juntando ambas manos en esperanzado desear. ???????????????? ? ?",positivo
 "Argentina esta tan a fondo en el choreo y currerio que es muy dificil de curar a pleno. Aunque parezca que hay una oportunidad, si no queres perder tu vida esperanzado por 50 años, la salida es y siempre sera Ezeiza.",positivo
-¡Denuncian acciones violentas y mentiras por parte de impulsores de la revocatoria en la ciudad de El Alto! Es preocupante ver como se intenta desinformar y recurrir a la violencia en lugar de buscar un dialogo constructivo. #DeUltimo #Contraparte @MRARANIBAR,positivo
+¡Denuncian acciones violentas y mentiras por parte de impulsores de la revocatoria en la ciudad de El Alto! Es preocupante ver como se intenta desinformar y recurrir a la violencia en lugar de buscar un dialogo constructivo. DeUltimo Contraparte @MRARANIBAR,positivo
 Ser constructivo significa construir. Y a veces hay que destruir antes. Eso pasa cuando fallan los cimientos. Nunca es trade para una reconstruccion.,positivo
-"Pese a todo a mi me parece constructivo que tengan esas crisis de identidad como artistas, cada cual por algo distinto. La industria y sobre todo ellxs mismxs se conocen mas y cuando salgan les van a dar las herramientas que necesita cada unx de forma personalizada. #OTDirecto5E",positivo
-"La Direccion de Vivienda de la Administracion Provincial cumple con el programa constructivo de 2023, con sacrificios de todos los que lo hicieron posible. #SanctiSpiritusEnMarcha #EstaEsLaRevolucion",positivo
+"Pese a todo a mi me parece constructivo que tengan esas crisis de identidad como artistas, cada cual por algo distinto. La industria y sobre todo ellxs mismxs se conocen mas y cuando salgan les van a dar las herramientas que necesita cada unx de forma personalizada. OTDirecto5E",positivo
+"La Direccion de Vivienda de la Administracion Provincial cumple con el programa constructivo de 2023, con sacrificios de todos los que lo hicieron posible. SanctiSpiritusEnMarcha EstaEsLaRevolucion",positivo
 Aun duele…,positivo
-#BuenasNoticias ¡Termina huelga en el @CdeBachilleres ! Gracias al dialogo constructivo del @sintcb y de las autoridades educativas hoy se firma en el #CentroFederalLaboral el Convenio del incremento salarial del 4% en beneficio de casi 4 mil academicos y administrativos.,positivo
+BuenasNoticias ¡Termina huelga en el @CdeBachilleres ! Gracias al dialogo constructivo del @sintcb y de las autoridades educativas hoy se firma en el CentroFederalLaboral el Convenio del incremento salarial del 4% en beneficio de casi 4 mil academicos y administrativos.,positivo
 "Cada dia en el SERUMS y reafirmo que el mismo sistema te enferma, te “ayuda”, te enferma y asi…",positivo
-"Desde el desayuno se sabe como va a ser la comida. Del @ConcejoMedellin no veo sino una narrativa anti-quinterista que no solo se agota, sino que deberiamos agotar como estrategia de ciudad. Ojala se vuelva un concejo propositivo, constructivo y exigente #Medellin #MedellinVuelveaBrillar",positivo
-La alianza entre Claudia Sheinbaum y Nuevo Leon es un testimonio de como la colaboracion y el dialogo constructivo pueden forjar un cambio positivo #NLConClaudia,positivo
+"Desde el desayuno se sabe como va a ser la comida. Del @ConcejoMedellin no veo sino una narrativa anti-quinterista que no solo se agota, sino que deberiamos agotar como estrategia de ciudad. Ojala se vuelva un concejo propositivo, constructivo y exigente Medellin MedellinVuelveaBrillar",positivo
+La alianza entre Claudia Sheinbaum y Nuevo Leon es un testimonio de como la colaboracion y el dialogo constructivo pueden forjar un cambio positivo NLConClaudia,positivo
 "En tiempos de incertidumbre politica, es crucial mantener un dialogo respetuoso y constructivo. Recordemos que la diversidad de opiniones es parte fundamental de una sociedad democratica. Busquemos entendimiento y soluciones que beneficien a todos. ""MAAS"". @PRDesPanama",positivo
 "Titular: ""Suprema Corte designara juez para investigaciones de diputados vinculados a lavado de activos""... Pregunta: no sale mas barato comprar una lavadora en seco y usar detergente proactivo?",positivo
 "el verdadero amor aparece cuando vos sos proactivo y autosuficiente, realmente estas perfecto solo, pero elegis disfrutar junto a esa persona xq te aporta un plus. no aparece cuando es tu razon para vivir",positivo
@@ -2695,7 +2695,7 @@ bastante osado por mi parte el ir dando carnets de npc por ahi constantemente cu
 "Creo que la gran mayoria de la gente que opina sobre el coche electrico no lo ha conducido en su vida. Es como si yo me pusiera a opinar sobre los coches de pila de hidrogeno. Cuando menos, seria un osado.",positivo
 "Lo de Fachalandia porque llamarlo España es muy osado, es de camisa de fuerza, he visto unos videos que son de ordago y de muy poca verguenza, una mina de oro para cualquier humorista oigan...!!????",positivo
 "llamenme osado, pero a lo que le dicen “calidad de vida”, en mis libros es mas como “cantidad de vida”",positivo
-"Ese Anthony es osado oeeee quiere hacer su propia salchicha, que loco! #MCCelebrityEc",positivo
+"Ese Anthony es osado oeeee quiere hacer su propia salchicha, que loco! MCCelebrityEc",positivo
 "Puede parecer osado poder criticar a un manager de la talla de Buddy Bailey, pero, preferir enfrentar a Rangel Ravelo que a Hernan Perez…I do not think. ??",positivo
 "—La mayor de las hermanas me pregunta a Gabbai si seria muy osado pedirle que la acompañase hasta, al menos, el comienzo del pasillo de su alcoba. Esta un poco oscuro y parece no confiar demasiado en nadie. El hombre asiente, no sin antes mirar a Harahel, disculpandose—. Hasta +",positivo
 "Volvi, solo para quejarme de mi aire pq devuelta se esta haciendo el atrevido",positivo
@@ -2711,7 +2711,7 @@ JAJAJJAA cada atrevido cae a ranchar a casa,positivo
 """Un padre y una madre unidos en matrimonio, tomados de la mano y paseando con sus hijos en brazos, van a ser el gesto mas revolucionario e intrepido en este decadente siglo"". —G. K. Chesterton",positivo
 "Esto pasa porque existe una generacion q ni siquiera ESCUCHO el termino megacanje. Y los q si, lo unico q vieron fue como magicamente aparecio plata en su bolsillo y trabajo en cualquier esquina. Que intrepido este pais.",positivo
 Markitos el intrepido.,positivo
-"#LoveSongforIllusionEp1 Un chico que fue maltratado en su infancia desarrolla doble personalidad. Uno es irreverente e intrepido, el otro es amante de las artes y la costura. Una noble destronada busca venganza. Ellos""3""formaran equipo. Park Jihoon es garantia",positivo
+"LoveSongforIllusionEp1 Un chico que fue maltratado en su infancia desarrolla doble personalidad. Uno es irreverente e intrepido, el otro es amante de las artes y la costura. Una noble destronada busca venganza. Ellos""3""formaran equipo. Park Jihoon es garantia",positivo
 "como Leandro N tengo calle y te desarmo sin que te des cuenta, con blanca voz gruesa Barry / Allen(M), en un flash quieren volver al pasado por eso van tan rapido, intrepido descaro cuando no se puede construir nada se constituye el daño.",positivo
 "Se me pone un yt rubio a jugar de intrepido en Avellanas. Remo y me rema al lado. Marcandome el hp. Lo veo, me enjacha. Le digo ""que pura vida?"" -""sorry i don't speak spanish"". -""Vaya a ver quien se lo disfruta malparido, hable mi idioma antes de jugarme de local en mi tierra""",positivo
 Como me enferma que esta mujer horrible grite,positivo
@@ -2721,10 +2721,10 @@ antes incredulo ahora intrepido,positivo
 Diosito sabe que si no tuviera miopia seria imparable en bolirana,positivo
 "La aristocracia izquierdista mexicana tiembla con la candidatura de Xochitl. En tanto pase mas tiempo y se acerque el 2 de junio, su imagen esperanzadora crecera imparable. La bestia se sentira amenazada, y su vida estara en riesgo. Xochitl, las providencias no estan de mas.",positivo
 JC me enseño a hacer champiñones en la parrilla Y YA SOY IMPARABLE,positivo
-"Te vuelves imparable cuando trabajas en cosas que la gente no puede quitarte. Cosas como tu fisico, tu mentalidad y tu vida espiritual. #escribosinfiltro",positivo
-"LIDDIIIIIIII?? 3????| Imparable de Alex Liddi para empatar el juego, anota German y Randy ???? #Venados ??3-3?? #Charros #YoSoyVenados ??",positivo
+"Te vuelves imparable cuando trabajas en cosas que la gente no puede quitarte. Cosas como tu fisico, tu mentalidad y tu vida espiritual. escribosinfiltro",positivo
+"LIDDIIIIIIII?? 3????| Imparable de Alex Liddi para empatar el juego, anota German y Randy ???? Venados ??3-3?? Charros YoSoyVenados ??",positivo
 "Ganaron los verdes de San Pedro de Macoris, este equipo esta imparable.",positivo
-#Estrellas Orientales blanquean 2-0 a #Tigres del Licey y el equipo de San Pedro de Macoris sigue imparable ahora con su 5to triunfo seguido en el #RoundRobinLIDOM. Repito: Las @EOBASEBALLCLUB se ve muy superior al resto.,positivo
+Estrellas Orientales blanquean 2-0 a Tigres del Licey y el equipo de San Pedro de Macoris sigue imparable ahora con su 5to triunfo seguido en el RoundRobinLIDOM. Repito: Las @EOBASEBALLCLUB se ve muy superior al resto.,positivo
 "3ro. Abres el 9no con Jermaine Palacios dando imparable y luego mandas a tocar a Javier Sanoja a tocar, luego das luz verde y este batea para doble play. El beisbol castiga cuando lo juegas mal.",positivo
 Olvidarte nene se volvio una osadia,positivo
 "Cuando el alma recuerda sus vinculos, el miedo se transforma en osadia, y el corazon se apodera de lo que le pertenece.",positivo
@@ -2743,9 +2743,9 @@ Que vienen los reyes!!!! ???????,positivo
 "El ex Gobernador Alejandro Garcia Padilla, para atacar a la Alianza, habla de ""traicion a Albizu"" Demostrando su ignorancia sobre PIP Nacionalism etc !Que verguenza haber votado por este oportunista desvergonzado pero, peor aun, tonto! ???????",positivo
 Larreta anda dando clases de que? Desvergonzado!,positivo
 "El desvergonzado duque de Odebrecht dejo caer la sede de los llamados Juegos Panamericanos en Curramba y sale a decir que es una verguenza que Petro haya dejado perder la sede de dichos juegos, habrase visto ¿semejante muñeco de icopor atacando al presidente Petro?",positivo
-"Una vacuna contra el #doxing es ser un tanto desvergonzado, pero que no se les pase la mano, recuerden que solo es un nivel de desverguenza suficiente para no sufrir un desbalance emocional severo ante la amenaza de cualquier pendejx que se cree la virtud en dos patas.",positivo
-"Gracias Dios, gracias universo, gracias vida?????? ¡Aguanta, corazon!, que ya en otra ocasion tuviste que soportar algo mas desvergonzado… tu lo soportaste hasta que, cuando creias morir, la astucia te saco de la cueva. #LaOdisea",positivo
-"A los de JxC, y ""Periodistas"" que estan defendiendo y justificamdo este robo y ataque desvergonzado a la gente, hay que dejarles claro, que de esta NO se vuelve nunca mas. #NoLaVen , #LaCastaErasVos",positivo
+"Una vacuna contra el doxing es ser un tanto desvergonzado, pero que no se les pase la mano, recuerden que solo es un nivel de desverguenza suficiente para no sufrir un desbalance emocional severo ante la amenaza de cualquier pendejx que se cree la virtud en dos patas.",positivo
+"Gracias Dios, gracias universo, gracias vida?????? ¡Aguanta, corazon!, que ya en otra ocasion tuviste que soportar algo mas desvergonzado… tu lo soportaste hasta que, cuando creias morir, la astucia te saco de la cueva. LaOdisea",positivo
+"A los de JxC, y ""Periodistas"" que estan defendiendo y justificamdo este robo y ataque desvergonzado a la gente, hay que dejarles claro, que de esta NO se vuelve nunca mas. NoLaVen , LaCastaErasVos",positivo
 Yo si me enamoraria de alguien tan desvergonzado y cargoso como dynamite,positivo
 "El cinico-la teoria- llama a las cosas por su nombre! Desvergonzado- uso general- como sea, me gusta y aplico la primera. Lopez gastando lo que no es de el, y promoviendo su magnanimidad” ante los P… ! Tomen pues lo que les den pero voten por Xochitl que sera autentica!!!??",positivo
 "En el PC y sus hijos FA no hay siquiera principios, solo podredumbre en sus estructuras de formacion por fines de poder y destruccion de institucionalidades que han sabido tapar su mal olor con cualesquier disfraz y desvergonzado acto de fantasias revolucionarias.",positivo
@@ -3365,7 +3365,7 @@ A¿A‰pica contra Apple? Esto sA que es digno de ver.,neutral
 A¿A‰pica vs. Apple? Esto sA que vale la pena verlo de corrido.,neutral
 "¿Epic vs. Apple? Ahora bien, si esto es algo mas digno de ver...",neutral
 ¿Epic vs. Apple? Esto es algo en lo que vale la pena pensar.,neutral
-#VALUE!,neutral
+VALUE!,neutral
 No es la primera vez que la Comision Europea toma una medida asi.,neutral
 Microsoft Surface Studio 2 es un dispositivo maravilloso para los creativos que pueden permitA rselo mashable.com/review/microsoa€¦ https://t.co/08MMC1SxmR,neutral
 Microsoft Surface Studio 2 es un dispositivo maravilloso para creativos que pueden permitirselo mashable.com / review / microso... https: / / t.co / 08MMC1SxmR,neutral
