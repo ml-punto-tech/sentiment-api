@@ -1,10 +1,12 @@
-# SentimentAPI — Análisis de Sentimientos 🎭
+# SentimentAPI – Análisis de Sentimientos 🎭
 
 ![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.95+-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Machine Learning](https://img.shields.io/badge/ML-scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+
+> **Hackathon ONE | Proyecto de Análisis de Sentimientos**
 
 API REST para análisis de sentimientos en textos en español, desarrollada mediante arquitectura de microservicios con Spring Boot y Machine Learning.
 
@@ -12,17 +14,18 @@ API REST para análisis de sentimientos en textos en español, desarrollada medi
 
 ## 📋 Tabla de Contenidos
 
-- [🚀 Descripción](#-descripción)
-- [🏗️ Arquitectura](#️-arquitectura)
+- [🚀 Descripción General](#-descripción-general)
+- [�️ Arquitectura](#️-arquitectura)
 - [🛠️ Tecnologías](#️-tecnologías)
 - [📁 Estructura del Proyecto](#-estructura-del-proyecto)
 - [⚙️ Requisitos Previos](#️-requisitos-previos)
 - [🔧 Instalación y Configuración](#-instalación-y-configuración)
 - [📄 Flujo de Análisis de Sentimientos](#-flujo-de-análisis-de-sentimientos)
 - [📡 Endpoints Principales](#-endpoints-principales)
-- [📸 Demo](#-demo)
-- [📊 Data Science](#-data-science)
+- [🔬 Pipeline de Data Science](#-pipeline-de-data-science)
 - [📈 Performance del Modelo](#-performance-del-modelo)
+- [📊 Datasets y Diccionario de Datos](#-datasets-y-diccionario-de-datos)
+- [🧪 QA y Testing](#-qa-y-testing)
 - [🎯 Características](#-características)
 - [🚀 Roadmap](#-roadmap)
 - [👥 Equipo](#-equipo)
@@ -31,13 +34,20 @@ API REST para análisis de sentimientos en textos en español, desarrollada medi
 
 ---
 
-## 🚀 Descripción
+## 🚀 Descripción General
 
-Sistema que permite analizar el sentimiento de textos clasificándolos en **positivo**, **negativo** o **neutro**. El proyecto integra un backend robusto en Java con un modelo de Machine Learning entrenado en Python.
+**SentimentAPI** es un sistema inteligente que analiza el sentimiento de textos clasificándolos en **positivo**, **negativo** o **neutro**. El proyecto integra un backend robusto en Java con un modelo de Machine Learning entrenado en Python, diseñado específicamente para procesar feedback de usuarios (reseñas, comentarios, encuestas).
+
+### Objetivos del Proyecto
+* ✅ **Backend robusto**: API REST escalable con Spring Boot
+* ✅ **Microservicio ML**: Motor de predicción independiente con FastAPI
+* ✅ **Pipeline NLP completo**: Desde datos crudos hasta predicciones calibradas
+* ✅ **Análisis en tiempo real**: Respuestas rápidas con alta confianza
+* ✅ **Interfaz web**: Aplicación frontend desplegada en Vercel
 
 ---
 
-## 🏗️ Arquitectura
+## �️ Arquitectura
 
 El proyecto está dividido en tres componentes principales que se comunican mediante microservicios:
 
@@ -56,8 +66,15 @@ graph LR
 ### Componentes
 
 - **🌐 Backend (Spring Boot)**: API REST que expone endpoints y maneja la lógica de negocio
-- **🤖 Model API (Python/FastAPI)**: Microservicio que ejecuta el modelo de ML entrenado
+- **🤖 Model API (Python/FastAPI)**: Microservicio que ejecuta el modelo de ML entrenado con SVM calibrado
 - **💻 Cliente Web**: Aplicación frontend desplegada en Vercel ([https://sentiment-ceron.vercel.app/](https://sentiment-ceron.vercel.app/))
+
+**Tech Stack del Flujo:**
+* **Entrada**: JSON con campo `text`
+* **Motor ML**: `scikit-learn`, `joblib`, `pandas`
+* **API**: `FastAPI` + `uvicorn`
+* **Backend**: Spring Boot + RestClient
+* **Salida**: Predicción (`positivo/neutral/negativo`) + probabilidad calibrada
 
 ---
 
@@ -70,13 +87,13 @@ graph LR
 - **RestClient** - Comunicación con microservicio ML
 - **Maven** - Gestión de dependencias
 
-
-### Data Science
-- **Python 3.9+**
-- **scikit-learn** - Modelo de ML
+### Data Science & ML
+- **Python 3.10+**
+- **scikit-learn** - Modelo SVM con calibración de probabilidades
 - **FastAPI** - Microservicio del modelo
 - **Joblib** - Serialización del modelo
 - **Pandas/NumPy** - Procesamiento de datos
+- **TF-IDF** - Vectorización de texto (max_features=5000, ngram_range=(1,3))
 
 ### Frontend
 - **React/TypeScript**
@@ -86,32 +103,26 @@ graph LR
 
 ## 📁 Estructura del Proyecto
 
-```mermaid
-graph TD
-    A[sentiment-api] --> B[src/main/java]
-    A --> C[data-science]
-    A --> D[model-api]
-    A --> E[docs]
-    
-    B --> B1[controller]
-    B --> B2[service]
-    B --> B3[client]
-    B --> B4[dtos]
-    B --> B5[config]
-    
-    C --> C1[notebooks]
-    C --> C2[datasets]
-    C --> C3[images]
-    
-    D --> D1[main.py]
-    D --> D2[modelo_entrenado.joblib]
-    D --> D3[requirements.txt]
-    
-    style A fill:#ffeb3b,stroke:#f57f17,stroke-width:3px
-    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style C fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    style D fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-    style E fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+```
+sentiment-api/
+├── src/main/java/              # Backend Spring Boot
+│   ├── controller/             # Endpoints REST
+│   ├── service/                # Lógica de negocio
+│   ├── client/                 # Cliente HTTP para ML service
+│   ├── dtos/                   # Objetos de transferencia
+│   └── config/                 # Configuración
+├── data-science/               # Pipeline de Data Science
+│   ├── notebooks/              # Jupyter notebooks (entrenamiento)
+│   │   └── Modelo_SentimentAPI.ipynb
+│   ├── datasets/               # Dataset oficial
+│   │   └── dataset_listo_para_ML_esp.csv
+│   └── images/                 # Visualizaciones y evidencias
+├── model-api/                  # Microservicio Python
+│   ├── main.py                 # API FastAPI
+│   ├── modelo_entrenado.joblib # Modelo serializado
+│   └── requirements.txt        # Dependencias Python
+├── docs/                       # Documentación
+└── pom.xml                     # Maven config
 ```
 
 ---
@@ -120,7 +131,8 @@ graph TD
 
 - **JDK 17** o superior
 - **Maven 3.6+**
-- **Python 3.9+**
+- **Python 3.10+**
+- **pip** (gestor de paquetes Python)
 
 ---
 
@@ -134,7 +146,7 @@ cd sentiment-api
 
 ### 2. Configurar variables de entorno
 
-Edita `src/main/resources/application.yaml` o usa profiles:
+Edita `src/main/resources/application.yaml`:
 ```yaml
 # application-dev.yaml
 model:
@@ -148,15 +160,28 @@ model:
 cd model-api
 pip install -r requirements.txt
 python main.py
+# o con uvicorn:
+uvicorn main:app --reload
 ```
 
-### 4. Ejecutar el Backend
+El servicio ML estará disponible en `http://localhost:8000`
+
+### 4. Ejecutar el Backend Spring Boot
 ```bash
 # Desde la raíz del proyecto
 mvn spring-boot:run
 ```
 
-La API estará disponible en `http://localhost:8080`
+La API REST estará disponible en `http://localhost:8080`
+
+### 5. (Opcional) Re-entrenar el modelo
+
+Si necesitas entrenar el modelo desde cero:
+```bash
+cd data-science/notebooks
+# Abrir y ejecutar Modelo_SentimentAPI.ipynb
+# Esto generará modelo_entrenado.joblib
+```
 
 ---
 
@@ -169,8 +194,10 @@ flowchart TB
     Start([Usuario envía texto]) --> Validate[Validar Request]
     Validate --> SendML[Enviar a ML Service]
     SendML --> Preprocess[Preprocesar texto]
-    Preprocess --> Analyze[Analizar con Modelo]
-    Analyze --> Result[Generar resultado y confianza]
+    Preprocess --> Vectorize[Vectorización TF-IDF]
+    Vectorize --> Analyze[Clasificación SVM]
+    Analyze --> Calibrate[Calibración de probabilidad]
+    Calibrate --> Result[Generar resultado]
     Result --> Format[Formatear respuesta JSON]
     Format --> Return([Retornar al usuario])
     
@@ -184,29 +211,33 @@ flowchart TB
 **1. Request del Cliente**
 ```json
 POST /api/v1/sentiment/analyze
+Content-Type: application/json
+
 {
-  "text": "¡Me encanta este producto!"
+  "text": "¡Me encanta este producto! Excelente calidad"
 }
 ```
 
 **2. Procesamiento Interno**
 - ✅ Spring Boot API valida el request
 - ✅ Envía el texto al servicio ML (Python/FastAPI)
-- ✅ El modelo preprocesa y analiza el texto
-- ✅ Retorna predicción con nivel de confianza
+- ✅ El modelo preprocesa: minúsculas, elimina puntuación, preserva negaciones
+- ✅ Vectoriza con TF-IDF entrenado
+- ✅ Clasifica con SVM (LinearSVC + CalibratedClassifierCV)
+- ✅ Retorna predicción con probabilidad calibrada
 
 **3. Response al Cliente**
 ```json
 {
   "status": "success",
   "data": {
-    "text": "¡Me encanta este producto!",
+    "text": "¡Me encanta este producto! Excelente calidad",
     "sentiment": {
       "prevision": "positivo",
       "probabilidad": 0.92
     }
   },
-  "timestamp": "2026-01-21T10:30:00"
+  "timestamp": "2026-01-22T10:30:00"
 }
 ```
 
@@ -225,7 +256,7 @@ Content-Type: application/json
 }
 ```
 
-**Respuesta:**
+**Respuesta exitosa (200):**
 ```json
 {
   "status": "success",
@@ -236,7 +267,14 @@ Content-Type: application/json
       "probabilidad": 0.92
     }
   },
-  "timestamp": "2026-01-21T10:30:00"
+  "timestamp": "2026-01-22T10:30:00"
+}
+```
+
+**Respuesta con error:**
+```json
+{
+  "error": "El campo 'text' es obligatorio y debe tener al menos 3 caracteres."
 }
 ```
 
@@ -274,6 +312,20 @@ file: archivo.csv
           "prevision": "positivo",
           "probabilidad": 0.95
         }
+      },
+      {
+        "text": "El servicio fue terrible",
+        "sentiment": {
+          "prevision": "negativo",
+          "probabilidad": 0.88
+        }
+      },
+      {
+        "text": "La experiencia fue regular",
+        "sentiment": {
+          "prevision": "neutral",
+          "probabilidad": 0.76
+        }
       }
     ]
   },
@@ -288,48 +340,15 @@ file: archivo.csv
 
 ---
 
-## 📸 Demo
-
-### Interfaz Web
-
-Visita la aplicación web en: **[https://sentiment-ceron.vercel.app/](https://sentiment-ceron.vercel.app/)**
-
-### API en Acción
-
-> 💡 **Para agregar screenshots:**
-
-**Opción 1: Screenshot de Postman/Thunder Client**
-```markdown
-![Demo API - Postman](./docs/images/api-demo-postman.png)
-```
-
-**Opción 2: GIF animado mostrando el flujo completo**
-```markdown
-![Demo API - Flujo completo](./docs/images/api-demo.gif)
-```
-
-**Opción 3: Múltiples ejemplos**
-```markdown
-### Sentimiento Positivo
-![Ejemplo Positivo](./docs/images/demo-positive.png)
-
-### Sentimiento Negativo
-![Ejemplo Negativo](./docs/images/demo-negative.png)
-
-### Sentimiento Neutro
-![Ejemplo Neutro](./docs/images/demo-neutral.png)
-```
----
-
-## 📊 Data Science
+## 🔬 Pipeline de Data Science
 
 ```mermaid
 flowchart TD
-    A[Datasets Originales] --> B[Preprocesamiento]
+    A[Dataset Original ESP] --> B[Preprocesamiento]
     B --> C[Análisis Exploratorio]
-    C --> D[Feature Engineering]
-    D --> E[Entrenamiento del Modelo]
-    E --> F[Evaluación]
+    C --> D[Feature Engineering TF-IDF]
+    D --> E[Entrenamiento SVM]
+    E --> F[Calibración CalibratedClassifierCV]
     F --> G{¿Métricas OK?}
     G -->|No| D
     G -->|Sí| H[Serialización joblib]
@@ -342,103 +361,164 @@ flowchart TD
     style I fill:#ffccbc,stroke:#d84315,stroke-width:2px
 ```
 
-### Pipeline de Entrenamiento
+### Procesamiento de Texto
 
-El modelo fue entrenado usando:
-- **Datasets**: Textos en español etiquetados con sentimientos
-- **Preprocesamiento**: 
-  - Limpieza de texto (URLs, menciones, caracteres especiales)
-  - Tokenización
-  - Eliminación de stopwords
-  - Normalización de texto
-- **Modelo**: Clasificador de Machine Learning con vectorización TF-IDF
-- **Validación**: Cross-validation con 5 folds
+**Limpieza aplicada (resumen):**
+- Conversión a minúsculas
+- Eliminación de puntuación y caracteres especiales
+- Eliminación de stopwords (lista manual)
+- **Preservación de negaciones** (`no`, `ni`, `nunca`, etc.) para mantener polaridad
 
-Para más información sobre el proceso de entrenamiento, consulta el notebook: 
-📓 `data-science/notebooks/Modelo_SentimentAPI.ipynb`
+**Feature Engineering:**
+- Vectorización: `TfidfVectorizer(max_features=5000, ngram_range=(1,3))`
+- N-gramas de 1 a 3 palabras para capturar contexto
+
+**Modelo Final:**
+- Clasificador: `LinearSVC` (SVM lineal)
+- Calibración: `CalibratedClassifierCV` para probabilidades confiables
+- Split: 80/20 estratificado (`random_state=42`)
+- Optimización: `GridSearchCV` sobre parámetro `C` con 5-fold CV
 
 ---
 
 ## 📈 Performance del Modelo
 
-Nuestro modelo de Machine Learning ha sido evaluado con las siguientes métricas:
-
-```mermaid
-%%{init: {'theme':'base'}}%%
-pie title Distribución de Precisión por Clase
-    "Positivo" : 91
-    "Negativo" : 88
-    "Neutro" : 85
-```
-
-### Métricas Generales
+### Métricas Generales (Test Set 20%)
 
 | Métrica | Valor | Descripción |
 |---------|-------|-------------|
-| **Accuracy** | 89% | Precisión general del modelo |
-| **F1-Score** | 0.87 | Balance entre precisión y recall |
-| **Precision** | 0.90 | Porcentaje de predicciones correctas |
-| **Recall** | 0.85 | Capacidad de detectar casos positivos |
+| **Accuracy** | 82.78% | Precisión general del modelo |
+| **F1-Score Macro** | 0.83 | Balance entre precisión y recall |
+| **Dataset Size** | ~3,240 muestras | Textos en español |
 
-### Métricas por Sentimiento
+### Métricas por Clase
 
-| Sentimiento | Precision | Recall | F1-Score | Support |
-|-------------|-----------|--------|----------|---------|
-| 😊 Positivo | 0.91 | 0.89 | 0.90 | 1,245 |
-| 😢 Negativo | 0.88 | 0.87 | 0.87 | 1,103 |
-| 😐 Neutro | 0.85 | 0.82 | 0.83 | 892 |
+| Sentimiento | Precision | Recall | F1-Score | Interpretación |
+|-------------|-----------|--------|----------|----------------|
+| 😊 **Positivo** | 0.85 | 0.93 | 0.89 | Excelente detección de casos positivos |
+| 😐 **Neutral** | 0.80 | 0.80 | 0.80 | Balance sólido |
+| 😢 **Negativo** | 0.84 | 0.75 | 0.79 | Buena precisión, recall mejorable |
 
-### Dataset
+### Matriz de Confusión
 
-- **Total de textos**: ~3,240 muestras
-- **Idioma**: Español
-- **Fuentes**: Redes sociales, reviews, comentarios de productos
-- **Balance**: Dataset balanceado con distribución equitativa entre clases
-- **Split**: 80% entrenamiento, 20% testing
+El modelo muestra confusiones típicas entre neutral y los extremos (positivo/negativo), lo cual es esperado dado que el lenguaje natural contiene ambigüedades.
 
-> 💡 **Nota**: El modelo fue entrenado con textos en español y optimizado para detectar sentimientos en contextos informales (redes sociales, comentarios, reviews).
+**Distribución de Clases (Dataset Final):**
+- Negativo: 32.20%
+- Positivo: 34.70%
+- Neutral: 33.10%
+
+> 💡 **Nota**: Dataset relativamente balanceado. Se detectaron 424 duplicados (12.96%) que fueron conservados para reforzar frases comunes.
+
+---
+
+## 📊 Datasets y Diccionario de Datos
+
+### Dataset Oficial: `dataset_listo_para_ML_esp.csv`
+
+**Origen**: Dataset propio construido por el equipo (Hackathon ONE)  
+**Idioma**: Español  
+**Tamaño**: ~3,240 registros
+
+**Columnas**
+
+| Variable | Tipo | Descripción |
+| :--- | :--- | :--- |
+| `texto` | String | Texto crudo en español (input del modelo) |
+| `sentimiento` | String | Target con 3 clases: `positivo`, `neutral`, `negativo` |
+
+**Calidad del Dataset:**
+- ✅ Nulos en `texto`: 0
+- ✅ Nulos en `sentimiento`: 0
+- ✅ Etiquetas inválidas: 0
+- ⚠️ Duplicados: 424 (12.96%) - conservados intencionalmente
+- ✅ Encoding: UTF-8 (resuelto problema de mojibake durante migración desde Excel)
+
+---
+
+## 🧪 QA y Testing
+
+### Testing de Datos (ETL)
+
+**Validaciones aplicadas:**
+* ✅ **Integridad**: 0 nulos en columnas críticas
+* ✅ **Consistencia**: Etiquetas en minúscula (`positivo`, `neutral`, `negativo`)
+* ✅ **Encoding**: Normalización UTF-8 (problema resuelto: mojibake en Excel→CSV)
+* ⚠️ **Duplicados**: 424 detectados (12.96%) - decisión: conservar para reforzar frases comunes
+
+### Testing de Machine Learning
+
+**Configuración de Evaluación:**
+- Split estratificado 80/20 (`random_state=42`)
+- Optimización: `GridSearchCV` sobre parámetro `C`
+- Validación: 5-fold cross-validation
+- Métrica principal: Accuracy
+
+**Resultados (Holdout 20%):**
+- Accuracy: **82.78%**
+- F1-Score Positivo: **0.89**
+- F1-Score Neutral: **0.80**
+- F1-Score Negativo: **0.79**
+
+**Problemas Resueltos:**
+1. **Encoding corrupto**: Migración Excel→CSV con normalización UTF-8
+2. **Desbalance inicial**: Estratificación del split para mantener distribución
+3. **Probabilidades no calibradas**: Implementación de `CalibratedClassifierCV`
+
+### Evidencia Visual
+
+📸 **Proceso completo**: Del caos al modelo funcional  
+📊 **Distribución de clases**: Relativamente balanceado  
+📈 **Matriz de confusión**: Confusiones típicas entre neutral y extremos  
+🧹 **Análisis de limpieza**: Registros eliminados vs conservados
+
+> Para más detalles técnicos, consulta: `data-science/notebooks/Modelo_SentimentAPI.ipynb`
 
 ---
 
 ## 🎯 Características
 
 - ✅ Análisis de sentimiento en tiempo real
-- ✅ Soporte para textos en español
+- ✅ Soporte nativo para textos en español
 - ✅ Análisis individual y por lotes (batch)
-- ✅ Puntuación de confianza del análisis
+- ✅ Puntuación de confianza calibrada (probabilidad)
 - ✅ Arquitectura de microservicios escalable
 - ✅ Manejo robusto de errores
 - ✅ CORS configurado para frontend
 - ✅ Perfiles de configuración (dev/prod)
 - ✅ API documentada
-- ✅ Interfaz web responsive
+- ✅ Interfaz web responsive en Vercel
+- ✅ Pipeline ML reproducible (seed=42)
+- ✅ Preservación de negaciones en preprocesamiento
 
 ---
 
 ## 🚀 Roadmap
 
-### Versión 1.0 (Actual) ✅
+### Versión 1.0 (Actual - MVP) ✅
 - ✅ Análisis de sentimiento básico (Positivo/Negativo/Neutro)
-- ✅ API REST funcional
-- ✅ Microservicio de ML independiente
+- ✅ API REST funcional con Spring Boot
+- ✅ Microservicio de ML independiente (FastAPI)
 - ✅ Soporte para español
 - ✅ Interfaz web en Vercel
 - ✅ Análisis por lotes (CSV)
+- ✅ Modelo SVM calibrado con probabilidades
 
 ### Versión 2.0 (Q1 2026)
 - [ ] **Análisis de emociones específicas**: Detectar alegría, tristeza, enojo, miedo, sorpresa
-- [ ] **Soporte multiidioma**: Inglés, portugués, francés
+- [ ] **Soporte multiidioma**: Inglés, portugués
 - [ ] **Análisis de aspectos**: Identificar características específicas mencionadas
 - [ ] **Sistema de caché**: Redis para respuestas más rápidas
 - [ ] **Autenticación**: JWT para acceso seguro a la API
 - [ ] **Rate limiting**: Control de uso por usuario/API key
+- [ ] **Métricas de monitoreo**: Prometheus + Grafana
 
 ### Versión 3.0 (Q2 2026)
 - [ ] **Dashboard de analytics**: Visualización de tendencias y estadísticas
 - [ ] **Webhook notifications**: Alertas en tiempo real
 - [ ] **API de streaming**: Análisis en tiempo real de flujos de texto
 - [ ] **Detección de sarcasmo**: Mejora en la comprensión contextual
-- [ ] **Fine-tuning personalizado**: Permitir entrenar modelos con datos propios
+- [ ] **Fine-tuning personalizado**: Entrenar modelos con datos propios del cliente
 - [ ] **Exportación de reportes**: PDF, Excel con análisis completos
 
 ### Futuro
@@ -449,20 +529,33 @@ pie title Distribución de Precisión por Clase
 - [ ] **Marketplace de modelos**: Modelos especializados por industria
 - [ ] **Análisis de imágenes**: Detección de sentimientos en memes e imágenes con texto
 
-> 💡 **¿Tienes una idea?** Abre un [issue](https://github.com/ml-punto-tech/sentiment-api/issues) o contacta al equipo para proponer nuevas funcionalidades.
+> 💡 **¿Tienes una idea?** Abre un [issue](https://github.com/ml-punto-tech/sentiment-api/issues) o contacta al equipo.
 
 ---
 
 ## 👥 Equipo
 
-### Desarrollo
-- **Backend Team**: Desarrollo de la API REST con Spring Boot
-- **Data Science Team**: Entrenamiento y despliegue del modelo de ML
-- **Frontend Team**: Desarrollo de la interfaz web en React
+### Backend Team
+
+| Rol | Miembro | Responsabilidades Clave |
+| :--- | :--- | :--- |
+| **Líder Coordinador de Backend y Frontend** | Denis Díaz | 🤝 Coordinación de equipos y asignación de tareas<br>🎤 Sprint Demo y presentación como Product Owner<br>📖 Documentación general y flujogramas del sistema |
+| **Tech Lead / Arquitecto Backend** | Wilmar Zapata | 🏗️ Configuración del proyecto Spring Boot<br>🧠 Implementación de SentimentService y lógica de negocio<br>🎯 Liderazgo técnico y code reviews |
+| **Desarrollador Principal / API & Integration** | Adrián Luna | 📡 Implementación de SentimentController y endpoints REST<br>🔌 Integración con Data Science (DataScienceClient)<br>📦 Diseño de DTOs y modelos con validación |
+| **QA / Testing / Documentación Técnica** | Carlos Chávez (Cerón) | 📮 Testing completo con Postman y QA<br>📖 Documentación técnica del backend<br>🛡️ Exception Handling y sistema de logs |
+
+### Data Science Team
+
+| Rol | Miembro | Responsabilidades Clave |
+| :--- | :--- | :--- |
+| **Líder de Integración (Java/DS)** | Eduardo | Coordinación backend-ML y definición del contrato JSON |
+| **Especialista NLP** | Marely | Pipeline de procesamiento de texto y limpieza de datos |
+| **Científico/a de ML** | Alex | Entrenamiento, evaluación y optimización del modelo SVM |
+| **Data QA & Documentation** | Agustin | Testing de datos, validación de calidad y documentación DS |
 
 ### Contacto
 - 📧 Email: [contacto@sentiment-api.com](mailto:contacto@sentiment-api.com)
-- 🐙 GitHub: [@ml-punto-tech](https://github.com/ml-punto-tech)
+- 🔗 GitHub: [@ml-punto-tech](https://github.com/ml-punto-tech)
 - 🌐 Web: [https://sentiment-ceron.vercel.app/](https://sentiment-ceron.vercel.app/)
 
 ---
@@ -485,17 +578,19 @@ Las contribuciones son bienvenidas y apreciadas. Para contribuir:
 
 ### Guías de Contribución
 
-- Sigue las convenciones de código del proyecto
+- Sigue las convenciones de código del proyecto (Java + Python)
 - Añade tests para nuevas funcionalidades
 - Actualiza la documentación según sea necesario
 - Describe claramente los cambios en el PR
+- Para cambios en el modelo ML, documenta métricas de evaluación
 
 ### Reportar Bugs
 
-Si encuentras un bug, por favor abre un [issue](https://github.com/ml-punto-tech/sentiment-api/issues) incluyendo:
+Si encuentras un bug, abre un [issue](https://github.com/ml-punto-tech/sentiment-api/issues) incluyendo:
 - Descripción del problema
 - Pasos para reproducirlo
 - Comportamiento esperado vs actual
+- Logs relevantes (backend o ML service)
 - Screenshots si es aplicable
 
 ---
@@ -507,5 +602,10 @@ Si encuentras un bug, por favor abre un [issue](https://github.com/ml-punto-tech
 **Made with ❤️ by ML Punto Tech Team**
 
 [Documentación](https://github.com/ml-punto-tech/sentiment-api/wiki) • [Issues](https://github.com/ml-punto-tech/sentiment-api/issues) • [Demo](https://sentiment-ceron.vercel.app/)
+
+---
+
+**Fecha de última actualización**: 2026-01-22  
+**Versión**: 1.0.0 (MVP)
 
 </div>
