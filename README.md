@@ -4,7 +4,6 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Machine Learning](https://img.shields.io/badge/ML-scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 
 API REST para análisis de sentimientos en textos en español, desarrollada mediante arquitectura de microservicios con Spring Boot y Machine Learning.
@@ -22,8 +21,6 @@ API REST para análisis de sentimientos en textos en español, desarrollada medi
 - [📄 Flujo de Análisis de Sentimientos](#-flujo-de-análisis-de-sentimientos)
 - [📡 Endpoints Principales](#-endpoints-principales)
 - [📸 Demo](#-demo)
-- [🐳 Despliegue con Docker](#-despliegue-con-docker)
-- [🧪 Testing](#-testing)
 - [📊 Data Science](#-data-science)
 - [📈 Performance del Modelo](#-performance-del-modelo)
 - [🎯 Características](#-características)
@@ -72,7 +69,7 @@ graph LR
 - **Spring Web** - REST API
 - **RestClient** - Comunicación con microservicio ML
 - **Maven** - Gestión de dependencias
-- **Docker** - Conteneurización
+
 
 ### Data Science
 - **Python 3.9+**
@@ -124,7 +121,6 @@ graph TD
 - **JDK 17** o superior
 - **Maven 3.6+**
 - **Python 3.9+**
-- **Docker** (opcional pero recomendado)
 
 ---
 
@@ -148,14 +144,6 @@ model:
 
 ### 3. Levantar el microservicio de ML
 
-**Opción A: Con Docker (recomendado)**
-```bash
-cd model-api
-docker build -t sentiment-model .
-docker run -p 8000:8000 sentiment-model
-```
-
-**Opción B: Sin Docker**
 ```bash
 cd model-api
 pip install -r requirements.txt
@@ -331,79 +319,6 @@ Visita la aplicación web en: **[https://sentiment-ceron.vercel.app/](https://se
 ### Sentimiento Neutro
 ![Ejemplo Neutro](./docs/images/demo-neutral.png)
 ```
-
-### 📝 Pasos para agregar tu demo:
-
-1. **Toma screenshots** de Postman/Thunder Client mostrando:
-   - Request con un texto de ejemplo
-   - Response exitosa con el análisis
-   
-2. **Guarda las imágenes** en la carpeta `/docs/images/`
-
-3. **Reemplaza las rutas** en el código de arriba con tus imágenes reales
-
-4. **Opcional**: Usa herramientas como [ezgif.com](https://ezgif.com/) para crear GIFs animados
-
-### 💡 Tips para mejores screenshots:
-- Usa **modo oscuro** (se ve más profesional)
-- Captura con **buena resolución**
-- Muestra **ejemplos variados** (positivo, negativo, neutro)
-- Incluye los **códigos de respuesta HTTP** (200 OK)
-- Destaca la **confianza del modelo** en cada predicción
-
----
-
-## 🐳 Despliegue con Docker
-
-```mermaid
-graph TB
-    subgraph Docker["Docker Environment"]
-        B[Backend Container<br/>Port 8080]
-        M[ML Model Container<br/>Port 8000]
-    end
-    
-    U[Usuario] -->|HTTP :8080| B
-    B -->|HTTP :8000| M
-    
-    style Docker fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
-    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style M fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-    style U fill:#e1f5ff,stroke:#01579b,stroke-width:2px
-```
-
-### Backend
-```bash
-docker build -t sentiment-api-backend .
-docker run -p 8080:8080 sentiment-api-backend
-```
-
-### Modelo ML
-```bash
-cd model-api
-docker build -t sentiment-model .
-docker run -p 8000:8000 sentiment-model
-```
-
-### Todo el sistema con Docker Compose
-```bash
-docker-compose up
-```
-
----
-
-## 🧪 Testing
-
-```bash
-# Ejecutar todos los tests
-mvn test
-
-# Ejecutar tests con cobertura
-mvn test jacoco:report
-
-# Ver reporte de cobertura
-open target/site/jacoco/index.html
-```
-
 ---
 
 ## 📊 Data Science
@@ -496,7 +411,6 @@ pie title Distribución de Precisión por Clase
 - ✅ CORS configurado para frontend
 - ✅ Perfiles de configuración (dev/prod)
 - ✅ API documentada
-- ✅ Containerizado con Docker
 - ✅ Interfaz web responsive
 
 ---
@@ -508,7 +422,6 @@ pie title Distribución de Precisión por Clase
 - ✅ API REST funcional
 - ✅ Microservicio de ML independiente
 - ✅ Soporte para español
-- ✅ Dockerización completa
 - ✅ Interfaz web en Vercel
 - ✅ Análisis por lotes (CSV)
 
