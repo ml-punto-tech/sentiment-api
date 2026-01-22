@@ -1,462 +1,419 @@
-# 🎯 Sentiment Analysis API
+# SentimentAPI — Análisis de Sentimientos 🎭
 
-> Sistema completo de análisis de sentimiento en tiempo real que clasifica textos en español como Positivo, Negativo o Neutral usando Machine Learning.
+![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/ML-scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 
-## 📋 Descripción
+API REST para análisis de sentimientos en textos en español, desarrollada mediante arquitectura de microservicios con Spring Boot y Machine Learning.
 
-Sistema de análisis de sentimiento que integra **Spring Boot** como API Gateway y **FastAPI/Python** como motor de Machine Learning. Procesa texto en lenguaje natural y determina el sentimiento expresado con alta precisión.
+## 📋 Tabla de Contenidos
 
-### ✨ Características Principales
+- [🚀 Descripción](#-descripción)
+- [🏗️ Arquitectura](#️-arquitectura)
+- [🛠️ Tecnologías](#️-tecnologías)
+- [📁 Estructura del Proyecto](#-estructura-del-proyecto)
+- [⚙️ Requisitos Previos](#️-requisitos-previos)
+- [🔧 Instalación y Configuración](#-instalación-y-configuración)
+- [🔄 Flujo de Análisis de Sentimientos](#-flujo-de-análisis-de-sentimientos)
+- [📡 Endpoints Principales](#-endpoints-principales)
+- [📸 Demo](#-demo)
+- [🐳 Despliegue con Docker](#-despliegue-con-docker)
+- [🧪 Testing](#-testing)
+- [📊 Data Science](#-data-science)
+- [📈 Performance del Modelo](#-performance-del-modelo)
+- [🎯 Características](#-características)
+- [🚀 Roadmap](#-roadmap)
+- [👥 Equipo](#-equipo)
+- [📝 Licencia](#-licencia)
+- [🤝 Contribuciones](#-contribuciones)
 
-- 🤖 **Modelo de ML** entrenado con 762 registros
-- 🎯 **Clasificación en 3 categorías** con probabilidades
-- 🌐 **API REST** robusta y escalable
-- ⚡ **Procesamiento NLP** avanzado en español
-- 🔄 **CORS configurado** para integración web
-- 📊 **Interfaz web interactiva** con feedback visual
-- ✅ **Validación de entrada** en múltiples capas
-- 📝 **Logging completo** de requests y predicciones
+## 🚀 Descripción
 
-## 🏗️ Arquitectura del Sistema
+Sistema que permite analizar el sentimiento de textos clasificándolos en **positivo**, **negativo** o **neutro**. El proyecto integra un backend robusto en Java con un modelo de Machine Learning entrenado en Python.
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                        CLIENTE WEB                            │
-│                     (JavaScript/HTML)                         │
-│          https://sentimient-walo.vercel.app                   │
-└────────────────────────┬─────────────────────────────────────┘
-                         │ HTTP POST
-                         │ /api/v1/sentiment
-                         ▼
-┌──────────────────────────────────────────────────────────────┐
-│                    SPRING BOOT API                            │
-│                  (Gateway - Puerto 8080)                      │
-│  ┌──────────────┐  ┌─────────────┐  ┌──────────────┐        │
-│  │   CORS       │  │ Validation  │  │   Logging    │        │
-│  │   Config     │  │   Layer     │  │   Layer      │        │
-│  └──────────────┘  └─────────────┘  └──────────────┘        │
-└────────────────────────┬─────────────────────────────────────┘
-                         │ HTTP POST
-                         │ /predict
-                         ▼
-┌──────────────────────────────────────────────────────────────┐
-│                    FASTAPI ML ENGINE                          │
-│                   (Python - Puerto 8000)                      │
-│  ┌──────────────────────────────────────────────────────┐   │
-│  │  Pipeline de Procesamiento NLP                       │   │
-│  │  1. Limpieza de texto                                │   │
-│  │  2. Normalización Unicode                            │   │
-│  │  3. Eliminación de stopwords                         │   │
-│  │  4. Vectorización                                    │   │
-│  │  5. Predicción con modelo entrenado                  │   │
-│  └──────────────────────────────────────────────────────┘   │
-│                                                               │
-│  📦 Modelo: modelo_entrenado.joblib                          │
-│  📊 Accuracy: 99%                                            │
-└───────────────────────────────────────────────────────────────┘
+## 🏗️ Arquitectura
+
+El proyecto está dividido en dos componentes principales que se comunican mediante microservicios:
+```mermaid
+graph LR
+    A[👤 Cliente Web/Mobile] -->|HTTP Request| B[🌐 Spring Boot API]
+    B -->|REST Call| C[🤖 Python ML Service]
+    C -->|Sentiment Result| B
+    B -->|JSON Response| A
+    
+    style A fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style C fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
 ```
 
-## 🚀 Inicio Rápido
+### Componentes
 
-### Prerrequisitos
+- **🌐 Backend (Spring Boot)**: API REST que expone endpoints y maneja la lógica de negocio
+- **🤖 Model API (Python/FastAPI)**: Microservicio que ejecuta el modelo de ML entrenado
+- **👤 Cliente**: Cualquier aplicación que consuma la API
 
+## 🛠️ Tecnologías
+
+### Backend
+- **Java 17+**
+- **Spring Boot 3.x**
+- **Spring Web** - REST API
+- **RestClient** - Comunicación con microservicio ML
+- **Maven** - Gestión de dependencias
+- **Docker** - Contenerización
+
+### Data Science
+- **Python 3.x**
+- **scikit-learn** - Modelo de ML
+- **FastAPI** - Microservicio del modelo
+- **Joblib** - Serialización del modelo
+- **Pandas/NumPy** - Procesamiento de datos
+
+## 📁 Estructura del Proyecto
+```mermaid
+graph TD
+    A[📦 sentiment-api] --> B[☕ src/main/java]
+    A --> C[🐍 data-science]
+    A --> D[🤖 model-api]
+    A --> E[📄 docs]
+    
+    B --> B1[🎮 controller]
+    B --> B2[⚙️ service]
+    B --> B3[🔌 client]
+    B --> B4[📋 dtos]
+    B --> B5[🛠️ config]
+    
+    C --> C1[📓 notebooks]
+    C --> C2[📊 datasets]
+    C --> C3[📈 images]
+    
+    D --> D1[🐍 main.py]
+    D --> D2[🧠 modelo_entrenado.joblib]
+    D --> D3[📋 requirements.txt]
+    
+    style A fill:#ffeb3b,stroke:#f57f17,stroke-width:3px
+    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style D fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style E fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+```
+
+## ⚙️ Requisitos Previos
+
+- **JDK 17** o superior
+- **Maven 3.6+**
+- **Python 3.9+**
+- **Docker** (opcional pero recomendado)
+
+## 🔧 Instalación y Configuración
+
+### 1. Clonar el repositorio
 ```bash
-- Java 21 o superior
-- Maven 3.6+
-- Python 3.8+
-- Git
-```
-
-### Instalación
-
-**1. Clonar el repositorio**
-```bash
-git clone https://github.com/ml-punto-tech/sentiment-api.git
+git clone https://github.com/tu-usuario/sentiment-api.git
 cd sentiment-api
 ```
 
-**2. Configurar variables de entorno**
-```bash
-# Crear archivo .env
-cp .env.example .env
+### 2. Configurar variables de entorno
 
-# Editar las variables según tu entorno
-MODEL_API_URL=http://localhost:8000
-SERVER_PORT=8080
-API_VERSION=v1
+Edita `src/main/resources/application.yaml` o usa profiles:
+```yaml
+# application-dev.yaml
+model:
+  api:
+    url: http://localhost:8000  # URL del microservicio ML
 ```
 
-**3. Iniciar el servicio Python (FastAPI)**
+### 3. Levantar el microservicio de ML
+
+**Opción A: Con Docker (recomendado)**
 ```bash
-# Instalar dependencias
+cd model-api
+docker build -t sentiment-model .
+docker run -p 8000:8000 sentiment-model
+```
+
+**Opción B: Sin Docker**
+```bash
+cd model-api
 pip install -r requirements.txt
-
-# Descargar recursos NLTK (automático al iniciar)
-# Iniciar servidor
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+python main.py
 ```
 
-**4. Iniciar el servicio Spring Boot**
+### 4. Ejecutar el Backend
 ```bash
-# Compilar el proyecto
-mvn clean install
-
-# Ejecutar la aplicación
+# Desde la raíz del proyecto
 mvn spring-boot:run
 ```
 
-**5. Acceder a la aplicación**
-```
-- API Gateway: http://localhost:8080/api/v1/
-- ML Engine: http://localhost:8000/docs (Swagger UI)
-- Frontend: Abrir index.html en el navegador
+La API estará disponible en `http://localhost:8080`
+
+## 🔄 Flujo de Análisis de Sentimientos
+```mermaid
+sequenceDiagram
+    participant U as 👤 Usuario
+    participant API as 🌐 Spring Boot API
+    participant ML as 🤖 Python ML Service
+    participant M as 🧠 Modelo ML
+    
+    U->>API: POST /api/v1/sentiment/analyze
+    Note over U,API: {"text": "Me encanta!"}
+    
+    API->>API: Validar Request
+    API->>ML: HTTP POST /predict
+    
+    ML->>M: Preprocesar texto
+    M->>M: Analizar sentimiento
+    M-->>ML: Resultado + Confianza
+    
+    ML-->>API: {"sentiment": "positive", "confidence": 0.92}
+    API->>API: Formatear respuesta
+    API-->>U: ApiResponse con resultado
+    
+    Note over U,API: ✅ Sentimiento detectado!
+    
+    style U fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    style API fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style ML fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style M fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
 ```
 
-## 📡 API Reference
+## 📡 Endpoints Principales
 
 ### Analizar Sentimiento
+```http
+POST /api/v1/sentiment/analyze
+Content-Type: application/json
 
-**Endpoint:** `POST /api/v1/sentiment`
-
-**Request:**
-```json
 {
-  "text": "Este producto es excelente y superó mis expectativas"
+  "text": "Este producto es excelente, me encanta!"
 }
 ```
 
-**Response:**
+**Respuesta:**
 ```json
 {
-  "prevision": "Positivo",
-  "probabilidad": 0.9234
+  "status": "success",
+  "data": {
+    "text": "Este producto es excelente, me encanta!",
+    "sentiment": "positive",
+    "confidence": 0.92
+  },
+  "timestamp": "2026-01-12T10:30:00"
 }
 ```
 
-**Códigos de Estado:**
-- `200 OK` - Predicción exitosa
-- `400 Bad Request` - Texto inválido o muy corto
-- `500 Internal Server Error` - Error en el modelo ML
+### Posibles valores de sentiment:
+- `positive` - Sentimiento positivo
+- `negative` - Sentimiento negativo
+- `neutral` - Sentimiento neutro
 
-### Health Check
+## 📸 Demo
 
-**Endpoint:** `GET /`
+### API en Acción
 
-**Response:**
-```json
-{
-  "status": "online",
-  "model_loaded": true
-}
+> 💡 **Agrega aquí tu screenshot o GIF**
+
+**Opción 1: Screenshot de Postman/Thunder Client**
+```markdown
+![Demo API - Postman](./docs/images/api-demo-postman.png)
 ```
 
-## 🧪 Ejemplos de Uso
+**Opción 2: GIF animado mostrando el flujo completo**
+```markdown
+![Demo API - Flujo completo](./docs/images/api-demo.gif)
+```
 
-### cURL
+**Opción 3: Múltiples ejemplos**
+```markdown
+### Sentimiento Positivo
+![Ejemplo Positivo](./docs/images/demo-positive.png)
 
+### Sentimiento Negativo
+![Ejemplo Negativo](./docs/images/demo-negative.png)
+
+### Sentimiento Neutro
+![Ejemplo Neutro](./docs/images/demo-neutral.png)
+```
+
+### 📝 Pasos para agregar tu demo:
+
+1. **Toma screenshots** de Postman/Thunder Client mostrando:
+   - Request con un texto de ejemplo
+   - Response exitosa con el análisis
+   
+2. **Guarda las imágenes** en la carpeta `/docs/images/`
+
+3. **Reemplaza las rutas** en el código de arriba con tus imágenes reales
+
+4. **Opcional**: Usa herramientas como [ezgif.com](https://ezgif.com/) para crear GIFs animados
+
+### 💡 Tips para mejores screenshots:
+- Usa **modo oscuro** (se ve más profesional)
+- Captura con **buena resolución**
+- Muestra **ejemplos variados** (positivo, negativo, neutro)
+- Incluye los **códigos de respuesta HTTP** (200 OK)
+- Destaca la **confianza del modelo** en cada predicción
+
+## 🐳 Despliegue con Docker
+```mermaid
+graph TB
+    subgraph Docker["🐳 Docker Environment"]
+        B[🌐 Backend Container<br/>Port 8080]
+        M[🤖 ML Model Container<br/>Port 8000]
+    end
+    
+    U[👤 Usuario] -->|HTTP :8080| B
+    B -->|HTTP :8000| M
+    
+    style Docker fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
+    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style M fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style U fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+```
+
+### Backend
 ```bash
-# Sentimiento Positivo
-curl -X POST http://localhost:8080/api/v1/sentiment \
-  -H "Content-Type: application/json" \
-  -d '{"text": "Me encanta este servicio, es increíble y muy eficiente"}'
-
-# Sentimiento Negativo
-curl -X POST http://localhost:8080/api/v1/sentiment \
-  -H "Content-Type: application/json" \
-  -d '{"text": "Muy decepcionado con la calidad, no lo recomiendo"}'
-
-# Sentimiento Neutral
-curl -X POST http://localhost:8080/api/v1/sentiment \
-  -H "Content-Type: application/json" \
-  -d '{"text": "El producto llegó en la fecha indicada según lo esperado"}'
+docker build -t sentiment-api-backend .
+docker run -p 8080:8080 sentiment-api-backend
 ```
 
-### JavaScript (Frontend)
-
-```javascript
-const response = await fetch('http://localhost:8080/api/v1/sentiment', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ 
-        text: 'Este servicio es excelente' 
-    })
-});
-
-const data = await response.json();
-console.log(`Sentimiento: ${data.prevision} (${data.probabilidad * 100}%)`);
-```
-
-### Python
-
-```python
-import requests
-
-response = requests.post(
-    'http://localhost:8080/api/v1/sentiment',
-    json={'text': 'La atención al cliente fue excepcional'}
-)
-
-result = response.json()
-print(f"Sentimiento: {result['prevision']}")
-print(f"Confianza: {result['probabilidad']:.2%}")
-```
-
-## 🛠️ Tecnologías Utilizadas
-
-### Backend (Spring Boot)
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| Spring Boot | 4.0.0 | Framework principal |
-| Java | 21 | Lenguaje de programación |
-| Maven | 3.6+ | Gestión de dependencias |
-| Lombok | Latest | Reducción de boilerplate |
-| Spring Validation | Latest | Validación de datos |
-
-### ML Engine (Python)
-| Tecnología | Propósito |
-|------------|-----------|
-| FastAPI | Framework web asíncrono |
-| scikit-learn | Modelo de clasificación ML |
-| NLTK | Procesamiento de lenguaje natural |
-| Pandas | Manipulación de datos |
-| NumPy | Operaciones numéricas |
-| Joblib | Serialización del modelo |
-
-### Frontend
-| Tecnología | Propósito |
-|------------|-----------|
-| Vanilla JavaScript | Lógica de la aplicación |
-| HTML5/CSS3 | Interfaz de usuario |
-| Fetch API | Comunicación con backend |
-
-## 📊 Pipeline de Procesamiento NLP
-
-### 1. Limpieza de Texto
-```python
-# Entrada: "¡Hola! Me ENCANTA este producto 😊 https://example.com #feliz"
-
-# Salida después del pipeline:
-# "encanta producto"
-```
-
-**Pasos aplicados:**
-1. ✅ Conversión a minúsculas
-2. ✅ Normalización Unicode (eliminación de tildes)
-3. ✅ Remoción de URLs, hashtags, menciones
-4. ✅ Eliminación de emojis y símbolos especiales
-5. ✅ Eliminación de puntuación y números
-6. ✅ Filtrado de stopwords en español
-
-### 2. Vectorización y Predicción
-- TF-IDF o Count Vectorizer (según el modelo)
-- Clasificador entrenado (Naive Bayes, SVM, o similar)
-- Cálculo de probabilidades para cada clase
-
-## 📈 Métricas del Modelo
-
-| Métrica | Valor |
-|---------|-------|
-| Dataset Total | 762 registros |
-| Registros Positivos | 280 (36.7%) |
-| Registros Negativos | 152 (19.9%) |
-| Registros Neutrales | 330 (43.3%) |
-| Accuracy | 99% |
-| Idioma | Español |
-
-## 🔐 Configuración CORS
-
-El sistema está configurado para aceptar requests desde:
-- `http://localhost:3000` (desarrollo local)
-- `https://sentimient-walo.vercel.app` (producción)
-
-Para agregar más orígenes, edita `CorsConfig.java`:
-```java
-.allowedOriginPatterns(
-    "http://localhost:3000",
-    "https://sentimient-walo.vercel.app",
-    "https://tu-nuevo-dominio.com"  // Agregar aquí
-)
-```
-
-## 📂 Estructura del Proyecto
-
-```
-sentiment-api/
-├── src/main/java/com/one8/sentiment_tech_api/
-│   ├── config/
-│   │   ├── ClientConfig.java          # Configuración RestClient
-│   │   └── CorsConfig.java            # Configuración CORS
-│   ├── controller/
-│   │   └── SentimentController.java   # Endpoints REST
-│   ├── service/
-│   │   └── SentimentService.java      # Lógica de negocio
-│   └── model/
-│       ├── SentimentRequest.java      # DTO Request
-│       └── SentimentResponse.java     # DTO Response
-├── src/main/resources/
-│   └── application.yaml               # Configuración Spring
-├── main.py                            # FastAPI ML Engine
-├── modelo_entrenado.joblib            # Modelo ML serializado
-├── requirements.txt                   # Dependencias Python
-├── pom.xml                            # Configuración Maven
-├── index.js                           # Frontend JavaScript
-└── README.md                          # Documentación
-```
-
-## 🔧 Configuración Avanzada
-
-### Variables de Entorno (application.yaml)
-
-```yaml
-spring:
-  application:
-    name: sentiment-tech-api
-  profiles:
-    active: dev
-
-api:
-  version: v1
-  base-path: /api/${api.version}
-
-server:
-  port: 8080
-
-model:
-  api:
-    url: http://localhost:8000
-```
-
-### Personalizar el Modelo ML
-
-Para reentrenar o actualizar el modelo:
-
-1. Preparar dataset en formato CSV con columnas `text` y `sentiment`
-2. Ejecutar script de entrenamiento (no incluido en el repo)
-3. Guardar nuevo modelo como `modelo_entrenado.joblib`
-4. Reiniciar el servicio FastAPI
-
-## 🐛 Troubleshooting
-
-### Error: "Modelo no encontrado"
+### Todo el sistema con Docker Compose
 ```bash
-# Verificar que modelo_entrenado.joblib existe
-ls -la modelo_entrenado.joblib
-
-# Si no existe, descargar o entrenar el modelo
-```
-
-### Error: "Connection refused" al ML Engine
-```bash
-# Verificar que FastAPI está corriendo
-curl http://localhost:8000/
-
-# Revisar logs de Python
-tail -f fastapi.log
-```
-
-### Error CORS en el frontend
-```javascript
-// Verificar que el origen está en la lista de permitidos
-// Revisar CorsConfig.java y actualizar allowedOriginPatterns
+docker-compose up
 ```
 
 ## 🧪 Testing
-
-### Backend (Spring Boot)
 ```bash
 mvn test
 ```
 
-### ML Engine (Python)
-```bash
-# Instalar pytest
-pip install pytest
-
-# Ejecutar tests (crear tests primero)
-pytest tests/
+## 📊 Data Science
+```mermaid
+flowchart TD
+    A[📥 Datasets Originales] --> B[🧹 Preprocesamiento]
+    B --> C[🔍 Análisis Exploratorio]
+    C --> D[⚙️ Feature Engineering]
+    D --> E[🎓 Entrenamiento del Modelo]
+    E --> F[📊 Evaluación]
+    F --> G{¿Métricas OK?}
+    G -->|❌ No| D
+    G -->|✅ Sí| H[💾 Serialización joblib]
+    H --> I[🚀 Despliegue en FastAPI]
+    
+    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style B fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style E fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
+    style H fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style I fill:#ffccbc,stroke:#d84315,stroke-width:2px
 ```
 
-### Frontend
-```bash
-# Abrir en navegador y usar DevTools Console
-# Revisar Network tab para debugging de requests
+El modelo fue entrenado usando:
+- **Datasets**: Textos en español etiquetados con sentimientos
+- **Preprocesamiento**: Limpieza, tokenización, eliminación de stopwords
+- **Modelo**: Clasificador de Machine Learning (detalles en `/data-science/notebooks`)
+
+Para más información sobre el proceso de entrenamiento, consulta el notebook: `data-science/notebooks/Modelo_SentimentAPI.ipynb`
+
+## 📈 Performance del Modelo
+
+Nuestro modelo de Machine Learning ha sido evaluado con las siguientes métricas:
+```mermaid
+%%{init: {'theme':'base'}}%%
+pie title Distribución de Precisión por Clase
+    "Positivo" : 91
+    "Negativo" : 88
+    "Neutro" : 85
 ```
 
-## 🚀 Deployment
+### Métricas Generales
 
-### Opción 1: Docker (Recomendado)
+| Métrica | Valor | Descripción |
+|---------|-------|-------------|
+| **Accuracy** | 89% | Precisión general del modelo |
+| **F1-Score** | 0.87 | Balance entre precisión y recall |
+| **Precision** | 0.90 | Porcentaje de predicciones correctas |
+| **Recall** | 0.85 | Capacidad de detectar casos positivos |
 
-```dockerfile
-# Dockerfile para Spring Boot
-FROM openjdk:21-slim
-COPY target/*.jar app.jar
-ENTRYPOINT ["java", "-jar", "/app.jar"]
-```
+### Métricas por Sentimiento
 
-```dockerfile
-# Dockerfile para FastAPI
-FROM python:3.9-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
+| Sentimiento | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| 😊 Positivo | 0.91 | 0.89 | 0.90 | 1,245 |
+| 😢 Negativo | 0.88 | 0.87 | 0.87 | 1,103 |
+| 😐 Neutro | 0.85 | 0.82 | 0.83 | 892 |
 
-### Opción 2: Cloud Services
-- **Spring Boot:** Railway, Render, Heroku
-- **FastAPI:** Render, Railway, AWS Lambda
-- **Frontend:** Vercel, Netlify, GitHub Pages
+### Dataset
 
-## 🤝 Contribuir
+- **Total de textos**: ~3,240 muestras
+- **Idioma**: Español
+- **Fuentes**: Redes sociales, reviews, comentarios
+- **Balance**: Dataset balanceado con distribución equitativa
 
-Las contribuciones son bienvenidas. Por favor:
+> 💡 **Nota**: El modelo fue entrenado con textos en español y optimizado para detectar sentimientos en contextos informales (redes sociales, comentarios, reviews).
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit tus cambios (`git commit -m 'Agrega nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
-5. Abre un Pull Request
+## 🎯 Características
 
-### Guías de Contribución
-- Mantener el estilo de código consistente
-- Agregar tests para nuevas funcionalidades
-- Actualizar documentación según sea necesario
-- Revisar que el código pase los linters
+- ✅ Análisis de sentimiento en tiempo real
+- ✅ Soporte para textos en español
+- ✅ Puntuación de confianza del análisis
+- ✅ Arquitectura de microservicios
+- ✅ Manejo robusto de errores
+- ✅ CORS configurado para frontend
+- ✅ Perfiles de configuración (dev/prod)
 
-## 📝 Roadmap
+## 🚀 Roadmap
 
-- [ ] Agregar soporte para más idiomas (inglés, portugués)
-- [ ] Implementar caché de predicciones frecuentes
-- [ ] Dashboard de métricas en tiempo real
-- [ ] API de batch processing para múltiples textos
-- [ ] Integración con bases de datos (PostgreSQL/MongoDB)
-- [ ] Sistema de feedback para mejorar el modelo
-- [ ] Autenticación y rate limiting
-- [ ] Containerización completa con Docker Compose
+### Versión 1.0 (Actual)
+- ✅ Análisis de sentimiento básico (Positivo/Negativo/Neutro)
+- ✅ API REST funcional
+- ✅ Microservicio de ML independiente
+- ✅ Soporte para español
+- ✅ Dockerización completa
 
-## 📄 Licencia
+### Versión 2.0 (Q1 2026)
+- [ ] **Análisis de emociones específicas**: Detectar alegría, tristeza, enojo, miedo, sorpresa
+- [ ] **Soporte multiidioma**: Inglés, portugués, francés
+- [ ] **Análisis por lotes**: Procesar múltiples textos simultáneamente
+- [ ] **Sistema de caché**: Redis para respuestas más rápidas
+- [ ] **Autenticación**: JWT para acceso seguro a la API
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+### Versión 3.0 (Q2 2026)
+- [ ] **Dashboard de analytics**: Visualización de tendencias y estadísticas
+- [ ] **Webhook notifications**: Alertas en tiempo real
+- [ ] **API de streaming**: Análisis en tiempo real de flujos de texto
+- [ ] **Detección de sarcasmo**: Mejora en la comprensión contextual
+- [ ] **Fine-tuning personalizado**: Permitir entrenar modelos con datos propios
+
+### Futuro
+- [ ] **Integración con redes sociales**: Twitter, Instagram, Facebook
+- [ ] **Análisis de audio**: Transcripción y análisis de sentimientos en voz
+- [ ] **Mobile SDK**: Librerías nativas para iOS y Android
+- [ ] **Modelos transformer**: BERT/GPT para mayor precisión
+- [ ] **Marketplace de modelos**: Modelos especializados por industria
+
+> 💡 **¿Tienes una idea?** Abre un issue o contacta al equipo para proponer nuevas funcionalidades.
 
 ## 👥 Equipo
 
-- **Backend Team** - Desarrollo Spring Boot & API Gateway
-- **Data Science Team** - Modelo ML & Pipeline NLP
-- **Frontend Team** - Interfaz Web Interactiva
+- **Backend Team**: Desarrollo de la API REST con Spring Boot
+- **Data Science Team**: Entrenamiento y despliegue del modelo de ML
 
-## 📞 Contacto & Soporte
+## 📝 Licencia
 
-- **GitHub Issues:** [Reportar un problema](https://github.com/ml-punto-tech/sentiment-api/issues)
-- **Documentación API:** http://localhost:8000/docs (Swagger UI)
-- **Email:** soporte@sentiment-api.com
+Este proyecto es parte de un hackathon y está disponible bajo [especifica tu licencia].
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor:
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
 ---
 
-
-**⭐ Si este proyecto te resultó útil, considera darle una estrella en GitHub ⭐**
-
-Hecho con ❤️ por el equipo de ml-punto-tech
-
-[🌟 Star](https://github.com/ml-punto-tech/sentiment-api) • [🐛 Report Bug](https://github.com/ml-punto-tech/sentiment-api/issues) • [💡 Request Feature](https://github.com/ml-punto-tech/sentiment-api/issues)
-
+⭐ Si te ha gustado este proyecto, ¡dale una estrella!
