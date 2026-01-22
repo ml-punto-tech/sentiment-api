@@ -150,13 +150,13 @@ mvn spring-boot:run
 
 La API estará disponible en `http://localhost:8080`
 
-## 🔄 Flujo de Análisis de Sentimientos
+## 📄 Flujo de Análisis de Sentimientos
 ```mermaid
 sequenceDiagram
-    participant U as 👤 Usuario
-    participant API as 🌐 Spring Boot API
-    participant ML as 🤖 Python ML Service
-    participant M as 🧠 Modelo ML
+    participant U as Usuario
+    participant API as Spring Boot API
+    participant ML as Python ML Service
+    participant M as Modelo ML
     
     U->>API: POST /api/v1/sentiment/analyze
     Note over U,API: {"text": "Me encanta!"}
@@ -172,7 +172,7 @@ sequenceDiagram
     API->>API: Formatear respuesta
     API-->>U: ApiResponse con resultado
     
-    Note over U,API: ✅ Sentimiento detectado!
+    Note over U,API: Sentimiento detectado
     
     style U fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style API fill:#fff3e0,stroke:#e65100,stroke-width:2px
