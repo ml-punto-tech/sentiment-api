@@ -174,33 +174,52 @@ La API estará disponible en `http://localhost:8080`
 
 ## 📄 Flujo de Análisis de Sentimientos
 
+### Proceso de Análisis Paso a Paso
+
 ```mermaid
-sequenceDiagram
-    participant U as Usuario
-    participant API as Spring Boot API
-    participant ML as Python ML Service
-    participant M as Modelo ML
+flowchart TB
+    Start([Usuario envía texto]) --> Validate[Validar Request]
+    Validate --> SendML[Enviar a ML Service]
+    SendML --> Preprocess[Preprocesar texto]
+    Preprocess --> Analyze[Analizar con Modelo]
+    Analyze --> Result[Generar resultado y confianza]
+    Result --> Format[Formatear respuesta JSON]
+    Format --> Return([Retornar al usuario])
     
-    U->>API: POST /api/v1/sentiment/analyze
-    Note over U,API: {"text": "Me encanta!"}
-    
-    API->>API: Validar Request
-    API->>ML: HTTP POST /predict
-    
-    ML->>M: Preprocesar texto
-    M->>M: Analizar sentimiento
-    M-->>ML: Resultado + Confianza
-    
-    ML-->>API: {"sentiment": "positive", "confidence": 0.92}
-    API->>API: Formatear respuesta
-    API-->>U: ApiResponse con resultado
-    
-    Note over U,API: Sentimiento detectado
-    
-    style U fill:#e1f5ff,stroke:#01579b,stroke-width:2px
-    style API fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style ML fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-    style M fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    Start -.->|POST /api/v1/sentiment/analyze| Validate
+    SendML -.->|HTTP POST /predict| Preprocess
+    Return -.->|JSON Response| End([Sentimiento detectado])
+```
+
+### Ejemplo de Flujo Completo
+
+**1. Request del Cliente**
+```json
+POST /api/v1/sentiment/analyze
+{
+  "text": "¡Me encanta este producto!"
+}
+```
+
+**2. Procesamiento Interno**
+- ✅ Spring Boot API valida el request
+- ✅ Envía el texto al servicio ML (Python/FastAPI)
+- ✅ El modelo preprocesa y analiza el texto
+- ✅ Retorna predicción con nivel de confianza
+
+**3. Response al Cliente**
+```json
+{
+  "status": "success",
+  "data": {
+    "text": "¡Me encanta este producto!",
+    "sentiment": {
+      "prevision": "positivo",
+      "probabilidad": 0.92
+    }
+  },
+  "timestamp": "2026-01-21T10:30:00"
+}
 ```
 
 ---
