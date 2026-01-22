@@ -104,8 +104,8 @@ Validamos que el dataset final sea íntegro y consistente antes del entrenamient
   *Decisión sugerida:* conservarlos (refuerzan frases comunes) o deduplicar (reduce sesgo). Queda explicitado como criterio de QA.
 * **Distribución de Clases:**
 
-![Distribución de Clases](images/class_distribution.png)
-*Figura 2. Distribución de clases (dataset v2): Negativo (39.73%), Positivo (37.62%), Neutral (22.65%).*
+![distribucion_sentimientos_final](https://github.com/user-attachments/assets/24e3b47c-9ba2-4142-bce8-c83330d8eda7)
+*Figura 2. Distribución de clases (dataset v2): Negativo (32.20%), Positivo (34.70%), Neutral (33.10%).*
 
 **Problemas y resoluciones (Dataset):**
 - **Incidente de encoding (Excel → CSV):** se detectó “mojibake”/caracteres corruptos al importar el dataset desde Excel.
@@ -133,7 +133,7 @@ Validamos que el dataset final sea íntegro y consistente antes del entrenamient
 
 ---
 
-## 📸 Evidencia visual (corrida final)
+## 📸 Evidencia visual
 
 > Capturas y gráficas generadas por el equipo Data Science durante la corrida final del pipeline.
 
@@ -142,9 +142,6 @@ Validamos que el dataset final sea íntegro y consistente antes del entrenamient
 
 ### Limpieza del dataframe (registros eliminados vs conservados)
 ![analisis_limpieza_dataframe](https://github.com/user-attachments/assets/22f34c24-5a07-4eb2-b85a-ee64b88f441c)
-
-### Distribución final de sentimientos
-![distribucion_sentimientos_final](https://github.com/user-attachments/assets/24e3b47c-9ba2-4142-bce8-c83330d8eda7)
 
 ---
 
