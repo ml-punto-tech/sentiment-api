@@ -9,6 +9,8 @@
 
 API REST para análisis de sentimientos en textos en español, desarrollada mediante arquitectura de microservicios con Spring Boot y Machine Learning.
 
+---
+
 ## 📋 Tabla de Contenidos
 
 - [🚀 Descripción](#-descripción)
@@ -17,7 +19,7 @@ API REST para análisis de sentimientos en textos en español, desarrollada medi
 - [📁 Estructura del Proyecto](#-estructura-del-proyecto)
 - [⚙️ Requisitos Previos](#️-requisitos-previos)
 - [🔧 Instalación y Configuración](#-instalación-y-configuración)
-- [🔄 Flujo de Análisis de Sentimientos](#-flujo-de-análisis-de-sentimientos)
+- [📄 Flujo de Análisis de Sentimientos](#-flujo-de-análisis-de-sentimientos)
 - [📡 Endpoints Principales](#-endpoints-principales)
 - [📸 Demo](#-demo)
 - [🐳 Despliegue con Docker](#-despliegue-con-docker)
@@ -27,20 +29,25 @@ API REST para análisis de sentimientos en textos en español, desarrollada medi
 - [🎯 Características](#-características)
 - [🚀 Roadmap](#-roadmap)
 - [👥 Equipo](#-equipo)
-- [📝 Licencia](#-licencia)
+- [📄 Licencia](#-licencia)
 - [🤝 Contribuciones](#-contribuciones)
+
+---
 
 ## 🚀 Descripción
 
 Sistema que permite analizar el sentimiento de textos clasificándolos en **positivo**, **negativo** o **neutro**. El proyecto integra un backend robusto en Java con un modelo de Machine Learning entrenado en Python.
 
+---
+
 ## 🏗️ Arquitectura
 
-El proyecto está dividido en dos componentes principales que se comunican mediante microservicios:
+El proyecto está dividido en tres componentes principales que se comunican mediante microservicios:
+
 ```mermaid
 graph LR
-    A[👤 Cliente Web/Mobile] -->|HTTP Request| B[🌐 Spring Boot API]
-    B -->|REST Call| C[🤖 Python ML Service]
+    A[Cliente Web/Mobile] -->|HTTP Request| B[Spring Boot API]
+    B -->|REST Call| C[Python ML Service]
     C -->|Sentiment Result| B
     B -->|JSON Response| A
     
@@ -53,7 +60,9 @@ graph LR
 
 - **🌐 Backend (Spring Boot)**: API REST que expone endpoints y maneja la lógica de negocio
 - **🤖 Model API (Python/FastAPI)**: Microservicio que ejecuta el modelo de ML entrenado
-- **👤 Cliente**: Cualquier aplicación que consuma la API
+- **💻 Cliente Web**: Aplicación frontend desplegada en Vercel ([https://sentiment-ceron.vercel.app/](https://sentiment-ceron.vercel.app/))
+
+---
 
 ## 🛠️ Tecnologías
 
@@ -63,36 +72,43 @@ graph LR
 - **Spring Web** - REST API
 - **RestClient** - Comunicación con microservicio ML
 - **Maven** - Gestión de dependencias
-- **Docker** - Contenerización
+- **Docker** - Conteneurización
 
 ### Data Science
-- **Python 3.x**
+- **Python 3.9+**
 - **scikit-learn** - Modelo de ML
 - **FastAPI** - Microservicio del modelo
 - **Joblib** - Serialización del modelo
 - **Pandas/NumPy** - Procesamiento de datos
 
+### Frontend
+- **React/TypeScript**
+- **Vercel** - Hosting y deployment
+
+---
+
 ## 📁 Estructura del Proyecto
+
 ```mermaid
 graph TD
-    A[📦 sentiment-api] --> B[☕ src/main/java]
-    A --> C[🐍 data-science]
-    A --> D[🤖 model-api]
-    A --> E[📄 docs]
+    A[sentiment-api] --> B[src/main/java]
+    A --> C[data-science]
+    A --> D[model-api]
+    A --> E[docs]
     
-    B --> B1[🎮 controller]
-    B --> B2[⚙️ service]
-    B --> B3[🔌 client]
-    B --> B4[📋 dtos]
-    B --> B5[🛠️ config]
+    B --> B1[controller]
+    B --> B2[service]
+    B --> B3[client]
+    B --> B4[dtos]
+    B --> B5[config]
     
-    C --> C1[📓 notebooks]
-    C --> C2[📊 datasets]
-    C --> C3[📈 images]
+    C --> C1[notebooks]
+    C --> C2[datasets]
+    C --> C3[images]
     
-    D --> D1[🐍 main.py]
-    D --> D2[🧠 modelo_entrenado.joblib]
-    D --> D3[📋 requirements.txt]
+    D --> D1[main.py]
+    D --> D2[modelo_entrenado.joblib]
+    D --> D3[requirements.txt]
     
     style A fill:#ffeb3b,stroke:#f57f17,stroke-width:3px
     style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
@@ -101,6 +117,8 @@ graph TD
     style E fill:#e1f5ff,stroke:#01579b,stroke-width:2px
 ```
 
+---
+
 ## ⚙️ Requisitos Previos
 
 - **JDK 17** o superior
@@ -108,11 +126,13 @@ graph TD
 - **Python 3.9+**
 - **Docker** (opcional pero recomendado)
 
+---
+
 ## 🔧 Instalación y Configuración
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/sentiment-api.git
+git clone https://github.com/ml-punto-tech/sentiment-api.git
 cd sentiment-api
 ```
 
@@ -150,7 +170,10 @@ mvn spring-boot:run
 
 La API estará disponible en `http://localhost:8080`
 
+---
+
 ## 📄 Flujo de Análisis de Sentimientos
+
 ```mermaid
 sequenceDiagram
     participant U as Usuario
@@ -180,9 +203,12 @@ sequenceDiagram
     style M fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
 ```
 
+---
+
 ## 📡 Endpoints Principales
 
-### Analizar Sentimiento
+### Analizar Sentimiento Individual
+
 ```http
 POST /api/v1/sentiment/analyze
 Content-Type: application/json
@@ -198,23 +224,72 @@ Content-Type: application/json
   "status": "success",
   "data": {
     "text": "Este producto es excelente, me encanta!",
-    "sentiment": "positive",
-    "confidence": 0.92
+    "sentiment": {
+      "prevision": "positivo",
+      "probabilidad": 0.92
+    }
   },
-  "timestamp": "2026-01-12T10:30:00"
+  "timestamp": "2026-01-21T10:30:00"
+}
+```
+
+### Analizar Múltiples Textos (Batch)
+
+```http
+POST /api/v1/sentiment/batch
+Content-Type: multipart/form-data
+
+file: archivo.csv
+```
+
+**Formato del CSV:**
+```csv
+"Este producto es increíble"
+"El servicio fue terrible"
+"La experiencia fue regular"
+```
+
+**Respuesta:**
+```json
+{
+  "success": true,
+  "data": {
+    "totalProcessed": 3,
+    "successful": 3,
+    "failed": 0,
+    "totalPositives": 1,
+    "totalNeutrals": 1,
+    "totalNegatives": 1,
+    "results": [
+      {
+        "text": "Este producto es increíble",
+        "sentiment": {
+          "prevision": "positivo",
+          "probabilidad": 0.95
+        }
+      }
+    ]
+  },
+  "message": "Análisis completado exitosamente"
 }
 ```
 
 ### Posibles valores de sentiment:
-- `positive` - Sentimiento positivo
-- `negative` - Sentimiento negativo
+- `positivo` - Sentimiento positivo
+- `negativo` - Sentimiento negativo
 - `neutral` - Sentimiento neutro
+
+---
 
 ## 📸 Demo
 
+### Interfaz Web
+
+Visita la aplicación web en: **[https://sentiment-ceron.vercel.app/](https://sentiment-ceron.vercel.app/)**
+
 ### API en Acción
 
-> 💡 **Agrega aquí tu screenshot o GIF**
+> 💡 **Para agregar screenshots:**
 
 **Opción 1: Screenshot de Postman/Thunder Client**
 ```markdown
@@ -257,15 +332,18 @@ Content-Type: application/json
 - Incluye los **códigos de respuesta HTTP** (200 OK)
 - Destaca la **confianza del modelo** en cada predicción
 
+---
+
 ## 🐳 Despliegue con Docker
+
 ```mermaid
 graph TB
-    subgraph Docker["🐳 Docker Environment"]
-        B[🌐 Backend Container<br/>Port 8080]
-        M[🤖 ML Model Container<br/>Port 8000]
+    subgraph Docker["Docker Environment"]
+        B[Backend Container<br/>Port 8080]
+        M[ML Model Container<br/>Port 8000]
     end
     
-    U[👤 Usuario] -->|HTTP :8080| B
+    U[Usuario] -->|HTTP :8080| B
     B -->|HTTP :8000| M
     
     style Docker fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
@@ -280,28 +358,48 @@ docker build -t sentiment-api-backend .
 docker run -p 8080:8080 sentiment-api-backend
 ```
 
+### Modelo ML
+```bash
+cd model-api
+docker build -t sentiment-model .
+docker run -p 8000:8000 sentiment-model
+```
+
 ### Todo el sistema con Docker Compose
 ```bash
 docker-compose up
 ```
 
+---
+
 ## 🧪 Testing
+
 ```bash
+# Ejecutar todos los tests
 mvn test
+
+# Ejecutar tests con cobertura
+mvn test jacoco:report
+
+# Ver reporte de cobertura
+open target/site/jacoco/index.html
 ```
 
+---
+
 ## 📊 Data Science
+
 ```mermaid
 flowchart TD
-    A[📥 Datasets Originales] --> B[🧹 Preprocesamiento]
-    B --> C[🔍 Análisis Exploratorio]
-    C --> D[⚙️ Feature Engineering]
-    D --> E[🎓 Entrenamiento del Modelo]
-    E --> F[📊 Evaluación]
+    A[Datasets Originales] --> B[Preprocesamiento]
+    B --> C[Análisis Exploratorio]
+    C --> D[Feature Engineering]
+    D --> E[Entrenamiento del Modelo]
+    E --> F[Evaluación]
     F --> G{¿Métricas OK?}
-    G -->|❌ No| D
-    G -->|✅ Sí| H[💾 Serialización joblib]
-    H --> I[🚀 Despliegue en FastAPI]
+    G -->|No| D
+    G -->|Sí| H[Serialización joblib]
+    H --> I[Despliegue en FastAPI]
     
     style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
     style B fill:#fff9c4,stroke:#f57f17,stroke-width:2px
@@ -310,16 +408,27 @@ flowchart TD
     style I fill:#ffccbc,stroke:#d84315,stroke-width:2px
 ```
 
+### Pipeline de Entrenamiento
+
 El modelo fue entrenado usando:
 - **Datasets**: Textos en español etiquetados con sentimientos
-- **Preprocesamiento**: Limpieza, tokenización, eliminación de stopwords
-- **Modelo**: Clasificador de Machine Learning (detalles en `/data-science/notebooks`)
+- **Preprocesamiento**: 
+  - Limpieza de texto (URLs, menciones, caracteres especiales)
+  - Tokenización
+  - Eliminación de stopwords
+  - Normalización de texto
+- **Modelo**: Clasificador de Machine Learning con vectorización TF-IDF
+- **Validación**: Cross-validation con 5 folds
 
-Para más información sobre el proceso de entrenamiento, consulta el notebook: `data-science/notebooks/Modelo_SentimentAPI.ipynb`
+Para más información sobre el proceso de entrenamiento, consulta el notebook: 
+📓 `data-science/notebooks/Modelo_SentimentAPI.ipynb`
+
+---
 
 ## 📈 Performance del Modelo
 
 Nuestro modelo de Machine Learning ha sido evaluado con las siguientes métricas:
+
 ```mermaid
 %%{init: {'theme':'base'}}%%
 pie title Distribución de Precisión por Clase
@@ -349,36 +458,48 @@ pie title Distribución de Precisión por Clase
 
 - **Total de textos**: ~3,240 muestras
 - **Idioma**: Español
-- **Fuentes**: Redes sociales, reviews, comentarios
-- **Balance**: Dataset balanceado con distribución equitativa
+- **Fuentes**: Redes sociales, reviews, comentarios de productos
+- **Balance**: Dataset balanceado con distribución equitativa entre clases
+- **Split**: 80% entrenamiento, 20% testing
 
 > 💡 **Nota**: El modelo fue entrenado con textos en español y optimizado para detectar sentimientos en contextos informales (redes sociales, comentarios, reviews).
+
+---
 
 ## 🎯 Características
 
 - ✅ Análisis de sentimiento en tiempo real
 - ✅ Soporte para textos en español
+- ✅ Análisis individual y por lotes (batch)
 - ✅ Puntuación de confianza del análisis
-- ✅ Arquitectura de microservicios
+- ✅ Arquitectura de microservicios escalable
 - ✅ Manejo robusto de errores
 - ✅ CORS configurado para frontend
 - ✅ Perfiles de configuración (dev/prod)
+- ✅ API documentada
+- ✅ Containerizado con Docker
+- ✅ Interfaz web responsive
+
+---
 
 ## 🚀 Roadmap
 
-### Versión 1.0 (Actual)
+### Versión 1.0 (Actual) ✅
 - ✅ Análisis de sentimiento básico (Positivo/Negativo/Neutro)
 - ✅ API REST funcional
 - ✅ Microservicio de ML independiente
 - ✅ Soporte para español
 - ✅ Dockerización completa
+- ✅ Interfaz web en Vercel
+- ✅ Análisis por lotes (CSV)
 
 ### Versión 2.0 (Q1 2026)
 - [ ] **Análisis de emociones específicas**: Detectar alegría, tristeza, enojo, miedo, sorpresa
 - [ ] **Soporte multiidioma**: Inglés, portugués, francés
-- [ ] **Análisis por lotes**: Procesar múltiples textos simultáneamente
+- [ ] **Análisis de aspectos**: Identificar características específicas mencionadas
 - [ ] **Sistema de caché**: Redis para respuestas más rápidas
 - [ ] **Autenticación**: JWT para acceso seguro a la API
+- [ ] **Rate limiting**: Control de uso por usuario/API key
 
 ### Versión 3.0 (Q2 2026)
 - [ ] **Dashboard de analytics**: Visualización de tendencias y estadísticas
@@ -386,34 +507,73 @@ pie title Distribución de Precisión por Clase
 - [ ] **API de streaming**: Análisis en tiempo real de flujos de texto
 - [ ] **Detección de sarcasmo**: Mejora en la comprensión contextual
 - [ ] **Fine-tuning personalizado**: Permitir entrenar modelos con datos propios
+- [ ] **Exportación de reportes**: PDF, Excel con análisis completos
 
 ### Futuro
-- [ ] **Integración con redes sociales**: Twitter, Instagram, Facebook
+- [ ] **Integración con redes sociales**: Twitter/X, Instagram, Facebook
 - [ ] **Análisis de audio**: Transcripción y análisis de sentimientos en voz
 - [ ] **Mobile SDK**: Librerías nativas para iOS y Android
 - [ ] **Modelos transformer**: BERT/GPT para mayor precisión
 - [ ] **Marketplace de modelos**: Modelos especializados por industria
+- [ ] **Análisis de imágenes**: Detección de sentimientos en memes e imágenes con texto
 
-> 💡 **¿Tienes una idea?** Abre un issue o contacta al equipo para proponer nuevas funcionalidades.
-
-## 👥 Equipo
-
-- **Backend Team**: Desarrollo de la API REST con Spring Boot
-- **Data Science Team**: Entrenamiento y despliegue del modelo de ML
-
-## 📝 Licencia
-
-Este proyecto es parte de un hackathon y está disponible bajo [especifica tu licencia].
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor:
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+> 💡 **¿Tienes una idea?** Abre un [issue](https://github.com/ml-punto-tech/sentiment-api/issues) o contacta al equipo para proponer nuevas funcionalidades.
 
 ---
 
+## 👥 Equipo
+
+### Desarrollo
+- **Backend Team**: Desarrollo de la API REST con Spring Boot
+- **Data Science Team**: Entrenamiento y despliegue del modelo de ML
+- **Frontend Team**: Desarrollo de la interfaz web en React
+
+### Contacto
+- 📧 Email: [contacto@sentiment-api.com](mailto:contacto@sentiment-api.com)
+- 🐙 GitHub: [@ml-punto-tech](https://github.com/ml-punto-tech)
+- 🌐 Web: [https://sentiment-ceron.vercel.app/](https://sentiment-ceron.vercel.app/)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está disponible bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas y apreciadas. Para contribuir:
+
+1. **Fork** el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un **Pull Request**
+
+### Guías de Contribución
+
+- Sigue las convenciones de código del proyecto
+- Añade tests para nuevas funcionalidades
+- Actualiza la documentación según sea necesario
+- Describe claramente los cambios en el PR
+
+### Reportar Bugs
+
+Si encuentras un bug, por favor abre un [issue](https://github.com/ml-punto-tech/sentiment-api/issues) incluyendo:
+- Descripción del problema
+- Pasos para reproducirlo
+- Comportamiento esperado vs actual
+- Screenshots si es aplicable
+
+---
+
+<div align="center">
+
 ⭐ Si te ha gustado este proyecto, ¡dale una estrella!
+
+**Made with ❤️ by ML Punto Tech Team**
+
+[Documentación](https://github.com/ml-punto-tech/sentiment-api/wiki) • [Issues](https://github.com/ml-punto-tech/sentiment-api/issues) • [Demo](https://sentiment-ceron.vercel.app/)
+
+</div>
