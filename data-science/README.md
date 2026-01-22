@@ -40,11 +40,10 @@ Este proyecto implementa un pipeline de **Natural Language Processing (NLP)** su
 2.  **Probabilidad:** Score de confianza del modelo.
 
 ### Objetivos de Data Science
-* ✅ **Dataset:** Limpieza y etiquetado para entrenamiento supervisado.
-* ✅ **Pipeline:** Normalización de texto y vectorización reproducible.
-* ✅ **Modelo:** Entrenamiento de modelo base (TF-IDF + Logistic Regression).
-* ✅ **QA:** Evidencia de calidad y pruebas de estrés de datos.
-
+* ✅ **Dataset:** Curación y documentación del dataset oficial (`dataset_listo_para_ML_esp.csv`) para entrenamiento supervisado.
+* ✅ **Pipeline:** Normalización de texto y vectorización reproducible (TF-IDF).
+* ✅ **Modelo (final):** Entrenamiento con **SVM (LinearSVC)** y **calibración de probabilidades** (`CalibratedClassifierCV`) para devolver `probabilidad` en la API.
+* ✅ **QA:** Evidencia de calidad, decisiones de limpieza, replicabilidad (semillas/paths) y resultados de evaluación.
 ---
 
 ## 🏗 Arquitectura y Flujo
@@ -61,45 +60,37 @@ El Back-end envía un JSON con el campo `text`. El microservicio en Python proce
 
 ---
 
-## 💾 Datasets y Diccionario de Datos
+### Dataset Oficial (único) — `dataset_listo_para_ML_esp.csv`
+Dataset final en español, listo para entrenamiento/evaluación del modelo.
 
-Se utilizan dos datasets principales en el flujo de trabajo:
+**Origen del dataset:** Dataset propio construido por el equipo (Hackathon ONE).  
 
-### 1. Dataset Final (`dataset_listo_para_ML.csv`)
-*Dataset limpio utilizado para el entrenamiento del modelo.*
-
-✅ **Dataset actual en uso (v2):** `dataset_listo_para_ML (2).csv`  
-Recomendación: renombrarlo en el repo a **`dataset_listo_para_ML.csv`** para estandarizar.
-
-**Resumen (v2):**
-- **Registros:** **3272**
-- **Duplicados (por texto):** **424 (12.96%)**
-- **Distribución:** `negativo` 39.73% | `positivo` 37.62% | `neutral` 22.65%
-
+**Columnas**
 | Variable | Tipo | Descripción |
 | :--- | :--- | :--- |
-| `Texto_Limpio` | String | Texto preprocesado según reglas del pipeline (puede conservar mayúsculas y caracteres no-ASCII para capturar intensidad/emoción). |
-| `Sentimiento_Final` | String | Target: `Positivo`, `Neutral`, `Negativo` *(en el CSV v2 viene en minúscula: `positivo`, `neutral`, `negativo`)*. |
+| `texto` | String | Texto crudo en español (input del modelo). |
+| `sentimiento` | String | Target con 3 clases: `positivo`, `neutral`, `negativo`. |
 
-### 2. Dataset Crudo (`sentimentdataset_es.csv`)
-*Contiene 15 columnas originales incluyendo `Timestamp`, `User`, `Platform`, `Hashtags`, etc.*
+**QA rápido (dataset oficial)**
+- Nulos en `texto`: 0
+- Nulos en `sentimiento`: 0
+- Etiquetas inválidas: 0 (solo `positivo/neutral/negativo`)
+- Recomendación: mantener etiquetas en minúscula para consistencia del pipeline.
 
----
 
-## ⚙️ Pipeline de Procesamiento
 
-El notebook `Procesamiento_y_Clasificacion_de_Datos_SentimentAPI.ipynb` ejecuta las siguientes transformaciones:
 
-1.  **Carga y Selección:** Extracción de columnas `Text` y `Sentiment`.
-2.  **Limpieza:**
-    * Normalización y corrección de problemas de **encoding** (dataset exportado desde Excel → CSV).
-    * Limpieza de ruido común (espacios/formatos) y estandarización para entrenamiento.
-    * *Decisión de diseño (v2):* se evita forzar todo a minúsculas para conservar **intensidad emocional** (ej. “GENIAL”, “HORRIBLE”) cuando aporta señal.
-3.  **Categorización:** Mapeo de emociones complejas a las 3 clases base.
-    * *Nota:* Sentimientos ambiguos no mapeados se asignan a `Neutral` (Regla de negocio MVP).
+### Procesamiento aplicado (notebook final)
+El notebook **`Modelo_SentimentAPI.ipynb`** entrena el modelo a partir del dataset oficial y aplica limpieza antes de vectorizar.
 
-> 🔎 Hallazgo dataset v2: aún existen registros con `#/@` y URLs en una fracción del dataset.
-> Se documenta en QA como punto de mejora (según el objetivo del MVP).
+**Limpieza (resumen)**
+- Minúsculas.
+- Eliminación de puntuación/caracteres especiales.
+- Eliminación de stopwords (lista manual).
+- **Preservación de negaciones** (`no`, `ni`, `nunca`, etc.) para no perder polaridad.
+
+**Feature Engineering**
+- Vectorización: `TfidfVectorizer(max_features=5000, ngram_range=(1,3))`
 
 ---
 
@@ -120,23 +111,40 @@ Validamos que el dataset final sea íntegro y consistente antes del entrenamient
 - **Incidente de encoding (Excel → CSV):** se detectó “mojibake”/caracteres corruptos al importar el dataset desde Excel.
   **Resolución:** exportación a CSV y normalización del encoding antes de integrar al pipeline.
 
-### 6.B Testing de Machine Learning
-**Modelo:** Pipeline `TF-IDF Vectorizer` + `Logistic Regression`.
+### 6.B Testing de Machine Learning (modelo final)
+**Modelo final:** `TF-IDF` + **SVM (LinearSVC)** + **Calibración de probabilidades** (`CalibratedClassifierCV`).
 
-> ⚠️ Métricas recalculadas con el **dataset v2** (`dataset_listo_para_ML (2).csv`), split estratificado 80/20 (`random_state=42`).
+**Configuración de evaluación**
+- Split estratificado **80/20** (`random_state=42`)
+- Optimización: `GridSearchCV` sobre `C` con **5-fold** (scoring = accuracy)
+- Output: predicción (`positivo/neutral/negativo`) + **probabilidad** (post-calibración)
 
-| Métrica | Valor (Holdout 20%) |
-| :--- | :--- |
-| **Accuracy** | **0.6840** |
-| **F1 Macro** | **0.6440** |
-| **F1 Weighted** | **0.6705** |
+**Resultados (holdout 20%)**
+- **Accuracy:** ~**82.78%**
+- (Recomendado reportar también F1 por clase por desbalance residual / confusiones entre neutral y extremos)
 
-**Matriz de Confusión:**
-![Matriz de Confusión](images/confusion_matrix.png)
-*Figura 3. Matriz de confusión (dataset v2). La clase 'Neutral' es la más difícil (Recall ≈ 0.365).*
+**Clasificación (resumen)**
+- `negativo`: precision ~0.84 | recall ~0.75 | f1 ~0.79  
+- `neutral`: precision ~0.80 | recall ~0.80 | f1 ~0.80  
+- `positivo`: precision ~0.85 | recall ~0.93 | f1 ~0.89  
 
-**Validación Cruzada (5-Fold):**
-El modelo demuestra estabilidad con un F1 Macro promedio de **0.6580 ± 0.0101**.
+**Matriz de Confusión**
+![Matriz de Confusión](images/confusion_matrix_v2.png)
+
+---
+
+## 📸 Evidencia visual (corrida final)
+
+> Capturas y gráficas generadas por el equipo Data Science durante la corrida final del pipeline.
+
+### Proceso general (del caos al modelo)
+![del_caos_al_modelo](https://github.com/user-attachments/assets/54f0ba26-2472-400a-850c-05e762b83c9f)
+
+### Limpieza del dataframe (registros eliminados vs conservados)
+![analisis_limpieza_dataframe](https://github.com/user-attachments/assets/22f34c24-5a07-4eb2-b85a-ee64b88f441c)
+
+### Distribución final de sentimientos
+![distribucion_sentimientos_final](https://github.com/user-attachments/assets/24e3b47c-9ba2-4142-bce8-c83330d8eda7)
 
 ---
 
