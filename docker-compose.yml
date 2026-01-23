@@ -1,0 +1,53 @@
+
+services:
+   db:
+      image: postgres:15
+      container_name: sentiment-postgres
+      ports:
+        - "5432:5432"
+      environment:
+       POSTGRES_USER: sentiment_user
+       POSTGRES_PASSWORD: sentiment_pass
+       POSTGRES_DB: sentiment_db
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+      healthcheck:
+        test: ["CMD-SHELL", "pg_isready -U sentiment_user -d sentiment_db"]
+        interval: 10s
+        timeout: 5s
+        retries: 5
+
+   spring-app:
+      build:
+        context: .
+      image: my-spring-image
+      container_name: sentiment-spring
+      depends_on:
+         db:
+           condition: service_healthy
+         python-api:
+           condition: service_healthy
+      environment:
+        DB_USERNAME: sentiment_user
+        DB_PASS: sentiment_pass
+        DB_PATH: db:5432/sentiment_db
+        MODEL_API_URL: http://sentiment-python:8000
+      ports:
+        - "8080:8080"
+
+   python-api:
+    build:
+      context: ./model-api
+    image: my-api-python
+    container_name: sentiment-python
+    environment:
+      PORT: 8000
+    healthcheck:
+      test: ["CMD-SHELL","python -c 'import socket; s = socket.socket(); s.connect((\"localhost\", 8000))'"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  postgres_data:
+
