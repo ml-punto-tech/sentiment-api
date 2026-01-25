@@ -53,25 +53,27 @@ API REST para análisis de sentimientos en textos en español, desarrollada medi
 El proyecto está dividido en tres componentes principales que se comunican mediante microservicios:
 
 ```
-┌─────────────────────┐
-│  Cliente Web/Mobile │
-│   (React/Vercel)    │
-└──────────┬──────────┘
-           │ HTTP Request
-           ▼
-┌─────────────────────┐
-│   Spring Boot API   │
-│    (Backend Java)   │
-└──────────┬──────────┘
-           │ REST Call
-           ▼
-┌─────────────────────┐
-│ Python ML Service   │
-│  (FastAPI + SVM)    │
-└─────────────────────┘
-           │
-           ▼
-    Sentiment Result
+                    ┌─────────────────────┐
+                    │  Cliente Web/Mobile │
+                    │   (React/Vercel)    │
+                    └──────────┬──────────┘
+                               │
+                               │ HTTP Request
+                               ▼
+                    ┌─────────────────────┐
+                    │   Spring Boot API   │
+                    │    (Backend Java)   │
+                    └──────────┬──────────┘
+                               │
+                               │ REST Call
+                               ▼
+                    ┌─────────────────────┐
+                    │ Python ML Service   │
+                    │  (FastAPI + SVM)    │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                         Sentiment Result
 ```
 
 **Flujo de Comunicación:**
@@ -256,27 +258,27 @@ Prueba la aplicación directamente desde tu navegador:
 ### Proceso de Análisis Paso a Paso
 
 ```
-Usuario envía texto
-       ↓
-Validar Request
-       ↓
-Enviar a ML Service (HTTP POST /predict)
-       ↓
-Preprocesar texto
-       ↓
-Vectorización TF-IDF
-       ↓
-Clasificación SVM
-       ↓
+    Usuario envía texto
+            ↓
+      Validar Request
+            ↓
+  Enviar a ML Service (HTTP POST /predict)
+            ↓
+    Preprocesar texto
+            ↓
+  Vectorización TF-IDF
+            ↓
+    Clasificación SVM
+            ↓
 Calibración de probabilidad
-       ↓
-Generar resultado
-       ↓
+            ↓
+    Generar resultado
+            ↓
 Formatear respuesta JSON
-       ↓
-Retornar al usuario
-       ↓
-Sentimiento detectado ✓
+            ↓
+  Retornar al usuario
+            ↓
+ Sentimiento detectado ✓
 ```
 
 **Tecnologías en cada paso:**
@@ -425,40 +427,40 @@ file: archivo.csv
 
 ```
 Dataset Original ESP (3,240 registros)
-           ↓
-    Preprocesamiento
-    • Limpieza de texto
-    • Normalización UTF-8
-    • Eliminación duplicados
-           ↓
-   Análisis Exploratorio
-    • Distribución de clases
-    • Longitud de textos
-    • Palabras frecuentes
-           ↓
-  Feature Engineering TF-IDF
-    • max_features=5000
-    • ngram_range=(1,3)
-    • Preservación negaciones
-           ↓
-    Entrenamiento SVM
-    • LinearSVC
-    • GridSearchCV (param C)
-    • 5-fold CV
-           ↓
-Calibración CalibratedClassifierCV
-    • Probabilidades confiables
-    • Método sigmoid
-           ↓
-   ¿Métricas OK? ────No───┐
-         │                │
-        Sí                │
-         ↓                │
- Serialización joblib ────┘
-         ↓
-  Despliegue FastAPI
-    • Endpoint /predict
-    • Puerto 8000
+              ↓
+       Preprocesamiento
+       • Limpieza de texto
+       • Normalización UTF-8
+       • Eliminación duplicados
+              ↓
+      Análisis Exploratorio
+       • Distribución de clases
+       • Longitud de textos
+       • Palabras frecuentes
+              ↓
+    Feature Engineering TF-IDF
+       • max_features=5000
+       • ngram_range=(1,3)
+       • Preservación negaciones
+              ↓
+       Entrenamiento SVM
+       • LinearSVC
+       • GridSearchCV (param C)
+       • 5-fold CV
+              ↓
+  Calibración CalibratedClassifierCV
+       • Probabilidades confiables
+       • Método sigmoid
+              ↓
+      ¿Métricas OK? ────No───┐
+            │                │
+           Sí                │
+            ↓                │
+    Serialización joblib ────┘
+            ↓
+     Despliegue FastAPI
+       • Endpoint /predict
+       • Puerto 8000
 ```
 
 **Métricas de Calidad:**
