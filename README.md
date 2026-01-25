@@ -15,11 +15,12 @@ API REST para análisis de sentimientos en textos en español, desarrollada medi
 ## 📋 Tabla de Contenidos
 
 - [🚀 Descripción General](#-descripción-general)
-- [�️ Arquitectura](#️-arquitectura)
+- [🏗️ Arquitectura](#️-arquitectura)
 - [🛠️ Tecnologías](#️-tecnologías)
 - [📁 Estructura del Proyecto](#-estructura-del-proyecto)
 - [⚙️ Requisitos Previos](#️-requisitos-previos)
 - [🔧 Instalación y Configuración](#-instalación-y-configuración)
+- [🎬 Demo](#-demo)
 - [📄 Flujo de Análisis de Sentimientos](#-flujo-de-análisis-de-sentimientos)
 - [📡 Endpoints Principales](#-endpoints-principales)
 - [🔬 Pipeline de Data Science](#-pipeline-de-data-science)
@@ -182,6 +183,54 @@ cd data-science/notebooks
 # Abrir y ejecutar Modelo_SentimentAPI.ipynb
 # Esto generará modelo_entrenado.joblib
 ```
+---
+
+## 🎬 Demo
+
+### Videos Demostrativos del Proyecto
+
+Explora el funcionamiento completo de SentimentAPI a través de nuestros videos demostrativos:
+
+#### 🔬 Demo Data Science
+Conoce el proceso completo de desarrollo del modelo de Machine Learning, desde la preparación de datos hasta el entrenamiento y evaluación del modelo SVM.
+
+📹 **[Ver Demo de Data Science](URL_DEL_VIDEO_DS)**
+
+**Contenido del video:**
+- Análisis exploratorio del dataset
+- Pipeline de preprocesamiento NLP
+- Entrenamiento y optimización del modelo
+- Métricas de evaluación y validación
+- Serialización y deployment del modelo
+
+---
+
+#### 💻 Demo Backend
+Descubre cómo funciona la API REST de SentimentAPI, sus endpoints y la integración con el microservicio de Machine Learning.
+
+📹 **[Ver Demo de Backend](URL_DEL_VIDEO_BACKEND)**
+
+**Contenido del video:**
+- Arquitectura del sistema
+- Endpoints principales (análisis individual y batch)
+- Integración Backend ↔ ML Service
+- Manejo de errores y validaciones
+- Testing con Postman
+- Deployment y configuración
+
+---
+
+### 🌐 Aplicación Web en Vivo
+
+Prueba la aplicación directamente desde tu navegador:
+
+🔗 **[https://sentiment-ceron.vercel.app/](https://sentiment-ceron.vercel.app/)**
+
+**Características de la demo web:**
+- ✅ Análisis de sentimientos en tiempo real
+- ✅ Interfaz intuitiva y responsive
+- ✅ Visualización de probabilidades
+- ✅ Soporte para textos en español
 
 ---
 
