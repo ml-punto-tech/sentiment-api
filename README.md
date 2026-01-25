@@ -48,39 +48,21 @@ API REST para análisis de sentimientos en textos en español, desarrollada medi
 
 ---
 
-## 🏗️ Arquitectura
+## �️ Arquitectura
 
 El proyecto está dividido en tres componentes principales que se comunican mediante microservicios:
 
+```mermaid
+graph LR
+    A[Cliente Web/Mobile] -->|HTTP Request| B[Spring Boot API]
+    B -->|REST Call| C[Python ML Service]
+    C -->|Sentiment Result| B
+    B -->|JSON Response| A
+    
+    style A fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style C fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
 ```
-                    ┌─────────────────────┐
-                    │  Cliente Web/Mobile │
-                    │   (React/Vercel)    │
-                    └──────────┬──────────┘
-                               │
-                               │ HTTP Request
-                               ▼
-                    ┌─────────────────────┐
-                    │   Spring Boot API   │
-                    │    (Backend Java)   │
-                    └──────────┬──────────┘
-                               │
-                               │ REST Call
-                               ▼
-                    ┌─────────────────────┐
-                    │ Python ML Service   │
-                    │  (FastAPI + SVM)    │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                         Sentiment Result
-```
-
-**Flujo de Comunicación:**
-1. 🌐 **Cliente** → Envía texto vía HTTP POST
-2. ☕ **Spring Boot** → Valida y procesa la petición
-3. 🐍 **Python ML** → Analiza sentimiento con modelo entrenado
-4. 📊 **Respuesta** → Retorna predicción + probabilidad
 
 ### Componentes
 
@@ -201,7 +183,6 @@ cd data-science/notebooks
 # Abrir y ejecutar Modelo_SentimentAPI.ipynb
 # Esto generará modelo_entrenado.joblib
 ```
-
 ---
 
 ## 🎬 Demo
@@ -257,37 +238,22 @@ Prueba la aplicación directamente desde tu navegador:
 
 ### Proceso de Análisis Paso a Paso
 
+```mermaid
+flowchart TB
+    Start([Usuario envía texto]) --> Validate[Validar Request]
+    Validate --> SendML[Enviar a ML Service]
+    SendML --> Preprocess[Preprocesar texto]
+    Preprocess --> Vectorize[Vectorización TF-IDF]
+    Vectorize --> Analyze[Clasificación SVM]
+    Analyze --> Calibrate[Calibración de probabilidad]
+    Calibrate --> Result[Generar resultado]
+    Result --> Format[Formatear respuesta JSON]
+    Format --> Return([Retornar al usuario])
+    
+    Start -.->|POST /api/v1/sentiment/analyze| Validate
+    SendML -.->|HTTP POST /predict| Preprocess
+    Return -.->|JSON Response| End([Sentimiento detectado])
 ```
-    Usuario envía texto
-            ↓
-      Validar Request
-            ↓
-  Enviar a ML Service (HTTP POST /predict)
-            ↓
-    Preprocesar texto
-            ↓
-  Vectorización TF-IDF
-            ↓
-    Clasificación SVM
-            ↓
-Calibración de probabilidad
-            ↓
-    Generar resultado
-            ↓
-Formatear respuesta JSON
-            ↓
-  Retornar al usuario
-            ↓
- Sentimiento detectado ✓
-```
-
-**Tecnologías en cada paso:**
-- 📥 **Validación**: Spring Boot Validation
-- 🔄 **Comunicación**: RestClient HTTP
-- 🧹 **Preprocesamiento**: Python NLP (lowercase, stopwords, negaciones)
-- 🔢 **Vectorización**: TF-IDF (scikit-learn)
-- 🤖 **Clasificación**: LinearSVC + CalibratedClassifierCV
-- 📤 **Respuesta**: JSON con probabilidad calibrada
 
 ### Ejemplo de Flujo Completo
 
@@ -425,49 +391,24 @@ file: archivo.csv
 
 ## 🔬 Pipeline de Data Science
 
+```mermaid
+flowchart TD
+    A[Dataset Original ESP] --> B[Preprocesamiento]
+    B --> C[Análisis Exploratorio]
+    C --> D[Feature Engineering TF-IDF]
+    D --> E[Entrenamiento SVM]
+    E --> F[Calibración CalibratedClassifierCV]
+    F --> G{¿Métricas OK?}
+    G -->|No| D
+    G -->|Sí| H[Serialización joblib]
+    H --> I[Despliegue en FastAPI]
+    
+    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style B fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style E fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
+    style H fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style I fill:#ffccbc,stroke:#d84315,stroke-width:2px
 ```
-Dataset Original ESP (3,240 registros)
-              ↓
-       Preprocesamiento
-       • Limpieza de texto
-       • Normalización UTF-8
-       • Eliminación duplicados
-              ↓
-      Análisis Exploratorio
-       • Distribución de clases
-       • Longitud de textos
-       • Palabras frecuentes
-              ↓
-    Feature Engineering TF-IDF
-       • max_features=5000
-       • ngram_range=(1,3)
-       • Preservación negaciones
-              ↓
-       Entrenamiento SVM
-       • LinearSVC
-       • GridSearchCV (param C)
-       • 5-fold CV
-              ↓
-  Calibración CalibratedClassifierCV
-       • Probabilidades confiables
-       • Método sigmoid
-              ↓
-      ¿Métricas OK? ────No───┐
-            │                │
-           Sí                │
-            ↓                │
-    Serialización joblib ────┘
-            ↓
-     Despliegue FastAPI
-       • Endpoint /predict
-       • Puerto 8000
-```
-
-**Métricas de Calidad:**
-- ✅ Accuracy: 82.78%
-- ✅ F1-Score Macro: 0.83
-- ✅ Balance entre clases
-- ✅ Reproducibilidad (seed=42)
 
 ### Procesamiento de Texto
 
@@ -648,9 +589,9 @@ El modelo muestra confusiones típicas entre neutral y los extremos (positivo/ne
 | Rol | Miembro | Responsabilidades Clave |
 | :--- | :--- | :--- |
 | **Líder Coordinador de Backend y Frontend** | Denis Díaz | 🤝 Coordinación de equipos y asignación de tareas<br>🎤 Sprint Demo y presentación como Product Owner<br>📖 Documentación general y flujogramas del sistema |
-| **Tech Lead / Arquitecto Backend** | Wilmar Zapata | 🗂️ Configuración del proyecto Spring Boot<br>🧠 Implementación de SentimentService y lógica de negocio<br>🎯 Liderazgo técnico y code reviews |
+| **Tech Lead / Arquitecto Backend** | Wilmar Zapata | 🏗️ Configuración del proyecto Spring Boot<br>🧠 Implementación de SentimentService y lógica de negocio<br>🎯 Liderazgo técnico y code reviews |
 | **Desarrollador Principal / API & Integration** | Adrián Luna | 📡 Implementación de SentimentController y endpoints REST<br>🔌 Integración con Data Science (DataScienceClient)<br>📦 Diseño de DTOs y modelos con validación |
-| **QA / Testing / Documentación Técnica** | Carlos Chávez (Cerón) | 🔮 Testing completo con Postman y QA<br>📖 Documentación técnica del backend<br>🛡️ Exception Handling y sistema de logs |
+| **QA / Testing / Documentación Técnica** | Carlos Chávez (Cerón) | 📮 Testing completo con Postman y QA<br>📖 Documentación técnica del backend<br>🛡️ Exception Handling y sistema de logs |
 
 ### Data Science Team
 
@@ -713,7 +654,7 @@ Si encuentras un bug, abre un [issue](https://github.com/ml-punto-tech/sentiment
 
 ---
 
-**Fecha de última actualización**: 2026-01-24  
+**Fecha de última actualización**: 2026-01-22  
 **Versión**: 1.0.0 (MVP)
 
 </div>
