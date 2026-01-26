@@ -194,7 +194,7 @@ Explora el funcionamiento completo de SentimentAPI a través de nuestros videos 
 #### 🔬 Demo Data Science
 Conoce el proceso completo de desarrollo del modelo de Machine Learning, desde la preparación de datos hasta el entrenamiento y evaluación del modelo SVM.
 
-📹 **[Ver Demo de Data Science](URL_DEL_VIDEO_DS)**
+📹 **[Ver Demo de Data Science](https://www.youtube.com/watch?v=6KPc_4aFbno&feature=youtu.be)**
 
 **Contenido del video:**
 - Análisis exploratorio del dataset
@@ -208,7 +208,7 @@ Conoce el proceso completo de desarrollo del modelo de Machine Learning, desde l
 #### 💻 Demo Backend
 Descubre cómo funciona la API REST de SentimentAPI, sus endpoints y la integración con el microservicio de Machine Learning.
 
-📹 **[Ver Demo de Backend](URL_DEL_VIDEO_BACKEND)**
+📹 **[Ver Demo de Backend](https://www.youtube.com/watch?v=6KPc_4aFbno&feature=youtu.be)**
 
 **Contenido del video:**
 - Arquitectura del sistema
